@@ -1,5 +1,5 @@
 {
-  "name": "skaut/poptavky",
+  "name": "poptavky",
   "version": "0.1.0",
   "description": "A GitHub app to automatically export issues to a webpage.",
   "keywords": [
