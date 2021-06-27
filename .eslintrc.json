@@ -1,0 +1,25 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/array-type": ["error", {"default": "generic"}],
+    "@typescript-eslint/member-ordering": "error",
+    "@typescript-eslint/no-extraneous-class": "error",
+    "@typescript-eslint/no-namespace": ["error", {"allowDeclarations": true}],
+    "@typescript-eslint/no-non-null-assertion": "error"
+  }
+}
