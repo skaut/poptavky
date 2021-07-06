@@ -4,8 +4,6 @@ interface GlobalConfig {
   projects: Array<string>;
 }
 
-const globalConfig = JSON.parse(
+export const globalConfig = JSON.parse(
   fs.readFileSync("config.json", "utf8") // TODO: Handle errors.
 ) as GlobalConfig;
-
-export default globalConfig;
