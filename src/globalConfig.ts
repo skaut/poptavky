@@ -1,7 +1,12 @@
 import * as fs from "fs";
 
+interface GlobalConfigProject {
+  owner: string;
+  repo: string;
+}
+
 interface GlobalConfig {
-  projects: Array<string>;
+  projects: Array<GlobalConfigProject>;
 }
 
 export const globalConfig = JSON.parse(

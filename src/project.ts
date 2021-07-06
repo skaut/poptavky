@@ -1,10 +1,16 @@
-// import { Octokit, App, Action } from "octokit";
-
 import { ProjectListing } from "./ProjectListing";
+import { octokit } from "./octokit";
 
-export function getProjectListing(_: string): ProjectListing | undefined {
+export function getProjectListing(
+  owner: string,
+  repo: string
+): ProjectListing | undefined {
   // TODO: No undefined
-  console.log(process.env.TEST_SECRET);
-  console.log(process.env.TEST_SECRET == "HOORAY");
+  const config = octokit.rest.repos.getContent({
+    owner,
+    repo,
+    path: ".poptavky.json",
+  });
+  console.log(config);
   return undefined;
 }

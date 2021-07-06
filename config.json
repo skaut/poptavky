@@ -1,3 +1,8 @@
 {
-  "projects": ["skaut/poptavky-test"]
+  "projects": [
+    {
+      "owner": "skaut",
+      "repo": "poptavky-test"
+    }
+  ]
 }

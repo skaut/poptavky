@@ -31,7 +31,7 @@ jobs:
         run: |
           npm run collect
         env:
-          TEST_SECRET: ${{ secrets.TEST_SECRET }}
+          PAT: ${{ secrets.PAT_MAREKDEDIC }}
 
       #- name: "Show results"
         #run: |

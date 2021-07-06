@@ -7,7 +7,7 @@ function run() {
   console.log(globalConfig);
   const listings: Array<ProjectListing | undefined> = []; // TODO: Remove undefined
   for (const project of globalConfig.projects) {
-    listings.push(getProjectListing(project));
+    listings.push(getProjectListing(project.owner, project.repo));
   }
 }
 
