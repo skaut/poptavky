@@ -17,6 +17,7 @@
     "url": "git+https://github.com/skaut/poptavky.git"
   },
   "dependencies": {
+    "octokit": "^1.1.0",
     "ts-custom-error": "^3.2.0",
     "ts-node": "^10.0.0"
   },
