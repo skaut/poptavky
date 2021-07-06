@@ -5,7 +5,7 @@ interface GlobalConfig {
 }
 
 const globalConfig = JSON.parse(
-  fs.readFileSync("config.json", "utf8")
-) as GlobalConfig; // TODO: Handle errors.
+  fs.readFileSync("config.json", "utf8") // TODO: Handle errors.
+) as GlobalConfig;
 
 export default globalConfig;
