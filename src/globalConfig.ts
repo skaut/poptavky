@@ -10,5 +10,5 @@ interface GlobalConfig {
 }
 
 export const globalConfig = JSON.parse(
-  fs.readFileSync("config.json", "utf8") // TODO: Handle errors.
-) as GlobalConfig;
+  fs.readFileSync("config.json", "utf8") // TODO: Handle errors in file read.
+) as GlobalConfig; // TODO: Handle parsing errors/invalid config.
