@@ -1,16 +1,22 @@
 import { ProjectListing } from "./ProjectListing";
 import { octokit } from "./octokit";
 
-export function getProjectListing(
+import { ConfigNotFoundError } from "./exceptions/ConfigNotFoundError";
+
+export async function getProjectListing(
   owner: string,
   repo: string
-): ProjectListing | undefined {
+): Promise<ProjectListing | undefined> {
   // TODO: No undefined
-  const config = octokit.rest.repos.getContent({
-    owner,
-    repo,
-    path: ".poptavky.json",
-  });
+  const config = await octokit.rest.repos
+    .getContent({
+      owner,
+      repo,
+      path: ".poptavky.json",
+    })
+    .catch(function (e): never {
+      throw new ConfigNotFoundError(String(e));
+    });
   console.log(config);
   return undefined;
 }

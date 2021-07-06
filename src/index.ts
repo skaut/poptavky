@@ -2,12 +2,10 @@ import { globalConfig } from "./globalConfig";
 import { ProjectListing } from "./ProjectListing";
 import { getProjectListing } from "./project";
 
-function run() {
-  console.log("Sucess");
-  console.log(globalConfig);
+async function run() {
   const listings: Array<ProjectListing | undefined> = []; // TODO: Remove undefined
   for (const project of globalConfig.projects) {
-    listings.push(getProjectListing(project.owner, project.repo));
+    listings.push(await getProjectListing(project.owner, project.repo));
   }
 }
 
