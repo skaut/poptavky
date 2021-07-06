@@ -32,7 +32,8 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint \"src/**/*\""
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*\"",
+    "collect": "ts-node -T src/index.ts"
   }
 }
