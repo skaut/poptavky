@@ -9,7 +9,7 @@ async function run() {
     const listings: Array<ProjectListing | undefined> = []; // TODO: Remove undefined
     const globalConfig = getGlobalConfig();
     for (const project of globalConfig.projects) {
-      listings.push(await getProjectListing(project.owner, project.repo));
+      listings.push(await getProjectListing(project));
     }
   } catch (e) {
     console.error((e as PoptavkyError).message);

@@ -1,12 +1,12 @@
 import { getProjectConfig } from "./getProjectConfig";
 import { ProjectListing } from "./ProjectListing";
+import { Repo } from "./Repo";
 
 export async function getProjectListing(
-  owner: string,
-  repo: string
+  repo: Repo
 ): Promise<ProjectListing | undefined> {
   // TODO: No undefined
-  const config = await getProjectConfig(owner, repo);
+  const config = await getProjectConfig(repo);
   console.log(config);
   return undefined;
 }
