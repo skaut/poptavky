@@ -1,7 +1,16 @@
 import * as fs from "fs";
 
-import { GlobalConfig } from "./interfaces/GlobalConfig";
+import { GlobalConfig, assertIsGlobalConfig } from "./interfaces/GlobalConfig";
+import { GlobalConfigError } from "./exceptions/GlobalConfigError";
 
 export function getGlobalConfig(): GlobalConfig {
-  return JSON.parse(fs.readFileSync("config.json", "utf8")) as GlobalConfig; // TODO: Handle errors in file read.
+  let rawContents = "";
+  try {
+    rawContents = fs.readFileSync("config.json", "utf8");
+  } catch (e) {
+    throw new GlobalConfigError(e);
+  }
+  const contents = JSON.parse(rawContents); // eslint-disable-line @typescript-eslint/no-unsafe-assignment
+  assertIsGlobalConfig(contents);
+  return contents;
 }
