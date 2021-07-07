@@ -7,6 +7,7 @@ export async function getProjectListing(
   owner: string,
   repo: string
 ): Promise<ProjectListing | undefined> {
+  console.log(await octokit.rest.repos.get({ owner, repo }));
   // TODO: No undefined
   const config = await octokit.rest.repos
     .getContent({
