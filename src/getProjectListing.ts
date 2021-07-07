@@ -1,6 +1,6 @@
 import { getProjectConfig } from "./getProjectConfig";
-import { ProjectListing } from "./ProjectListing";
-import { Repo } from "./Repo";
+import { ProjectListing } from "./interfaces/ProjectListing";
+import { Repo } from "./interfaces/Repo";
 
 export async function getProjectListing(
   repo: Repo

@@ -1,6 +1,6 @@
 import { octokit } from "./octokit";
-import { ProjectConfig } from "./ProjectConfig";
-import { Repo } from "./Repo";
+import { ProjectConfig } from "./interfaces/ProjectConfig";
+import { Repo } from "./interfaces/Repo";
 
 import { ProjectConfigError } from "./exceptions/ProjectConfigError";
 

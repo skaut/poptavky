@@ -1,5 +1,5 @@
 import { getGlobalConfig } from "./getGlobalConfig";
-import { ProjectListing } from "./ProjectListing";
+import { ProjectListing } from "./interfaces/ProjectListing";
 import { getProjectListing } from "./getProjectListing";
 
 import { PoptavkyError } from "./exceptions/PoptavkyError";
