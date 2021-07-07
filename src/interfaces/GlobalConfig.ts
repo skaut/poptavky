@@ -19,9 +19,7 @@ export function assertIsGlobalConfig(
   }
   for (const project of config.projects) {
     assertIsRepo(project, (e) =>
-      errorFn(
-        'The "project" field item "' + String(project) + '" is invalid: ' + e
-      )
+      errorFn('A "project" field item is invalid: ' + e)
     );
   }
 }
