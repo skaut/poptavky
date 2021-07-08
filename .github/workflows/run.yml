@@ -33,6 +33,8 @@ jobs:
         env:
           PAT: ${{ secrets.PAT_MAREKDEDIC }}
 
-      #- name: "Show results"
-        #run: |
-          #cat collected.json
+      - name: "Upload artifact"
+        uses: actions/upload-artifact@v2
+        with:
+          name: "listings"
+          path: listings.json

@@ -1,6 +1,7 @@
 import * as fs from "fs";
 
 import { GlobalConfig, assertIsGlobalConfig } from "./interfaces/GlobalConfig";
+
 import { GlobalConfigError } from "./exceptions/GlobalConfigError";
 
 export function getGlobalConfig(): GlobalConfig {

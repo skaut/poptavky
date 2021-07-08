@@ -1,4 +1,5 @@
 import { PoptavkyError } from "./PoptavkyError";
+
 import { Repo } from "../interfaces/Repo";
 
 export class ProjectConfigError extends PoptavkyError {

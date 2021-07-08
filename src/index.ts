@@ -1,6 +1,9 @@
+import * as fs from "fs";
+
 import { getGlobalConfig } from "./getGlobalConfig";
-import { ProjectListing } from "./interfaces/ProjectListing";
 import { getProjectListing } from "./getProjectListing";
+
+import { ProjectListing } from "./interfaces/ProjectListing";
 
 import { PoptavkyError } from "./exceptions/PoptavkyError";
 
@@ -11,8 +14,9 @@ async function run() {
     for (const project of globalConfig.projects) {
       listings.push(await getProjectListing(project));
     }
-    console.log(listings);
+    fs.writeFileSync("listings.json", JSON.stringify(listings));
   } catch (e) {
+    // TODO: Handle project errors gracefully
     console.error((e as PoptavkyError).message);
     process.exit(1);
   }

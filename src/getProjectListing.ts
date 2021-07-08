@@ -1,5 +1,6 @@
 import { getProjectConfig } from "./getProjectConfig";
 import { getProjectIssues } from "./getProjectIssues";
+
 import { ProjectListing } from "./interfaces/ProjectListing";
 import { Repo } from "./interfaces/Repo";
 
