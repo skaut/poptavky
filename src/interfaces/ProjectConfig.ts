@@ -151,6 +151,7 @@ export function assertIsProjectConfig(
   if ("issue-label" in config && typeof config["issue-label"] !== "string") {
     throw errorFn('The field "issue-label" is not a string.');
   }
+  // TODO: Check issue-label doesn't contain commas
   if ("tags" in config) {
     if (!Array.isArray(config.tags)) {
       throw errorFn('The field "tags" is not an array.');
