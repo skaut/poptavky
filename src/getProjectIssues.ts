@@ -17,10 +17,11 @@ export async function getProjectIssues(
       per_page: 100,
       labels: issueLabel,
     })
-    .catch(function (e): never {
+    .catch((e): never => {
       throw new IssueListError(String(e));
     });
-  return issues.data.map((issue) => {
-    return { title: issue.title, description: issue.body ?? "" };
-  });
+  return issues.data.map((issue) => ({
+    title: issue.title,
+    description: issue.body ?? "",
+  }));
 }

@@ -17,7 +17,7 @@ export async function getProjectConfig(
       repo: project.repo,
       path: ".poptavky.json",
     })
-    .catch(function (e): never {
+    .catch((e): never => {
       throw new ProjectConfigError(String(e));
     });
   const encodedContent = (rawResponse.data as { content?: string }).content;
