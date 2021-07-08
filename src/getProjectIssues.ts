@@ -1,17 +1,22 @@
 import { octokit } from "./octokit";
 
+import { Project } from "./interfaces/Project";
 import { ProjectIssue } from "./interfaces/ProjectIssue";
-import { Repo } from "./interfaces/Repo";
 
 import { IssueListError } from "./exceptions/IssueListError";
 
 export async function getProjectIssues(
-  repo: Repo,
+  project: Project,
   issueLabel: string | undefined
 ): Promise<Array<ProjectIssue>> {
   issueLabel = issueLabel ?? "help-wanted";
   const issues = await octokit.rest.issues
-    .listForRepo({ ...repo, per_page: 100, labels: issueLabel })
+    .listForRepo({
+      owner: project.owner,
+      repo: project.repo,
+      per_page: 100,
+      labels: issueLabel,
+    })
     .catch(function (e): never {
       throw new IssueListError(String(e));
     });

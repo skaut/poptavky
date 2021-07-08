@@ -1,14 +1,16 @@
 import { getProjectConfig } from "./getProjectConfig";
 import { getProjectIssues } from "./getProjectIssues";
 
+import { Project } from "./interfaces/Project";
 import { ProjectListing } from "./interfaces/ProjectListing";
-import { Repo } from "./interfaces/Repo";
 
-export async function getProjectListing(repo: Repo): Promise<ProjectListing> {
-  const config = await getProjectConfig(repo);
+export async function getProjectListing(
+  project: Project
+): Promise<ProjectListing> {
+  const config = await getProjectConfig(project);
   const listing = {
     ...config,
-    issues: await getProjectIssues(repo, config["issue-label"]),
+    issues: await getProjectIssues(project, config["issue-label"]),
   };
   return listing;
 }

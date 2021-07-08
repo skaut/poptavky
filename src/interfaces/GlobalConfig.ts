@@ -1,9 +1,9 @@
-import { Repo, assertIsRepo } from "./Repo";
+import { Project, assertIsProject } from "./Project";
 
 import { GlobalConfigError } from "../exceptions/GlobalConfigError";
 
 export interface GlobalConfig {
-  projects: Array<Repo>;
+  projects: Array<Project>;
 }
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
@@ -18,7 +18,7 @@ export function assertIsGlobalConfig(
     throw errorFn('The field "projects" is not an array.');
   }
   for (const project of config.projects) {
-    assertIsRepo(project, (e) =>
+    assertIsProject(project, (e) =>
       errorFn('A "project" field item is invalid: ' + e)
     );
   }

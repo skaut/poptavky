@@ -4,15 +4,17 @@ import {
   ProjectConfig,
   assertIsProjectConfig,
 } from "./interfaces/ProjectConfig";
-import { Repo } from "./interfaces/Repo";
+import { Project } from "./interfaces/Project";
 
 import { ProjectConfigError } from "./exceptions/ProjectConfigError";
 
-export async function getProjectConfig(repo: Repo): Promise<ProjectConfig> {
+export async function getProjectConfig(
+  project: Project
+): Promise<ProjectConfig> {
   const rawResponse = await octokit.rest.repos
     .getContent({
-      owner: repo.owner,
-      repo: repo.repo,
+      owner: project.owner,
+      repo: project.repo,
       path: ".poptavky.json",
     })
     .catch(function (e): never {
