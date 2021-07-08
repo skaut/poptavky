@@ -148,10 +148,14 @@ export function assertIsProjectConfig(
       errorFn('A "link" field item is invalid: ' + e)
     );
   }
-  if ("issue-label" in config && typeof config["issue-label"] !== "string") {
-    throw errorFn('The field "issue-label" is not a string.');
+  if ("issue-label" in config) {
+    if (typeof config["issue-label"] !== "string") {
+      throw errorFn('The field "issue-label" is not a string.');
+    }
+    if (config["issue-label"].includes(",")) {
+      throw errorFn('The field "issue-label" can\'t contain commas.');
+    }
   }
-  // TODO: Check issue-label doesn't contain commas
   if ("tags" in config) {
     if (!Array.isArray(config.tags)) {
       throw errorFn('The field "tags" is not an array.');
