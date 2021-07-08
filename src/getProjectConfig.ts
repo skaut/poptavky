@@ -1,5 +1,8 @@
 import { octokit } from "./octokit";
-import { ProjectConfig } from "./interfaces/ProjectConfig";
+import {
+  ProjectConfig,
+  assertIsProjectConfig,
+} from "./interfaces/ProjectConfig";
 import { Repo } from "./interfaces/Repo";
 
 import { ProjectConfigError } from "./exceptions/ProjectConfigError";
@@ -25,6 +28,6 @@ export async function getProjectConfig(repo: Repo): Promise<ProjectConfig> {
   } catch (e) {
     throw new ProjectConfigError(repo, (e as SyntaxError).message);
   }
-  // TODO: Strong type check with a type guard
-  return config as ProjectConfig;
+  assertIsProjectConfig(config, (e) => new ProjectConfigError(repo, e));
+  return config;
 }

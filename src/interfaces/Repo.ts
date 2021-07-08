@@ -23,4 +23,4 @@ export function assertIsRepo(
     throw errorFn('The field "repo" is not a string.');
   }
 }
-/* eslint-enbale @typescript-eslint/no-unsafe-member-access */
+/* eslint-enable @typescript-eslint/no-unsafe-member-access */

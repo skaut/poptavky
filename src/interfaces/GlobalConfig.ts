@@ -23,4 +23,4 @@ export function assertIsGlobalConfig(
     );
   }
 }
-/* eslint-enbale @typescript-eslint/no-unsafe-member-access */
+/* eslint-enable @typescript-eslint/no-unsafe-member-access */
