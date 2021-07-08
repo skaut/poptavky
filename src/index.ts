@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import * as core from "@actions/core";
 
 import { getGlobalConfig } from "./getGlobalConfig";
 import { getProjectListing } from "./getProjectListing";
@@ -12,13 +13,23 @@ async function run() {
     const listings: Array<ProjectListing> = [];
     const globalConfig = getGlobalConfig();
     for (const project of globalConfig.projects) {
-      listings.push(await getProjectListing(project));
+      try {
+        listings.push(await getProjectListing(project));
+      } catch (e) {
+        core.warning(
+          "There was an error while processing the project " +
+            project.owner +
+            "/" +
+            project.repo +
+            ". " +
+            (e as PoptavkyError).message
+        );
+      }
     }
     fs.writeFileSync("listings.json", JSON.stringify(listings));
   } catch (e) {
-    // TODO: Handle project errors gracefully
-    console.error((e as PoptavkyError).message);
-    process.exit(1);
+    process.exitCode = 1;
+    core.setFailed((e as PoptavkyError).message);
   }
 }
 

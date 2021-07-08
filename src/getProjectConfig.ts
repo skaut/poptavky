@@ -16,19 +16,19 @@ export async function getProjectConfig(repo: Repo): Promise<ProjectConfig> {
       path: ".poptavky.json",
     })
     .catch(function (e): never {
-      throw new ProjectConfigError(repo, String(e));
+      throw new ProjectConfigError(String(e));
     });
   const encodedContent = (rawResponse.data as { content?: string }).content;
   if (!encodedContent) {
-    throw new ProjectConfigError(repo, "Failed to decode the file.");
+    throw new ProjectConfigError("Failed to decode the file.");
   }
   let config: any = undefined; // eslint-disable-line @typescript-eslint/no-explicit-any
   try {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     config = JSON.parse(Buffer.from(encodedContent, "base64").toString());
   } catch (e) {
-    throw new ProjectConfigError(repo, (e as SyntaxError).message);
+    throw new ProjectConfigError((e as SyntaxError).message);
   }
-  assertIsProjectConfig(config, (e) => new ProjectConfigError(repo, e));
+  assertIsProjectConfig(config);
   return config;
 }

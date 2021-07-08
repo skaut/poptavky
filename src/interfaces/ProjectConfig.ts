@@ -1,4 +1,4 @@
-import { PoptavkyError } from "../exceptions/PoptavkyError";
+import { ProjectConfigError } from "../exceptions/ProjectConfigError";
 
 interface ProjectConfigAuthor {
   name: string;
@@ -41,7 +41,7 @@ export interface ProjectConfig {
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 function assertIsProjectConfigAuthor(
   author: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-  errorFn = (e: string) => new PoptavkyError(e)
+  errorFn = (e: string) => new ProjectConfigError(e)
 ): asserts author is ProjectConfigAuthor {
   if (!("name" in author)) {
     throw errorFn('The author doesn\'t contain the required field "name".');
@@ -58,7 +58,7 @@ function assertIsProjectConfigAuthor(
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 function assertIsProjectConfigLink(
   link: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-  errorFn = (e: string) => new PoptavkyError(e)
+  errorFn = (e: string) => new ProjectConfigError(e)
 ): asserts link is ProjectConfigLink {
   if (!("type" in link)) {
     throw errorFn('The link doesn\'t contain the required field "type".');
@@ -102,7 +102,7 @@ function assertIsProjectConfigLink(
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 export function assertIsProjectConfig(
   config: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-  errorFn = (e: string) => new PoptavkyError(e)
+  errorFn = (e: string) => new ProjectConfigError(e)
 ): asserts config is ProjectConfig {
   if (!("name" in config)) {
     throw errorFn('The file doesn\'t contain the required field "name".');
