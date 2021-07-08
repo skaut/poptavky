@@ -16,7 +16,7 @@ async function run() {
       try {
         listings.push(await getProjectListing(project));
       } catch (e) {
-        core.warning(
+        core.error(
           "There was an error while processing the project " +
             project.owner +
             "/" +
