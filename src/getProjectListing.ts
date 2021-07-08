@@ -8,9 +8,9 @@ export async function getProjectListing(
   project: Project
 ): Promise<ProjectListing> {
   const config = await getProjectConfig(project);
-  const listing = {
-    ...config,
+  return {
+    project,
+    config,
     issues: await getProjectIssues(project, config["issue-label"]),
   };
-  return listing;
 }

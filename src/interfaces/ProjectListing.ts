@@ -1,6 +1,9 @@
+import { Project } from "./Project";
 import { ProjectConfig } from "./ProjectConfig";
 import { ProjectIssue } from "./ProjectIssue";
 
-export type ProjectListing = ProjectConfig & {
+export interface ProjectListing {
+  project: Project;
+  config: ProjectConfig;
   issues: Array<ProjectIssue>;
-};
+}
