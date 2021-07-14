@@ -7,7 +7,7 @@ env:
   cache-version: 1
 
 jobs:
-  build:
+  collect:
     name: "Collect"
     runs-on: ubuntu-latest
     steps:
@@ -26,7 +26,7 @@ jobs:
 
       - name: "Install NPM dependencies"
         run: |
-          npm ci --no-dev
+          npm --prefix packages/collector ci --no-dev
 
       - name: "Collect"
         run: |
