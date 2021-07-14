@@ -20,23 +20,25 @@
     "@actions/core": "^1.4.0",
     "octokit": "^1.1.0",
     "ts-custom-error": "^3.2.0",
-    "ts-node": "^10.0.0"
+    "ts-node": "^10.1.0"
   },
   "devDependencies": {
-    "@types/node": "^16.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.28.2",
-    "@typescript-eslint/parser": "^4.28.2",
+    "@types/node": "^16.3.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-prettier": "^3.4.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.3.1",
     "typescript": "^4.3.5"
   },
-  "main": "dist/index.js",
   "scripts": {
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint \"src/**/*\"",
-    "collect": "ts-node -T src/index.ts"
+    "lint:typecheck:collector": "tsc -p packages/collector --noEmit",
+    "lint:typecheck": "run-p -c --aggregate-output lint:typecheck:*",
+    "lint:eslint": "eslint --color 'packages/*/src/**/*'",
+    "lint": "run-p -c --aggregate-output lint:*",
+    "collect": "ts-node -T packages/collector/src/index.ts"
   }
 }

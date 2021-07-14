@@ -7,7 +7,7 @@ env:
   cache-version: 1
 
 jobs:
-  build:
+  collect:
     name: "Collect"
     runs-on: ubuntu-latest
     steps:

@@ -1,6 +1,6 @@
 import { ProjectConfigError } from "../exceptions/ProjectConfigError";
 
-interface ProjectConfigAuthor {
+interface ProjectConfigMaintainer {
   name: string;
   email?: string;
 }
@@ -19,7 +19,7 @@ interface ProjectConfigLinkNamed {
 }
 
 interface ProjectConfigLinkOther {
-  type: "homepage" | "demo" | "issue-tracker" | "wiki" | "docs";
+  type: "email" | "homepage" | "demo" | "issue-tracker" | "wiki" | "docs";
   uri: string;
 }
 
@@ -32,24 +32,24 @@ export interface ProjectConfig {
   name: string;
   "short-description": string;
   description: string;
-  authors: Array<ProjectConfigAuthor>;
+  maintainers: Array<ProjectConfigMaintainer>;
   links: Array<ProjectConfigLink>;
   "issue-label"?: string;
   tags?: Array<string>;
 }
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-function assertIsProjectConfigAuthor(
-  author: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
+function assertIsProjectConfigMaintainer(
+  maintainer: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
   errorFn = (e: string) => new ProjectConfigError(e)
-): asserts author is ProjectConfigAuthor {
-  if (!("name" in author)) {
-    throw errorFn('The author doesn\'t contain the required field "name".');
+): asserts maintainer is ProjectConfigMaintainer {
+  if (!("name" in maintainer)) {
+    throw errorFn('The maintainer doesn\'t contain the required field "name".');
   }
-  if (typeof author.name !== "string") {
+  if (typeof maintainer.name !== "string") {
     throw errorFn('The field "name" is not a string.');
   }
-  if ("email" in author && typeof author.email !== "string") {
+  if ("email" in maintainer && typeof maintainer.email !== "string") {
     throw errorFn('The field "email" is not a string.');
   }
 }
@@ -92,7 +92,9 @@ function assertIsProjectConfigLink(
       throw errorFn('The field "name" is not a string.');
     }
   } else if (
-    !["homepage", "demo", "issue-tracker", "wiki", "docs"].includes(link.type)
+    !["email", "homepage", "demo", "issue-tracker", "wiki", "docs"].includes(
+      link.type
+    )
   ) {
     throw errorFn("The link type is unsupported.");
   }
@@ -117,8 +119,10 @@ export function assertIsProjectConfig(
       'The file doesn\'t contain the required field "description".'
     );
   }
-  if (!("authors" in config)) {
-    throw errorFn('The file doesn\'t contain the required field "authors".');
+  if (!("maintainers" in config)) {
+    throw errorFn(
+      'The file doesn\'t contain the required field "maintainers".'
+    );
   }
   if (!("links" in config)) {
     throw errorFn('The file doesn\'t contain the required field "links".');
@@ -132,19 +136,22 @@ export function assertIsProjectConfig(
   if (typeof config.description !== "string") {
     throw errorFn('The field "description" is not a string.');
   }
-  if (!Array.isArray(config.authors)) {
-    throw errorFn('The field "authors" is not an array.');
+  if (!Array.isArray(config.maintainers)) {
+    throw errorFn('The field "maintainers" is not an array.');
   }
-  for (const author of config.authors) {
-    assertIsProjectConfigAuthor(author, (e) =>
-      errorFn('An "author" field item is invalid: ' + e)
+  if (config.maintainers.length == 0) {
+    throw errorFn('The field "maintainers" is empty.');
+  }
+  for (const maintainer of config.maintainers) {
+    assertIsProjectConfigMaintainer(maintainer, (e) =>
+      errorFn('A "maintainer" field item is invalid: ' + e)
     );
   }
   if (!Array.isArray(config.links)) {
     throw errorFn('The field "links" is not an array.');
   }
-  for (const author of config.links) {
-    assertIsProjectConfigLink(author, (e) =>
+  for (const link of config.links) {
+    assertIsProjectConfigLink(link, (e) =>
       errorFn('A "link" field item is invalid: ' + e)
     );
   }
