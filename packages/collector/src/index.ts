@@ -26,7 +26,7 @@ async function run() {
         );
       }
     }
-    fs.writeFileSync("../../listings.json", JSON.stringify(listings));
+    fs.writeFileSync("listings.json", JSON.stringify(listings));
   } catch (e) {
     process.exitCode = 1;
     core.setFailed((e as PoptavkyError).message);
