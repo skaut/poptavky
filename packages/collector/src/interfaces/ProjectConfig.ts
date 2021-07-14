@@ -92,7 +92,9 @@ function assertIsProjectConfigLink(
       throw errorFn('The field "name" is not a string.');
     }
   } else if (
-    !["homepage", "demo", "issue-tracker", "wiki", "docs"].includes(link.type)
+    !["email", "homepage", "demo", "issue-tracker", "wiki", "docs"].includes(
+      link.type
+    )
   ) {
     throw errorFn("The link type is unsupported.");
   }

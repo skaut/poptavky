@@ -7,7 +7,7 @@ import { GlobalConfigError } from "./exceptions/GlobalConfigError";
 export function getGlobalConfig(): GlobalConfig {
   let rawContents = "";
   try {
-    rawContents = fs.readFileSync("config.json", "utf8");
+    rawContents = fs.readFileSync("../../config.json", "utf8");
   } catch (e) {
     throw new GlobalConfigError(e);
   }

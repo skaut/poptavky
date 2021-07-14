@@ -16,14 +16,8 @@
     "type": "git",
     "url": "git+https://github.com/skaut/poptavky.git"
   },
-  "dependencies": {
-    "@actions/core": "^1.4.0",
-    "octokit": "^1.1.0",
-    "ts-custom-error": "^3.2.0",
-    "ts-node": "^10.1.0"
-  },
   "devDependencies": {
-    "@types/node": "^16.3.1",
+    "@types/node": "^16.3.2",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
     "eslint": "^7.30.0",
@@ -32,10 +26,10 @@
     "prettier": "^2.3.1",
     "typescript": "^4.3.5"
   },
-  "main": "dist/index.js",
   "scripts": {
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint \"src/**/*\"",
-    "collect": "ts-node -T src/index.ts"
+    "lint:collector": "cd packages/collector && npm run lint",
+    "lint:eslint": "eslint \"packages/*/src/**/*\"",
+    "lint": "npm run lint:collector && npm run lint:eslint",
+    "collect": "cd packages/collector && npm run execute"
   }
 }
