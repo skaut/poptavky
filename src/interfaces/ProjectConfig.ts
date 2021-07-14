@@ -137,6 +137,9 @@ export function assertIsProjectConfig(
   if (!Array.isArray(config.maintainers)) {
     throw errorFn('The field "maintainers" is not an array.');
   }
+  if (config.maintainers.length == 0) {
+    throw errorFn('The field "maintainers" is empty.');
+  }
   for (const maintainer of config.maintainers) {
     assertIsProjectConfigMaintainer(maintainer, (e) =>
       errorFn('A "maintainer" field item is invalid: ' + e)
