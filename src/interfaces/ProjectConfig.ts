@@ -19,7 +19,7 @@ interface ProjectConfigLinkNamed {
 }
 
 interface ProjectConfigLinkOther {
-  type: "homepage" | "demo" | "issue-tracker" | "wiki" | "docs";
+  type: "email" | "homepage" | "demo" | "issue-tracker" | "wiki" | "docs";
   uri: string;
 }
 
