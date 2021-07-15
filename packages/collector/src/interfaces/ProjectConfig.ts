@@ -150,6 +150,9 @@ export function assertIsProjectConfig(
   if (!Array.isArray(config.links)) {
     throw errorFn('The field "links" is not an array.');
   }
+  if (config.links.length == 0) {
+    throw errorFn('The field "links" is empty.');
+  }
   for (const link of config.links) {
     assertIsProjectConfigLink(link, (e) =>
       errorFn('A "link" field item is invalid: ' + e)

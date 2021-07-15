@@ -9,7 +9,7 @@ export async function getProjectIssues(
   project: Project,
   issueLabel: string | undefined
 ): Promise<Array<ProjectIssue>> {
-  issueLabel = issueLabel ?? "help-wanted";
+  issueLabel = issueLabel ?? "help wanted";
   const issues = await octokit.rest.issues
     .listForRepo({
       owner: project.owner,
