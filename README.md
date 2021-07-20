@@ -3,7 +3,7 @@ Kód pro web pro poptávky hostovaný na https://ITpoptavky.skaut.cz.
 
 ## Jak zapojím svůj projekt?
 
-Pro zapojení projektu do poptávkového webu kontaktuj TODO. Po přidání vytvoř v repozitáři svého projektu konfigurační soubor `.poptavky.json` s následující strukturou:
+Pro zapojení projektu do poptávkového webu kontaktuj [Péťu](mailto:petra.meslova@gmail.com). Po přidání vytvoř v repozitáři svého projektu konfigurační soubor `.poptavky.json` s následující strukturou:
 
 ```json
 {
