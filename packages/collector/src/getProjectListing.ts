@@ -11,6 +11,6 @@ export async function getProjectListing(
   return {
     project,
     config,
-    issues: await getProjectIssues(project, config["issue-label"]),
+    issues: await getProjectIssues(project, config["help-issue-label"]),
   };
 }

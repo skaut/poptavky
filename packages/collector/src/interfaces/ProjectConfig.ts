@@ -34,7 +34,7 @@ export interface ProjectConfig {
   description: string;
   maintainers: Array<ProjectConfigMaintainer>;
   links: Array<ProjectConfigLink>;
-  "issue-label"?: string;
+  "help-issue-label"?: string;
   tags?: Array<string>;
 }
 
@@ -158,12 +158,12 @@ export function assertIsProjectConfig(
       errorFn('A "link" field item is invalid: ' + e)
     );
   }
-  if ("issue-label" in config) {
-    if (typeof config["issue-label"] !== "string") {
-      throw errorFn('The field "issue-label" is not a string.');
+  if ("help-issue-label" in config) {
+    if (typeof config["help-issue-label"] !== "string") {
+      throw errorFn('The field "help-issue-label" is not a string.');
     }
-    if (config["issue-label"].includes(",")) {
-      throw errorFn('The field "issue-label" can\'t contain commas.');
+    if (config["help-issue-label"].includes(",")) {
+      throw errorFn('The field "help-issue-label" can\'t contain commas.');
     }
   }
   if ("tags" in config) {

@@ -10,7 +10,7 @@ Pro zapojení projektu do poptávkového webu kontaktuj [Péťu](mailto:petra.me
     "name": "Testovací projekt",
     "short-description": "Tohle je demo - 1 řádek textu",
     "description": "Tohle je projekt, který je jen demo... - 1-2 odstavce textu",
-    "issue-label": "help wanted",
+    "help-issue-label": "help wanted",
     "tags": [
         "php",
         "wordpress"
@@ -72,4 +72,4 @@ Pro zapojení projektu do poptávkového webu kontaktuj [Péťu](mailto:petra.me
 
 Povinná jsou pole `name`, `short-description`, `description`, `maintainers` (alespoň jeden) a `links` (ty, které máte).
 
-Celý projekt bude zobrazen na webu spolu se všemi issues, které mají `issue-label` z nastavení (nebo `help wanted`, pokud není nastaven).
+Celý projekt bude zobrazen na webu spolu se všemi issues, které mají `help-issue-label` z nastavení (nebo `help wanted`, pokud není nastaven).
