@@ -1,48 +1,48 @@
-import { ProjectConfigError } from "../exceptions/ProjectConfigError";
+import { ProjectInfoError } from "../exceptions/ProjectInfoError";
 
-interface ProjectConfigMaintainer {
+interface ProjectInfoMaintainer {
   name: string;
   email?: string;
 }
 
-interface ProjectConfigLinkSlack {
+interface ProjectInfoLinkSlack {
   type: "slack";
   uri: string;
   space: string;
   channel: string;
 }
 
-interface ProjectConfigLinkNamed {
+interface ProjectInfoLinkNamed {
   type: "github-repo" | "facebook-page" | "facebook-group";
   uri: string;
   name: string;
 }
 
-interface ProjectConfigLinkOther {
+interface ProjectInfoLinkOther {
   type: "email" | "homepage" | "demo" | "issue-tracker" | "wiki" | "docs";
   uri: string;
 }
 
-type ProjectConfigLink =
-  | ProjectConfigLinkSlack
-  | ProjectConfigLinkNamed
-  | ProjectConfigLinkOther;
+type ProjectInfoLink =
+  | ProjectInfoLinkSlack
+  | ProjectInfoLinkNamed
+  | ProjectInfoLinkOther;
 
-export interface ProjectConfig {
+export interface ProjectInfo {
   name: string;
   "short-description": string;
   description: string;
-  maintainers: Array<ProjectConfigMaintainer>;
-  links: Array<ProjectConfigLink>;
+  maintainers: Array<ProjectInfoMaintainer>;
+  links: Array<ProjectInfoLink>;
   "help-issue-label"?: string;
   tags?: Array<string>;
 }
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-function assertIsProjectConfigMaintainer(
+function assertIsProjectInfoMaintainer(
   maintainer: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-  errorFn = (e: string) => new ProjectConfigError(e)
-): asserts maintainer is ProjectConfigMaintainer {
+  errorFn = (e: string) => new ProjectInfoError(e)
+): asserts maintainer is ProjectInfoMaintainer {
   if (!("name" in maintainer)) {
     throw errorFn('The maintainer doesn\'t contain the required field "name".');
   }
@@ -56,10 +56,10 @@ function assertIsProjectConfigMaintainer(
 /* eslint-enable @typescript-eslint/no-unsafe-member-access */
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-function assertIsProjectConfigLink(
+function assertIsProjectInfoLink(
   link: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-  errorFn = (e: string) => new ProjectConfigError(e)
-): asserts link is ProjectConfigLink {
+  errorFn = (e: string) => new ProjectInfoError(e)
+): asserts link is ProjectInfoLink {
   if (!("type" in link)) {
     throw errorFn('The link doesn\'t contain the required field "type".');
   }
@@ -102,75 +102,75 @@ function assertIsProjectConfigLink(
 /* eslint-enable @typescript-eslint/no-unsafe-member-access */
 
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-export function assertIsProjectConfig(
-  config: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-  errorFn = (e: string) => new ProjectConfigError(e)
-): asserts config is ProjectConfig {
-  if (!("name" in config)) {
+export function assertIsProjectInfo(
+  info: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
+  errorFn = (e: string) => new ProjectInfoError(e)
+): asserts info is ProjectInfo {
+  if (!("name" in info)) {
     throw errorFn('The file doesn\'t contain the required field "name".');
   }
-  if (!("short-description" in config)) {
+  if (!("short-description" in info)) {
     throw errorFn(
       'The file doesn\'t contain the required field "short-description".'
     );
   }
-  if (!("description" in config)) {
+  if (!("description" in info)) {
     throw errorFn(
       'The file doesn\'t contain the required field "description".'
     );
   }
-  if (!("maintainers" in config)) {
+  if (!("maintainers" in info)) {
     throw errorFn(
       'The file doesn\'t contain the required field "maintainers".'
     );
   }
-  if (!("links" in config)) {
+  if (!("links" in info)) {
     throw errorFn('The file doesn\'t contain the required field "links".');
   }
-  if (typeof config.name !== "string") {
+  if (typeof info.name !== "string") {
     throw errorFn('The field "name" is not a string.');
   }
-  if (typeof config["short-description"] !== "string") {
+  if (typeof info["short-description"] !== "string") {
     throw errorFn('The field "short-description" is not a string.');
   }
-  if (typeof config.description !== "string") {
+  if (typeof info.description !== "string") {
     throw errorFn('The field "description" is not a string.');
   }
-  if (!Array.isArray(config.maintainers)) {
+  if (!Array.isArray(info.maintainers)) {
     throw errorFn('The field "maintainers" is not an array.');
   }
-  if (config.maintainers.length == 0) {
+  if (info.maintainers.length == 0) {
     throw errorFn('The field "maintainers" is empty.');
   }
-  for (const maintainer of config.maintainers) {
-    assertIsProjectConfigMaintainer(maintainer, (e) =>
+  for (const maintainer of info.maintainers) {
+    assertIsProjectInfoMaintainer(maintainer, (e) =>
       errorFn('A "maintainer" field item is invalid: ' + e)
     );
   }
-  if (!Array.isArray(config.links)) {
+  if (!Array.isArray(info.links)) {
     throw errorFn('The field "links" is not an array.');
   }
-  if (config.links.length == 0) {
+  if (info.links.length == 0) {
     throw errorFn('The field "links" is empty.');
   }
-  for (const link of config.links) {
-    assertIsProjectConfigLink(link, (e) =>
+  for (const link of info.links) {
+    assertIsProjectInfoLink(link, (e) =>
       errorFn('A "link" field item is invalid: ' + e)
     );
   }
-  if ("help-issue-label" in config) {
-    if (typeof config["help-issue-label"] !== "string") {
+  if ("help-issue-label" in info) {
+    if (typeof info["help-issue-label"] !== "string") {
       throw errorFn('The field "help-issue-label" is not a string.');
     }
-    if (config["help-issue-label"].includes(",")) {
+    if (info["help-issue-label"].includes(",")) {
       throw errorFn('The field "help-issue-label" can\'t contain commas.');
     }
   }
-  if ("tags" in config) {
-    if (!Array.isArray(config.tags)) {
+  if ("tags" in info) {
+    if (!Array.isArray(info.tags)) {
       throw errorFn('The field "tags" is not an array.');
     }
-    for (const tag of config.tags) {
+    for (const tag of info.tags) {
       if (typeof tag !== "string") {
         throw errorFn('A "tags" field item is not a string.');
       }
