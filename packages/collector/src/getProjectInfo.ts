@@ -1,16 +1,11 @@
 import { octokit } from "./octokit";
 
-import {
-  ProjectInfo,
-  assertIsProjectInfo,
-} from "./interfaces/ProjectInfo";
+import { ProjectInfo, assertIsProjectInfo } from "./interfaces/ProjectInfo";
 import { Project } from "./interfaces/Project";
 
 import { ProjectInfoError } from "./exceptions/ProjectInfoError";
 
-export async function getProjectInfo(
-  project: Project
-): Promise<ProjectInfo> {
+export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
   const rawResponse = await octokit.rest.repos
     .getContent({
       owner: project.owner,
