@@ -15,7 +15,7 @@ export async function getProjectConfig(
     .getContent({
       owner: project.owner,
       repo: project.repo,
-      path: ".poptavky.json",
+      path: ".project-info.json",
     })
     .catch(function (e): never {
       throw new ProjectConfigError(String(e));
