@@ -7,6 +7,7 @@ import { IssueListError } from "./exceptions/IssueListError";
 
 export async function getProjectIssues(
   project: Project,
+  publicRepo: boolean,
   issueLabel: string | undefined
 ): Promise<Array<ProjectIssue>> {
   issueLabel = issueLabel ?? "help wanted";
@@ -21,6 +22,10 @@ export async function getProjectIssues(
       throw new IssueListError(String(e));
     });
   return issues.data.map((issue) => {
-    return { title: issue.title, description: issue.body ?? "" };
+    return {
+      title: issue.title,
+      description: issue.body ?? "",
+      link: publicRepo ? issue.html_url : undefined,
+    };
   });
 }
