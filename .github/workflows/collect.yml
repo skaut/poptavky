@@ -1,4 +1,4 @@
-name: "Run"
+name: "Collect"
 on:
   workflow_dispatch:
   schedule:
