@@ -54,9 +54,6 @@ jobs:
           name: "listings"
           path: dist
 
-      - name: Display structure of downloaded files
-        run: ls -R
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
