@@ -38,6 +38,7 @@
     "lint:typecheck": "run-p -c --aggregate-output lint:typecheck:*",
     "lint:eslint": "eslint --color 'packages/*/src/**/*'",
     "lint": "run-p -c --aggregate-output lint:*",
-    "collect": "ts-node -T packages/collector/src/index.ts"
+    "collect": "ts-node -T packages/collector/src/index.ts",
+    "build-frontend": "mkdir -p packages/frontend/dist && echo 'TODO' > packages/frontend/dist/index.html"
   }
 }
