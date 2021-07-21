@@ -7,9 +7,10 @@ import { IssueListError } from "./exceptions/IssueListError";
 
 export async function getProjectIssues(
   project: Project,
+  publicRepo: boolean,
   issueLabel: string | undefined
 ): Promise<Array<ProjectIssue>> {
-  issueLabel = issueLabel ?? "help-wanted";
+  issueLabel = issueLabel ?? "help wanted";
   const issues = await octokit.rest.issues
     .listForRepo({
       owner: project.owner,
@@ -23,5 +24,6 @@ export async function getProjectIssues(
   return issues.data.map((issue) => ({
     title: issue.title,
     description: issue.body ?? "",
+    link: publicRepo ? issue.html_url : undefined,
   }));
 }

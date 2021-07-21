@@ -4,17 +4,17 @@ import * as core from "@actions/core";
 import { getGlobalConfig } from "./getGlobalConfig";
 import { getProjectListing } from "./getProjectListing";
 
-import { ProjectListing } from "./interfaces/ProjectListing";
+import { ProjectListings } from "./interfaces/ProjectListings";
 
 import { PoptavkyError } from "./exceptions/PoptavkyError";
 
 async function run() {
   try {
-    const listings: Array<ProjectListing> = [];
     const globalConfig = getGlobalConfig();
+    const listings: ProjectListings = { projects: [] };
     for (const project of globalConfig.projects) {
       try {
-        listings.push(await getProjectListing(project));
+        listings.projects.push(await getProjectListing(project));
       } catch (e) {
         core.error(
           "There was an error while processing the project " +

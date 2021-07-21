@@ -23,10 +23,10 @@
     "ts-node": "^10.1.0"
   },
   "devDependencies": {
-    "@types/node": "^16.3.2",
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
-    "@typescript-eslint/parser": "^4.28.3",
-    "eslint": "^7.30.0",
+    "@types/node": "^16.3.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-prettier": "^3.4.0",
@@ -39,6 +39,7 @@
     "lint:typecheck": "run-p -c --aggregate-output lint:typecheck:*",
     "lint:eslint": "eslint --color 'packages/*/src/**/*'",
     "lint": "run-p -c --aggregate-output lint:*",
-    "collect": "ts-node -T packages/collector/src/index.ts"
+    "collect": "ts-node -T packages/collector/src/index.ts",
+    "build-frontend": "mkdir -p packages/frontend/dist && echo 'TODO' > packages/frontend/dist/index.html"
   }
 }
