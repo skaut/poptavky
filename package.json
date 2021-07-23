@@ -41,8 +41,7 @@
     "lint:typecheck": "run-p -c --aggregate-output lint:typecheck:*",
     "lint:eslint": "eslint --color 'packages/*/src/**/*' 'packages/*/__tests__/**/*'",
     "lint": "run-p -c --aggregate-output lint:*",
-    "test:collector": "jest",
-    "test": "run-p -c --aggregate-output test:*",
+    "test": "jest",
     "collect": "ts-node -T packages/collector/src/index.ts",
     "build-frontend": "mkdir -p packages/frontend/dist && echo 'TODO' > packages/frontend/dist/index.html"
   }
