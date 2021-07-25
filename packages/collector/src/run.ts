@@ -8,7 +8,7 @@ import { ProjectListings } from "./interfaces/ProjectListings";
 
 import { PoptavkyError } from "./exceptions/PoptavkyError";
 
-export async function run() {
+export async function run(): Promise<void> {
   try {
     const globalConfig = getGlobalConfig();
     const listings: ProjectListings = { projects: [] };

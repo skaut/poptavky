@@ -38,7 +38,7 @@ test("getProjectListing gets a value", async () => {
   expect(mocked(getProjectVisibility).mock.calls[0][0]).toStrictEqual(project);
   expect(mocked(getProjectIssues).mock.calls.length).toBe(1);
   expect(mocked(getProjectIssues).mock.calls[0][0]).toStrictEqual(project);
-  expect(mocked(getProjectIssues).mock.calls[0][1]).toEqual(true);
+  expect(mocked(getProjectIssues).mock.calls[0][1]).toBe(true);
   expect(mocked(getProjectIssues).mock.calls[0][2]).toEqual(
     info["help-issue-label"]
   );
