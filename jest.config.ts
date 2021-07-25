@@ -6,7 +6,10 @@
 export default {
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ["packages/*/src/**/*"],
+  collectCoverageFrom: [
+    "packages/*/src/**/*",
+    "!packages/collector/src/index.ts",
+  ],
   coverageDirectory: "coverage",
   coverageProvider: "v8",
   errorOnDeprecated: true,
