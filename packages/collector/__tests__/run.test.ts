@@ -46,13 +46,15 @@ const listing1 = Object.assign({}, globalConfig1.projects[1], {
   issues: [],
 });
 
-// TODO: Deduplicate with beforeEach
-test("run works", async () => {
-  mocked(getGlobalConfig).mockReturnValue(globalConfig0);
-  mocked(getProjectListing).mockResolvedValue(listing0);
+beforeEach(() => {
   mocked(fs).writeFileSync.mockReturnValue(undefined);
   mocked(core).error.mockReturnValue(undefined);
   mocked(core).setFailed.mockReturnValue(undefined);
+});
+
+test("run works", async () => {
+  mocked(getGlobalConfig).mockReturnValue(globalConfig0);
+  mocked(getProjectListing).mockResolvedValue(listing0);
   await run();
   expect(mocked(getProjectListing).mock.calls.length).toBe(
     globalConfig0.projects.length
@@ -73,9 +75,6 @@ test("run works with multiple repos", async () => {
   mocked(getGlobalConfig).mockReturnValue(globalConfig1);
   mocked(getProjectListing).mockResolvedValueOnce(listing0);
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
-  mocked(fs).writeFileSync.mockReturnValue(undefined);
-  mocked(core).error.mockReturnValue(undefined);
-  mocked(core).setFailed.mockReturnValue(undefined);
   await run();
   expect(mocked(getProjectListing).mock.calls.length).toBe(
     globalConfig1.projects.length
@@ -101,9 +100,6 @@ test("run handles global error gracefully", async () => {
   });
   mocked(getProjectListing).mockResolvedValueOnce(listing0);
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
-  mocked(fs).writeFileSync.mockReturnValue(undefined);
-  mocked(core).error.mockReturnValue(undefined);
-  mocked(core).setFailed.mockReturnValue(undefined);
   await run();
   expect(mocked(fs).writeFileSync.mock.calls.length).toBe(0);
   expect(mocked(core).error.mock.calls.length).toBe(0);
@@ -116,9 +112,6 @@ test("run handes local error gracefully", async () => {
     throw new Error();
   });
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
-  mocked(fs).writeFileSync.mockReturnValue(undefined);
-  mocked(core).error.mockReturnValue(undefined);
-  mocked(core).setFailed.mockReturnValue(undefined);
   await run();
   expect(mocked(getProjectListing).mock.calls.length).toBe(
     globalConfig1.projects.length
