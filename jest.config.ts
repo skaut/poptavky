@@ -8,6 +8,9 @@ export default {
   collectCoverageFrom: [
     "packages/*/src/**/*",
     "!packages/collector/src/index.ts",
+    "!packages/collector/src/interfaces/ProjectIssue.ts", // Interface only, see kulshekhar/ts-jest#378
+    "!packages/collector/src/interfaces/ProjectListing.ts", // Interface only, see kulshekhar/ts-jest#378
+    "!packages/collector/src/interfaces/ProjectListings.ts", // Interface only, see kulshekhar/ts-jest#378
   ],
   coverageDirectory: "coverage",
   coverageProvider: "v8",
