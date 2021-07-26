@@ -94,3 +94,46 @@ test("run works with multiple repos", async () => {
   expect(mocked(core).error.mock.calls.length).toBe(0);
   expect(mocked(core).setFailed.mock.calls.length).toBe(0);
 });
+
+test("run handles global error gracefully", async () => {
+  mocked(getGlobalConfig).mockImplementation(() => {
+    throw new Error();
+  });
+  mocked(getProjectListing).mockResolvedValueOnce(listing0);
+  mocked(getProjectListing).mockResolvedValueOnce(listing1);
+  mocked(fs).writeFileSync.mockReturnValue(undefined);
+  mocked(core).error.mockReturnValue(undefined);
+  mocked(core).setFailed.mockReturnValue(undefined);
+  await run();
+  expect(mocked(fs).writeFileSync.mock.calls.length).toBe(0);
+  expect(mocked(core).error.mock.calls.length).toBe(0);
+  expect(mocked(core).setFailed.mock.calls.length).toBe(1);
+});
+
+test("run handes local error gracefully", async () => {
+  mocked(getGlobalConfig).mockReturnValue(globalConfig1);
+  mocked(getProjectListing).mockImplementationOnce(() => {
+    throw new Error();
+  });
+  mocked(getProjectListing).mockResolvedValueOnce(listing1);
+  mocked(fs).writeFileSync.mockReturnValue(undefined);
+  mocked(core).error.mockReturnValue(undefined);
+  mocked(core).setFailed.mockReturnValue(undefined);
+  await run();
+  expect(mocked(getProjectListing).mock.calls.length).toBe(
+    globalConfig1.projects.length
+  );
+  expect(mocked(getProjectListing).mock.calls[0][0]).toStrictEqual(
+    globalConfig1.projects[0]
+  );
+  expect(mocked(getProjectListing).mock.calls[1][0]).toStrictEqual(
+    globalConfig1.projects[1]
+  );
+  expect(mocked(fs).writeFileSync.mock.calls.length).toBe(1);
+  expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("listings.json");
+  expect(mocked(fs).writeFileSync.mock.calls[0][1]).toBe(
+    JSON.stringify({ projects: [listing1] })
+  );
+  expect(mocked(core).error.mock.calls.length).toBe(1);
+  expect(mocked(core).setFailed.mock.calls.length).toBe(0);
+});

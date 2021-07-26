@@ -4,7 +4,6 @@
  */
 
 export default {
-  clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: [
     "packages/*/src/**/*",
@@ -15,4 +14,5 @@ export default {
   errorOnDeprecated: true,
   preset: "ts-jest/presets/default-esm",
   projects: ["packages/collector"],
+  resetMocks: true,
 };
