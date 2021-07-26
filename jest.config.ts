@@ -13,7 +13,7 @@ export default {
     "!packages/collector/src/interfaces/ProjectListings.ts", // Interface only, see kulshekhar/ts-jest#378
   ],
   coverageDirectory: "coverage",
-  coverageProvider: "v8",
+  coverageProvider: "babel",
   errorOnDeprecated: true,
   preset: "ts-jest/presets/default-esm",
   projects: ["packages/collector"],
