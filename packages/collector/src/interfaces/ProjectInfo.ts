@@ -1,3 +1,4 @@
+import { PoptavkyError } from "../exceptions/PoptavkyError";
 import { ProjectInfoError } from "../exceptions/ProjectInfoError";
 
 interface ProjectInfoMaintainer {
@@ -41,7 +42,7 @@ export interface ProjectInfo {
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 function assertIsProjectInfoMaintainer(
   maintainer: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-  errorFn = (e: string) => new ProjectInfoError(e)
+  errorFn: (e: string) => PoptavkyError
 ): asserts maintainer is ProjectInfoMaintainer {
   if (!("name" in maintainer)) {
     throw errorFn('The maintainer doesn\'t contain the required field "name".');
@@ -58,7 +59,7 @@ function assertIsProjectInfoMaintainer(
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 function assertIsProjectInfoLink(
   link: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-  errorFn = (e: string) => new ProjectInfoError(e)
+  errorFn: (e: string) => PoptavkyError
 ): asserts link is ProjectInfoLink {
   if (!("type" in link)) {
     throw errorFn('The link doesn\'t contain the required field "type".');
