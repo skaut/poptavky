@@ -32,7 +32,7 @@ jobs:
         run: |
           npm run collect
         env:
-          PAT: ${{ secrets.PAT_MAREKDEDIC }}
+          PAT: ${{ secrets.PAT_PETA }}
 
       - name: "Upload artifact"
         uses: actions/upload-artifact@v2
