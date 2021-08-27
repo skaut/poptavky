@@ -10,7 +10,7 @@ export function getGlobalConfig(): GlobalConfig {
     const rawContents = fs.readFileSync("config.json", "utf8");
     contents = JSON.parse(rawContents); // eslint-disable-line @typescript-eslint/no-unsafe-assignment
   } catch (e) {
-    throw new GlobalConfigError(e);
+    throw new GlobalConfigError(String(e));
   }
   assertIsGlobalConfig(contents);
   return contents;
