@@ -19,7 +19,7 @@ export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
   if (!encodedContent) {
     throw new ProjectInfoError("Failed to decode the file.");
   }
-  let info: any = undefined; // eslint-disable-line @typescript-eslint/no-explicit-any
+  let info: unknown = undefined;
   try {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     info = JSON.parse(Buffer.from(encodedContent, "base64").toString());

@@ -26,6 +26,16 @@ test("ProjectInfo recognizes full valid info", () => {
   expect(() => assertIsProjectInfo(info)).not.toThrow();
 });
 
+test("ProjectInfo requires object input", () => {
+  const info = false;
+  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires cannot be null", () => {
+  const info = null;
+  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+});
+
 test("ProjectInfo requires the name field", () => {
   const info = {
     "short-description": "DESC",
@@ -189,6 +199,28 @@ test("ProjectInfo requires the links field to be non-empty", () => {
   expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
 });
 
+test("ProjectInfo requires the maintainers field to be objects", () => {
+  const info = {
+    name: "NAME",
+    "short-description": "DESC",
+    description: "DESCRIPTION",
+    maintainers: [false],
+    links: [{ type: "email", uri: "mailto:test@example.test" }],
+  };
+  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires the maintainers field not to be null", () => {
+  const info = {
+    name: "NAME",
+    "short-description": "DESC",
+    description: "DESCRIPTION",
+    maintainers: [null],
+    links: [{ type: "email", uri: "mailto:test@example.test" }],
+  };
+  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+});
+
 test("ProjectInfo requires the maintainers field to contain name", () => {
   const info = {
     name: "NAME",
@@ -218,6 +250,28 @@ test("ProjectInfo requires the maintainers field email to be a string", () => {
     description: "DESCRIPTION",
     maintainers: [{ name: "MAINTAINER", email: 42 }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
+  };
+  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires the link field to be objects", () => {
+  const info = {
+    name: "NAME",
+    "short-description": "DESC",
+    description: "DESCRIPTION",
+    maintainers: [{ name: "MAINTAINER" }],
+    links: [false],
+  };
+  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires the link field to not be null", () => {
+  const info = {
+    name: "NAME",
+    "short-description": "DESC",
+    description: "DESCRIPTION",
+    maintainers: [{ name: "MAINTAINER" }],
+    links: [null],
   };
   expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
 });

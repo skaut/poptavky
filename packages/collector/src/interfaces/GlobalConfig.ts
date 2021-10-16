@@ -6,21 +6,23 @@ export interface GlobalConfig {
   projects: Array<Project>;
 }
 
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 export function assertIsGlobalConfig(
-  config: any, // eslint-disable-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
+  config: unknown,
   errorFn = (e: string) => new GlobalConfigError(e)
 ): asserts config is GlobalConfig {
+  if (typeof config !== "object" || config === null) {
+    throw errorFn("The file doesn't contain a valid object.");
+  }
   if (!("projects" in config)) {
     throw errorFn('The file doesn\'t contain the required field "projects".');
   }
-  if (!Array.isArray(config.projects)) {
+  const configWithProps = config as { projects: unknown }; // microsoft/TypeScript#21732
+  if (!Array.isArray(configWithProps.projects)) {
     throw errorFn('The field "projects" is not an array.');
   }
-  for (const project of config.projects) {
+  for (const project of configWithProps.projects) {
     assertIsProject(project, (e) =>
       errorFn('A "project" field item is invalid: ' + e)
     );
   }
 }
-/* eslint-enable @typescript-eslint/no-unsafe-member-access */

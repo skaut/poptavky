@@ -7,6 +7,16 @@ test("GlobalConfig recognizes valid config", () => {
   expect(() => assertIsGlobalConfig(config)).not.toThrow();
 });
 
+test("GlobalConfig requires object input", () => {
+  const config = false;
+  expect(() => assertIsGlobalConfig(config)).toThrow(GlobalConfigError);
+});
+
+test("GlobalConfig cannot be null", () => {
+  const config = null;
+  expect(() => assertIsGlobalConfig(config)).toThrow(GlobalConfigError);
+});
+
 test("GlobalConfig requires the projects field", () => {
   const config = {};
   expect(() => assertIsGlobalConfig(config)).toThrow(GlobalConfigError);

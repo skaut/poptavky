@@ -7,6 +7,16 @@ test("Project recognizes valid project", () => {
   expect(() => assertIsProject(project)).not.toThrow();
 });
 
+test("Project requires object input", () => {
+  const project = false;
+  expect(() => assertIsProject(project)).toThrow(PoptavkyError);
+});
+
+test("Project cannot be null", () => {
+  const project = null;
+  expect(() => assertIsProject(project)).toThrow(PoptavkyError);
+});
+
 test("Project requires the owner field", () => {
   const project = { repo: "REPO1" };
   expect(() => assertIsProject(project)).toThrow(PoptavkyError);
