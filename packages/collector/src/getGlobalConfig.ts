@@ -1,6 +1,8 @@
 import * as fs from "fs";
 
-import { GlobalConfig, assertIsGlobalConfig } from "./interfaces/GlobalConfig";
+import { assertIsGlobalConfig } from "./interfaces/GlobalConfig";
+
+import type { GlobalConfig } from "./interfaces/GlobalConfig";
 
 import { GlobalConfigError } from "./exceptions/GlobalConfigError";
 

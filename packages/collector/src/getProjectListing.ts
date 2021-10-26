@@ -2,8 +2,8 @@ import { getProjectInfo } from "./getProjectInfo";
 import { getProjectIssues } from "./getProjectIssues";
 import { getProjectVisibility } from "./getProjectVisibility";
 
-import { Project } from "./interfaces/Project";
-import { ProjectListing } from "./interfaces/ProjectListing";
+import type { Project } from "./interfaces/Project";
+import type { ProjectListing } from "./interfaces/ProjectListing";
 
 export async function getProjectListing(
   project: Project

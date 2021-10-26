@@ -1,9 +1,9 @@
 import { octokit } from "./octokit";
 
-import { Project } from "./interfaces/Project";
-import { ProjectIssue } from "./interfaces/ProjectIssue";
-
 import { IssueListError } from "./exceptions/IssueListError";
+
+import type { Project } from "./interfaces/Project";
+import type { ProjectIssue } from "./interfaces/ProjectIssue";
 
 export async function getProjectIssues(
   project: Project,
