@@ -16,7 +16,7 @@ export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
       throw new ProjectInfoError(String(e));
     });
   const encodedContent = (rawResponse.data as { content?: string }).content;
-  if (!encodedContent) {
+  if (encodedContent === undefined) {
     throw new ProjectInfoError("Failed to decode the file.");
   }
   let info: unknown = undefined;

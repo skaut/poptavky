@@ -93,7 +93,7 @@ test("getProjectIssues fails gracefully on connection issues", async () => {
     .get("/repos/OWNER/REPO/issues")
     .query(true)
     .reply(404);
-  await expect(() =>
+  await expect(async () =>
     getProjectIssues({ owner: "OWNER", repo: "REPO" }, true, "help-wanted")
   ).rejects.toThrow(IssueListError);
   nock.cleanAll();

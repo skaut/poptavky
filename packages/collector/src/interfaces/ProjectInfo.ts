@@ -14,20 +14,20 @@ interface ProjectInfoLinkSlack {
 }
 
 interface ProjectInfoLinkNamed {
-  type: "github-repo" | "facebook-page" | "facebook-group";
+  type: "facebook-group" | "facebook-page" | "github-repo";
   uri: string;
   name: string;
 }
 
 interface ProjectInfoLinkOther {
-  type: "email" | "homepage" | "demo" | "issue-tracker" | "wiki" | "docs";
+  type: "demo" | "docs" | "email" | "homepage" | "issue-tracker" | "wiki";
   uri: string;
 }
 
 type ProjectInfoLink =
-  | ProjectInfoLinkSlack
   | ProjectInfoLinkNamed
-  | ProjectInfoLinkOther;
+  | ProjectInfoLinkOther
+  | ProjectInfoLinkSlack;
 
 export interface ProjectInfo {
   name: string;
@@ -130,7 +130,7 @@ function assertIsProjectInfoLink(
 
 export function assertIsProjectInfo(
   info: unknown,
-  errorFn = (e: string) => new ProjectInfoError(e)
+  errorFn = (e: string): ProjectInfoError => new ProjectInfoError(e)
 ): asserts info is ProjectInfo {
   if (typeof info !== "object" || info === null) {
     throw errorFn("The file doesn't contain a valid object.");

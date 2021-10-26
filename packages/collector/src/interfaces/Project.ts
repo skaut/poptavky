@@ -7,7 +7,7 @@ export interface Project {
 
 export function assertIsProject(
   project: unknown,
-  errorFn = (e: string) => new PoptavkyError(e)
+  errorFn = (e: string): PoptavkyError => new PoptavkyError(e)
 ): asserts project is Project {
   if (typeof project !== "object" || project === null) {
     throw errorFn("The project isn't a valid object.");
