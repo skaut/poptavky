@@ -1,9 +1,10 @@
 import { octokit } from "./octokit";
 
-import { ProjectInfo, assertIsProjectInfo } from "./interfaces/ProjectInfo";
-import { Project } from "./interfaces/Project";
-
+import { assertIsProjectInfo } from "./interfaces/ProjectInfo";
 import { ProjectInfoError } from "./exceptions/ProjectInfoError";
+
+import type { ProjectInfo } from "./interfaces/ProjectInfo";
+import type { Project } from "./interfaces/Project";
 
 export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
   const rawResponse = await octokit.rest.repos
@@ -16,7 +17,7 @@ export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
       throw new ProjectInfoError(String(e));
     });
   const encodedContent = (rawResponse.data as { content?: string }).content;
-  if (!encodedContent) {
+  if (encodedContent === undefined) {
     throw new ProjectInfoError("Failed to decode the file.");
   }
   let info: unknown = undefined;

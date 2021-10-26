@@ -4,9 +4,8 @@ import * as core from "@actions/core";
 import { getGlobalConfig } from "./getGlobalConfig";
 import { getProjectListing } from "./getProjectListing";
 
-import { ProjectListings } from "./interfaces/ProjectListings";
-
-import { PoptavkyError } from "./exceptions/PoptavkyError";
+import type { ProjectListings } from "./interfaces/ProjectListings";
+import type { PoptavkyError } from "./exceptions/PoptavkyError";
 
 export async function run(): Promise<void> {
   try {

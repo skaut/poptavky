@@ -1,6 +1,8 @@
-import { Project, assertIsProject } from "./Project";
+import { assertIsProject } from "./Project";
 
 import { GlobalConfigError } from "../exceptions/GlobalConfigError";
+
+import type { Project } from "./Project";
 
 export interface GlobalConfig {
   projects: Array<Project>;
@@ -8,7 +10,7 @@ export interface GlobalConfig {
 
 export function assertIsGlobalConfig(
   config: unknown,
-  errorFn = (e: string) => new GlobalConfigError(e)
+  errorFn = (e: string): GlobalConfigError => new GlobalConfigError(e)
 ): asserts config is GlobalConfig {
   if (typeof config !== "object" || config === null) {
     throw errorFn("The file doesn't contain a valid object.");

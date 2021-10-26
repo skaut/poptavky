@@ -2,12 +2,11 @@ import * as fs from "fs";
 import * as core from "@actions/core";
 import { mocked } from "ts-jest/utils";
 
-import { run } from "../src/run";
-
 import { getGlobalConfig } from "../src/getGlobalConfig";
 import { getProjectListing } from "../src/getProjectListing";
+import { run } from "../src/run";
 
-import { ProjectInfo } from "../src/interfaces/ProjectInfo";
+import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
 
 jest.mock("fs");
 jest.mock("@actions/core");
