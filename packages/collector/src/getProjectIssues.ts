@@ -21,11 +21,10 @@ export async function getProjectIssues(
     .catch(function (e): never {
       throw new IssueListError(String(e));
     });
-  return issues.data.map((issue) => {
-    return {
-      title: issue.title,
-      description: issue.body ?? "",
-      link: publicRepo ? issue.html_url : undefined,
-    };
-  });
+  return issues.data.map((issue) => ({
+    number: issue.number,
+    title: issue.title,
+    description: issue.body ?? "",
+    link: publicRepo ? issue.html_url : undefined,
+  }));
 }

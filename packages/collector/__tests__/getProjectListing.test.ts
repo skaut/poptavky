@@ -20,8 +20,8 @@ const info: ProjectInfo = {
   links: [{ type: "email", uri: "mailto:test@example.test" }],
 };
 const issues = [
-  { title: "1_TITLE", description: "1_DESCRIPTION" },
-  { title: "2_TITLE", description: "2_DESCRIPTION" },
+  { number: 1, title: "1_TITLE", description: "1_DESCRIPTION" },
+  { number: 2, title: "2_TITLE", description: "2_DESCRIPTION" },
 ];
 
 test("getProjectListing gets a value", async () => {
