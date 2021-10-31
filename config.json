@@ -2,7 +2,11 @@
   "projects": [
     {
       "owner": "skaut",
-      "repo": "poptavky-test"
+      "repo": "skaut-google-drive-gallery"
+    },
+    {
+      "owner": "skaut",
+      "repo": "skautis-integration"
     }
   ]
 }

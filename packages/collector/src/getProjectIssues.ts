@@ -1,9 +1,9 @@
 import { octokit } from "./octokit";
 
-import { Project } from "./interfaces/Project";
-import { ProjectIssue } from "./interfaces/ProjectIssue";
-
 import { IssueListError } from "./exceptions/IssueListError";
+
+import type { Project } from "./interfaces/Project";
+import type { ProjectIssue } from "./interfaces/ProjectIssue";
 
 export async function getProjectIssues(
   project: Project,
@@ -22,6 +22,7 @@ export async function getProjectIssues(
       throw new IssueListError(String(e));
     });
   return issues.data.map((issue) => ({
+    number: issue.number,
     title: issue.title,
     description: issue.body ?? "",
     link: publicRepo ? issue.html_url : undefined,

@@ -10,7 +10,9 @@ test("ProjectInfo recognizes minimal valid info", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).not.toThrow();
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).not.toThrow();
 });
 
 test("ProjectInfo recognizes full valid info", () => {
@@ -23,7 +25,23 @@ test("ProjectInfo recognizes full valid info", () => {
     "help-issue-label": "LABEL",
     tags: ["TAG"],
   };
-  expect(() => assertIsProjectInfo(info)).not.toThrow();
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).not.toThrow();
+});
+
+test("ProjectInfo requires object input", () => {
+  const info = false;
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires cannot be null", () => {
+  const info = null;
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the name field", () => {
@@ -33,7 +51,9 @@ test("ProjectInfo requires the name field", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the short-description field", () => {
@@ -43,7 +63,9 @@ test("ProjectInfo requires the short-description field", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the description field", () => {
@@ -53,7 +75,9 @@ test("ProjectInfo requires the description field", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field", () => {
@@ -63,7 +87,9 @@ test("ProjectInfo requires the maintainers field", () => {
     description: "DESCRIPTION",
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the links field", () => {
@@ -73,7 +99,9 @@ test("ProjectInfo requires the links field", () => {
     description: "DESCRIPTION",
     maintainers: [{ name: "MAINTAINER" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the name field to be a string", () => {
@@ -84,7 +112,9 @@ test("ProjectInfo requires the name field to be a string", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the short-description field to be a string", () => {
@@ -95,7 +125,9 @@ test("ProjectInfo requires the short-description field to be a string", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the description field to be a string", () => {
@@ -106,7 +138,9 @@ test("ProjectInfo requires the description field to be a string", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field to be an array", () => {
@@ -117,7 +151,9 @@ test("ProjectInfo requires the maintainers field to be an array", () => {
     maintainers: 42,
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the links field to be an array", () => {
@@ -128,7 +164,9 @@ test("ProjectInfo requires the links field to be an array", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: 42,
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the help-issue-label field to be a string", () => {
@@ -140,7 +178,9 @@ test("ProjectInfo requires the help-issue-label field to be a string", () => {
     links: [{ type: "email", uri: "mailto:test@example.test" }],
     "help-issue-label": 42,
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the help-issue-label not to contain commas", () => {
@@ -152,7 +192,9 @@ test("ProjectInfo requires the help-issue-label not to contain commas", () => {
     links: [{ type: "email", uri: "mailto:test@example.test" }],
     "help-issue-label": "TAG1,TAG2",
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the tags field to be an array", () => {
@@ -164,7 +206,9 @@ test("ProjectInfo requires the tags field to be an array", () => {
     links: [{ type: "email", uri: "mailto:test@example.test" }],
     tags: 42,
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field to be non-empty", () => {
@@ -175,7 +219,9 @@ test("ProjectInfo requires the maintainers field to be non-empty", () => {
     maintainers: [],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the links field to be non-empty", () => {
@@ -186,7 +232,35 @@ test("ProjectInfo requires the links field to be non-empty", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires the maintainers field to be objects", () => {
+  const info = {
+    name: "NAME",
+    "short-description": "DESC",
+    description: "DESCRIPTION",
+    maintainers: [false],
+    links: [{ type: "email", uri: "mailto:test@example.test" }],
+  };
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires the maintainers field not to be null", () => {
+  const info = {
+    name: "NAME",
+    "short-description": "DESC",
+    description: "DESCRIPTION",
+    maintainers: [null],
+    links: [{ type: "email", uri: "mailto:test@example.test" }],
+  };
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field to contain name", () => {
@@ -197,7 +271,9 @@ test("ProjectInfo requires the maintainers field to contain name", () => {
     maintainers: [{ name: "MAINTAINER" }, {}],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field name to be a string", () => {
@@ -208,7 +284,9 @@ test("ProjectInfo requires the maintainers field name to be a string", () => {
     maintainers: [{ name: 42 }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field email to be a string", () => {
@@ -219,7 +297,35 @@ test("ProjectInfo requires the maintainers field email to be a string", () => {
     maintainers: [{ name: "MAINTAINER", email: 42 }],
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires the link field to be objects", () => {
+  const info = {
+    name: "NAME",
+    "short-description": "DESC",
+    description: "DESCRIPTION",
+    maintainers: [{ name: "MAINTAINER" }],
+    links: [false],
+  };
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
+});
+
+test("ProjectInfo requires the link field to not be null", () => {
+  const info = {
+    name: "NAME",
+    "short-description": "DESC",
+    description: "DESCRIPTION",
+    maintainers: [{ name: "MAINTAINER" }],
+    links: [null],
+  };
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain type", () => {
@@ -233,7 +339,9 @@ test("ProjectInfo requires the link field to contain type", () => {
       { uri: "example.test" },
     ],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain uri", () => {
@@ -247,7 +355,9 @@ test("ProjectInfo requires the link field to contain uri", () => {
       { type: "email" },
     ],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo allows the link field type to be slack", () => {
@@ -265,7 +375,9 @@ test("ProjectInfo allows the link field type to be slack", () => {
       },
     ],
   };
-  expect(() => assertIsProjectInfo(info)).not.toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).not.toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo allows the link field type to be github-repo, facebook-page, facebook-group", () => {
@@ -277,7 +389,9 @@ test("ProjectInfo allows the link field type to be github-repo, facebook-page, f
       maintainers: [{ name: "MAINTAINER" }],
       links: [{ type, uri: "example.test", name: "NAME" }],
     };
-    expect(() => assertIsProjectInfo(info)).not.toThrow(ProjectInfoError);
+    expect(() => {
+      assertIsProjectInfo(info);
+    }).not.toThrow(ProjectInfoError);
   }
 });
 
@@ -297,7 +411,9 @@ test("ProjectInfo allows the link field type to be email, homepage, demo, issue-
       maintainers: [{ name: "MAINTAINER" }],
       links: [{ type, uri: "example.test" }],
     };
-    expect(() => assertIsProjectInfo(info)).not.toThrow();
+    expect(() => {
+      assertIsProjectInfo(info);
+    }).not.toThrow();
   }
 });
 
@@ -309,7 +425,9 @@ test("ProjectInfo disallows the link field type to be something else", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "RANDOM", uri: "example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field type to be a string", () => {
@@ -320,7 +438,9 @@ test("ProjectInfo requires the link field type to be a string", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: 42, uri: "example.test" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field uri to be a string", () => {
@@ -331,7 +451,9 @@ test("ProjectInfo requires the link field uri to be a string", () => {
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "email", uri: 42 }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain space when the type is slack", () => {
@@ -342,7 +464,9 @@ test("ProjectInfo requires the link field to contain space when the type is slac
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "slack", uri: "example.test", channel: "CHANNEL" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field space to be a string when the type is slack", () => {
@@ -355,7 +479,9 @@ test("ProjectInfo requires the link field space to be a string when the type is 
       { type: "slack", uri: "example.test", space: 42, channel: "CHANNEL" },
     ],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain channel when the type is slack", () => {
@@ -366,7 +492,9 @@ test("ProjectInfo requires the link field to contain channel when the type is sl
     maintainers: [{ name: "MAINTAINER" }],
     links: [{ type: "slack", uri: "example.test", space: "SPACE" }],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field channel to be a string when the type is slack", () => {
@@ -379,7 +507,9 @@ test("ProjectInfo requires the link field channel to be a string when the type i
       { type: "slack", uri: "example.test", space: "SPACE", channel: 42 },
     ],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain name when the type is github-repo, facebook-page, facebook-group", () => {
@@ -391,7 +521,9 @@ test("ProjectInfo requires the link field to contain name when the type is githu
       maintainers: [{ name: "MAINTAINER" }],
       links: [{ type, uri: "example.test" }],
     };
-    expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+    expect(() => {
+      assertIsProjectInfo(info);
+    }).toThrow(ProjectInfoError);
   }
 });
 
@@ -404,7 +536,9 @@ test("ProjectInfo requires the link field name to be a string when the type is g
       maintainers: [{ name: "MAINTAINER" }],
       links: [{ type, uri: "example.test", name: 42 }],
     };
-    expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+    expect(() => {
+      assertIsProjectInfo(info);
+    }).toThrow(ProjectInfoError);
   }
 });
 
@@ -417,16 +551,16 @@ test("ProjectInfo requires the tags field to be an array of strings", () => {
     links: [{ type: "email", uri: "mailto:test@example.test" }],
     tags: ["TAG", 42],
   };
-  expect(() => assertIsProjectInfo(info)).toThrow(ProjectInfoError);
+  expect(() => {
+    assertIsProjectInfo(info);
+  }).toThrow(ProjectInfoError);
 });
-
-// TODO
 
 test("ProjectInfo uses custom errors", () => {
   const info = {};
-  expect(() =>
+  expect(() => {
     assertIsProjectInfo(info, () => {
       throw new Error("My error");
-    })
-  ).toThrow("My error");
+    });
+  }).toThrow("My error");
 });

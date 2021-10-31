@@ -1,12 +1,11 @@
 import { mocked } from "ts-jest/utils";
 
-import { getProjectListing } from "../src/getProjectListing";
-
 import { getProjectInfo } from "../src/getProjectInfo";
 import { getProjectIssues } from "../src/getProjectIssues";
+import { getProjectListing } from "../src/getProjectListing";
 import { getProjectVisibility } from "../src/getProjectVisibility";
 
-import { ProjectInfo } from "../src/interfaces/ProjectInfo";
+import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
 
 jest.mock("../src/getProjectInfo");
 jest.mock("../src/getProjectIssues");
@@ -21,8 +20,8 @@ const info: ProjectInfo = {
   links: [{ type: "email", uri: "mailto:test@example.test" }],
 };
 const issues = [
-  { title: "1_TITLE", description: "1_DESCRIPTION" },
-  { title: "2_TITLE", description: "2_DESCRIPTION" },
+  { number: 1, title: "1_TITLE", description: "1_DESCRIPTION" },
+  { number: 2, title: "2_TITLE", description: "2_DESCRIPTION" },
 ];
 
 test("getProjectListing gets a value", async () => {

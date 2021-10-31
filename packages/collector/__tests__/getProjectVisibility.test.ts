@@ -28,7 +28,7 @@ test("getProjectVisibility gets the correct value for a private project", async 
 
 test("getProjectVisibility fails gracefully on connection issues", async () => {
   nock("https://api.github.com").get("/repos/OWNER/REPO").reply(404);
-  await expect(() =>
+  await expect(
     getProjectVisibility({ owner: "OWNER", repo: "REPO" })
   ).rejects.toThrow(VisibilityError);
   nock.cleanAll();
