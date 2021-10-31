@@ -23,8 +23,8 @@ const listing0 = Object.assign({}, globalConfig0.projects[0], {
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   } as ProjectInfo,
   issues: [
-    { title: "1_TITLE", description: "1_DESCRIPTION" },
-    { title: "2_TITLE", description: "2_DESCRIPTION" },
+    { number: 1, title: "1_TITLE", description: "1_DESCRIPTION" },
+    { number: 2, title: "2_TITLE", description: "2_DESCRIPTION" },
   ],
 });
 
