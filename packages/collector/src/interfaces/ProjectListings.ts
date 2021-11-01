@@ -1,6 +1,6 @@
 import type { GlobalConfig } from "./GlobalConfig";
 import type { ProjectListing } from "./ProjectListing";
 
-export type ProjectListings = GlobalConfig & {
+export interface ProjectListings extends GlobalConfig {
   projects: Array<ProjectListing>;
-};
+}
