@@ -4,6 +4,13 @@ import { getProjectInfo } from "../src/getProjectInfo";
 
 import { ProjectInfoError } from "../src/exceptions/ProjectInfoError";
 
+beforeAll(() => {
+  nock.disableNetConnect();
+});
+afterAll(() => {
+  nock.enableNetConnect();
+});
+
 const config = {
   name: "NAME",
   "short-description": "DESC",
