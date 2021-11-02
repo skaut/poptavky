@@ -4,8 +4,6 @@ import { getProjectIssues } from "../src/getProjectIssues";
 
 import { IssueListError } from "../src/exceptions/IssueListError";
 
-//nock.recorder.rec();
-
 describe("Working issue listing", () => {
   beforeEach(() => {
     nock("https://api.github.com")
