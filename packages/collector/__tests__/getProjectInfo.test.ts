@@ -32,6 +32,13 @@ test("getProjectInfo gets a value", async () => {
 });
 
 test("getProjectInfo fails gracefully on connection issues", async () => {
+  await expect(
+    getProjectInfo({ owner: "OWNER", repo: "REPO" })
+  ).rejects.toThrow(ProjectInfoError);
+  nock.cleanAll();
+});
+
+test("getProjectInfo fails gracefully on connection issues 2", async () => {
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/contents/.project-info.json")
     .reply(404);

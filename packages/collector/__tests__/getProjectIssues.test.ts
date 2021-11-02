@@ -120,6 +120,13 @@ test("getProjectIssues auto-populates body", async () => {
 });
 
 test("getProjectIssues fails gracefully on connection issues", async () => {
+  await expect(async () =>
+    getProjectIssues({ owner: "OWNER", repo: "REPO" }, true, "help-wanted")
+  ).rejects.toThrow(IssueListError);
+  nock.cleanAll();
+});
+
+test("getProjectIssues fails gracefully on connection issues 2", async () => {
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/issues")
     .query(true)
