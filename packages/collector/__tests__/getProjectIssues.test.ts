@@ -4,13 +4,6 @@ import { getProjectIssues } from "../src/getProjectIssues";
 
 import { IssueListError } from "../src/exceptions/IssueListError";
 
-beforeAll(() => {
-  nock.disableNetConnect();
-});
-afterAll(() => {
-  nock.enableNetConnect();
-});
-
 describe("Working issue listing", () => {
   beforeEach(() => {
     nock("https://api.github.com")

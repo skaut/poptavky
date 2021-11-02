@@ -17,9 +17,11 @@ export default {
           tsconfig: "packages/collector/tsconfig.json",
         },
       },
+      setupFiles: ["<rootDir>/packages/collector/__tests__/setup.ts"],
+      teardownFiles: ["<rootDir>/packages/collector/__tests__/teardown.ts"],
       preset: "ts-jest/presets/default-esm",
       resetMocks: true,
-      testMatch: ["<rootDir>/packages/collector/__tests__/**/*"],
+      testMatch: ["<rootDir>/packages/collector/__tests__/**/*.test.ts"],
     },
   ],
 };

@@ -4,13 +4,6 @@ import { getProjectVisibility } from "../src/getProjectVisibility";
 
 import { VisibilityError } from "../src/exceptions/VisibilityError";
 
-beforeAll(() => {
-  nock.disableNetConnect();
-});
-afterAll(() => {
-  nock.enableNetConnect();
-});
-
 test("getProjectVisibility gets the correct value for a public project", async () => {
   nock("https://api.github.com").get("/repos/OWNER/REPO").reply(200, {
     private: false,
