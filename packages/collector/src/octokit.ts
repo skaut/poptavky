@@ -1,3 +1,5 @@
-import { Octokit } from "octokit";
+import { Octokit } from "@octokit/core";
+import { restEndpointMethods } from "@octokit/plugin-rest-endpoint-methods";
 
-export const octokit = new Octokit({ auth: process.env.PAT });
+const OctokitWithRest = Octokit.plugin(restEndpointMethods);
+export const octokit = new OctokitWithRest({ auth: process.env.PAT });
