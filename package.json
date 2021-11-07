@@ -18,15 +18,16 @@
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "octokit": "^1.7.0",
+    "@octokit/core": "^3.5.1",
+    "@octokit/plugin-rest-endpoint-methods": "^5.13.0",
     "ts-custom-error": "^3.2.0",
     "ts-node": "^10.4.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.6",
-    "@typescript-eslint/eslint-plugin": "^5.1.0",
-    "@typescript-eslint/parser": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
@@ -41,7 +42,7 @@
   "scripts": {
     "lint:typecheck:collector": "tsc -p packages/collector --noEmit",
     "lint:typecheck": "run-p -c --aggregate-output lint:typecheck:*",
-    "lint:eslint": "eslint --color 'packages/*/src/**/*' 'packages/*/__tests__/**/*'",
+    "lint:eslint": "eslint --color 'jest.config.ts' 'packages/*/src/**/*' 'packages/*/__tests__/**/*'",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "jest",
     "collect": "ts-node -T packages/collector/src/index.ts",

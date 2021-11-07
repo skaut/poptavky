@@ -1,8 +1,3 @@
-/*
- * For a detailed explanation regarding each configuration property and type check, visit:
- * https://jestjs.io/docs/configuration
- */
-
 export default {
   collectCoverage: true,
   collectCoverageFrom: [
@@ -22,9 +17,10 @@ export default {
           tsconfig: "packages/collector/tsconfig.json",
         },
       },
+      setupFiles: ["<rootDir>/packages/collector/__tests__/setup.ts"],
       preset: "ts-jest/presets/default-esm",
       resetMocks: true,
-      testMatch: ["<rootDir>/packages/collector/__tests__/**/*"],
+      testMatch: ["<rootDir>/packages/collector/__tests__/**/*.test.ts"],
     },
   ],
 };
