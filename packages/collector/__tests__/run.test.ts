@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as core from "@actions/core";
-import { mocked } from "ts-jest/utils";
+import { mocked } from "jest-mock";
 
 import { getGlobalConfig } from "../src/getGlobalConfig";
 import { getProjectListing } from "../src/getProjectListing";
