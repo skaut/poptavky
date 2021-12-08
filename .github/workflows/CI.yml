@@ -24,9 +24,13 @@ jobs:
             npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
             npm-dependencies-${{ runner.os }}-
 
-      - name: "Install NPM dependencies"
+      - name: "Install core NPM dependencies"
         run: |
           npm ci
+
+      - name: "Install fronted NPM dependencies"
+        run: |
+          cd packages/frontend && npm ci
 
       - name: "Build"
         run: |
@@ -49,9 +53,13 @@ jobs:
             npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
             npm-dependencies-${{ runner.os }}-
 
-      - name: "Install NPM dependencies"
+      - name: "Install core NPM dependencies"
         run: |
           npm ci
+
+      - name: "Install fronted NPM dependencies"
+        run: |
+          cd packages/frontend && npm ci
 
       - name: "Lint"
         run: |
