@@ -45,6 +45,6 @@
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "jest",
     "collect": "ts-node -T packages/collector/src/index.ts",
-    "build-frontend": "mkdir -p packages/frontend/dist && echo 'TODO' > packages/frontend/dist/index.html"
+    "build-frontend": "cd packages/frontend && npm run build"
   }
 }
