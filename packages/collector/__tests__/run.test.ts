@@ -52,30 +52,32 @@ beforeEach(() => {
 });
 
 test("run works", async () => {
+  expect.assertions(7);
   mocked(getGlobalConfig).mockReturnValue(globalConfig0);
   mocked(getProjectListing).mockResolvedValue(listing0);
   await run();
-  expect(mocked(getProjectListing).mock.calls.length).toBe(
+  expect(mocked(getProjectListing).mock.calls).toHaveLength(
     globalConfig0.projects.length
   );
   expect(mocked(getProjectListing).mock.calls[0][0]).toStrictEqual(
     globalConfig0.projects[0]
   );
-  expect(mocked(fs).writeFileSync.mock.calls.length).toBe(1);
+  expect(mocked(fs).writeFileSync.mock.calls).toHaveLength(1);
   expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("listings.json");
   expect(mocked(fs).writeFileSync.mock.calls[0][1]).toBe(
     JSON.stringify({ projects: [listing0] })
   );
-  expect(mocked(core).error.mock.calls.length).toBe(0);
-  expect(mocked(core).setFailed.mock.calls.length).toBe(0);
+  expect(mocked(core).error.mock.calls).toHaveLength(0);
+  expect(mocked(core).setFailed.mock.calls).toHaveLength(0);
 });
 
 test("run works with multiple repos", async () => {
+  expect.assertions(8);
   mocked(getGlobalConfig).mockReturnValue(globalConfig1);
   mocked(getProjectListing).mockResolvedValueOnce(listing0);
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
   await run();
-  expect(mocked(getProjectListing).mock.calls.length).toBe(
+  expect(mocked(getProjectListing).mock.calls).toHaveLength(
     globalConfig1.projects.length
   );
   expect(mocked(getProjectListing).mock.calls[0][0]).toStrictEqual(
@@ -84,35 +86,37 @@ test("run works with multiple repos", async () => {
   expect(mocked(getProjectListing).mock.calls[1][0]).toStrictEqual(
     globalConfig1.projects[1]
   );
-  expect(mocked(fs).writeFileSync.mock.calls.length).toBe(1);
+  expect(mocked(fs).writeFileSync.mock.calls).toHaveLength(1);
   expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("listings.json");
   expect(mocked(fs).writeFileSync.mock.calls[0][1]).toBe(
     JSON.stringify({ projects: [listing0, listing1] })
   );
-  expect(mocked(core).error.mock.calls.length).toBe(0);
-  expect(mocked(core).setFailed.mock.calls.length).toBe(0);
+  expect(mocked(core).error.mock.calls).toHaveLength(0);
+  expect(mocked(core).setFailed.mock.calls).toHaveLength(0);
 });
 
 test("run handles global error gracefully", async () => {
+  expect.assertions(3);
   mocked(getGlobalConfig).mockImplementation(() => {
     throw new Error();
   });
   mocked(getProjectListing).mockResolvedValueOnce(listing0);
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
   await run();
-  expect(mocked(fs).writeFileSync.mock.calls.length).toBe(0);
-  expect(mocked(core).error.mock.calls.length).toBe(0);
-  expect(mocked(core).setFailed.mock.calls.length).toBe(1);
+  expect(mocked(fs).writeFileSync.mock.calls).toHaveLength(0);
+  expect(mocked(core).error.mock.calls).toHaveLength(0);
+  expect(mocked(core).setFailed.mock.calls).toHaveLength(1);
 });
 
 test("run handes local error gracefully", async () => {
+  expect.assertions(8);
   mocked(getGlobalConfig).mockReturnValue(globalConfig1);
   mocked(getProjectListing).mockImplementationOnce(() => {
     throw new Error();
   });
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
   await run();
-  expect(mocked(getProjectListing).mock.calls.length).toBe(
+  expect(mocked(getProjectListing).mock.calls).toHaveLength(
     globalConfig1.projects.length
   );
   expect(mocked(getProjectListing).mock.calls[0][0]).toStrictEqual(
@@ -121,11 +125,11 @@ test("run handes local error gracefully", async () => {
   expect(mocked(getProjectListing).mock.calls[1][0]).toStrictEqual(
     globalConfig1.projects[1]
   );
-  expect(mocked(fs).writeFileSync.mock.calls.length).toBe(1);
+  expect(mocked(fs).writeFileSync.mock.calls).toHaveLength(1);
   expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("listings.json");
   expect(mocked(fs).writeFileSync.mock.calls[0][1]).toBe(
     JSON.stringify({ projects: [listing1] })
   );
-  expect(mocked(core).error.mock.calls.length).toBe(1);
-  expect(mocked(core).setFailed.mock.calls.length).toBe(0);
+  expect(mocked(core).error.mock.calls).toHaveLength(1);
+  expect(mocked(core).setFailed.mock.calls).toHaveLength(0);
 });

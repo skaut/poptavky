@@ -5,26 +5,29 @@ import { getProjectVisibility } from "../src/getProjectVisibility";
 import { VisibilityError } from "../src/exceptions/VisibilityError";
 
 test("getProjectVisibility gets the correct value for a public project", async () => {
+  expect.assertions(1);
   nock("https://api.github.com").get("/repos/OWNER/REPO").reply(200, {
     private: false,
   });
   await expect(
     getProjectVisibility({ owner: "OWNER", repo: "REPO" })
-  ).resolves.toEqual(true);
+  ).resolves.toBe(true);
   nock.cleanAll();
 });
 
 test("getProjectVisibility gets the correct value for a private project", async () => {
+  expect.assertions(1);
   nock("https://api.github.com").get("/repos/OWNER/REPO").reply(200, {
     private: true,
   });
   await expect(
     getProjectVisibility({ owner: "OWNER", repo: "REPO" })
-  ).resolves.toEqual(false);
+  ).resolves.toBe(false);
   nock.cleanAll();
 });
 
 test("getProjectVisibility fails gracefully on connection issues", async () => {
+  expect.assertions(1);
   nock("https://api.github.com").get("/repos/OWNER/REPO").reply(404);
   await expect(
     getProjectVisibility({ owner: "OWNER", repo: "REPO" })

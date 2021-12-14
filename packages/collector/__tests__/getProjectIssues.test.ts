@@ -58,6 +58,7 @@ describe("Working issue listing", () => {
   });
 
   test("getProjectIssues gets a value", async () => {
+    expect.assertions(1);
     await expect(
       getProjectIssues({ owner: "OWNER", repo: "REPO" }, true, "help-wanted")
     ).resolves.toStrictEqual([
@@ -71,6 +72,7 @@ describe("Working issue listing", () => {
   });
 
   test("getProjectIssues auto-populates label", async () => {
+    expect.assertions(1);
     await expect(
       getProjectIssues({ owner: "OWNER", repo: "REPO" }, true, undefined)
     ).resolves.toStrictEqual([
@@ -84,6 +86,7 @@ describe("Working issue listing", () => {
   });
 
   test("getProjectIssues omits link for private repos", async () => {
+    expect.assertions(1);
     await expect(
       getProjectIssues({ owner: "OWNER", repo: "REPO" }, false, "help-wanted")
     ).resolves.toStrictEqual([
@@ -93,6 +96,7 @@ describe("Working issue listing", () => {
 });
 
 test("getProjectIssues auto-populates body", async () => {
+  expect.assertions(1);
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/issues")
     .query((actualQueryObject) => actualQueryObject.labels === "help-wanted")
@@ -113,6 +117,7 @@ test("getProjectIssues auto-populates body", async () => {
 });
 
 test("getProjectIssues fails gracefully on connection issues", async () => {
+  expect.assertions(1);
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/issues")
     .query(true)
