@@ -1,9 +1,9 @@
-import { testData } from "../../testData"
 import { Project } from "../../components/Project"
+import { ProjectListings } from "../../interfaces/ProjectListings"
 
-export const ProjectsList: React.FC = () => (
+export const ProjectsList: React.FC<{ data: ProjectListings }> = ({ data }) => (
   <>
-    {testData.projects.map((project) => (
+    {data.projects.map((project) => (
       <Project project={project} />
     ))}
   </>

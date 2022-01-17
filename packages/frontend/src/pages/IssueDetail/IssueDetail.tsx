@@ -12,7 +12,6 @@ import { HiOutlineDocumentText } from "react-icons/hi"
 import { BsFillPersonFill } from "react-icons/bs"
 import { H1, H2, Paragraph, Mark, H3 } from "../../components/Typography"
 import { ExtLink } from "../../components/Link"
-import { testData } from "../../testData"
 import { getIssueWithProject } from "../../utils/getIssueWithProject"
 import { ProjectInfoLink } from "../../interfaces/ProjectInfo"
 import styled from "@emotion/styled"
@@ -26,20 +25,22 @@ import { theme } from "../../theme"
 import ReactMarkdown from "react-markdown"
 import TextTruncate from "react-text-truncate"
 import { Button } from "../../components/Button"
+import { ProjectListings } from "../../interfaces/ProjectListings"
 
-export const IssueDetail: React.FC = () => {
+export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
   const {
     owner: projectOwner,
     project: projectRepo,
     issue: issueNumber,
   } = useParams<{ owner: string; project: string; issue: string }>()
+
   const issue = getIssueWithProject(
-    testData,
+    data,
     projectOwner,
     projectRepo,
     Number(issueNumber)
   )
-  const projectIssues = getIssuesWithProjectInfo(testData, {
+  const projectIssues = getIssuesWithProjectInfo(data, {
     owner: projectOwner,
     repo: projectRepo,
     omitIssueNumber: issue?.number,

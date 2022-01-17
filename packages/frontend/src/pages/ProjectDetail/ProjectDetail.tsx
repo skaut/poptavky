@@ -12,7 +12,6 @@ import { HiOutlineDocumentText } from "react-icons/hi"
 import { BsFillPersonFill } from "react-icons/bs"
 import { H1, Paragraph, Mark, H3 } from "../../components/Typography"
 import { ExtLink } from "../../components/Link"
-import { testData } from "../../testData"
 import { ProjectInfoLink } from "../../interfaces/ProjectInfo"
 import styled from "@emotion/styled"
 import { Link } from "react-router-dom"
@@ -23,11 +22,14 @@ import { css } from "@emotion/react"
 import { theme } from "../../theme"
 import ReactMarkdown from "react-markdown"
 import TextTruncate from "react-text-truncate"
+import { ProjectListings } from "../../interfaces/ProjectListings"
 
-export const ProjectDetail: React.FC = () => {
+export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
+  data,
+}) => {
   const { owner: projectOwner, project: projectRepo } =
     useParams<{ owner: string; project: string; issue: string }>()
-  const project = getProject(testData, projectOwner, projectRepo)
+  const project = getProject(data, projectOwner, projectRepo)
 
   if (!project) {
     return (

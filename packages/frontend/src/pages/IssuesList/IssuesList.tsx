@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import React from "react"
-import { testData } from "../../testData"
 import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
 import { Issue } from "../../components/Issue"
+import { ProjectListings } from "../../interfaces/ProjectListings"
 
-export const IssuesList: React.FC = () => {
-  const issues = getIssuesWithProjectInfo(testData)
+export const IssuesList: React.FC<{ data: ProjectListings }> = ({ data }) => {
+  const issues = getIssuesWithProjectInfo(data)
   return (
     <>
       {issues.map((issue) => (

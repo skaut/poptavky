@@ -2,6 +2,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { Global } from "@emotion/react"
+import useSWR from "swr"
 import logo from "./images/logo.svg"
 import { theme } from "./theme"
 import { globalStyles } from "./globalStyles"
@@ -12,8 +13,19 @@ import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
 import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
 import { Navigation } from "./components/Navigation"
 import { ScrollToTop } from "./components/ScrollToTop"
+import { config } from "./config"
 
 export const App: React.FC = () => {
+  const { data, error } = useSWR(config.dataApiUrl, async (...args) => {
+    const res = await fetch(...args)
+    return res.json()
+  })
+  if (error) {
+    return <div>Nepodařilo se načíst data webu.</div>
+  }
+  if (!data) {
+    return <div>Načítají se data webu.</div>
+  }
   return (
     <Router>
       <Container>
@@ -43,12 +55,22 @@ export const App: React.FC = () => {
             </Route>
           </Switch>
           <Switch>
-            <Route path="/projekty">
-              <ProjectsList />
-            </Route>
-            <Route path="/:owner/:project/:issue" component={IssueDetail} />
-            <Route path="/:owner/:project" component={ProjectDetail} />
-            <Route path="/" component={IssuesList} />
+            <Route
+              path="/projekty"
+              render={(props) => <ProjectsList {...props} data={data} />}
+            />
+            <Route
+              path="/:owner/:project/:issue"
+              render={(props) => <IssueDetail {...props} data={data} />}
+            />
+            <Route
+              path="/:owner/:project"
+              render={(props) => <ProjectDetail {...props} data={data} />}
+            />
+            <Route
+              path="/"
+              render={(props) => <IssuesList {...props} data={data} />}
+            />
           </Switch>
         </main>
       </Container>
