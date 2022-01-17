@@ -13,7 +13,6 @@ import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
 import { Navigation } from "./components/Navigation"
 import { ScrollToTop } from "./components/ScrollToTop"
 
-
 export const App: React.FC = () => {
   return (
     <Router>
@@ -29,16 +28,18 @@ export const App: React.FC = () => {
           <ScrollToTop />
           <Switch>
             <Route path={["/", "/projekty"]} exact>
-              <Navigation items={[
-                {
-                  title: "Poptávky",
-                  link: "/"
-                },
-                {
-                  title: "Projekty",
-                  link: "/projekty"
-                }
-              ]} />
+              <Navigation
+                items={[
+                  {
+                    title: "Poptávky",
+                    link: "/",
+                  },
+                  {
+                    title: "Projekty",
+                    link: "/projekty",
+                  },
+                ]}
+              />
             </Route>
           </Switch>
           <Switch>
@@ -46,7 +47,7 @@ export const App: React.FC = () => {
               <ProjectsList />
             </Route>
             <Route path="/:owner/:project/:issue" component={IssueDetail} />
-            <Route path="/:owner/:project" component={ProjectDetail}/>
+            <Route path="/:owner/:project" component={ProjectDetail} />
             <Route path="/" component={IssuesList} />
           </Switch>
         </main>
@@ -76,5 +77,5 @@ const Title = styled("h1")`
 `
 
 const Logo = styled("img")`
-  max-height: 100%
+  max-height: 100%;
 `

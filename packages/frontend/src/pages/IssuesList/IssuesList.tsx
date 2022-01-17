@@ -6,5 +6,11 @@ import { Issue } from "../../components/Issue"
 
 export const IssuesList: React.FC = () => {
   const issues = getIssuesWithProjectInfo(testData)
-  return <>{issues.map(issue => <Issue key={issue.link} issue={issue} />)}</>
+  return (
+    <>
+      {issues.map((issue) => (
+        <Issue key={issue.link} issue={issue} />
+      ))}
+    </>
+  )
 }

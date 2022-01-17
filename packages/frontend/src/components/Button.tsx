@@ -3,12 +3,9 @@ import styled from "@emotion/styled"
 import { theme } from "../theme"
 import { ExtLink, LinkProps } from "./Link"
 
-interface Props extends LinkProps {
-}
+interface Props extends LinkProps {}
 
-export const Button: React.FC<Props> = props => (
-  <ButtonWrapper {...props} />
-)
+export const Button: React.FC<Props> = (props) => <ButtonWrapper {...props} />
 
 const ButtonWrapper = styled(ExtLink)`
   display: inline-block;

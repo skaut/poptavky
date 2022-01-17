@@ -4,7 +4,10 @@ import { ArticleBox } from "./ArticleBox"
 import { getIssueLink } from "../utils/getIssueLink"
 import { getProjectLink } from "../utils/getProjectLink"
 
-export const Issue: React.FC<{issue: ProjectIssueWithProjectInfo, hideTags?: boolean}> = ({issue, hideTags}) => (
+export const Issue: React.FC<{
+  issue: ProjectIssueWithProjectInfo
+  hideTags?: boolean
+}> = ({ issue, hideTags }) => (
   <ArticleBox
     title={issue.title}
     link={getIssueLink(issue)}

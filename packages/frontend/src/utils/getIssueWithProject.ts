@@ -1,14 +1,21 @@
 import { ProjectListings } from "../interfaces/ProjectListings"
 import { ProjectIssueWithProjectInfo } from "./getAllIssues"
 
-export const getIssueWithProject = (projectListings: ProjectListings, projectOwner: string, projectRepo: string, issueNumber: number): ProjectIssueWithProjectInfo | undefined =>  {
-  const project = projectListings.projects.find(project => project.owner === projectOwner && project.repo === projectRepo)
+export const getIssueWithProject = (
+  projectListings: ProjectListings,
+  projectOwner: string,
+  projectRepo: string,
+  issueNumber: number
+): ProjectIssueWithProjectInfo | undefined => {
+  const project = projectListings.projects.find(
+    (project) => project.owner === projectOwner && project.repo === projectRepo
+  )
 
   if (!project) {
     return
   }
 
-  const issue = project.issues.find(issue => issue.number === issueNumber)
+  const issue = project.issues.find((issue) => issue.number === issueNumber)
 
   if (!issue) {
     return
@@ -16,6 +23,6 @@ export const getIssueWithProject = (projectListings: ProjectListings, projectOwn
 
   return {
     ...issue,
-    project: { owner: project.owner, repo: project.repo, ...project.info }
+    project: { owner: project.owner, repo: project.repo, ...project.info },
   }
 }

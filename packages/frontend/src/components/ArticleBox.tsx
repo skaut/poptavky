@@ -6,12 +6,12 @@ import { Article, H2, Paragraph } from "./Typography"
 import TextTruncate from "react-text-truncate"
 
 export const ArticleBox: React.FC<{
-  title: string,
-  link?: string,
-  subtitle?: string,
-  subtitleLink?: string,
-  subtitleDescription?: string,
-  description: string,
+  title: string
+  link?: string
+  subtitle?: string
+  subtitleLink?: string
+  subtitleDescription?: string
+  description: string
   tags?: string[]
 }> = ({
   title,
@@ -25,7 +25,11 @@ export const ArticleBox: React.FC<{
   <ThinArticle>
     <H2>{link ? <Link to={link}>{title}</Link> : title}</H2>
     <ProjectName>
-      {subtitle && subtitleLink && <Link to={subtitleLink} title={subtitleDescription}>{subtitle}</Link>}
+      {subtitle && subtitleLink && (
+        <Link to={subtitleLink} title={subtitleDescription}>
+          {subtitle}
+        </Link>
+      )}
     </ProjectName>
     <Paragraph>
       <TextTruncate
@@ -36,7 +40,9 @@ export const ArticleBox: React.FC<{
         textTruncateChild={<></>}
       />
     </Paragraph>
-    {(tags ?? []).map(tag => <ColoredTag>{tag}</ColoredTag>) }
+    {(tags ?? []).map((tag) => (
+      <ColoredTag>{tag}</ColoredTag>
+    ))}
   </ThinArticle>
 )
 

@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
-import { theme } from "./theme";
+import { css } from "@emotion/react"
+import { theme } from "./theme"
 
 export const globalStyles = css`
   body {
@@ -21,6 +21,6 @@ export const globalStyles = css`
 
   ::selection {
     background-color: ${theme.colors.brand};
-    color: white
+    color: white;
   }
 `

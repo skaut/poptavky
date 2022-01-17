@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
-import { theme } from "../theme";
+import styled from "@emotion/styled"
+import { NavLink } from "react-router-dom"
+import { theme } from "../theme"
 
 interface NavigationItem {
   title: string
@@ -8,10 +8,16 @@ interface NavigationItem {
   isActive?: boolean
 }
 
-export const Navigation: React.FC<{ items: NavigationItem[] }> = ({items}) => (
+export const Navigation: React.FC<{ items: NavigationItem[] }> = ({
+  items,
+}) => (
   <nav>
     <Container>
-      {items.map((item, index) => <NavigationLink key={index} to={item.link} exact>{item.title}</NavigationLink>)}
+      {items.map((item, index) => (
+        <NavigationLink key={index} to={item.link} exact>
+          {item.title}
+        </NavigationLink>
+      ))}
     </Container>
   </nav>
 )
@@ -37,5 +43,4 @@ const NavigationLink = styled(NavLink)`
     border-left: 1px solid ${theme.colors.brand};
     background-color: #fff;
   }
-
 `

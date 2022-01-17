@@ -25,75 +25,142 @@ import ReactMarkdown from "react-markdown"
 import TextTruncate from "react-text-truncate"
 
 export const ProjectDetail: React.FC = () => {
-  const { owner: projectOwner, project: projectRepo } = useParams<{owner: string, project: string, issue: string}>()
+  const { owner: projectOwner, project: projectRepo } =
+    useParams<{ owner: string; project: string; issue: string }>()
   const project = getProject(testData, projectOwner, projectRepo)
 
   if (!project) {
-    return <h1>Projekt {projectOwner}/{projectRepo} zde není.</h1>
+    return (
+      <h1>
+        Projekt {projectOwner}/{projectRepo} zde není.
+      </h1>
+    )
   }
 
   return (
-    <div css={css`
-      @media (min-width: 850px) {
-        display: grid;
-        grid-template-columns: 1fr 300px;
-        column-gap: 36px;
-      }
-    `}>
-      <Section css={css`grid-column: 1 / span 2`}>
+    <div
+      css={css`
+        @media (min-width: 850px) {
+          display: grid;
+          grid-template-columns: 1fr 300px;
+          column-gap: 36px;
+        }
+      `}
+    >
+      <Section
+        css={css`
+          grid-column: 1 / span 2;
+        `}
+      >
         <H1>{project.info.name}</H1>
-        <div css={css`max-width: 750px`}>
-          <LargeParagraph><ReactMarkdown>{project.info["short-description"]}</ReactMarkdown></LargeParagraph>
-          <LargeParagraph><ReactMarkdown>{project.info.description}</ReactMarkdown></LargeParagraph>
-          {project.info.tags?.map(tag => <ColoredTag>{tag}</ColoredTag>) }
+        <div
+          css={css`
+            max-width: 750px;
+          `}
+        >
+          <LargeParagraph>
+            <ReactMarkdown>{project.info["short-description"]}</ReactMarkdown>
+          </LargeParagraph>
+          <LargeParagraph>
+            <ReactMarkdown>{project.info.description}</ReactMarkdown>
+          </LargeParagraph>
+          {project.info.tags?.map((tag) => (
+            <ColoredTag>{tag}</ColoredTag>
+          ))}
         </div>
       </Section>
-      <Section css={css`
-        max-width: 500px;
-        grid-column: 2 / 2;
-        @media (min-width: 850px) {
-          border: none;
-        }
-      `}>
+      <Section
+        css={css`
+          max-width: 500px;
+          grid-column: 2 / 2;
+          @media (min-width: 850px) {
+            border: none;
+          }
+        `}
+      >
         <Paragraph>
-          <Mark><BsFillPersonFill />&nbsp;{project.info.maintainers.length > 1 ? "Správci:" : "Správce:"}</Mark>
-          {project.info.maintainers.map(person => <SmallLink><ExtLink href={`mailto:${person.email}`}>{person.name}</ExtLink></SmallLink>)}
+          <Mark>
+            <BsFillPersonFill />
+            &nbsp;
+            {project.info.maintainers.length > 1 ? "Správci:" : "Správce:"}
+          </Mark>
+          {project.info.maintainers.map((person) => (
+            <SmallLink>
+              <ExtLink href={`mailto:${person.email}`}>{person.name}</ExtLink>
+            </SmallLink>
+          ))}
         </Paragraph>
-        {links.map(link => {
-          const currentLink = project.info.links.find(item => item.type === link.type)
+        {links.map((link) => {
+          const currentLink = project.info.links.find(
+            (item) => item.type === link.type
+          )
           if (!currentLink) {
             return undefined
           }
           const url = new URL(currentLink.uri)
-          return <>
-            <Paragraph>
-              <Mark>{link.icon}&nbsp;{link.label}:</Mark>
-              <SmallLink key={link.type}>
-                <ExtLink href={currentLink.uri}>
-                {`${url.host}${url.pathname}`}
-                </ExtLink>
-              </SmallLink>
-            </Paragraph>
-          </>
+          return (
+            <>
+              <Paragraph>
+                <Mark>
+                  {link.icon}&nbsp;{link.label}:
+                </Mark>
+                <SmallLink key={link.type}>
+                  <ExtLink href={currentLink.uri}>
+                    {`${url.host}${url.pathname}`}
+                  </ExtLink>
+                </SmallLink>
+              </Paragraph>
+            </>
+          )
         })}
       </Section>
       {!!project.issues.length && (
-        <Section css={css`max-width: 450px; grid-column: 1 / 1; grid-row: 2 / 2;`}>
+        <Section
+          css={css`
+            max-width: 450px;
+            grid-column: 1 / 1;
+            grid-row: 2 / 2;
+          `}
+        >
           <Mark>Poptávky u projektu:</Mark>
-            {project.issues.map(issue => (
-              <article css={css`
+          {project.issues.map((issue) => (
+            <article
+              css={css`
                 margin: 12px 0 24px;
-              `}>
-                <H3>{issue.link ? <Link to={getIssueLink({project: { ...project, ...project.info}, ...issue})}>{issue.title}</Link> : issue.title}&nbsp;<span css={css`color: ${theme.colors.gray}; font-weight: normal;`}>#{issue.number}</span></H3>
-                <TextTruncate
-                  line={3}
-                  element="span"
-                  truncateText="…"
-                  text={issue.description}
-                  textTruncateChild={<></>}
-                />
-              </article>
-            ))}
+              `}
+            >
+              <H3>
+                {issue.link ? (
+                  <Link
+                    to={getIssueLink({
+                      project: { ...project, ...project.info },
+                      ...issue,
+                    })}
+                  >
+                    {issue.title}
+                  </Link>
+                ) : (
+                  issue.title
+                )}
+                &nbsp;
+                <span
+                  css={css`
+                    color: ${theme.colors.gray};
+                    font-weight: normal;
+                  `}
+                >
+                  #{issue.number}
+                </span>
+              </H3>
+              <TextTruncate
+                line={3}
+                element="span"
+                truncateText="…"
+                text={issue.description}
+                textTruncateChild={<></>}
+              />
+            </article>
+          ))}
         </Section>
       )}
     </div>
@@ -118,13 +185,12 @@ const SmallLink = styled("span")`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
   }
 `
 
 interface LinkType {
   type: ProjectInfoLink["type"]
-  label: string,
+  label: string
   icon?: ReactNode
 }
 
@@ -132,12 +198,12 @@ const links: LinkType[] = [
   {
     type: "email",
     label: "E-mail",
-    icon: <GrMail />
+    icon: <GrMail />,
   },
   {
     type: "demo",
     label: "Demo",
-    icon: <MdWebAsset />
+    icon: <MdWebAsset />,
   },
   {
     type: "docs",
@@ -178,5 +244,5 @@ const links: LinkType[] = [
     type: "wiki",
     label: "Wiki",
     icon: <BiBookAlt />,
-  }
+  },
 ]

@@ -1,13 +1,13 @@
 interface ProjectInfoMaintainer {
-  name: string;
-  email?: string;
+  name: string
+  email?: string
 }
 
 interface ProjectInfoLinkSlack {
-  type: "slack";
-  uri: string;
-  space: string;
-  channel: string;
+  type: "slack"
+  uri: string
+  space: string
+  channel: string
 }
 
 interface ProjectInfoLinkNamed {

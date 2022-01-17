@@ -11,15 +11,26 @@ interface Query extends Partial<Project> {
   omitIssueNumber?: number
 }
 
-export const getIssuesWithProjectInfo =  (projectListings: ProjectListings, query?: Query): ProjectIssueWithProjectInfo[] =>
+export const getIssuesWithProjectInfo = (
+  projectListings: ProjectListings,
+  query?: Query
+): ProjectIssueWithProjectInfo[] =>
   projectListings.projects
-    .filter(project => !query || ((!query.owner || query.owner === project.owner) && (!query.repo || query.repo === project.repo))  )
-    .flatMap(project =>
-    project
-      .issues
-      .filter(issue => !query || query.omitIssueNumber !== issue.number)
-      .map(issue => ({
-        ...issue,
-        project: { owner: project.owner, repo: project.repo, ...project.info }
-      }))
-  )
+    .filter(
+      (project) =>
+        !query ||
+        ((!query.owner || query.owner === project.owner) &&
+          (!query.repo || query.repo === project.repo))
+    )
+    .flatMap((project) =>
+      project.issues
+        .filter((issue) => !query || query.omitIssueNumber !== issue.number)
+        .map((issue) => ({
+          ...issue,
+          project: {
+            owner: project.owner,
+            repo: project.repo,
+            ...project.info,
+          },
+        }))
+    )
