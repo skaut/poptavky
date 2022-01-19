@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "@emotion/styled"
+import LinesEllipsis from "react-lines-ellipsis"
 import { ColoredTag } from "./ColoredTag"
 import { Link } from "react-router-dom"
 import { Article, H2, Paragraph } from "./Typography"
-import TextTruncate from "react-text-truncate"
 
 export const ArticleBox: React.FC<{
   title: string
@@ -31,15 +31,7 @@ export const ArticleBox: React.FC<{
         </Link>
       )}
     </ProjectName>
-    <Paragraph>
-      <TextTruncate
-        line={3}
-        element="span"
-        truncateText="…"
-        text={description}
-        textTruncateChild={<></>}
-      />
-    </Paragraph>
+    <Paragraph>{description}</Paragraph>
     {(tags ?? []).map((tag) => (
       <ColoredTag>{tag}</ColoredTag>
     ))}
