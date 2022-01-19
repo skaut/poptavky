@@ -33,7 +33,7 @@ export const ArticleBox: React.FC<{
     </ProjectName>
     <Paragraph>{description}</Paragraph>
     {(tags ?? []).map((tag) => (
-      <ColoredTag>{tag}</ColoredTag>
+      <ColoredTag key={tag}>{tag}</ColoredTag>
     ))}
   </ThinArticle>
 )
