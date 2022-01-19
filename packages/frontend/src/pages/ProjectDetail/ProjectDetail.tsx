@@ -21,7 +21,6 @@ import { getIssueLink } from "../../utils/getIssueLink"
 import { css } from "@emotion/react"
 import { theme } from "../../theme"
 import ReactMarkdown from "react-markdown"
-import TextTruncate from "react-text-truncate"
 import { ProjectListings } from "../../interfaces/ProjectListings"
 
 export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
@@ -154,13 +153,7 @@ export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
                   #{issue.number}
                 </span>
               </H3>
-              <TextTruncate
-                line={3}
-                element="span"
-                truncateText="…"
-                text={issue.description}
-                textTruncateChild={<></>}
-              />
+              {issue.description}
             </article>
           ))}
         </Section>
