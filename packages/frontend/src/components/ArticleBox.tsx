@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "@emotion/styled"
-import LinesEllipsis from "react-lines-ellipsis"
 import { ColoredTag } from "./ColoredTag"
 import { Link } from "react-router-dom"
 import { Article, H2, Paragraph } from "./Typography"
