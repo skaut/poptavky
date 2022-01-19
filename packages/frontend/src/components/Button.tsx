@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { theme } from "../theme"
-import { ExtLink, LinkProps } from "./Link"
+import { ExtLink, LinkProps } from "./ExtLink"
 
 interface Props extends LinkProps {}
 
