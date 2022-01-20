@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsList page should renders correctly 1`] = `
+Array [
+  .emotion-0 {
+  margin: 0 0 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #29488510;
+  max-width: 600px;
+}
+
+.emotion-1 {
+  color: #294885;
+  margin: 0 0 12px;
+  font-family: themix;
+}
+
+.emotion-2 {
+  margin: 0 0 0.6em;
+}
+
+.emotion-2 * {
+  font-size: 0.8rem;
+}
+
+.emotion-3 {
+  margin: 0 0 16px;
+}
+
+.emotion-4 {
+  background-color: #894cc033;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.emotion-5 {
+  background-color: #6d52b833;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.emotion-6 {
+  background-color: #8b843b33;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.emotion-7 {
+  background-color: #d293ff33;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+<article
+    className="emotion-0"
+  >
+    <h2
+      className="emotion-1"
+    >
+      <a
+        href="/skaut/skaut-google-drive-gallery"
+        onClick={[Function]}
+      >
+        WordPress plugin: Galerie obrázků a videí z Google Disku
+      </a>
+    </h2>
+    <p
+      className="emotion-2"
+    />
+    <p
+      className="emotion-3"
+    >
+      Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
+    </p>
+    <span
+      className="emotion-4"
+    >
+      wordpress
+    </span>
+    <span
+      className="emotion-5"
+    >
+      php
+    </span>
+    <span
+      className="emotion-6"
+    >
+      javascript
+    </span>
+    <span
+      className="emotion-7"
+    >
+      google
+    </span>
+  </article>,
+  .emotion-0 {
+  margin: 0 0 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #29488510;
+  max-width: 600px;
+}
+
+.emotion-1 {
+  color: #294885;
+  margin: 0 0 12px;
+  font-family: themix;
+}
+
+.emotion-2 {
+  margin: 0 0 0.6em;
+}
+
+.emotion-2 * {
+  font-size: 0.8rem;
+}
+
+.emotion-3 {
+  margin: 0 0 16px;
+}
+
+.emotion-4 {
+  background-color: #894cc033;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.emotion-5 {
+  background-color: #6d52b833;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.emotion-6 {
+  background-color: #8b843b33;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.emotion-7 {
+  background-color: #6317e833;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+<article
+    className="emotion-0"
+  >
+    <h2
+      className="emotion-1"
+    >
+      <a
+        href="/skaut/skautis-integration"
+        onClick={[Function]}
+      >
+        WordPress plugin: SkautIS integrace
+      </a>
+    </h2>
+    <p
+      className="emotion-2"
+    />
+    <p
+      className="emotion-3"
+    >
+      Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.
+    </p>
+    <span
+      className="emotion-4"
+    >
+      wordpress
+    </span>
+    <span
+      className="emotion-5"
+    >
+      php
+    </span>
+    <span
+      className="emotion-6"
+    >
+      javascript
+    </span>
+    <span
+      className="emotion-7"
+    >
+      skautis
+    </span>
+  </article>,
+]
+`;
