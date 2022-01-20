@@ -32,9 +32,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -42,9 +42,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -52,9 +52,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -62,9 +62,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -154,9 +154,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -164,9 +164,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -174,9 +174,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -184,9 +184,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -276,9 +276,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -286,9 +286,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -296,9 +296,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -306,9 +306,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -402,9 +402,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -412,9 +412,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -422,9 +422,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -432,9 +432,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -519,9 +519,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -529,9 +529,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -539,9 +539,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -549,9 +549,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -646,9 +646,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -656,9 +656,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -666,9 +666,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -676,9 +676,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -763,9 +763,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -773,9 +773,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -783,9 +783,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -793,9 +793,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -880,9 +880,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -890,9 +890,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -900,9 +900,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -910,9 +910,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -997,9 +997,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -1007,9 +1007,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -1017,9 +1017,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -1027,9 +1027,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -1134,9 +1134,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -1144,9 +1144,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -1154,9 +1154,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -1164,9 +1164,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -1257,9 +1257,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -1267,9 +1267,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -1277,9 +1277,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -1287,9 +1287,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -1374,9 +1374,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -1384,9 +1384,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -1394,9 +1394,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -1404,9 +1404,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -1547,9 +1547,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -1557,9 +1557,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -1567,9 +1567,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -1577,9 +1577,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -1660,9 +1660,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -1670,9 +1670,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -1680,9 +1680,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -1690,9 +1690,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -1780,9 +1780,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -1790,9 +1790,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -1800,9 +1800,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -1810,9 +1810,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -1902,9 +1902,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -1912,9 +1912,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -1922,9 +1922,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -1932,9 +1932,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -2019,9 +2019,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -2029,9 +2029,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -2039,9 +2039,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -2049,9 +2049,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -2136,9 +2136,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -2146,9 +2146,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -2156,9 +2156,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -2166,9 +2166,9 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article

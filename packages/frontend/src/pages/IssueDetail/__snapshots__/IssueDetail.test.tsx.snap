@@ -13,7 +13,6 @@ exports[`IssueDetail page should renders correctly 1`] = `
 .emotion-1 {
   margin: 0 0 16px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #29488510;
   grid-column: 1/span 2;
 }
 
@@ -95,76 +94,96 @@ exports[`IssueDetail page should renders correctly 1`] = `
 .emotion-11 {
   margin: 0 0 16px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #29488510;
   max-width: 600px;
   grid-column: 1/1;
 }
 
-.emotion-13 {
+.emotion-12 {
+  color: white;
+  background-color: #294885;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.emotion-12 * {
+  color: white;
+}
+
+.emotion-12 *::selection {
+  background-color: white;
+  color: #294885;
+}
+
+.emotion-14 {
   color: #294885;
   margin: 0 0 12px;
   font-family: themix;
 }
 
-.emotion-14 {
+.emotion-15 {
   margin: 0 0 16px;
-}
-
-.emotion-16 {
-  background-color: #894cc033;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-17 {
-  background-color: #6d52b833;
-  color: #444;
+  background-color: #894cc033;
+  color: white;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
+  border: 1px solid #ffffff55;
 }
 
 .emotion-18 {
-  background-color: #8b843b33;
-  color: #444;
+  background-color: #6d52b833;
+  color: white;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
+  border: 1px solid #ffffff55;
 }
 
 .emotion-19 {
-  background-color: #d293ff33;
-  color: #444;
+  background-color: #8b843b33;
+  color: white;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
+  border: 1px solid #ffffff55;
 }
 
 .emotion-20 {
+  background-color: #d293ff33;
+  color: white;
+  font-family: themix;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ffffff55;
+}
+
+.emotion-21 {
   margin: 0 0 16px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #29488510;
   max-width: 500px;
   grid-column: 2/2;
 }
 
 @media (min-width: 850px) {
-  .emotion-20 {
+  .emotion-21 {
     border: none;
   }
 }
 
-.emotion-23 a {
+.emotion-24 a {
   display: block;
   font-size: 0.9em;
   white-space: nowrap;
@@ -172,21 +191,15 @@ exports[`IssueDetail page should renders correctly 1`] = `
   text-overflow: ellipsis;
 }
 
-.emotion-49 {
+.emotion-50 {
   margin: 0 0 16px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #29488510;
   max-width: 450px;
   grid-column: 1/1;
 }
 
-.emotion-51 {
+.emotion-52 {
   margin: 12px 0 24px;
-}
-
-.emotion-53 {
-  color: #999;
-  font-weight: normal;
 }
 
 <div
@@ -275,59 +288,63 @@ exports[`IssueDetail page should renders correctly 1`] = `
   <section
     className="emotion-11"
   >
-    <span
-      className="emotion-2"
+    <div
+      className="emotion-12"
     >
-      Projekt:
-    </span>
-    <h2
-      className="emotion-13"
-    >
-      <a
-        href="/skaut/skaut-google-drive-gallery"
-        onClick={[Function]}
+      <span
+        className="emotion-2"
       >
-        WordPress plugin: Galerie obrázků a videí z Google Disku
-      </a>
-    </h2>
-    <p
-      className="emotion-14"
-    >
-      Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
-    </p>
-    <p
-      className="emotion-14"
-    >
-      <p>
-        Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
+        Projekt:
+      </span>
+      <h2
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery"
+          onClick={[Function]}
+        >
+          WordPress plugin: Galerie obrázků a videí z Google Disku
+        </a>
+      </h2>
+      <p
+        className="emotion-15"
+      >
+        Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
       </p>
-    </p>
-    <span
-      className="emotion-16"
-    >
-      wordpress
-    </span>
-    <span
-      className="emotion-17"
-    >
-      php
-    </span>
-    <span
-      className="emotion-18"
-    >
-      javascript
-    </span>
-    <span
-      className="emotion-19"
-    >
-      google
-    </span>
+      <p
+        className="emotion-15"
+      >
+        <p>
+          Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
+        </p>
+      </p>
+      <span
+        className="emotion-17"
+      >
+        wordpress
+      </span>
+      <span
+        className="emotion-18"
+      >
+        php
+      </span>
+      <span
+        className="emotion-19"
+      >
+        javascript
+      </span>
+      <span
+        className="emotion-20"
+      >
+        google
+      </span>
+    </div>
   </section>
   <section
-    className="emotion-20"
+    className="emotion-21"
   >
     <p
-      className="emotion-14"
+      className="emotion-15"
     >
       <span
         className="emotion-2"
@@ -354,7 +371,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         Správce:
       </span>
       <span
-        className="emotion-23"
+        className="emotion-24"
       >
         <a
           className="emotion-6"
@@ -367,7 +384,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-14"
+      className="emotion-15"
     >
       <span
         className="emotion-2"
@@ -396,7 +413,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-23"
+        className="emotion-24"
       >
         <a
           className="emotion-6"
@@ -409,7 +426,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-14"
+      className="emotion-15"
     >
       <span
         className="emotion-2"
@@ -441,7 +458,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-23"
+        className="emotion-24"
       >
         <a
           className="emotion-6"
@@ -454,7 +471,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-14"
+      className="emotion-15"
     >
       <span
         className="emotion-2"
@@ -485,7 +502,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-23"
+        className="emotion-24"
       >
         <a
           className="emotion-6"
@@ -498,7 +515,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-14"
+      className="emotion-15"
     >
       <span
         className="emotion-2"
@@ -526,7 +543,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-23"
+        className="emotion-24"
       >
         <a
           className="emotion-6"
@@ -539,7 +556,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-14"
+      className="emotion-15"
     >
       <span
         className="emotion-2"
@@ -568,7 +585,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-23"
+        className="emotion-24"
       >
         <a
           className="emotion-6"
@@ -581,7 +598,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-14"
+      className="emotion-15"
     >
       <span
         className="emotion-2"
@@ -613,7 +630,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-23"
+        className="emotion-24"
       >
         <a
           className="emotion-6"
@@ -627,7 +644,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
     </p>
   </section>
   <section
-    className="emotion-49"
+    className="emotion-50"
   >
     <span
       className="emotion-2"
@@ -635,10 +652,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       Další poptávky projektu:
     </span>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/2"
@@ -648,7 +665,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           2
@@ -664,10 +681,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/3"
@@ -677,7 +694,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           3
@@ -697,10 +714,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/4"
@@ -710,7 +727,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           4
@@ -721,10 +738,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/5"
@@ -734,7 +751,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           5
@@ -755,10 +772,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/6"
@@ -768,7 +785,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           6
@@ -779,10 +796,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/7"
@@ -792,7 +809,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           7
@@ -803,10 +820,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/8"
@@ -816,7 +833,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           8
@@ -827,10 +844,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/9"
@@ -840,7 +857,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           9
@@ -871,10 +888,10 @@ exports[`IssueDetail page should renders correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/10"
@@ -884,7 +901,7 @@ exports[`IssueDetail page should renders correctly 1`] = `
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           10
@@ -901,10 +918,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/11"
@@ -914,7 +931,7 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           11
@@ -925,10 +942,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
       </p>
     </article>
     <article
-      className="emotion-51"
+      className="emotion-52"
     >
       <h3
-        className="emotion-13"
+        className="emotion-14"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/12"
@@ -938,7 +955,7 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
         </a>
          
         <span
-          className="emotion-53"
+          className="emotion-4"
         >
           #
           12

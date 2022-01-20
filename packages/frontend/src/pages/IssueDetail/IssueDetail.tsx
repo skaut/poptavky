@@ -1,30 +1,29 @@
 /** @jsxImportSource @emotion/react */
-import React, { ReactNode } from "react"
+import React from "react"
 import { useParams } from "react-router"
 import { AiFillGithub } from "react-icons/ai"
-import { MdWebAsset } from "react-icons/md"
-import { GrMail } from "react-icons/gr"
-import { BiBookAlt } from "react-icons/bi"
-import { FaSlack, FaFacebook } from "react-icons/fa"
-import { MdChecklist } from "react-icons/md"
-import { ImEarth } from "react-icons/im"
-import { HiOutlineDocumentText } from "react-icons/hi"
-import { BsFillPersonFill } from "react-icons/bs"
-import { H1, H2, Paragraph, Mark, H3 } from "../../components/Typography"
+import {
+  H1,
+  H2,
+  Paragraph,
+  Mark,
+  LargeParagraph,
+} from "../../components/Typography"
 import { ExtLink } from "../../components/ExtLink"
 import { getIssueWithProject } from "../../utils/getIssueWithProject"
-import { ProjectInfoLink } from "../../interfaces/ProjectInfo"
-import styled from "@emotion/styled"
 import { getProjectLink } from "../../utils/getProjectLink"
 import { Link } from "react-router-dom"
 import { ColoredTag } from "../../components/ColoredTag"
+import { ProjectBox } from "../../components/ProjectBox"
 import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
-import { getIssueLink } from "../../utils/getIssueLink"
 import { css } from "@emotion/react"
 import { theme } from "../../theme"
 import ReactMarkdown from "react-markdown"
 import { Button } from "../../components/Button"
 import { ProjectListings } from "../../interfaces/ProjectListings"
+import { ProjectLinks } from "../../components/ProjectLinks"
+import { IssuesList } from "../../components/IssuesList"
+import { Section } from "../../components/Layout"
 
 export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
   const {
@@ -112,17 +111,21 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
           grid-column: 1 / 1;
         `}
       >
-        <Mark>Projekt:</Mark>
-        <H2>
-          <Link to={getProjectLink(issue.project)}>{issue.project.name}</Link>
-        </H2>
-        <Paragraph>{issue.project["short-description"]}</Paragraph>
-        <Paragraph>
-          <ReactMarkdown>{issue.project.description}</ReactMarkdown>
-        </Paragraph>
-        {issue.project.tags?.map((tag) => (
-          <ColoredTag key={tag}>{tag}</ColoredTag>
-        ))}
+        <ProjectBox>
+          <Mark>Projekt:</Mark>
+          <H2>
+            <Link to={getProjectLink(issue.project)}>{issue.project.name}</Link>
+          </H2>
+          <Paragraph>{issue.project["short-description"]}</Paragraph>
+          <Paragraph>
+            <ReactMarkdown>{issue.project.description}</ReactMarkdown>
+          </Paragraph>
+          {issue.project.tags?.map((tag) => (
+            <ColoredTag key={tag} isLight>
+              {tag}
+            </ColoredTag>
+          ))}
+        </ProjectBox>
       </Section>
       <Section
         css={css`
@@ -133,39 +136,7 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
           }
         `}
       >
-        <Paragraph>
-          <Mark>
-            <BsFillPersonFill />
-            &nbsp;
-            {issue.project.maintainers.length > 1 ? "Správci:" : "Správce:"}
-          </Mark>
-          {issue.project.maintainers.map((person) => (
-            <SmallLink key={person.email}>
-              <ExtLink href={`mailto:${person.email}`}>{person.name}</ExtLink>
-            </SmallLink>
-          ))}
-        </Paragraph>
-        {links.map((link) => {
-          const currentLink = issue.project.links.find(
-            (item) => item.type === link.type
-          )
-          if (!currentLink) {
-            return undefined
-          }
-          const url = new URL(currentLink.uri)
-          return (
-            <Paragraph key={link.type}>
-              <Mark>
-                {link.icon}&nbsp;{link.label}:
-              </Mark>
-              <SmallLink key={link.type}>
-                <ExtLink href={currentLink.uri}>
-                  {`${url.host}${url.pathname}`}
-                </ExtLink>
-              </SmallLink>
-            </Paragraph>
-          )
-        })}
+        <ProjectLinks projectInfo={issue.project} />
       </Section>
       {!!projectIssues.length && (
         <Section
@@ -175,114 +146,9 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
           `}
         >
           <Mark>Další poptávky projektu:</Mark>
-          {projectIssues.map((issue) => (
-            <article
-              key={issue.number}
-              css={css`
-                margin: 12px 0 24px;
-              `}
-            >
-              <H3>
-                {issue.link ? (
-                  <Link to={getIssueLink(issue)}>{issue.title}</Link>
-                ) : (
-                  issue.title
-                )}
-                &nbsp;
-                <span
-                  css={css`
-                    color: ${theme.colors.gray};
-                    font-weight: normal;
-                  `}
-                >
-                  #{issue.number}
-                </span>
-              </H3>
-              <ReactMarkdown>{issue.description}</ReactMarkdown>
-            </article>
-          ))}
+          <IssuesList issues={projectIssues} project={issue.project} />
         </Section>
       )}
     </div>
   )
 }
-
-const Section = styled("section")`
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid ${theme.colors.brand}10;
-`
-
-const LargeParagraph = styled(Paragraph)`
-  font-size: 18px;
-  margin: 0;
-`
-
-const SmallLink = styled("span")`
-  a {
-    display: block;
-    font-size: 0.9em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-`
-
-interface LinkType {
-  type: ProjectInfoLink["type"]
-  label: string
-  icon?: ReactNode
-}
-
-const links: LinkType[] = [
-  {
-    type: "email",
-    label: "E-mail",
-    icon: <GrMail />,
-  },
-  {
-    type: "demo",
-    label: "Demo",
-    icon: <MdWebAsset />,
-  },
-  {
-    type: "docs",
-    label: "Dokumentace",
-    icon: <HiOutlineDocumentText />,
-  },
-  {
-    type: "facebook-group",
-    label: "Skupina na facebooku",
-    icon: <FaFacebook />,
-  },
-  {
-    type: "facebook-page",
-    label: "Stránka na facebooku",
-    icon: <FaFacebook />,
-  },
-  {
-    type: "github-repo",
-    label: "Repozitář",
-    icon: <AiFillGithub />,
-  },
-  {
-    type: "homepage",
-    label: "Web",
-    icon: <ImEarth />,
-  },
-  {
-    type: "issue-tracker",
-    label: "Issue tracker",
-    icon: <MdChecklist />,
-  },
-  {
-    type: "slack",
-    label: "Slack",
-    icon: <FaSlack />,
-  },
-  {
-    type: "wiki",
-    label: "Wiki",
-    icon: <BiBookAlt />,
-  },
-]

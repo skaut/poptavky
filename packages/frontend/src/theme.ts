@@ -4,6 +4,7 @@ export const theme = {
   },
   colors: {
     brand: "#294885",
+    lightBrand: "#4667a7",
     gray: "#999",
     lightGray: "#ddd",
   },

@@ -32,9 +32,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -42,9 +42,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -52,9 +52,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -62,9 +62,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article
@@ -141,9 +141,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-5 {
@@ -151,9 +151,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-6 {
@@ -161,9 +161,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 .emotion-7 {
@@ -171,9 +171,9 @@ Array [
   color: #444;
   font-family: themix;
   font-size: 0.8rem;
+  margin-right: 8px;
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  margin-right: 4px;
 }
 
 <article

@@ -39,3 +39,18 @@ export const H3 = styled("h3")`
   margin: 0 0 12px;
   font-family: themix;
 `
+
+export const SmallLink = styled("span")`
+  a {
+    display: block;
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+`
+
+export const LargeParagraph = styled(Paragraph)`
+  font-size: 18px;
+  margin: 0;
+`
