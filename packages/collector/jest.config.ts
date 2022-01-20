@@ -9,18 +9,13 @@ export default {
   ],
   coverageDirectory: "coverage",
   coverageProvider: "babel",
-  projects: [
-    {
-      displayName: "collector",
-      globals: {
-        "ts-jest": {
-          tsconfig: "tsconfig.json",
-        },
-      },
-      setupFiles: ["<rootDir>/__tests__/setup.ts"],
-      preset: "ts-jest/presets/default-esm",
-      resetMocks: true,
-      testMatch: ["<rootDir>/__tests__/**/*.test.ts"],
+  globals: {
+    "ts-jest": {
+      tsconfig: "tsconfig.json",
     },
-  ],
+  },
+  setupFiles: ["<rootDir>/__tests__/setup.ts"],
+  preset: "ts-jest/presets/default-esm",
+  resetMocks: true,
+  testMatch: ["<rootDir>/__tests__/**/*.test.ts"],
 };
