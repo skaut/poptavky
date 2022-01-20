@@ -39,8 +39,7 @@
     "typescript": "^4.5.5"
   },
   "scripts": {
-    "lint:typecheck:collector": "tsc  --noEmit",
-    "lint:typecheck": "run-p -c --aggregate-output lint:typecheck:*",
+    "lint:typecheck": "tsc  --noEmit",
     "lint:eslint": "eslint --color 'jest.config.ts' 'src/**/*' '__tests__/**/*'",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "jest",
