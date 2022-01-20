@@ -93,9 +93,14 @@ exports[`Issue component should renders correctly 1`] = `
   <p
     className="emotion-3"
   >
-    When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+    <p>
+      When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+    </p>
+    
 
-Depends on #792
+    <p>
+      Depends on #792
+    </p>
   </p>
   <span
     className="emotion-4"
@@ -173,9 +178,14 @@ exports[`Issue component should renders correctly without tags 1`] = `
   <p
     className="emotion-3"
   >
-    When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+    <p>
+      When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+    </p>
+    
 
-Depends on #792
+    <p>
+      Depends on #792
+    </p>
   </p>
 </article>
 `;

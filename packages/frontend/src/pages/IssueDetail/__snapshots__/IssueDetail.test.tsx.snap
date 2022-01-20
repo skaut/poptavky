@@ -654,9 +654,14 @@ exports[`IssueDetail page should renders correctly 1`] = `
           2
         </span>
       </h3>
-      When in a situation that there is a Google Drive shortcut somewhere in the gallery, the plugin displays the folder and it works for browsing. However, when looking at the shortcut as a member of its parent directory and when being inside the directory and looking at its name in the breadcrumbs, one uses the shortcut name, whereas the other uses the original folder name (when they differ).
+      <p>
+        When in a situation that there is a Google Drive shortcut somewhere in the gallery, the plugin displays the folder and it works for browsing. However, when looking at the shortcut as a member of its parent directory and when being inside the directory and looking at its name in the breadcrumbs, one uses the shortcut name, whereas the other uses the original folder name (when they differ).
+      </p>
+      
 
-This is a bug and both should show the shortcut name.
+      <p>
+        This is a bug and both should show the shortcut name.
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -678,9 +683,18 @@ This is a bug and both should show the shortcut name.
           3
         </span>
       </h3>
-      When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: \`Directory &quot;Galerie ODYWEB&quot; wasn&#039;t found - it may have been deleted or renamed.\` Instead, it should verify that the path is valid and if it's not, should display a warning (and possibly move you to either the root directory, or the closest valid ancestor - however, this should not lead to you accidentally changing the gallery!)
+      <p>
+        When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: 
+        <code>
+          Directory &quot;Galerie ODYWEB&quot; wasn&#039;t found - it may have been deleted or renamed.
+        </code>
+         Instead, it should verify that the path is valid and if it's not, should display a warning (and possibly move you to either the root directory, or the closest valid ancestor - however, this should not lead to you accidentally changing the gallery!)
+      </p>
+      
 
-Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3
+      <p>
+        Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -702,7 +716,9 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3
           4
         </span>
       </h3>
-      Ctrl+click on a gallery item (subfolder) or breadcrumbs should open in a new tab
+      <p>
+        Ctrl+click on a gallery item (subfolder) or breadcrumbs should open in a new tab
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -724,11 +740,19 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3
           5
         </span>
       </h3>
-      https://wordpress.org/support/topic/folder-link-instead-of-folder-name/
+      <p>
+        https://wordpress.org/support/topic/folder-link-instead-of-folder-name/
+      </p>
+      
 
-Basically, instead of searching for the folder in WP, you'd just paste the link to it into the editor and the plugin would figure out the path (Google Drive files now return a list of parents, so it could be done.)
+      <p>
+        Basically, instead of searching for the folder in WP, you'd just paste the link to it into the editor and the plugin would figure out the path (Google Drive files now return a list of parents, so it could be done.)
+      </p>
+      
 
-Depends on #111.
+      <p>
+        Depends on #111.
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -750,7 +774,9 @@ Depends on #111.
           6
         </span>
       </h3>
-      Currently, images aren't listed in the editor - both block and TinyMCE plugin. This often confuses users.
+      <p>
+        Currently, images aren't listed in the editor - both block and TinyMCE plugin. This often confuses users.
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -772,7 +798,9 @@ Depends on #111.
           7
         </span>
       </h3>
-      In the image grid, we should add an overlay to signify that an item is a video (for example a big play icon).
+      <p>
+        In the image grid, we should add an overlay to signify that an item is a video (for example a big play icon).
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -794,7 +822,9 @@ Depends on #111.
           8
         </span>
       </h3>
-      https://codecov.io/gh/skaut/skaut-google-drive-gallery
+      <p>
+        https://codecov.io/gh/skaut/skaut-google-drive-gallery
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -816,13 +846,29 @@ Depends on #111.
           9
         </span>
       </h3>
-      If the active theme contains
-\`\`\`php
-add_theme_support( 'editor-styles' );
-\`\`\`
-its styles are also applied to the block editor, which then looks weird. We should implement our own styles for the editor.
+      <p>
+        If the active theme contains
+      </p>
+      
 
-Example of such theme is the Twenty Seventeen theme.
+      <pre>
+        <code
+          className="language-php"
+        >
+          add_theme_support( 'editor-styles' );
+
+        </code>
+      </pre>
+      
+
+      <p>
+        its styles are also applied to the block editor, which then looks weird. We should implement our own styles for the editor.
+      </p>
+      
+
+      <p>
+        Example of such theme is the Twenty Seventeen theme.
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -844,10 +890,15 @@ Example of such theme is the Twenty Seventeen theme.
           10
         </span>
       </h3>
-      https://napoveda.skaut.cz/dobryweb/en-skaut-google-drive-gallery/en-get-google-application
+      <p>
+        https://napoveda.skaut.cz/dobryweb/en-skaut-google-drive-gallery/en-get-google-application
 https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-google-aplikace
+      </p>
+      
 
-Google changed the consent screen layout and require some form of verification.
+      <p>
+        Google changed the consent screen layout and require some form of verification.
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -869,7 +920,9 @@ Google changed the consent screen layout and require some form of verification.
           11
         </span>
       </h3>
-      Currently, the first image in a directory is used for its preview.
+      <p>
+        Currently, the first image in a directory is used for its preview.
+      </p>
     </article>
     <article
       className="emotion-51"
@@ -891,18 +944,65 @@ Google changed the consent screen layout and require some form of verification.
           12
         </span>
       </h3>
-      Go over the design of:
-- [ ] gallery view https://github.com/skaut/skaut-google-drive-gallery/issues/36
-- [ ] preview
-- [ ] folder thumbnail - overlay, folder title and image count
-- [ ] svg folder icon
-- [ ] gallery breadcrumbs
-- [ ] options page
-- [ ] WP.org plugin page
-- [ ] TinyMCE & Gutenberg editor plugins
-- [ ] TinyMCE & Gutenberg "Authentication failed" dialogs
+      <p>
+        Go over the design of:
+      </p>
+      
 
-Everything on the frontend needs to work at least with the default WP template and DSW templates.
+      <ul>
+        
+
+        <li>
+          [ ] gallery view https://github.com/skaut/skaut-google-drive-gallery/issues/36
+        </li>
+        
+
+        <li>
+          [ ] preview
+        </li>
+        
+
+        <li>
+          [ ] folder thumbnail - overlay, folder title and image count
+        </li>
+        
+
+        <li>
+          [ ] svg folder icon
+        </li>
+        
+
+        <li>
+          [ ] gallery breadcrumbs
+        </li>
+        
+
+        <li>
+          [ ] options page
+        </li>
+        
+
+        <li>
+          [ ] WP.org plugin page
+        </li>
+        
+
+        <li>
+          [ ] TinyMCE & Gutenberg editor plugins
+        </li>
+        
+
+        <li>
+          [ ] TinyMCE & Gutenberg "Authentication failed" dialogs
+        </li>
+        
+
+      </ul>
+      
+
+      <p>
+        Everything on the frontend needs to work at least with the default WP template and DSW templates.
+      </p>
     </article>
   </section>
 </div>

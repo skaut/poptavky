@@ -152,7 +152,7 @@ export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
                   #{issue.number}
                 </span>
               </H3>
-              {issue.description}
+              <ReactMarkdown>{issue.description}</ReactMarkdown>
             </article>
           ))}
         </Section>

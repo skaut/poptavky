@@ -1,4 +1,5 @@
 import React from "react"
+import ReactMarkdown from "react-markdown"
 import styled from "@emotion/styled"
 import { ColoredTag } from "./ColoredTag"
 import { Link } from "react-router-dom"
@@ -30,7 +31,9 @@ export const ArticleBox: React.FC<{
         </Link>
       )}
     </ProjectName>
-    <Paragraph>{description}</Paragraph>
+    <Paragraph>
+      <ReactMarkdown>{description}</ReactMarkdown>
+    </Paragraph>
     {(tags ?? []).map((tag) => (
       <ColoredTag key={tag}>{tag}</ColoredTag>
     ))}
