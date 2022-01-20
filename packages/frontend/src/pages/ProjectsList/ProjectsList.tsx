@@ -4,7 +4,7 @@ import { ProjectListings } from "../../interfaces/ProjectListings"
 export const ProjectsList: React.FC<{ data: ProjectListings }> = ({ data }) => (
   <>
     {data.projects.map((project) => (
-      <Project project={project} />
+      <Project key={`${project.owner}/${project.repo}`} project={project} />
     ))}
   </>
 )

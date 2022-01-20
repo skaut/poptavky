@@ -121,7 +121,7 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
           <ReactMarkdown>{issue.project.description}</ReactMarkdown>
         </Paragraph>
         {issue.project.tags?.map((tag) => (
-          <ColoredTag>{tag}</ColoredTag>
+          <ColoredTag key={tag}>{tag}</ColoredTag>
         ))}
       </Section>
       <Section
@@ -140,7 +140,7 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
             {issue.project.maintainers.length > 1 ? "Správci:" : "Správce:"}
           </Mark>
           {issue.project.maintainers.map((person) => (
-            <SmallLink>
+            <SmallLink key={person.email}>
               <ExtLink href={`mailto:${person.email}`}>{person.name}</ExtLink>
             </SmallLink>
           ))}
@@ -154,18 +154,16 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
           }
           const url = new URL(currentLink.uri)
           return (
-            <>
-              <Paragraph>
-                <Mark>
-                  {link.icon}&nbsp;{link.label}:
-                </Mark>
-                <SmallLink key={link.type}>
-                  <ExtLink href={currentLink.uri}>
-                    {`${url.host}${url.pathname}`}
-                  </ExtLink>
-                </SmallLink>
-              </Paragraph>
-            </>
+            <Paragraph key={link.type}>
+              <Mark>
+                {link.icon}&nbsp;{link.label}:
+              </Mark>
+              <SmallLink key={link.type}>
+                <ExtLink href={currentLink.uri}>
+                  {`${url.host}${url.pathname}`}
+                </ExtLink>
+              </SmallLink>
+            </Paragraph>
           )
         })}
       </Section>
@@ -179,6 +177,7 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
           <Mark>Další poptávky projektu:</Mark>
           {projectIssues.map((issue) => (
             <article
+              key={issue.number}
               css={css`
                 margin: 12px 0 24px;
               `}
