@@ -1,0 +1,1038 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IssueDetail page should renders correctly 1`] = `
+@media (min-width: 850px) {
+  .emotion-0 {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    -webkit-column-gap: 36px;
+    column-gap: 36px;
+  }
+}
+
+.emotion-1 {
+  margin: 0 0 16px;
+  padding-bottom: 24px;
+  grid-column: 1/span 2;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #999;
+  font-size: 0.8em;
+}
+
+.emotion-2 svg {
+  margin-right: 0.2em;
+}
+
+.emotion-3 {
+  color: #294885;
+  margin: 0 0 16px;
+  font-family: themix;
+  font-size: 2em;
+}
+
+.emotion-4 {
+  color: #999;
+  font-weight: normal;
+}
+
+.emotion-5 {
+  margin-top: -16px;
+}
+
+.emotion-6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-7 {
+  max-width: 750px;
+}
+
+.emotion-8 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: inline-block;
+  font-size: 1.2rem;
+  background-color: #294885;
+  color: white;
+  margin-top: 0.2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0 #999;
+  -webkit-transition: box-shadow 300ms;
+  transition: box-shadow 300ms;
+}
+
+.emotion-11 {
+  margin: 0 0 16px;
+  padding-bottom: 24px;
+  max-width: 600px;
+  grid-column: 1/1;
+}
+
+.emotion-12 {
+  color: white;
+  background-color: #294885;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.emotion-12 * {
+  color: white;
+}
+
+.emotion-12 *::selection {
+  background-color: white;
+  color: #294885;
+}
+
+.emotion-14 {
+  color: #294885;
+  margin: 0 0 12px;
+  font-family: themix;
+}
+
+.emotion-15 {
+  margin: 0 0 16px;
+}
+
+.emotion-17 {
+  background-color: #894cc033;
+  color: white;
+  font-family: themix;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ffffff55;
+}
+
+.emotion-18 {
+  background-color: #6d52b833;
+  color: white;
+  font-family: themix;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ffffff55;
+}
+
+.emotion-19 {
+  background-color: #8b843b33;
+  color: white;
+  font-family: themix;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ffffff55;
+}
+
+.emotion-20 {
+  background-color: #d293ff33;
+  color: white;
+  font-family: themix;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ffffff55;
+}
+
+.emotion-21 {
+  margin: 0 0 16px;
+  padding-bottom: 24px;
+  max-width: 500px;
+  grid-column: 2/2;
+}
+
+@media (min-width: 850px) {
+  .emotion-21 {
+    border: none;
+  }
+}
+
+.emotion-24 a {
+  display: block;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.emotion-50 {
+  margin: 0 0 16px;
+  padding-bottom: 24px;
+  max-width: 450px;
+  grid-column: 1/1;
+}
+
+.emotion-52 {
+  margin: 12px 0 24px;
+}
+
+<div
+  className="emotion-0"
+>
+  <section
+    className="emotion-1"
+  >
+    <span
+      className="emotion-2"
+    >
+      Poptávka:
+    </span>
+    <h1
+      className="emotion-3"
+    >
+      Add hint to set videos to public
+       
+      <span
+        className="emotion-4"
+      >
+        #
+        1
+      </span>
+    </h1>
+    <div
+      className="emotion-5"
+    >
+      <a
+        className="emotion-6"
+        href="https://github.com/skaut/skaut-google-drive-gallery/issues/873"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <svg
+          fill="currentColor"
+          height={20}
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 1024 1024"
+          width={20}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+          />
+        </svg>
+         GitHub
+      </a>
+    </div>
+    <div
+      className="emotion-7"
+    >
+      <p
+        className="emotion-8"
+      >
+        <p>
+          When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+        </p>
+        
+
+        <p>
+          Depends on #792
+        </p>
+      </p>
+    </div>
+    <span
+      className="emotion-2"
+    >
+      Zaujala tě poptávka?
+    </span>
+    <a
+      className="emotion-10"
+      href="mailto:mlha@skaut.cz"
+      rel="noreferrer noopener"
+      target="_blank"
+    >
+      Napiš nám
+    </a>
+  </section>
+  <section
+    className="emotion-11"
+  >
+    <div
+      className="emotion-12"
+    >
+      <span
+        className="emotion-2"
+      >
+        Projekt:
+      </span>
+      <h2
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery"
+          onClick={[Function]}
+        >
+          WordPress plugin: Galerie obrázků a videí z Google Disku
+        </a>
+      </h2>
+      <p
+        className="emotion-15"
+      >
+        Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
+      </p>
+      <p
+        className="emotion-15"
+      >
+        <p>
+          Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
+        </p>
+      </p>
+      <span
+        className="emotion-17"
+      >
+        wordpress
+      </span>
+      <span
+        className="emotion-18"
+      >
+        php
+      </span>
+      <span
+        className="emotion-19"
+      >
+        javascript
+      </span>
+      <span
+        className="emotion-20"
+      >
+        google
+      </span>
+    </div>
+  </section>
+  <section
+    className="emotion-21"
+  >
+    <p
+      className="emotion-15"
+    >
+      <span
+        className="emotion-2"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+          />
+        </svg>
+         
+        Správce:
+      </span>
+      <span
+        className="emotion-24"
+      >
+        <a
+          className="emotion-6"
+          href="mailto:mlha@skaut.cz"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Marek Dědič – Mlha
+        </a>
+      </span>
+    </p>
+    <p
+      className="emotion-15"
+    >
+      <span
+        className="emotion-2"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"
+            fillRule="evenodd"
+          />
+        </svg>
+         
+        E-mail
+        :
+      </span>
+      <span
+        className="emotion-24"
+      >
+        <a
+          className="emotion-6"
+          href="mailto:mlha@skaut.cz"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          mlha@skaut.cz
+        </a>
+      </span>
+    </p>
+    <p
+      className="emotion-15"
+    >
+      <span
+        className="emotion-2"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M19 4H5a2 2 0 00-2 2v12a2 2 0 002 2h14c1.1 0 2-.9 2-2V6a2 2 0 00-2-2zm0 14H5V8h14v10z"
+          />
+        </svg>
+         
+        Demo
+        :
+      </span>
+      <span
+        className="emotion-24"
+      >
+        <a
+          className="emotion-6"
+          href="https://demo-skaut-google-drive-gallery.skauting.cz/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          demo-skaut-google-drive-gallery.skauting.cz/
+        </a>
+      </span>
+    </p>
+    <p
+      className="emotion-15"
+    >
+      <span
+        className="emotion-2"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+          />
+        </svg>
+         
+        Dokumentace
+        :
+      </span>
+      <span
+        className="emotion-24"
+      >
+        <a
+          className="emotion-6"
+          href="https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery
+        </a>
+      </span>
+    </p>
+    <p
+      className="emotion-15"
+    >
+      <span
+        className="emotion-2"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 1024 1024"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+          />
+        </svg>
+         
+        Repozitář
+        :
+      </span>
+      <span
+        className="emotion-24"
+      >
+        <a
+          className="emotion-6"
+          href="https://github.com/skaut/skaut-google-drive-gallery"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          github.com/skaut/skaut-google-drive-gallery
+        </a>
+      </span>
+    </p>
+    <p
+      className="emotion-15"
+    >
+      <span
+        className="emotion-2"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM8 15c-0.984 0-1.92-0.203-2.769-0.57l3.643-4.098c0.081-0.092 0.126-0.21 0.126-0.332v-1.5c0-0.276-0.224-0.5-0.5-0.5-1.765 0-3.628-1.835-3.646-1.854-0.094-0.094-0.221-0.146-0.354-0.146h-2c-0.276 0-0.5 0.224-0.5 0.5v3c0 0.189 0.107 0.363 0.276 0.447l1.724 0.862v2.936c-1.813-1.265-3-3.366-3-5.745 0-1.074 0.242-2.091 0.674-3h1.826c0.133 0 0.26-0.053 0.354-0.146l2-2c0.094-0.094 0.146-0.221 0.146-0.354v-1.21c0.634-0.189 1.305-0.29 2-0.29 1.1 0 2.141 0.254 3.067 0.706-0.065 0.055-0.128 0.112-0.188 0.172-0.567 0.567-0.879 1.32-0.879 2.121s0.312 1.555 0.879 2.121c0.569 0.569 1.332 0.879 2.119 0.879 0.049 0 0.099-0.001 0.149-0.004 0.216 0.809 0.605 2.917-0.131 5.818-0.007 0.027-0.011 0.055-0.013 0.082-1.271 1.298-3.042 2.104-5.002 2.104z"
+          />
+        </svg>
+         
+        Web
+        :
+      </span>
+      <span
+        className="emotion-24"
+      >
+        <a
+          className="emotion-6"
+          href="https://wordpress.org/plugins/skaut-google-drive-gallery/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          wordpress.org/plugins/skaut-google-drive-gallery/
+        </a>
+      </span>
+    </p>
+    <p
+      className="emotion-15"
+    >
+      <span
+        className="emotion-2"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M22 7h-9v2h9V7zm0 8h-9v2h9v-2zM5.54 11L2 7.46l1.41-1.41 2.12 2.12 4.24-4.24 1.41 1.41L5.54 11zm0 8L2 15.46l1.41-1.41 2.12 2.12 4.24-4.24 1.41 1.41L5.54 19z"
+          />
+        </svg>
+         
+        Issue tracker
+        :
+      </span>
+      <span
+        className="emotion-24"
+      >
+        <a
+          className="emotion-6"
+          href="https://github.com/skaut/skaut-google-drive-gallery/issues"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          github.com/skaut/skaut-google-drive-gallery/issues
+        </a>
+      </span>
+    </p>
+  </section>
+  <section
+    className="emotion-50"
+  >
+    <span
+      className="emotion-2"
+    >
+      Další poptávky projektu:
+    </span>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/2"
+          onClick={[Function]}
+        >
+          If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          2
+        </span>
+      </h3>
+      <p>
+        When in a situation that there is a Google Drive shortcut somewhere in the gallery, the plugin displays the folder and it works for browsing. However, when looking at the shortcut as a member of its parent directory and when being inside the directory and looking at its name in the breadcrumbs, one uses the shortcut name, whereas the other uses the original folder name (when they differ).
+      </p>
+      
+
+      <p>
+        This is a bug and both should show the shortcut name.
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/3"
+          onClick={[Function]}
+        >
+          Editing doesn't check path validity
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          3
+        </span>
+      </h3>
+      <p>
+        When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: 
+        <code>
+          Directory &quot;Galerie ODYWEB&quot; wasn&#039;t found - it may have been deleted or renamed.
+        </code>
+         Instead, it should verify that the path is valid and if it's not, should display a warning (and possibly move you to either the root directory, or the closest valid ancestor - however, this should not lead to you accidentally changing the gallery!)
+      </p>
+      
+
+      <p>
+        Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/4"
+          onClick={[Function]}
+        >
+          Ctrl-click on folders does not work
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          4
+        </span>
+      </h3>
+      <p>
+        Ctrl+click on a gallery item (subfolder) or breadcrumbs should open in a new tab
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/5"
+          onClick={[Function]}
+        >
+          Add option to specify gallery by a Drive link
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          5
+        </span>
+      </h3>
+      <p>
+        https://wordpress.org/support/topic/folder-link-instead-of-folder-name/
+      </p>
+      
+
+      <p>
+        Basically, instead of searching for the folder in WP, you'd just paste the link to it into the editor and the plugin would figure out the path (Google Drive files now return a list of parents, so it could be done.)
+      </p>
+      
+
+      <p>
+        Depends on #111.
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/6"
+          onClick={[Function]}
+        >
+          Add images to the block
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          6
+        </span>
+      </h3>
+      <p>
+        Currently, images aren't listed in the editor - both block and TinyMCE plugin. This often confuses users.
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/7"
+          onClick={[Function]}
+        >
+          Add video overlay
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          7
+        </span>
+      </h3>
+      <p>
+        In the image grid, we should add an overlay to signify that an item is a video (for example a big play icon).
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/8"
+          onClick={[Function]}
+        >
+          Increase test coverage
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          8
+        </span>
+      </h3>
+      <p>
+        https://codecov.io/gh/skaut/skaut-google-drive-gallery
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/9"
+          onClick={[Function]}
+        >
+          Themes with "editor-styles" support change the look of the block editor
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          9
+        </span>
+      </h3>
+      <p>
+        If the active theme contains
+      </p>
+      
+
+      <pre>
+        <code
+          className="language-php"
+        >
+          add_theme_support( 'editor-styles' );
+
+        </code>
+      </pre>
+      
+
+      <p>
+        its styles are also applied to the block editor, which then looks weird. We should implement our own styles for the editor.
+      </p>
+      
+
+      <p>
+        Example of such theme is the Twenty Seventeen theme.
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/10"
+          onClick={[Function]}
+        >
+          Google app creation manual is outdated
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          10
+        </span>
+      </h3>
+      <p>
+        https://napoveda.skaut.cz/dobryweb/en-skaut-google-drive-gallery/en-get-google-application
+https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-google-aplikace
+      </p>
+      
+
+      <p>
+        Google changed the consent screen layout and require some form of verification.
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/11"
+          onClick={[Function]}
+        >
+          Directory preview images
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          11
+        </span>
+      </h3>
+      <p>
+        Currently, the first image in a directory is used for its preview.
+      </p>
+    </article>
+    <article
+      className="emotion-52"
+    >
+      <h3
+        className="emotion-14"
+      >
+        <a
+          href="/skaut/skaut-google-drive-gallery/12"
+          onClick={[Function]}
+        >
+          UX & design audit
+        </a>
+         
+        <span
+          className="emotion-4"
+        >
+          #
+          12
+        </span>
+      </h3>
+      <p>
+        Go over the design of:
+      </p>
+      
+
+      <ul>
+        
+
+        <li>
+          [ ] gallery view https://github.com/skaut/skaut-google-drive-gallery/issues/36
+        </li>
+        
+
+        <li>
+          [ ] preview
+        </li>
+        
+
+        <li>
+          [ ] folder thumbnail - overlay, folder title and image count
+        </li>
+        
+
+        <li>
+          [ ] svg folder icon
+        </li>
+        
+
+        <li>
+          [ ] gallery breadcrumbs
+        </li>
+        
+
+        <li>
+          [ ] options page
+        </li>
+        
+
+        <li>
+          [ ] WP.org plugin page
+        </li>
+        
+
+        <li>
+          [ ] TinyMCE & Gutenberg editor plugins
+        </li>
+        
+
+        <li>
+          [ ] TinyMCE & Gutenberg "Authentication failed" dialogs
+        </li>
+        
+
+      </ul>
+      
+
+      <p>
+        Everything on the frontend needs to work at least with the default WP template and DSW templates.
+      </p>
+    </article>
+  </section>
+</div>
+`;
+
+exports[`IssueDetail page should renders correctly if there is no related issue 1`] = `
+<h1>
+  Poptávka 
+  skaut
+  /
+  skaut-google-drive-gallery
+  /
+  0
+   zde není.
+</h1>
+`;

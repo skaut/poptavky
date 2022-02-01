@@ -1,7 +1,13 @@
 version: 2
 updates:
 - package-ecosystem: npm
-  directory: "/"
+  directory: "/packages/collector"
+  schedule:
+    interval: daily
+  assignees:
+  - marekdedic
+- package-ecosystem: npm
+  directory: "/packages/frontend"
   schedule:
     interval: daily
   assignees:
