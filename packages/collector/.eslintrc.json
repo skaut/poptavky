@@ -7,6 +7,7 @@
     "node": true
   },
   "plugins": [
+    "prefer-arrow",
     "@typescript-eslint"
   ],
   "extends": [
@@ -16,7 +17,9 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "arrow-body-style": ["error", "as-needed"],
     "no-warning-comments": "warn",
+    "prefer-arrow/prefer-arrow-functions": ["error", {"allowStandaloneDeclarations": true}],
     "@typescript-eslint/array-type": ["error", {"default": "generic"}],
     "@typescript-eslint/consistent-indexed-object-style": "error",
     "@typescript-eslint/consistent-type-assertions": "error",
