@@ -16,4 +16,20 @@ describe("IssuesList component", () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
+  it("should renders correctly without link", () => {
+    const tree = renderer
+      .create(
+        <MemoryRouter>
+          <IssuesList
+            issues={project.issues.map((issue) => ({
+              ...issue,
+              link: undefined,
+            }))}
+            project={project}
+          />
+        </MemoryRouter>
+      )
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })
