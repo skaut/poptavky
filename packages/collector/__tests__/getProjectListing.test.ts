@@ -1,4 +1,4 @@
-import { mocked } from "ts-jest/utils";
+import { mocked } from "jest-mock";
 
 import { getProjectInfo } from "../src/getProjectInfo";
 import { getProjectIssues } from "../src/getProjectIssues";

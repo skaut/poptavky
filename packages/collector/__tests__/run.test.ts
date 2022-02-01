@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as core from "@actions/core";
-import { mocked } from "ts-jest/utils";
+import { mocked } from "jest-mock";
 
 import { getGlobalConfig } from "../src/getGlobalConfig";
 import { getProjectListing } from "../src/getProjectListing";
@@ -62,7 +62,7 @@ test("run works", async () => {
     globalConfig0.projects[0]
   );
   expect(mocked(fs).writeFileSync.mock.calls.length).toBe(1);
-  expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("listings.json");
+  expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("../../listings.json");
   expect(mocked(fs).writeFileSync.mock.calls[0][1]).toBe(
     JSON.stringify({ projects: [listing0] })
   );
@@ -85,7 +85,7 @@ test("run works with multiple repos", async () => {
     globalConfig1.projects[1]
   );
   expect(mocked(fs).writeFileSync.mock.calls.length).toBe(1);
-  expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("listings.json");
+  expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("../../listings.json");
   expect(mocked(fs).writeFileSync.mock.calls[0][1]).toBe(
     JSON.stringify({ projects: [listing0, listing1] })
   );
@@ -122,7 +122,7 @@ test("run handes local error gracefully", async () => {
     globalConfig1.projects[1]
   );
   expect(mocked(fs).writeFileSync.mock.calls.length).toBe(1);
-  expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("listings.json");
+  expect(mocked(fs).writeFileSync.mock.calls[0][0]).toBe("../../listings.json");
   expect(mocked(fs).writeFileSync.mock.calls[0][1]).toBe(
     JSON.stringify({ projects: [listing1] })
   );

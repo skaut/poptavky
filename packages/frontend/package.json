@@ -1,0 +1,57 @@
+{
+  "name": "poptavky-fe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-markdown": "^8.0.0",
+    "react-router-dom": "^5.3.0",
+    "string-to-color": "^2.2.2",
+    "swr": "^1.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --coverage --transformIgnorePatterns \"node_modules/(?!react-markdown)/\" --testPathIgnorePatterns src/*.*",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@emotion/jest": "^11.7.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-test-renderer": "^17.0.1",
+    "react-scripts": "^5.0.0",
+    "react-test-renderer": "^17.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.1.2"
+  },
+  "homepage": "https://itpoptavky.skaut.cz"
+}
