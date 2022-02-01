@@ -2,15 +2,23 @@
   "projects": [
     {
       "owner": "skaut",
+      "repo": "lebeda"
+    },
+    {
+      "owner": "skaut",
+      "repo": "zavody"
+    },
+    {
+      "owner": "skaut",
+      "repo": "srs"
+    }
+    {
+      "owner": "skaut",
       "repo": "skaut-google-drive-gallery"
     },
     {
       "owner": "skaut",
       "repo": "skautis-integration"
-    },
-    {
-      "owner": "skaut",
-      "repo": "srs"
     }
   ]
 }
