@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColoredTag component should renders correctly 1`] = `
+.emotion-0 {
+  background-color: #13791433;
+  color: #444;
+  font-family: themix;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+<span
+  className="emotion-0"
+>
+  Tag
+</span>
+`;
