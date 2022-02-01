@@ -1,28 +1,20 @@
-import React from "react"
 import renderer from "react-test-renderer"
-import { MemoryRouter } from "react-router-dom"
+import { Router } from "react-router-dom"
 import { ScrollToTop } from "./ScrollToTop"
+import { createMemoryHistory } from "history"
 
 global.scrollTo = jest.fn()
 
 describe("ScrollToTop", () => {
-  let wrapper
-  let history
-  beforeEach(() => {
-    wrapper = renderer.create(
-      <MemoryRouter initialEntries={["/"]}>
-        <ScrollToTop />
-      </MemoryRouter>
-    )
-    history = wrapper.getInstance().history
-  })
-  afterEach(() => {
-    jest.clearAllMocks()
-  })
-
   it("calls window.scrollTo when route changes", () => {
+    const history = createMemoryHistory()
+    renderer.create(
+      <Router history={history}>
+        <ScrollToTop />
+      </Router>
+    )
     expect(global.scrollTo).not.toHaveBeenCalled()
-    history.push("/new-url")
+    history.push("/some/route")
     expect(global.scrollTo).toHaveBeenCalledWith(0, 0)
   })
 })
