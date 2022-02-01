@@ -9,7 +9,7 @@ import { GlobalConfigError } from "./exceptions/GlobalConfigError";
 export function getGlobalConfig(): GlobalConfig {
   let contents = "";
   try {
-    const rawContents = fs.readFileSync("config.json", "utf8");
+    const rawContents = fs.readFileSync("../../config.json", "utf8");
     contents = JSON.parse(rawContents); // eslint-disable-line @typescript-eslint/no-unsafe-assignment
   } catch (e) {
     throw new GlobalConfigError(String(e));

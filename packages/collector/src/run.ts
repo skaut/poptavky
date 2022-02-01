@@ -25,7 +25,7 @@ export async function run(): Promise<void> {
         );
       }
     }
-    fs.writeFileSync("listings.json", JSON.stringify(listings));
+    fs.writeFileSync("../../listings.json", JSON.stringify(listings));
   } catch (e) {
     core.setFailed((e as PoptavkyError).message);
   }
