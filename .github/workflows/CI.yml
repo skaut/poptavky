@@ -1,7 +1,8 @@
 name: "CI"
 on:
   push:
-    branches: "*"
+    branches:
+      - master
   pull_request:
 env:
   cache-version: 1
