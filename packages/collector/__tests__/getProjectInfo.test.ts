@@ -13,6 +13,7 @@ const config = {
 };
 
 test("getProjectInfo gets a value", async () => {
+  expect.assertions(1);
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/contents/.project-info.json")
     .reply(200, {
@@ -25,6 +26,7 @@ test("getProjectInfo gets a value", async () => {
 });
 
 test("getProjectInfo fails gracefully on connection issues", async () => {
+  expect.assertions(1);
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/contents/.project-info.json")
     .reply(404);
@@ -35,6 +37,7 @@ test("getProjectInfo fails gracefully on connection issues", async () => {
 });
 
 test("getProjectInfo fails gracefully on invalid response", async () => {
+  expect.assertions(1);
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/contents/.project-info.json")
     .reply(200, {});
@@ -45,6 +48,7 @@ test("getProjectInfo fails gracefully on invalid response", async () => {
 });
 
 test("getProjectInfo fails gracefully on invalid response 2", async () => {
+  expect.assertions(1);
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/contents/.project-info.json")
     .reply(200, {

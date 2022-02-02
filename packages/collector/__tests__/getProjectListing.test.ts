@@ -25,20 +25,21 @@ const issues = [
 ];
 
 test("getProjectListing gets a value", async () => {
+  expect.assertions(9);
   mocked(getProjectInfo).mockResolvedValue(info);
   mocked(getProjectIssues).mockResolvedValue(issues);
   mocked(getProjectVisibility).mockResolvedValue(true);
   await expect(getProjectListing(project)).resolves.toStrictEqual(
     Object.assign({}, project, { info, issues })
   );
-  expect(mocked(getProjectInfo).mock.calls.length).toBe(1);
+  expect(mocked(getProjectInfo).mock.calls).toHaveLength(1);
   expect(mocked(getProjectInfo).mock.calls[0][0]).toStrictEqual(project);
-  expect(mocked(getProjectVisibility).mock.calls.length).toBe(1);
+  expect(mocked(getProjectVisibility).mock.calls).toHaveLength(1);
   expect(mocked(getProjectVisibility).mock.calls[0][0]).toStrictEqual(project);
-  expect(mocked(getProjectIssues).mock.calls.length).toBe(1);
+  expect(mocked(getProjectIssues).mock.calls).toHaveLength(1);
   expect(mocked(getProjectIssues).mock.calls[0][0]).toStrictEqual(project);
   expect(mocked(getProjectIssues).mock.calls[0][1]).toBe(true);
-  expect(mocked(getProjectIssues).mock.calls[0][2]).toEqual(
+  expect(mocked(getProjectIssues).mock.calls[0][2]).toStrictEqual(
     info["help-issue-label"]
   );
 });

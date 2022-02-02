@@ -37,7 +37,7 @@ test("GlobalConfig requires the projects field to be an array", () => {
   }).toThrow(GlobalConfigError);
 });
 
-test("GlobalConfig requires the projects field to be an array", () => {
+test("GlobalConfig requires the projects field to be an array of projects", () => {
   const config = { projects: [{}] };
   expect(() => {
     assertIsGlobalConfig(config);
