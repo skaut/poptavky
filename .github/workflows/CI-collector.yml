@@ -1,74 +1,16 @@
-name: "CI"
+name: "collector CI"
 on:
   push:
     branches:
       - master
   pull_request:
+    paths:
+      - 'config.json'
+      - 'packages/collector/**'
 env:
   cache-version: 1
 
 jobs:
-  frontend-build:
-    name: "Build frontend"
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/frontend
-    steps:
-      - name: "Checkout"
-        uses: actions/checkout@v2.4.0
-
-      - name: "Cache NPM dependencies"
-        uses: actions/cache@v2.1.7
-        with:
-          path: "~/.npm"
-          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-          restore-keys: |
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
-            npm-dependencies-${{ runner.os }}-
-
-      - name: "Install NPM dependencies"
-        run: |
-          npm ci
-
-      - name: "Build"
-        run: |
-          npm run build
-
-  frontend-test:
-    name: "Test frontend"
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/frontend
-    steps:
-      - name: "Checkout"
-        uses: actions/checkout@v2.4.0
-
-      - name: "Cache NPM dependencies"
-        uses: actions/cache@v2.1.7
-        with:
-          path: "~/.npm"
-          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-          restore-keys: |
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
-            npm-dependencies-${{ runner.os }}-
-
-      - name: "Install NPM dependencies"
-        run: |
-          npm ci
-
-      - name: "Test"
-        run: |
-          npm run test
-
-      - name: "Upload coverage results"
-        uses: codecov/codecov-action@v2.1.0
-        with:
-          flags: frontend
-
   collect:
     name: "Collect dry-run"
     runs-on: ubuntu-latest
