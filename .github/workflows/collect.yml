@@ -1,6 +1,11 @@
 name: "Collect"
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'config.json'
   schedule:
     - cron: '0 0 * * *'
 env:
