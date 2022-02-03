@@ -13,7 +13,7 @@ env:
 
 jobs:
   collect:
-    uses: ./.github/workflows/reusable-collect.yml
+    uses: skaut/poptavky/.github/workflows/reusable-collect.yml
     secrets:
       PAT: ${{ secrets.PAT_PETA }}
 
