@@ -1,6 +1,9 @@
 name: "Collect"
 on:
   workflow_call:
+    secrets:
+      PAT:
+        required: true
 env:
   cache-version: 1
 
@@ -33,7 +36,7 @@ jobs:
         run: |
           npm run collect
         env:
-          PAT: ${{ secrets.PAT_PETA }}
+          PAT: ${{ secrets.PAT }}
 
       - name: "Upload artifact"
         uses: actions/upload-artifact@v2

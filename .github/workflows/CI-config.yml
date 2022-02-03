@@ -12,3 +12,5 @@ env:
 jobs:
   collect-dry-run:
     uses: ./.github/workflows/reusable-collect.yml
+    secrets:
+      PAT: ${{ secrets.PAT_PETA }}

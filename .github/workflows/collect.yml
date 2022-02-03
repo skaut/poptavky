@@ -14,6 +14,8 @@ env:
 jobs:
   collect:
     uses: ./.github/workflows/reusable-collect.yml
+    secrets:
+      PAT: ${{ secrets.PAT_PETA }}
 
   deploy:
     name: "Deploy collected listings"
