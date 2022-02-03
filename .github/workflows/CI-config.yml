@@ -11,4 +11,4 @@ env:
 
 jobs:
   collect-dry-run:
-    uses: ./.github/workflows/reusable/collect
+    uses: ./.github/workflows/reusable-collect
