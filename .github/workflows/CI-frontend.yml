@@ -1,8 +1,11 @@
-name: "CI"
+name: "Frontend CI"
 on:
   push:
-    branches: "*"
+    branches:
+      - master
   pull_request:
+    paths:
+      - 'packages/frontend/**'
 env:
   cache-version: 1
 
@@ -67,64 +70,3 @@ jobs:
         uses: codecov/codecov-action@v2.1.0
         with:
           flags: frontend
-
-  collector-lint:
-    name: "Lint collector"
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/collector
-    steps:
-      - name: "Checkout"
-        uses: actions/checkout@v2.4.0
-
-      - name: "Cache NPM dependencies"
-        uses: actions/cache@v2.1.7
-        with:
-          path: "~/.npm"
-          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-          restore-keys: |
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
-            npm-dependencies-${{ runner.os }}-
-
-      - name: "Install NPM dependencies"
-        run: |
-          npm ci
-
-      - name: "Lint"
-        run: |
-          npm run lint
-
-  collector-test:
-    name: "Test collector"
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/collector
-    steps:
-      - name: "Checkout"
-        uses: actions/checkout@v2.4.0
-
-      - name: "Cache NPM dependencies"
-        uses: actions/cache@v2.1.7
-        with:
-          path: "~/.npm"
-          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-          restore-keys: |
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
-            npm-dependencies-${{ runner.os }}-
-
-      - name: "Install NPM dependencies"
-        run: |
-          npm ci
-
-      - name: "Run tests"
-        run: |
-          npm test
-
-      - name: "Upload coverage results"
-        uses: codecov/codecov-action@v2.1.0
-        with:
-          flags: collector

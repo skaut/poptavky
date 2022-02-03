@@ -1,6 +1,11 @@
 name: "Collect"
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'config.json'
   schedule:
     - cron: '0 0 * * *'
 env:
@@ -8,43 +13,12 @@ env:
 
 jobs:
   collect:
-    name: "Collect"
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/collector
-    steps:
-      - name: "Checkout"
-        uses: actions/checkout@v2.4.0
-
-      - name: "Cache NPM dependencies"
-        uses: actions/cache@v2.1.7
-        with:
-          path: "~/.npm"
-          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-          restore-keys: |
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
-            npm-dependencies-${{ runner.os }}-
-
-      - name: "Install NPM dependencies"
-        run: |
-          npm ci --no-dev
-
-      - name: "Collect"
-        run: |
-          npm run collect
-        env:
-          PAT: ${{ secrets.PAT_PETA }}
-
-      - name: "Upload artifact"
-        uses: actions/upload-artifact@v2
-        with:
-          name: "listings"
-          path: listings.json
+    uses: ./.github/workflows/reusable-collect.yml
+    secrets:
+      PAT: ${{ secrets.PAT_PETA }}
 
   deploy:
-    name: "Deploy"
+    name: "Deploy collected listings"
     runs-on: ubuntu-latest
     needs: collect
     defaults:
