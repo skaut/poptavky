@@ -1,15 +1,16 @@
-name: "Deploy frontend"
+name: "Frontend CI"
 on:
   push:
     branches:
       - master
+  pull_request:
     paths:
       - 'packages/frontend/**'
 env:
   cache-version: 1
 
 jobs:
-  build:
+  frontend-build:
     name: "Build frontend"
     runs-on: ubuntu-latest
     defaults:
@@ -33,37 +34,39 @@ jobs:
         run: |
           npm ci
 
-      - name: "build"
+      - name: "Build"
         run: |
           npm run build
 
-      - name: "Upload artifact"
-        uses: actions/upload-artifact@v2
-        with:
-          name: "frontend"
-          path: packages/frontend/build
-
-  deploy:
-    name: "Deploy frontend"
+  frontend-test:
+    name: "Test frontend"
     runs-on: ubuntu-latest
-    needs: build
+    defaults:
+      run:
+        working-directory: packages/frontend
     steps:
       - name: "Checkout"
         uses: actions/checkout@v2.4.0
 
-      - name: "Download artifact"
-        uses: actions/download-artifact@v2
+      - name: "Cache NPM dependencies"
+        uses: actions/cache@v2.1.7
         with:
-          name: "frontend"
-          path: packages/frontend/build
+          path: "~/.npm"
+          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
+            npm-dependencies-${{ runner.os }}-
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
+      - name: "Install NPM dependencies"
+        run: |
+          npm ci
+
+      - name: "Test"
+        run: |
+          npm run test
+
+      - name: "Upload coverage results"
+        uses: codecov/codecov-action@v2.1.0
         with:
-          branch: gh-pages
-          folder: packages/frontend/build
-          clean: true
-          clean-exclude: |
-            CNAME
-            listings.json
-          single-commit: true
+          flags: frontend
