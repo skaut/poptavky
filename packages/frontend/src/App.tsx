@@ -6,7 +6,7 @@ import useSWR from "swr"
 import logo from "./images/logo.svg"
 import { theme } from "./theme"
 import { globalStyles } from "./globalStyles"
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom"
+import { Link, Route, Switch } from "react-router-dom"
 import { IssuesList } from "./pages/IssuesList/IssuesList"
 import { IssueDetail } from "./pages/IssueDetail/IssueDetail"
 import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
@@ -27,7 +27,6 @@ export const App: React.FC = () => {
     return <div>Načítají se data webu.</div>
   }
   return (
-    <Router>
       <Container>
         <Global styles={globalStyles} />
         <Link to="/" title="domů">
@@ -74,7 +73,6 @@ export const App: React.FC = () => {
           </Switch>
         </main>
       </Container>
-    </Router>
   )
 }
 
