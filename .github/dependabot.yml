@@ -9,12 +9,14 @@ updates:
 - package-ecosystem: npm
   directory: "/packages/frontend"
   schedule:
-    interval: daily
+    interval: weekly
   assignees:
+  - DeetsCZ
   - marekdedic
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
-    interval: daily
+    interval: weekly
   assignees:
+  - DeetsCZ
   - marekdedic
