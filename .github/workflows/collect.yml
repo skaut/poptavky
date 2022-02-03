@@ -13,7 +13,7 @@ env:
 
 jobs:
   collect:
-    uses: ./.github/workflows/reusable-collect
+    uses: ./.github/workflows/reusable-collect.yml
 
   deploy:
     name: "Deploy collected listings"
