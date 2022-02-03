@@ -27,52 +27,52 @@ export const App: React.FC = () => {
     return <div>Načítají se data webu.</div>
   }
   return (
-      <Container>
-        <Global styles={globalStyles} />
-        <Link to="/" title="domů">
-          <Header>
-            <Logo src={logo} alt="logo" />
-            <Title>IT poptávky</Title>
-          </Header>
-        </Link>
-        <main>
-          <ScrollToTop />
-          <Switch>
-            <Route path={["/", "/projekty"]} exact>
-              <Navigation
-                items={[
-                  {
-                    title: "Poptávky",
-                    link: "/",
-                  },
-                  {
-                    title: "Projekty",
-                    link: "/projekty",
-                  },
-                ]}
-              />
-            </Route>
-          </Switch>
-          <Switch>
-            <Route
-              path="/projekty"
-              render={(props) => <ProjectsList {...props} data={data} />}
+    <Container>
+      <Global styles={globalStyles} />
+      <Link to="/" title="domů">
+        <Header>
+          <Logo src={logo} alt="logo" />
+          <Title>IT poptávky</Title>
+        </Header>
+      </Link>
+      <main>
+        <ScrollToTop />
+        <Switch>
+          <Route path={["/", "/projekty"]} exact>
+            <Navigation
+              items={[
+                {
+                  title: "Poptávky",
+                  link: "/",
+                },
+                {
+                  title: "Projekty",
+                  link: "/projekty",
+                },
+              ]}
             />
-            <Route
-              path="/:owner/:project/:issue"
-              render={(props) => <IssueDetail {...props} data={data} />}
-            />
-            <Route
-              path="/:owner/:project"
-              render={(props) => <ProjectDetail {...props} data={data} />}
-            />
-            <Route
-              path="/"
-              render={(props) => <IssuesList {...props} data={data} />}
-            />
-          </Switch>
-        </main>
-      </Container>
+          </Route>
+        </Switch>
+        <Switch>
+          <Route
+            path="/projekty"
+            render={(props) => <ProjectsList {...props} data={data} />}
+          />
+          <Route
+            path="/:owner/:project/:issue"
+            render={(props) => <IssueDetail {...props} data={data} />}
+          />
+          <Route
+            path="/:owner/:project"
+            render={(props) => <ProjectDetail {...props} data={data} />}
+          />
+          <Route
+            path="/"
+            render={(props) => <IssuesList {...props} data={data} />}
+          />
+        </Switch>
+      </main>
+    </Container>
   )
 }
 
