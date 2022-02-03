@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`App should handle error gracefully 1`] = `
+<div>
+  Nepodařilo se načíst data webu.
+</div>
+`;
+
 exports[`App should renders correctly 1`] = `
 .emotion-0 {
   max-width: 1000px;
