@@ -1,4 +1,4 @@
-name: "collector CI"
+name: "Collector CI"
 on:
   push:
     branches:

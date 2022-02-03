@@ -1,4 +1,4 @@
-name: "Deploy"
+name: "Deploy frontend"
 on:
   push:
     branches:
@@ -10,7 +10,7 @@ env:
 
 jobs:
   build:
-    name: "Build"
+    name: "Build frontend"
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -44,7 +44,7 @@ jobs:
           path: packages/frontend/build
 
   deploy:
-    name: "Deploy"
+    name: "Deploy frontend"
     runs-on: ubuntu-latest
     needs: build
     steps:
