@@ -5,15 +5,11 @@ on:
       - master
   pull_request:
     paths:
-      - 'config.json'
       - 'packages/collector/**'
 env:
   cache-version: 1
 
 jobs:
-  collect-dry-run:
-    uses: ./.github/workflows/reusable/collect
-
   collector-lint:
     name: "Lint collector"
     runs-on: ubuntu-latest
