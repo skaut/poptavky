@@ -1,6 +1,7 @@
 {
   "name": "poptavky",
   "version": "0.1.0",
+  "private": true,
   "description": "A GitHub app to automatically export issues to a webpage.",
   "keywords": [
     "plugin",
