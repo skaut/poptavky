@@ -66,4 +66,5 @@ jobs:
           clean-exclude: |
             CNAME
             listings.json
+            404.html
           single-commit: true
