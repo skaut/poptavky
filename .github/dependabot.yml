@@ -3,8 +3,9 @@ updates:
 - package-ecosystem: npm
   directory: "/packages/collector"
   schedule:
-    interval: daily
+    interval: weekly
   assignees:
+  - DeetsCZ
   - marekdedic
 - package-ecosystem: npm
   directory: "/packages/frontend"
