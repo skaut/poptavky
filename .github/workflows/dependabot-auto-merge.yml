@@ -9,7 +9,7 @@ jobs:
   dependabot:
     name: "Dependabot auto-merge"
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
+    if: ${{ false && github.actor == 'dependabot[bot]' }}
     steps:
       - name: "Enable auto-merge for the request"
         run: gh pr merge --auto --merge "$PR_URL"
