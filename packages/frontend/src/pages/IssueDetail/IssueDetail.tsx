@@ -34,8 +34,8 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
 
   const issue = getIssueWithProject(
     data,
-    projectOwner,
-    projectRepo,
+    projectOwner!,
+    projectRepo!,
     Number(issueNumber)
   )
   const projectIssues = getIssuesWithProjectInfo(data, {
