@@ -36,12 +36,10 @@ exports[`Navigation component should renders correctly 1`] = `
       className="emotion-1 active"
       href="/"
       onClick={[Function]}
-      style={Object {}}
     >
       Poptávky
     </a>
     <a
-      aria-current={null}
       className="emotion-1"
       href="/projekty"
       onClick={[Function]}
@@ -88,12 +86,10 @@ exports[`Navigation component should renders correctly wyth active item 1`] = `
       className="emotion-1 active"
       href="/"
       onClick={[Function]}
-      style={Object {}}
     >
       Poptávky
     </a>
     <a
-      aria-current={null}
       className="emotion-1"
       href="/projekty"
       onClick={[Function]}

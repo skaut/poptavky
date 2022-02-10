@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer"
-import { Router } from "react-router-dom"
+import { unstable_HistoryRouter as Router } from "react-router-dom"
 import { ScrollToTop } from "./ScrollToTop"
 import { createMemoryHistory } from "history"
 
@@ -14,7 +14,9 @@ describe("ScrollToTop", () => {
       </Router>
     )
     expect(global.scrollTo).not.toHaveBeenCalled()
-    history.push("/some/route")
+    renderer.act(() => {
+      history.push("/some/route")
+    })
     expect(global.scrollTo).toHaveBeenCalledWith(0, 0)
   })
 })
