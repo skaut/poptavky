@@ -21,38 +21,47 @@ export const App: React.FC = () => {
   if (!data) {
     return <div>Načítají se data webu.</div>
   }
-  const AppNavigation = () => <Navigation
-    items={[
-      {
-        title: "Poptávky",
-        link: "/",
-      },
-      {
-        title: "Projekty",
-        link: "/projekty",
-      },
-    ]}
-  />
+  const AppNavigation = () => (
+    <Navigation
+      items={[
+        {
+          title: "Poptávky",
+          link: "/",
+        },
+        {
+          title: "Projekty",
+          link: "/projekty",
+        },
+      ]}
+    />
+  )
   return (
-      <Routes>
-        <Route path="/" element={<Container />}>
-          <Route
-            path="projekty"
-            element={<div><AppNavigation /><ProjectsList data={data} /></div>}
-          />
-          <Route
-            path=":owner/:project/:issue"
-            element={<IssueDetail data={data} />}
-          />
-          <Route
-            path=":owner/:project"
-            element={<ProjectDetail data={data} />}
-          />
-          <Route
-            path="/"
-            element={<div><AppNavigation /><IssuesList data={data} /></div>}
-          />
-        </Route>
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Container />}>
+        <Route
+          path="projekty"
+          element={
+            <div>
+              <AppNavigation />
+              <ProjectsList data={data} />
+            </div>
+          }
+        />
+        <Route
+          path=":owner/:project/:issue"
+          element={<IssueDetail data={data} />}
+        />
+        <Route path=":owner/:project" element={<ProjectDetail data={data} />} />
+        <Route
+          path="/"
+          element={
+            <div>
+              <AppNavigation />
+              <IssuesList data={data} />
+            </div>
+          }
+        />
+      </Route>
+    </Routes>
   )
 }

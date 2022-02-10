@@ -7,7 +7,7 @@ import { globalStyles } from "../globalStyles"
 import { Link, Outlet } from "react-router-dom"
 import { ScrollToTop } from "./ScrollToTop"
 
-export const Container: React.FC = () => 
+export const Container: React.FC = () => (
   <WrapperDiv>
     <Global styles={globalStyles} />
     <Link to="/" title="domů">
@@ -21,6 +21,7 @@ export const Container: React.FC = () =>
       <Outlet />
     </main>
   </WrapperDiv>
+)
 
 const WrapperDiv = styled("div")`
   max-width: ${theme.layout.width}px;
