@@ -7,6 +7,7 @@ import { IssueDetail } from "./pages/IssueDetail/IssueDetail"
 import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
 import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
 import { Container } from "./components/Container"
+import { Navigation } from "./components/Navigation"
 import { config } from "./config"
 
 export const App: React.FC = () => {
@@ -20,12 +21,24 @@ export const App: React.FC = () => {
   if (!data) {
     return <div>Načítají se data webu.</div>
   }
+  const AppNavigation = () => <Navigation
+    items={[
+      {
+        title: "Poptávky",
+        link: "/",
+      },
+      {
+        title: "Projekty",
+        link: "/projekty",
+      },
+    ]}
+  />
   return (
       <Routes>
         <Route path="/" element={<Container />}>
           <Route
             path="projekty"
-            element={<ProjectsList data={data} />}
+            element={<div><AppNavigation /><ProjectsList data={data} /></div>}
           />
           <Route
             path=":owner/:project/:issue"
@@ -37,7 +50,7 @@ export const App: React.FC = () => {
           />
           <Route
             path="/"
-            element={<IssuesList data={data} />}
+            element={<div><AppNavigation /><IssuesList data={data} /></div>}
           />
         </Route>
       </Routes>

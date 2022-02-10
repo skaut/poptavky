@@ -6,7 +6,6 @@ import { theme } from "../theme"
 import { globalStyles } from "../globalStyles"
 import { Link, Outlet } from "react-router-dom"
 import { ScrollToTop } from "./ScrollToTop"
-import { Navigation } from "./Navigation"
 
 export const Container: React.FC = () => 
   <WrapperDiv>
@@ -19,18 +18,6 @@ export const Container: React.FC = () =>
     </Link>
     <main>
       <ScrollToTop />
-        <Navigation
-          items={[
-            {
-              title: "Poptávky",
-              link: "/",
-            },
-            {
-              title: "Projekty",
-              link: "/projekty",
-            },
-          ]}
-        />
       <Outlet />
     </main>
   </WrapperDiv>
