@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IssueDetail page should renders correctly 1`] = `
+exports[`IssueDetail page should render correctly 1`] = `
 @media (min-width: 850px) {
   .emotion-0 {
     display: grid;
@@ -1025,7 +1025,7 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 </div>
 `;
 
-exports[`IssueDetail page should renders correctly if there is no related issue 1`] = `
+exports[`IssueDetail page should render correctly if there is no related issue 1`] = `
 <h1>
   Poptávka 
   skaut

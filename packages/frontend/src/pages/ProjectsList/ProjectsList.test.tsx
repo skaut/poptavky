@@ -4,7 +4,7 @@ import { testData } from "../../testData"
 import { MemoryRouter } from "react-router-dom"
 
 describe("ProjectsList page", () => {
-  it("should renders correctly", () => {
+  it("should render correctly", () => {
     const tree = renderer.create(
       <MemoryRouter>
         <ProjectsList data={testData} />

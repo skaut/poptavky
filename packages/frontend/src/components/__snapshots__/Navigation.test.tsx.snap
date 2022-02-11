@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navigation component should renders correctly 1`] = `
+exports[`Navigation component should render correctly 1`] = `
 .emotion-0 {
   list-style: none;
   display: -webkit-box;
@@ -50,7 +50,7 @@ exports[`Navigation component should renders correctly 1`] = `
 </nav>
 `;
 
-exports[`Navigation component should renders correctly wyth active item 1`] = `
+exports[`Navigation component should render correctly wyth active item 1`] = `
 .emotion-0 {
   list-style: none;
   display: -webkit-box;

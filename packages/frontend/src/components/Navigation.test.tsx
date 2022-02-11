@@ -3,7 +3,7 @@ import { Navigation } from "./Navigation"
 import { MemoryRouter } from "react-router-dom"
 
 describe("Navigation component", () => {
-  it("should renders correctly", () => {
+  it("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
@@ -24,7 +24,7 @@ describe("Navigation component", () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
-  it("should renders correctly wyth active item", () => {
+  it("should render correctly wyth active item", () => {
     const tree = renderer
       .create(
         <MemoryRouter>

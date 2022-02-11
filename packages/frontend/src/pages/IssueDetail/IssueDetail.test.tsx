@@ -7,7 +7,7 @@ const project = testData.projects[0]
 const issue = project.issues[0]
 
 describe("IssueDetail page", () => {
-  it("should renders correctly", () => {
+  it("should render correctly", () => {
     const tree = renderer.create(
       <MemoryRouter
         initialEntries={[`/${project.owner}/${project.repo}/${issue.number}`]}
@@ -23,7 +23,7 @@ describe("IssueDetail page", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should renders correctly if there is no related issue", () => {
+  it("should render correctly if there is no related issue", () => {
     const tree = renderer.create(
       <MemoryRouter initialEntries={[`/${project.owner}/${project.repo}/0`]}>
         <Routes>

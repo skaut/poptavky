@@ -6,7 +6,7 @@ import { MemoryRouter } from "react-router-dom"
 const project = testData.projects[0]
 
 describe("IssuesList component", () => {
-  it("should renders correctly", () => {
+  it("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
@@ -16,7 +16,7 @@ describe("IssuesList component", () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
-  it("should renders correctly without link", () => {
+  it("should render correctly without link", () => {
     const tree = renderer
       .create(
         <MemoryRouter>

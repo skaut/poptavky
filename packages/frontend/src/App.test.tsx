@@ -13,7 +13,7 @@ describe("App", () => {
     window.scrollTo = jest.fn()
   })
 
-  it("should renders correctly", async () => {
+  it("should render correctly", async () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       mutate: jest.fn(),
@@ -29,7 +29,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should renders projects correctly", () => {
+  it("should render projects correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       mutate: jest.fn(),
@@ -45,7 +45,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should renders project listing correctly", () => {
+  it("should render project listing correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       mutate: jest.fn(),
@@ -61,7 +61,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should renders issue listing correctly", () => {
+  it("should render issue listing correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       mutate: jest.fn(),

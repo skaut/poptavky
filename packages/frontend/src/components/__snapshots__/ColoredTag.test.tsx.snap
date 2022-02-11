@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ColoredTag component should renders correctly 1`] = `
+exports[`ColoredTag component should render correctly 1`] = `
 .emotion-0 {
   background-color: #13791433;
   color: #444;

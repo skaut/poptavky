@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Issue component should renders correctly 1`] = `
+exports[`Issue component should render correctly 1`] = `
 .emotion-0 {
   margin: 0 0 16px;
   padding-bottom: 24px;
@@ -125,7 +125,7 @@ exports[`Issue component should renders correctly 1`] = `
 </article>
 `;
 
-exports[`Issue component should renders correctly without tags 1`] = `
+exports[`Issue component should render correctly without tags 1`] = `
 .emotion-0 {
   margin: 0 0 16px;
   padding-bottom: 24px;
