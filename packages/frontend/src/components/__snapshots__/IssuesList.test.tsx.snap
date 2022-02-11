@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IssuesList component should renders correctly 1`] = `
+exports[`IssuesList component should render correctly 1`] = `
 Array [
   .emotion-0 {
   margin: 12px 0 24px;
@@ -584,7 +584,7 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 ]
 `;
 
-exports[`IssuesList component should renders correctly without link 1`] = `
+exports[`IssuesList component should render correctly without link 1`] = `
 Array [
   .emotion-0 {
   margin: 12px 0 24px;

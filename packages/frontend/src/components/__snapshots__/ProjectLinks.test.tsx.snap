@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProjectLinks component should renders correctly 1`] = `
+exports[`ProjectLinks component should render correctly 1`] = `
 Array [
   .emotion-0 {
   margin: 0 0 16px;

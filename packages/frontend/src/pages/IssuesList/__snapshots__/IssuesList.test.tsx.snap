@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IssuesList page should renders correctly 1`] = `
+exports[`IssuesList page should render correctly 1`] = `
 Array [
   .emotion-0 {
   margin: 0 0 16px;

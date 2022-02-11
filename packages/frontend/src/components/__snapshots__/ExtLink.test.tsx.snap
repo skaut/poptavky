@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExtLink component should renders correctly 1`] = `
+exports[`ExtLink component should render correctly 1`] = `
 .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -22,7 +22,7 @@ exports[`ExtLink component should renders correctly 1`] = `
 </a>
 `;
 
-exports[`ExtLink component should renders correctly with custom class 1`] = `
+exports[`ExtLink component should render correctly with custom class 1`] = `
 .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -44,7 +44,7 @@ exports[`ExtLink component should renders correctly with custom class 1`] = `
 </a>
 `;
 
-exports[`ExtLink component should renders correctly with target self 1`] = `
+exports[`ExtLink component should render correctly with target self 1`] = `
 .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -64,7 +64,7 @@ exports[`ExtLink component should renders correctly with target self 1`] = `
 </a>
 `;
 
-exports[`ExtLink component should renders correctly with title 1`] = `
+exports[`ExtLink component should render correctly with title 1`] = `
 .emotion-0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

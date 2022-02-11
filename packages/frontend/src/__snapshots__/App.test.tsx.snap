@@ -6,7 +6,7 @@ exports[`App should handle error gracefully 1`] = `
 </div>
 `;
 
-exports[`App should renders correctly 1`] = `
+exports[`App should render correctly 1`] = `
 .emotion-0 {
   max-width: 1000px;
   padding: 0 16px;
@@ -1246,7 +1246,7 @@ příklad: http://is.skaut.cz/napoveda/programatori.Hotove-reseni-MapAdvertising
 </div>
 `;
 
-exports[`App should renders issue listing correctly 1`] = `
+exports[`App should render issue listing correctly 1`] = `
 .emotion-0 {
   max-width: 1000px;
   padding: 0 16px;
@@ -2327,7 +2327,7 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 </div>
 `;
 
-exports[`App should renders project listing correctly 1`] = `
+exports[`App should render project listing correctly 1`] = `
 .emotion-0 {
   max-width: 1000px;
   padding: 0 16px;
@@ -3315,7 +3315,7 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 </div>
 `;
 
-exports[`App should renders projects correctly 1`] = `
+exports[`App should render projects correctly 1`] = `
 .emotion-0 {
   max-width: 1000px;
   padding: 0 16px;
