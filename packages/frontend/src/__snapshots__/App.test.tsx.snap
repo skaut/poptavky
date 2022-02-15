@@ -2396,6 +2396,7 @@ exports[`App should render project listing correctly 1`] = `
   margin: 0 0 16px;
   font-family: themix;
   font-size: 2em;
+  color: white;
 }
 
 .emotion-8 {

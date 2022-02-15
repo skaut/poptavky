@@ -43,7 +43,13 @@ export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
         `}
       >
         <ProjectBox>
-          <H1>{project.info.name}</H1>
+          <H1
+            css={css`
+              color: white;
+            `}
+          >
+            {project.info.name}
+          </H1>
           <div
             css={css`
               max-width: 750px;
