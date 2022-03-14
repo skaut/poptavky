@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@octokit/core": "^3.5.1",
+    "@octokit/core": "^3.6.0",
     "@octokit/plugin-rest-endpoint-methods": "^5.13.0",
     "ts-custom-error": "^3.2.0",
     "ts-node": "^10.7.0"
