@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
+      - name: "Wait for checks to finish"
+        run: gh pr checks --watch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "Enable auto-merge for the request"
         run: gh pr merge --auto --merge "$PR_URL"
         env:
