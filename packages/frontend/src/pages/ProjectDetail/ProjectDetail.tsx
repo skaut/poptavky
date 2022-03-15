@@ -17,7 +17,7 @@ export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
 }) => {
   const { owner: projectOwner, project: projectRepo } =
     useParams<{ owner: string; project: string; issue: string }>()
-  const project = getProject(data, projectOwner, projectRepo)
+  const project = getProject(data, projectOwner!, projectRepo!)
 
   if (!project) {
     return (
@@ -43,7 +43,13 @@ export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
         `}
       >
         <ProjectBox>
-          <H1>{project.info.name}</H1>
+          <H1
+            css={css`
+              color: white;
+            `}
+          >
+            {project.info.name}
+          </H1>
           <div
             css={css`
               max-width: 750px;

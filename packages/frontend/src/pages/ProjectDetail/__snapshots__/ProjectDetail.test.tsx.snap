@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProjectDetail page should renders correctly 1`] = `
+exports[`ProjectDetail page should render correctly 1`] = `
 @media (min-width: 850px) {
   .emotion-0 {
     display: grid;
@@ -39,6 +39,7 @@ exports[`ProjectDetail page should renders correctly 1`] = `
   margin: 0 0 16px;
   font-family: themix;
   font-size: 2em;
+  color: white;
 }
 
 .emotion-4 {
@@ -932,7 +933,7 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 </div>
 `;
 
-exports[`ProjectDetail page should renders correctly if there is no related issue 1`] = `
+exports[`ProjectDetail page should render correctly if there is no related issue 1`] = `
 <h1>
   Projekt 
   owner

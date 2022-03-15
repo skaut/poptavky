@@ -6,7 +6,7 @@ import { MemoryRouter } from "react-router-dom"
 const project = testData.projects[0]
 
 describe("ProjectLinks component", () => {
-  it("should renders correctly", () => {
+  it("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>

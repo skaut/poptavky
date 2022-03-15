@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Project component should renders correctly 1`] = `
+exports[`Project component should render correctly 1`] = `
 .emotion-0 {
   margin: 0 0 16px;
   padding-bottom: 24px;
