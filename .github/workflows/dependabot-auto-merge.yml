@@ -9,7 +9,7 @@ jobs:
   dependabot:
     name: "Dependabot auto-merge"
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
+    if: ${{ false && github.actor == 'dependabot[bot]' }}
     steps:
       - name: "Wait for checks to finish"
         run: gh pr checks --watch "$PR_URL"
