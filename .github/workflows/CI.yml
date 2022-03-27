@@ -9,6 +9,7 @@ env:
 
 jobs:
   collect-dry-run:
+    name: "Collector dry-run"
     uses: skaut/poptavky/.github/workflows/reusable-collect.yml@master
     secrets:
       PAT: ${{ secrets.PAT_PETA }}
