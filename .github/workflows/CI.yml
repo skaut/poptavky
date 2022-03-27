@@ -1,0 +1,137 @@
+name: "CI"
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+env:
+  cache-version: 1
+
+jobs:
+  collect-dry-run:
+    name: "Collector dry-run"
+    uses: skaut/poptavky/.github/workflows/reusable-collect.yml@master
+    secrets:
+      PAT: ${{ secrets.PAT_PETA }}
+
+  collector-lint:
+    name: "Lint collector"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/collector
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v3
+
+      - name: "Cache NPM dependencies"
+        uses: actions/cache@v3
+        with:
+          path: "~/.npm"
+          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
+            npm-dependencies-${{ runner.os }}-
+
+      - name: "Install NPM dependencies"
+        run: |
+          npm ci
+
+      - name: "Lint"
+        run: |
+          npm run lint
+
+  collector-test:
+    name: "Test collector"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/collector
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v3
+
+      - name: "Cache NPM dependencies"
+        uses: actions/cache@v3
+        with:
+          path: "~/.npm"
+          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
+            npm-dependencies-${{ runner.os }}-
+
+      - name: "Install NPM dependencies"
+        run: |
+          npm ci
+
+      - name: "Run tests"
+        run: |
+          npm test
+
+      - name: "Upload coverage results"
+        uses: codecov/codecov-action@v2.1.0
+        with:
+          flags: collector
+
+  frontend-build:
+    name: "Build frontend"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/frontend
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v3
+
+      - name: "Cache NPM dependencies"
+        uses: actions/cache@v3
+        with:
+          path: "~/.npm"
+          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
+            npm-dependencies-${{ runner.os }}-
+
+      - name: "Install NPM dependencies"
+        run: |
+          npm ci
+
+      - name: "Build"
+        run: |
+          npm run build
+
+  frontend-test:
+    name: "Test frontend"
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/frontend
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v3
+
+      - name: "Cache NPM dependencies"
+        uses: actions/cache@v3
+        with:
+          path: "~/.npm"
+          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
+            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
+            npm-dependencies-${{ runner.os }}-
+
+      - name: "Install NPM dependencies"
+        run: |
+          npm ci
+
+      - name: "Test"
+        run: |
+          npm run test
+
+      - name: "Upload coverage results"
+        uses: codecov/codecov-action@v2.1.0
+        with:
+          flags: frontend
