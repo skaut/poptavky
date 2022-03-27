@@ -4,8 +4,6 @@ on:
     branches:
       - master
   pull_request:
-    paths:
-      - 'packages/frontend/**'
 env:
   cache-version: 1
 
