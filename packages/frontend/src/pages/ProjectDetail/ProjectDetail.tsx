@@ -15,8 +15,11 @@ import { Section } from "../../components/Layout"
 export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
   data,
 }) => {
-  const { owner: projectOwner, project: projectRepo } =
-    useParams<{ owner: string; project: string; issue: string }>()
+  const { owner: projectOwner, project: projectRepo } = useParams<{
+    owner: string
+    project: string
+    issue: string
+  }>()
   const project = getProject(data, projectOwner!, projectRepo!)
 
   if (!project) {
