@@ -2,6 +2,7 @@
 import { css } from "@emotion/react"
 
 export interface LinkProps {
+  children?: React.ReactNode
   href?: string
   title?: string
   targetSelf?: true
