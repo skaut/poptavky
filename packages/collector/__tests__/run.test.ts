@@ -8,7 +8,12 @@ import { run } from "../src/run";
 
 import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
 
-jest.mock("fs");
+jest.mock("fs", () => ({
+  promises: {
+    access: jest.fn(),
+  },
+  writeFileSync: jest.fn(),
+}));
 jest.mock("@actions/core");
 jest.mock("../src/getGlobalConfig");
 jest.mock("../src/getProjectListing");
