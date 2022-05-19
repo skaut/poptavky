@@ -381,6 +381,7 @@ test("ProjectInfo allows the link field type to be slack", () => {
 });
 
 test("ProjectInfo allows the link field type to be github-repo, facebook-page, facebook-group", () => {
+  expect.assertions(3);
   for (const type of ["github-repo", "facebook-page", "facebook-group"]) {
     const info = {
       name: "NAME",
@@ -396,6 +397,7 @@ test("ProjectInfo allows the link field type to be github-repo, facebook-page, f
 });
 
 test("ProjectInfo allows the link field type to be email, homepage, demo, issue-tracker, wiki, docs", () => {
+  expect.assertions(6);
   for (const type of [
     "email",
     "homepage",
@@ -513,6 +515,7 @@ test("ProjectInfo requires the link field channel to be a string when the type i
 });
 
 test("ProjectInfo requires the link field to contain name when the type is github-repo, facebook-page, facebook-group", () => {
+  expect.assertions(3);
   for (const type of ["github-repo", "facebook-page", "facebook-group"]) {
     const info = {
       name: "NAME",
@@ -528,6 +531,7 @@ test("ProjectInfo requires the link field to contain name when the type is githu
 });
 
 test("ProjectInfo requires the link field name to be a string when the type is github-repo, facebook-page, facebook-group", () => {
+  expect.assertions(3);
   for (const type of ["github-repo", "facebook-page", "facebook-group"]) {
     const info = {
       name: "NAME",
