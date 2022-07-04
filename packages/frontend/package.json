@@ -58,7 +58,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/react-test-renderer": "^18.0.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "react-scripts": "^5.0.1",
     "react-test-renderer": "^18.2.0",
