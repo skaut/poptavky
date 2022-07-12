@@ -1592,6 +1592,10 @@ exports[`App should render issue listing correctly 1`] = `
   margin: 12px 0 24px;
 }
 
+.emotion-56 img {
+  max-width: 100%;
+}
+
 <div
   className="emotion-0"
 >
@@ -2728,6 +2732,10 @@ exports[`App should render project listing correctly 1`] = `
 
 .emotion-46 {
   margin: 12px 0 24px;
+}
+
+.emotion-46 img {
+  max-width: 100%;
 }
 
 .emotion-47 {
