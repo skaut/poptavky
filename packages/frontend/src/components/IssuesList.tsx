@@ -24,22 +24,18 @@ export const IssuesList: React.FC<{
         `}
       >
         <H3>
-          {issue.link ? (
-            <Link
-              to={getIssueLink({
-                project: {
-                  ...("info" in project
-                    ? { ...project, ...project.info }
-                    : { ...project }),
-                },
-                ...issue,
-              })}
-            >
-              {issue.title}
-            </Link>
-          ) : (
-            issue.title
-          )}
+          <Link
+            to={getIssueLink({
+              project: {
+                ...("info" in project
+                  ? { ...project, ...project.info }
+                  : { ...project }),
+              },
+              ...issue,
+            })}
+          >
+            {issue.title}
+          </Link>
           &nbsp;
           <span
             css={css`
