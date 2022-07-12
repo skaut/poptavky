@@ -6,6 +6,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -50,6 +54,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -92,6 +100,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -142,6 +154,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -179,6 +195,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -234,6 +254,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -273,6 +297,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -310,6 +338,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -353,6 +385,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -414,6 +450,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -469,6 +509,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -506,6 +550,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -687,6 +735,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -731,6 +783,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -773,6 +829,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -823,6 +883,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -860,6 +924,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -915,6 +983,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -954,6 +1026,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -991,6 +1067,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -1034,6 +1114,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {
@@ -1095,6 +1179,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -1150,6 +1238,10 @@ Array [
   margin: 12px 0 24px;
 }
 
+.emotion-0 img {
+  max-width: 100%;
+}
+
 .emotion-1 {
   color: #294885;
   margin: 0 0 12px;
@@ -1187,6 +1279,10 @@ Array [
   </article>,
   .emotion-0 {
   margin: 12px 0 24px;
+}
+
+.emotion-0 img {
+  max-width: 100%;
 }
 
 .emotion-1 {

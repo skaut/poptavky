@@ -210,6 +210,10 @@ exports[`IssueDetail page should render correctly 1`] = `
   margin: 12px 0 24px;
 }
 
+.emotion-52 img {
+  max-width: 100%;
+}
+
 <div
   className="emotion-0"
 >

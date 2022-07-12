@@ -22,6 +22,9 @@ export const IssuesList: React.FC<{
         key={issue.number}
         css={css`
           margin: 12px 0 24px;
+          img {
+            max-width: 100%;
+          }
         `}
       >
         <H3>

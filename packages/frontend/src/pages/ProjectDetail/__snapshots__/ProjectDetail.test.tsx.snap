@@ -162,6 +162,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
   margin: 12px 0 24px;
 }
 
+.emotion-42 img {
+  max-width: 100%;
+}
+
 .emotion-43 {
   color: #294885;
   margin: 0 0 12px;
