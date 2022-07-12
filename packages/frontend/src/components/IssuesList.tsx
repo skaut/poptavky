@@ -10,6 +10,7 @@ import { ProjectIssue } from "../interfaces/ProjectIssue"
 import { ProjectListing } from "../interfaces/ProjectListing"
 import { Project } from "../interfaces/Project"
 import { ProjectInfo } from "../interfaces/ProjectInfo"
+import remarkGfm from "remark-gfm"
 
 export const IssuesList: React.FC<{
   issues: ProjectIssue[]
@@ -46,7 +47,9 @@ export const IssuesList: React.FC<{
             #{issue.number}
           </span>
         </H3>
-        <ReactMarkdown>{issue.description}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {issue.description}
+        </ReactMarkdown>
       </article>
     ))}
   </>

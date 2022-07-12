@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import { ColoredTag } from "./ColoredTag"
 import { Link } from "react-router-dom"
 import { Article, H2, Paragraph } from "./Typography"
+import remarkGfm from "remark-gfm"
 
 export const ArticleBox: React.FC<{
   title: string
@@ -32,7 +33,7 @@ export const ArticleBox: React.FC<{
       )}
     </ProjectName>
     <Paragraph>
-      <ReactMarkdown>{description}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{description}</ReactMarkdown>
     </Paragraph>
     {(tags ?? []).map((tag) => (
       <ColoredTag key={tag}>{tag}</ColoredTag>
