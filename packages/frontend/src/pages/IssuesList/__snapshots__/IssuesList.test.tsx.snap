@@ -602,7 +602,11 @@ Array [
       className="emotion-3"
     >
       <p>
-        https://wordpress.org/support/topic/folder-link-instead-of-folder-name/
+        <a
+          href="https://wordpress.org/support/topic/folder-link-instead-of-folder-name/"
+        >
+          https://wordpress.org/support/topic/folder-link-instead-of-folder-name/
+        </a>
       </p>
       
 
@@ -975,7 +979,11 @@ Array [
       className="emotion-3"
     >
       <p>
-        https://codecov.io/gh/skaut/skaut-google-drive-gallery
+        <a
+          href="https://codecov.io/gh/skaut/skaut-google-drive-gallery"
+        >
+          https://codecov.io/gh/skaut/skaut-google-drive-gallery
+        </a>
       </p>
     </p>
     <span
@@ -1237,8 +1245,18 @@ Array [
       className="emotion-3"
     >
       <p>
-        https://napoveda.skaut.cz/dobryweb/en-skaut-google-drive-gallery/en-get-google-application
-https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-google-aplikace
+        <a
+          href="https://napoveda.skaut.cz/dobryweb/en-skaut-google-drive-gallery/en-get-google-application"
+        >
+          https://napoveda.skaut.cz/dobryweb/en-skaut-google-drive-gallery/en-get-google-application
+        </a>
+        
+
+        <a
+          href="https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-google-aplikace"
+        >
+          https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-google-aplikace
+        </a>
       </p>
       
 
@@ -1489,51 +1507,130 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
       </p>
       
 
-      <ul>
+      <ul
+        className="contains-task-list"
+      >
         
 
-        <li>
-          [ ] gallery view https://github.com/skaut/skaut-google-drive-gallery/issues/36
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          gallery view 
+          <a
+            href="https://github.com/skaut/skaut-google-drive-gallery/issues/36"
+          >
+            https://github.com/skaut/skaut-google-drive-gallery/issues/36
+          </a>
         </li>
         
 
-        <li>
-          [ ] preview
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          preview
         </li>
         
 
-        <li>
-          [ ] folder thumbnail - overlay, folder title and image count
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          folder thumbnail - overlay, folder title and image count
         </li>
         
 
-        <li>
-          [ ] svg folder icon
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          svg folder icon
         </li>
         
 
-        <li>
-          [ ] gallery breadcrumbs
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          gallery breadcrumbs
         </li>
         
 
-        <li>
-          [ ] options page
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          options page
         </li>
         
 
-        <li>
-          [ ] WP.org plugin page
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          WP.org plugin page
         </li>
         
 
-        <li>
-          [ ] TinyMCE & Gutenberg editor plugins
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          TinyMCE & Gutenberg editor plugins
         </li>
         
 
-        <li>
-          [ ] TinyMCE & Gutenberg "Authentication failed" dialogs
+        <li
+          className="task-list-item"
+        >
+          <input
+            checked={false}
+            disabled={true}
+            type="checkbox"
+          />
+           
+          TinyMCE & Gutenberg "Authentication failed" dialogs
         </li>
         
 
@@ -2272,7 +2369,12 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
     >
       <p>
         modul pro nábory se zobrazením náborové mapy
-příklad: http://is.skaut.cz/napoveda/programatori.Hotove-reseni-MapAdvertising-Interaktivni-mapa-naborovych-informaci-zakladni.ashx
+příklad: 
+        <a
+          href="http://is.skaut.cz/napoveda/programatori.Hotove-reseni-MapAdvertising-Interaktivni-mapa-naborovych-informaci-zakladni.ashx"
+        >
+          http://is.skaut.cz/napoveda/programatori.Hotove-reseni-MapAdvertising-Interaktivni-mapa-naborovych-informaci-zakladni.ashx
+        </a>
       </p>
       
 
