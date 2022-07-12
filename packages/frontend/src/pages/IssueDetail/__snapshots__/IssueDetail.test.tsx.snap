@@ -70,6 +70,10 @@ exports[`IssueDetail page should render correctly 1`] = `
   margin: 0;
 }
 
+.emotion-8 img {
+  max-width: 100%;
+}
+
 .emotion-10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -124,6 +128,10 @@ exports[`IssueDetail page should render correctly 1`] = `
 
 .emotion-15 {
   margin: 0 0 16px;
+}
+
+.emotion-15 img {
+  max-width: 100%;
 }
 
 .emotion-17 {

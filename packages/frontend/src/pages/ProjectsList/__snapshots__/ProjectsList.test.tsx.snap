@@ -27,6 +27,10 @@ Array [
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -134,6 +138,10 @@ Array [
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {

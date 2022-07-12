@@ -88,6 +88,10 @@ exports[`App should render correctly 1`] = `
   margin: 0 0 16px;
 }
 
+.emotion-10 img {
+  max-width: 100%;
+}
+
 .emotion-11 {
   background-color: #894cc033;
   color: #444;
@@ -1346,6 +1350,10 @@ exports[`App should render issue listing correctly 1`] = `
   margin: 0;
 }
 
+.emotion-12 img {
+  max-width: 100%;
+}
+
 .emotion-14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1400,6 +1408,10 @@ exports[`App should render issue listing correctly 1`] = `
 
 .emotion-19 {
   margin: 0 0 16px;
+}
+
+.emotion-19 img {
+  max-width: 100%;
 }
 
 .emotion-21 {
@@ -2409,6 +2421,10 @@ exports[`App should render project listing correctly 1`] = `
   margin: 0;
 }
 
+.emotion-9 img {
+  max-width: 100%;
+}
+
 .emotion-11 {
   background-color: #894cc033;
   color: white;
@@ -2462,6 +2478,10 @@ exports[`App should render project listing correctly 1`] = `
 
 .emotion-16 {
   margin: 0 0 16px;
+}
+
+.emotion-16 img {
+  max-width: 100%;
 }
 
 .emotion-17 {
@@ -3396,6 +3416,10 @@ exports[`App should render projects correctly 1`] = `
 
 .emotion-10 {
   margin: 0 0 16px;
+}
+
+.emotion-10 img {
+  max-width: 100%;
 }
 
 .emotion-11 {

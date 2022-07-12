@@ -27,6 +27,10 @@ Array [
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -149,6 +153,10 @@ Array [
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -269,6 +277,10 @@ Array [
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {
@@ -397,6 +409,10 @@ Array [
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -512,6 +528,10 @@ Array [
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {
@@ -641,6 +661,10 @@ Array [
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -756,6 +780,10 @@ Array [
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {
@@ -875,6 +903,10 @@ Array [
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -990,6 +1022,10 @@ Array [
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {
@@ -1129,6 +1165,10 @@ Array [
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -1252,6 +1292,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -1367,6 +1411,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {
@@ -1542,6 +1590,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -1653,6 +1705,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {
@@ -1773,6 +1829,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {
@@ -1897,6 +1957,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -2014,6 +2078,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;
@@ -2129,6 +2197,10 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
 
 .emotion-3 {
   margin: 0 0 16px;
+}
+
+.emotion-3 img {
+  max-width: 100%;
 }
 
 .emotion-4 {
