@@ -607,7 +607,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Add hint to set videos to public
+      <a
+        href="/skaut/skaut-google-drive-gallery/1"
+        onClick={[Function]}
+      >
+        Add hint to set videos to public
+      </a>
        
       <span
         className="emotion-2"
@@ -646,7 +651,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
+      <a
+        href="/skaut/skaut-google-drive-gallery/2"
+        onClick={[Function]}
+      >
+        If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
+      </a>
        
       <span
         className="emotion-2"
@@ -685,7 +695,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Editing doesn't check path validity
+      <a
+        href="/skaut/skaut-google-drive-gallery/3"
+        onClick={[Function]}
+      >
+        Editing doesn't check path validity
+      </a>
        
       <span
         className="emotion-2"
@@ -728,7 +743,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Ctrl-click on folders does not work
+      <a
+        href="/skaut/skaut-google-drive-gallery/4"
+        onClick={[Function]}
+      >
+        Ctrl-click on folders does not work
+      </a>
        
       <span
         className="emotion-2"
@@ -762,7 +782,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Add option to specify gallery by a Drive link
+      <a
+        href="/skaut/skaut-google-drive-gallery/5"
+        onClick={[Function]}
+      >
+        Add option to specify gallery by a Drive link
+      </a>
        
       <span
         className="emotion-2"
@@ -806,7 +831,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Add images to the block
+      <a
+        href="/skaut/skaut-google-drive-gallery/6"
+        onClick={[Function]}
+      >
+        Add images to the block
+      </a>
        
       <span
         className="emotion-2"
@@ -840,7 +870,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Add video overlay
+      <a
+        href="/skaut/skaut-google-drive-gallery/7"
+        onClick={[Function]}
+      >
+        Add video overlay
+      </a>
        
       <span
         className="emotion-2"
@@ -874,7 +909,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Increase test coverage
+      <a
+        href="/skaut/skaut-google-drive-gallery/8"
+        onClick={[Function]}
+      >
+        Increase test coverage
+      </a>
        
       <span
         className="emotion-2"
@@ -908,7 +948,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Themes with "editor-styles" support change the look of the block editor
+      <a
+        href="/skaut/skaut-google-drive-gallery/9"
+        onClick={[Function]}
+      >
+        Themes with "editor-styles" support change the look of the block editor
+      </a>
        
       <span
         className="emotion-2"
@@ -962,7 +1007,12 @@ Array [
     <h3
       className="emotion-1"
     >
-      Google app creation manual is outdated
+      <a
+        href="/skaut/skaut-google-drive-gallery/10"
+        onClick={[Function]}
+      >
+        Google app creation manual is outdated
+      </a>
        
       <span
         className="emotion-2"
@@ -1002,7 +1052,12 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
     <h3
       className="emotion-1"
     >
-      Directory preview images
+      <a
+        href="/skaut/skaut-google-drive-gallery/11"
+        onClick={[Function]}
+      >
+        Directory preview images
+      </a>
        
       <span
         className="emotion-2"
@@ -1036,7 +1091,12 @@ https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-goog
     <h3
       className="emotion-1"
     >
-      UX & design audit
+      <a
+        href="/skaut/skaut-google-drive-gallery/12"
+        onClick={[Function]}
+      >
+        UX & design audit
+      </a>
        
       <span
         className="emotion-2"
