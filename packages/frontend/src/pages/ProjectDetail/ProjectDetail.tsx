@@ -58,9 +58,7 @@ export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
               max-width: 750px;
             `}
           >
-            <LargeParagraph>
-              <ReactMarkdown>{project.info["short-description"]}</ReactMarkdown>
-            </LargeParagraph>
+            <LargeParagraph>{project.info["short-description"]}</LargeParagraph>
             <LargeParagraph>
               <ReactMarkdown>{project.info.description}</ReactMarkdown>
             </LargeParagraph>
