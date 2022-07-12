@@ -19,6 +19,7 @@ import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
 import { css } from "@emotion/react"
 import { theme } from "../../theme"
 import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 import { Button } from "../../components/Button"
 import { ProjectListings } from "../../interfaces/ProjectListings"
 import { ProjectLinks } from "../../components/ProjectLinks"
@@ -97,7 +98,9 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
           `}
         >
           <LargeParagraph>
-            <ReactMarkdown>{issue.description}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {issue.description}
+            </ReactMarkdown>
           </LargeParagraph>
         </div>
         <Mark>Zaujala tě poptávka?</Mark>
@@ -118,7 +121,9 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
           </H2>
           <Paragraph>{issue.project["short-description"]}</Paragraph>
           <Paragraph>
-            <ReactMarkdown>{issue.project.description}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {issue.project.description}
+            </ReactMarkdown>
           </Paragraph>
           {issue.project.tags?.map((tag) => (
             <ColoredTag key={tag} isLight>

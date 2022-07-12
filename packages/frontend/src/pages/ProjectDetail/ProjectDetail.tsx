@@ -11,6 +11,7 @@ import { ProjectLinks } from "../../components/ProjectLinks"
 import { IssuesList } from "../../components/IssuesList"
 import { ProjectBox } from "../../components/ProjectBox"
 import { Section } from "../../components/Layout"
+import remarkGfm from "remark-gfm"
 
 export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
   data,
@@ -60,7 +61,9 @@ export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
           >
             <LargeParagraph>{project.info["short-description"]}</LargeParagraph>
             <LargeParagraph>
-              <ReactMarkdown>{project.info.description}</ReactMarkdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {project.info.description}
+              </ReactMarkdown>
             </LargeParagraph>
             {project.info.tags?.map((tag) => (
               <ColoredTag key={tag} isLight>
