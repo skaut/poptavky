@@ -26,6 +26,10 @@ exports[`Project component should render correctly 1`] = `
   margin: 0 0 16px;
 }
 
+.emotion-3 img {
+  max-width: 100%;
+}
+
 .emotion-4 {
   background-color: #894cc033;
   color: #444;

@@ -52,6 +52,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
   margin: 0;
 }
 
+.emotion-5 img {
+  max-width: 100%;
+}
+
 .emotion-7 {
   background-color: #894cc033;
   color: white;
@@ -105,6 +109,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
 
 .emotion-12 {
   margin: 0 0 16px;
+}
+
+.emotion-12 img {
+  max-width: 100%;
 }
 
 .emotion-13 {

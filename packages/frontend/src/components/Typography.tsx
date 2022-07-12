@@ -9,6 +9,9 @@ export const Article = styled("article")`
 
 export const Paragraph = styled("p")`
   margin: 0 0 16px;
+  img {
+    max-width: 100%;
+  }
 `
 
 export const Mark = styled("span")`
