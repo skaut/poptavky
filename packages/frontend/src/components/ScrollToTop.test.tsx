@@ -1,22 +1,31 @@
+import userEvent from "@testing-library/user-event"
 import renderer from "react-test-renderer"
-import { unstable_HistoryRouter as Router } from "react-router-dom"
+import { Link, MemoryRouter, Route, Routes } from "react-router-dom"
 import { ScrollToTop } from "./ScrollToTop"
-import { createMemoryHistory } from "history"
 
 global.scrollTo = jest.fn()
 
 describe("ScrollToTop", () => {
-  it("calls window.scrollTo when route changes", () => {
-    const history = createMemoryHistory()
-    renderer.create(
-      <Router history={history}>
+  it("calls window.scrollTo when route changes", async () => {
+    const user = userEvent.setup()
+    const root = renderer.create(
+      <MemoryRouter initialEntries={["/home"]}>
         <ScrollToTop />
-      </Router>
+        <Routes>
+          <Route
+            path="home"
+            element={
+              <Link to="/about" className="the-link">
+                Linkage
+              </Link>
+            }
+          />
+          <Route path="about" element={<h1>About</h1>} />
+        </Routes>
+      </MemoryRouter>
     )
     expect(global.scrollTo).not.toHaveBeenCalled()
-    renderer.act(() => {
-      history.push("/some/route")
-    })
+    await user.click(root.root.findByProps({ className: "the-link" }).instance)
     expect(global.scrollTo).toHaveBeenCalledWith(0, 0)
   })
 })

@@ -3804,7 +3804,8 @@ exports[`App should render projects correctly 1`] = `
           className="emotion-4"
         >
           <a
-            className="emotion-5"
+            aria-current="page"
+            className="emotion-5 active"
             href="/"
             onClick={[Function]}
           >
