@@ -14,7 +14,7 @@ export const Navigation: React.FC<{ items: NavigationItem[] }> = ({
   <nav>
     <Container>
       {items.map((item, index) => (
-        <NavigationLink key={index} to={item.link}>
+        <NavigationLink key={index} to={item.link} end>
           {item.title}
         </NavigationLink>
       ))}
