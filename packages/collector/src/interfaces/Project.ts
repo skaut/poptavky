@@ -18,11 +18,10 @@ export function assertIsProject(
   if (!("repo" in project)) {
     throw errorFn('The project doesn\'t contain the required field "repo".');
   }
-  const projectWithProps = project as { owner: unknown; repo: unknown }; // microsoft/TypeScript#21732
-  if (typeof projectWithProps.owner !== "string") {
+  if (typeof project.owner !== "string") {
     throw errorFn('The field "owner" is not a string.');
   }
-  if (typeof projectWithProps.repo !== "string") {
+  if (typeof project.repo !== "string") {
     throw errorFn('The field "repo" is not a string.');
   }
 }
