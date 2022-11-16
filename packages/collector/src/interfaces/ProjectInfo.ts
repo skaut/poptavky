@@ -53,10 +53,7 @@ function assertIsProjectInfoMaintainer(
   if (typeof maintainer.name !== "string") {
     throw errorFn('The field "name" is not a string.');
   }
-  if (
-    "email" in maintainer &&
-    typeof maintainer.email !== "string"
-  ) {
+  if ("email" in maintainer && typeof maintainer.email !== "string") {
     throw errorFn('The field "email" is not a string.');
   }
 }
@@ -94,9 +91,7 @@ function assertIsProjectInfoLink(
       throw errorFn('The field "channel" is not a string.');
     }
   } else if (
-    ["github-repo", "facebook-page", "facebook-group"].includes(
-      link.type
-    )
+    ["github-repo", "facebook-page", "facebook-group"].includes(link.type)
   ) {
     if (!("name" in link)) {
       throw errorFn('The link doesn\'t contain the field "name".');
