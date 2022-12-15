@@ -16,8 +16,10 @@ describe("App", () => {
   it("should render correctly", async () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
+      error: undefined,
       mutate: jest.fn(),
       isValidating: false,
+      isLoading: false,
     })
     const tree = renderer
       .create(
@@ -32,8 +34,10 @@ describe("App", () => {
   it("should render projects correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
+      error: undefined,
       mutate: jest.fn(),
       isValidating: false,
+      isLoading: false,
     })
     const tree = renderer
       .create(
@@ -48,8 +52,10 @@ describe("App", () => {
   it("should render project listing correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
+      error: undefined,
       mutate: jest.fn(),
       isValidating: false,
+      isLoading: false,
     })
     const tree = renderer
       .create(
@@ -64,8 +70,10 @@ describe("App", () => {
   it("should render issue listing correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
+      error: undefined,
       mutate: jest.fn(),
       isValidating: false,
+      isLoading: false,
     })
     const tree = renderer
       .create(
@@ -79,9 +87,11 @@ describe("App", () => {
 
   it("should handle error gracefully", async () => {
     mocked(swr).default.mockReturnValue({
+      data: undefined,
       error: true,
       mutate: jest.fn(),
       isValidating: false,
+      isLoading: false,
     })
     const tree = renderer
       .create(
