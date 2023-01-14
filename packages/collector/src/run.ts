@@ -1,11 +1,10 @@
-import * as fs from "fs";
 import * as core from "@actions/core";
+import * as fs from "fs";
 
+import type { PoptavkyError } from "./exceptions/PoptavkyError";
 import { getGlobalConfig } from "./getGlobalConfig";
 import { getProjectListing } from "./getProjectListing";
-
 import type { ProjectListings } from "./interfaces/ProjectListings";
-import type { PoptavkyError } from "./exceptions/PoptavkyError";
 
 export async function run(): Promise<void> {
   try {

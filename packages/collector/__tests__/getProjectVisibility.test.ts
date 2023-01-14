@@ -1,8 +1,7 @@
 import * as nock from "nock";
 
-import { getProjectVisibility } from "../src/getProjectVisibility";
-
 import { VisibilityError } from "../src/exceptions/VisibilityError";
+import { getProjectVisibility } from "../src/getProjectVisibility";
 
 test("getProjectVisibility gets the correct value for a public project", async () => {
   expect.assertions(1);

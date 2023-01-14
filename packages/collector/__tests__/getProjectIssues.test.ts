@@ -1,8 +1,7 @@
 import * as nock from "nock";
 
-import { getProjectIssues } from "../src/getProjectIssues";
-
 import { IssueListError } from "../src/exceptions/IssueListError";
+import { getProjectIssues } from "../src/getProjectIssues";
 
 describe("Working issue listing", () => {
   beforeEach(() => {

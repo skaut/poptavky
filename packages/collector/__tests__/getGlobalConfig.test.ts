@@ -1,9 +1,8 @@
 import * as fs from "fs";
 import { mocked } from "jest-mock";
 
-import { getGlobalConfig } from "../src/getGlobalConfig";
-
 import { GlobalConfigError } from "../src/exceptions/GlobalConfigError";
+import { getGlobalConfig } from "../src/getGlobalConfig";
 
 jest.mock("fs");
 

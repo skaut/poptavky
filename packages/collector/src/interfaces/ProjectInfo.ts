@@ -1,6 +1,5 @@
-import { ProjectInfoError } from "../exceptions/ProjectInfoError";
-
 import type { PoptavkyError } from "../exceptions/PoptavkyError";
+import { ProjectInfoError } from "../exceptions/ProjectInfoError";
 
 interface ProjectInfoMaintainer {
   name: string;

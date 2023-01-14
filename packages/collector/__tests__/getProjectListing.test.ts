@@ -4,7 +4,6 @@ import { getProjectInfo } from "../src/getProjectInfo";
 import { getProjectIssues } from "../src/getProjectIssues";
 import { getProjectListing } from "../src/getProjectListing";
 import { getProjectVisibility } from "../src/getProjectVisibility";
-
 import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
 
 jest.mock("../src/getProjectInfo");
