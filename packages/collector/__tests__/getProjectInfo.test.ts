@@ -1,8 +1,7 @@
 import * as nock from "nock";
 
-import { getProjectInfo } from "../src/getProjectInfo";
-
 import { ProjectInfoError } from "../src/exceptions/ProjectInfoError";
+import { getProjectInfo } from "../src/getProjectInfo";
 
 const config = {
   name: "NAME",

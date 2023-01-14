@@ -1,6 +1,5 @@
-import { assertIsProject } from "../../src/interfaces/Project";
-
 import { PoptavkyError } from "../../src/exceptions/PoptavkyError";
+import { assertIsProject } from "../../src/interfaces/Project";
 
 test("Project recognizes valid project", () => {
   const project = { owner: "OWNER1", repo: "REPO1" };

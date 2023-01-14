@@ -1,12 +1,11 @@
-import * as fs from "fs";
 import * as core from "@actions/core";
+import * as fs from "fs";
 import { mocked } from "jest-mock";
 
 import { getGlobalConfig } from "../src/getGlobalConfig";
 import { getProjectListing } from "../src/getProjectListing";
-import { run } from "../src/run";
-
 import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
+import { run } from "../src/run";
 
 jest.mock("fs", () => ({
   promises: {

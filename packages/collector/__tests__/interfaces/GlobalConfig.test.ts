@@ -1,6 +1,5 @@
-import { assertIsGlobalConfig } from "../../src/interfaces/GlobalConfig";
-
 import { GlobalConfigError } from "../../src/exceptions/GlobalConfigError";
+import { assertIsGlobalConfig } from "../../src/interfaces/GlobalConfig";
 
 test("GlobalConfig recognizes valid config", () => {
   const config = { projects: [] };

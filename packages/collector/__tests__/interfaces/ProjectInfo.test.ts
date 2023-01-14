@@ -1,6 +1,5 @@
-import { assertIsProjectInfo } from "../../src/interfaces/ProjectInfo";
-
 import { ProjectInfoError } from "../../src/exceptions/ProjectInfoError";
+import { assertIsProjectInfo } from "../../src/interfaces/ProjectInfo";
 
 test("ProjectInfo recognizes minimal valid info", () => {
   const info = {

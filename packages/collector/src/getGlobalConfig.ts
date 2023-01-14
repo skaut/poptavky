@@ -1,10 +1,8 @@
 import * as fs from "fs";
 
-import { assertIsGlobalConfig } from "./interfaces/GlobalConfig";
-
-import type { GlobalConfig } from "./interfaces/GlobalConfig";
-
 import { GlobalConfigError } from "./exceptions/GlobalConfigError";
+import type { GlobalConfig } from "./interfaces/GlobalConfig";
+import { assertIsGlobalConfig } from "./interfaces/GlobalConfig";
 
 export function getGlobalConfig(): GlobalConfig {
   let contents = "";
