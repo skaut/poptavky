@@ -12,7 +12,7 @@
     "react-router-dom": "^6.7.0",
     "remark-gfm": "^3.0.1",
     "string-to-color": "^2.2.2",
-    "swr": "^2.0.1"
+    "swr": "^2.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
