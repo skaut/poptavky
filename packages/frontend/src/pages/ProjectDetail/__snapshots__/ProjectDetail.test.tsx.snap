@@ -253,7 +253,7 @@ exports[`ProjectDetail page should render correctly 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
           />
         </svg>
          
@@ -366,10 +366,11 @@ exports[`ProjectDetail page should render correctly 1`] = `
         className="emotion-13"
       >
         <svg
+          aria-hidden="true"
           fill="none"
           height="1em"
           stroke="currentColor"
-          strokeWidth="0"
+          strokeWidth="2"
           style={
             Object {
               "color": undefined,
@@ -383,7 +384,6 @@ exports[`ProjectDetail page should render correctly 1`] = `
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth="2"
           />
         </svg>
          
