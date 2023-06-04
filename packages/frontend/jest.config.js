@@ -1,5 +1,6 @@
 module.exports = {
   roots: ["<rootDir>/src"],
+  collectCoverage: true,
   collectCoverageFrom: [
     "src/**/*.{ts,tsx}",
     "!src/index.tsx",
@@ -20,8 +21,7 @@ module.exports = {
       "<rootDir>/config/jest/fileTransform.js",
   },
   transformIgnorePatterns: [
-    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
-    "^.+\\.module\\.(css|sass|scss)$",
+    "node_modules/(?!react-markdown)/",
   ],
   modulePaths: [],
   moduleNameMapper: {

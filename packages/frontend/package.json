@@ -62,7 +62,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "lint": "NODE_ENV=development eslint --color jest.config.js 'config/**/*' 'scripts/**/*' 'src/**/*'",
-    "test": "node scripts/test.js --coverage --transformIgnorePatterns \"node_modules/(?!react-markdown)/\""
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "browserslist": {
     "production": [
