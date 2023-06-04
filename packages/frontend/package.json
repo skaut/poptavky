@@ -61,6 +61,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "prebuild": "rimraf build/*",
+    "build:public": "mkdir -p build && cp -r public/* build/",
     "build:webpack": "node scripts/build.js",
     "build": "run-p -c --aggregate-output build:*",
     "lint": "NODE_ENV=development eslint --color jest.config.js 'config/**/*' 'scripts/**/*' 'src/**/*'",

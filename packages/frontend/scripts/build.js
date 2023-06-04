@@ -15,15 +15,9 @@ require("../config/env")
 const fs = require("fs-extra")
 const webpack = require("webpack")
 const configFactory = require("../config/webpack.config")
-const paths = require("../config/paths")
 
 // Generate configuration
 const config = configFactory("production")
 
-// Merge with the public folder
-fs.copySync(paths.appPublic, paths.appBuild, {
-  dereference: true,
-  filter: (file) => file !== paths.appHtml,
-})
 // Start the webpack build
 return webpack(config).run()
