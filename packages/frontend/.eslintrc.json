@@ -4,5 +4,5 @@
     "react-app/jest",
     "plugin:prettier/recommended"
   ],
-  "ignorePatterns": ["*.svg"]
+  "ignorePatterns": ["*.html", "*.svg"]
 }
