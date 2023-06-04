@@ -60,5 +60,3 @@ module.exports = {
   swSrc: resolveModule(resolveApp, "src/service-worker"),
   publicUrlOrPath,
 }
-
-module.exports.moduleFileExtensions = moduleFileExtensions
