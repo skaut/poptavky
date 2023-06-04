@@ -59,7 +59,6 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
     "prebuild": "rimraf build/*",
     "build:public": "mkdir -p build && cp -r public/* build/",
     "build:webpack": "NODE_ENV=production npx webpack --config=config/webpack.config.js",
