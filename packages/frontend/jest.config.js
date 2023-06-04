@@ -20,9 +20,7 @@ module.exports = {
     "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":
       "<rootDir>/config/jest/fileTransform.js",
   },
-  transformIgnorePatterns: [
-    "node_modules/(?!react-markdown)/",
-  ],
+  transformIgnorePatterns: ["node_modules/(?!react-markdown)/"],
   modulePaths: [],
   moduleNameMapper: {
     "^react-native$": "react-native-web",
