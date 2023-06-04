@@ -64,13 +64,6 @@
     "lint": "NODE_ENV=development eslint --color 'config/**/*' 'scripts/**/*' 'src/**/*'",
     "test": "node scripts/test.js --coverage --transformIgnorePatterns \"node_modules/(?!react-markdown)/\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:prettier/recommended"
-    ]
-  },
   "jest": {
     "roots": [
       "<rootDir>/src"

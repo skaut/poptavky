@@ -1,4 +1,9 @@
 {
-  "extends": "eslint-config-react-app/base",
+  "extends": [
+    "eslint-config-react-app/base",
+    "react-app",
+    "react-app/jest",
+    "plugin:prettier/recommended"
+  ],
   "ignorePatterns": ["*.svg"]
 }
