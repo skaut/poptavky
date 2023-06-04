@@ -9,7 +9,6 @@ const { WebpackManifestPlugin } = require("webpack-manifest-plugin")
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin")
 const ModuleScopePlugin = require("react-dev-utils/ModuleScopePlugin")
 const paths = require("./paths")
-const modules = require("./modules")
 const getClientEnvironment = require("./env")
 const ForkTsCheckerWebpackPlugin =
   process.env.TSC_COMPILE_ON_ERROR === "true"
@@ -276,7 +275,7 @@ module.exports = function (webpackEnv) {
       // if there are any conflicts. This matches Node resolution mechanism.
       // https://github.com/facebook/create-react-app/issues/253
       modules: ["node_modules", paths.appNodeModules].concat(
-        modules.additionalModulePaths || []
+        "" || []
       ),
       // These are the reasonable defaults supported by the Node ecosystem.
       // We also include JSX as a common component filename extension to support
@@ -296,7 +295,6 @@ module.exports = function (webpackEnv) {
           "react-dom$": "react-dom/profiling",
           "scheduler/tracing": "scheduler/tracing-profiling",
         }),
-        ...(modules.webpackAliases || {}),
       },
       plugins: [
         // Prevents users from importing files from outside of src/ (or node_modules/).
