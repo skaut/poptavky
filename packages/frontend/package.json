@@ -62,7 +62,7 @@
     "start": "node scripts/start.js",
     "prebuild": "rimraf build/*",
     "build:public": "mkdir -p build && cp -r public/* build/",
-    "build:webpack": "node scripts/build.js",
+    "build:webpack": "NODE_ENV=production npx webpack --config=config/webpack.config.js",
     "build": "run-p -c --aggregate-output build:*",
     "lint": "NODE_ENV=development eslint --color jest.config.js 'config/**/*' 'scripts/**/*' 'src/**/*'",
     "test": "jest",
@@ -99,7 +99,8 @@
     "react-test-renderer": "^18.2.0",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "webpack-cli": "^5.1.3"
   },
   "homepage": "https://itpoptavky.skaut.cz",
   "babel": {
