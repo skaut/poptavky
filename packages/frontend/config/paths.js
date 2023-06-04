@@ -50,22 +50,13 @@ const resolveModule = (resolveFn, filePath) => {
 
 // config after eject: we're in ./config/
 module.exports = {
-  dotenv: resolveApp(".env"),
   appPath: resolveApp("."),
   appBuild: resolveApp(buildPath),
-  appPublic: resolveApp("public"),
   appHtml: resolveApp("src/html/index.html"),
   appIndexJs: resolveModule(resolveApp, "src/index"),
   appPackageJson: resolveApp("package.json"),
   appSrc: resolveApp("src"),
-  appTsConfig: resolveApp("tsconfig.json"),
-  appJsConfig: resolveApp("jsconfig.json"),
-  yarnLockFile: resolveApp("yarn.lock"),
-  testsSetup: resolveModule(resolveApp, "src/setupTests"),
-  proxySetup: resolveApp("src/setupProxy.js"),
   appNodeModules: resolveApp("node_modules"),
-  appWebpackCache: resolveApp("node_modules/.cache"),
-  appTsBuildInfoFile: resolveApp("node_modules/.cache/tsconfig.tsbuildinfo"),
   swSrc: resolveModule(resolveApp, "src/service-worker"),
   publicUrlOrPath,
 }

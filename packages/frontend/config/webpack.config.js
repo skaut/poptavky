@@ -14,8 +14,6 @@ const ForkTsCheckerWebpackPlugin =
     ? require("react-dev-utils/ForkTsCheckerWarningWebpackPlugin")
     : require("react-dev-utils/ForkTsCheckerWebpackPlugin")
 
-const createEnvironmentHash = require("./webpack/persistentCache/createEnvironmentHash")
-
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== "false"
 
@@ -31,14 +29,6 @@ const babelRuntimeEntryHelpers = require.resolve(
 const babelRuntimeRegenerator = require.resolve("@babel/runtime/regenerator", {
   paths: [babelRuntimeEntry],
 })
-
-// Check if TypeScript is setup
-const useTypeScript = fs.existsSync(paths.appTsConfig)
-
-// Check if Tailwind config exists
-const useTailwind = fs.existsSync(
-  path.join(paths.appPath, "tailwind.config.js")
-)
 
 // Get the path to the uncompiled service worker (if it exists).
 const swSrc = paths.swSrc
@@ -98,36 +88,22 @@ module.exports = function (webpackEnv) {
             // https://github.com/facebook/create-react-app/issues/2677
             ident: "postcss",
             config: false,
-            plugins: !useTailwind
-              ? [
-                  "postcss-flexbugs-fixes",
-                  [
-                    "postcss-preset-env",
-                    {
-                      autoprefixer: {
-                        flexbox: "no-2009",
-                      },
-                      stage: 3,
-                    },
-                  ],
-                  // Adds PostCSS Normalize as the reset css with default options,
-                  // so that it honors browserslist config in package.json
-                  // which in turn let's users customize the target behavior as per their needs.
-                  "postcss-normalize",
-                ]
-              : [
-                  "tailwindcss",
-                  "postcss-flexbugs-fixes",
-                  [
-                    "postcss-preset-env",
-                    {
-                      autoprefixer: {
-                        flexbox: "no-2009",
-                      },
-                      stage: 3,
-                    },
-                  ],
-                ],
+            plugins: [
+              "postcss-flexbugs-fixes",
+              [
+                "postcss-preset-env",
+                {
+                  autoprefixer: {
+                    flexbox: "no-2009",
+                  },
+                  stage: 3,
+                },
+              ],
+              // Adds PostCSS Normalize as the reset css with default options,
+              // so that it honors browserslist config in package.json
+              // which in turn let's users customize the target behavior as per their needs.
+              "postcss-normalize",
+            ],
           },
           sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
         },
@@ -252,18 +228,14 @@ module.exports = function (webpackEnv) {
       // We placed these paths second because we want `node_modules` to "win"
       // if there are any conflicts. This matches Node resolution mechanism.
       // https://github.com/facebook/create-react-app/issues/253
-      modules: ["node_modules", paths.appNodeModules].concat(
-        "" || []
-      ),
+      modules: ["node_modules", paths.appNodeModules].concat("" || []),
       // These are the reasonable defaults supported by the Node ecosystem.
       // We also include JSX as a common component filename extension to support
       // some tools, although we do not recommend using it, see:
       // https://github.com/facebook/create-react-app/issues/290
       // `web` extension prefixes have been added for better support
       // for React Native Web.
-      extensions: paths.moduleFileExtensions
-        .map((ext) => `.${ext}`)
-        .filter((ext) => useTypeScript || !ext.includes("ts")),
+      extensions: paths.moduleFileExtensions.map((ext) => `.${ext}`),
       alias: {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
@@ -502,53 +474,52 @@ module.exports = function (webpackEnv) {
           maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         }),
       // TypeScript type checking
-      useTypeScript &&
-        new ForkTsCheckerWebpackPlugin({
-          async: isEnvDevelopment,
-          typescript: {
-            typescriptPath: resolve.sync("typescript", {
-              basedir: paths.appNodeModules,
-            }),
-            configOverwrite: {
-              compilerOptions: {
-                sourceMap: isEnvProduction
-                  ? shouldUseSourceMap
-                  : isEnvDevelopment,
-                skipLibCheck: true,
-                inlineSourceMap: false,
-                declarationMap: false,
-                noEmit: true,
-                incremental: true,
-                tsBuildInfoFile: paths.appTsBuildInfoFile,
-              },
+      new ForkTsCheckerWebpackPlugin({
+        async: isEnvDevelopment,
+        typescript: {
+          typescriptPath: resolve.sync("typescript", {
+            basedir: paths.appNodeModules,
+          }),
+          configOverwrite: {
+            compilerOptions: {
+              sourceMap: isEnvProduction
+                ? shouldUseSourceMap
+                : isEnvDevelopment,
+              skipLibCheck: true,
+              inlineSourceMap: false,
+              declarationMap: false,
+              noEmit: true,
+              incremental: true,
+              tsBuildInfoFile: paths.appTsBuildInfoFile,
             },
-            context: paths.appPath,
-            diagnosticOptions: {
-              syntactic: true,
-            },
-            mode: "write-references",
-            // profile: true,
           },
-          issue: {
-            // This one is specifically to match during CI tests,
-            // as micromatch doesn't match
-            // '../cra-template-typescript/template/src/App.tsx'
-            // otherwise.
-            include: [
-              { file: "../**/src/**/*.{ts,tsx}" },
-              { file: "**/src/**/*.{ts,tsx}" },
-            ],
-            exclude: [
-              { file: "**/src/**/__tests__/**" },
-              { file: "**/src/**/?(*.){spec|test}.*" },
-              { file: "**/src/setupProxy.*" },
-              { file: "**/src/setupTests.*" },
-            ],
+          context: paths.appPath,
+          diagnosticOptions: {
+            syntactic: true,
           },
-          logger: {
-            infrastructure: "silent",
-          },
-        }),
+          mode: "write-references",
+          // profile: true,
+        },
+        issue: {
+          // This one is specifically to match during CI tests,
+          // as micromatch doesn't match
+          // '../cra-template-typescript/template/src/App.tsx'
+          // otherwise.
+          include: [
+            { file: "../**/src/**/*.{ts,tsx}" },
+            { file: "**/src/**/*.{ts,tsx}" },
+          ],
+          exclude: [
+            { file: "**/src/**/__tests__/**" },
+            { file: "**/src/**/?(*.){spec|test}.*" },
+            { file: "**/src/setupProxy.*" },
+            { file: "**/src/setupTests.*" },
+          ],
+        },
+        logger: {
+          infrastructure: "silent",
+        },
+      }),
     ].filter(Boolean),
     // Turn off performance processing because we utilize
     // our own hints via the FileSizeReporter
