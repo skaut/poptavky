@@ -6,6 +6,7 @@ const TerserPlugin = require("terser-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const { WebpackManifestPlugin } = require("webpack-manifest-plugin")
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin")
 const ModuleScopePlugin = require("react-dev-utils/ModuleScopePlugin")
 const paths = require("./paths")
@@ -424,6 +425,12 @@ module.exports = function (webpackEnv) {
             : undefined
         )
       ),
+      // Makes some environment variables available in index.html.
+      // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
+      // <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+      // It will be an empty string unless you specify "homepage"
+      // in `package.json`, in which case it will be the pathname of that URL.
+      new InterpolateHtmlPlugin(HtmlWebpackPlugin, {PUBLIC_URL: paths.publicUrlOrPath.slice(0, -1)}),
       isEnvProduction &&
         new MiniCssExtractPlugin({
           // Options similar to the same options in webpackOptions.output
