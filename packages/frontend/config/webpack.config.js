@@ -6,7 +6,7 @@ const TerserPlugin = require("terser-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const { WebpackManifestPlugin } = require("webpack-manifest-plugin")
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+const InterpolateHtmlPlugin = require("react-dev-utils/InterpolateHtmlPlugin")
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin")
 const ModuleScopePlugin = require("react-dev-utils/ModuleScopePlugin")
 const paths = require("./paths")
@@ -273,6 +273,30 @@ module.exports = function (webpackEnv) {
           // match the requirements. When no loader matches it will fall
           // back to the "file" loader at the end of the loader list.
           oneOf: [
+            // TODO: Merge this config once `image/avif` is in the mime-db
+            // https://github.com/jshttp/mime-db
+            {
+              test: [/\.avif$/],
+              type: "asset",
+              mimetype: "image/avif",
+              parser: {
+                dataUrlCondition: {
+                  maxSize: "10000",
+                },
+              },
+            },
+            // "url" loader works like "file" loader except that it embeds assets
+            // smaller than specified limit in bytes as data URLs to avoid requests.
+            // A missing `test` is equivalent to a match.
+            {
+              test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+              type: "asset",
+              parser: {
+                dataUrlCondition: {
+                  maxSize: "10000",
+                },
+              },
+            },
             {
               test: /\.svg$/,
               use: [
@@ -430,7 +454,9 @@ module.exports = function (webpackEnv) {
       // <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
       // It will be an empty string unless you specify "homepage"
       // in `package.json`, in which case it will be the pathname of that URL.
-      new InterpolateHtmlPlugin(HtmlWebpackPlugin, {PUBLIC_URL: paths.publicUrlOrPath.slice(0, -1)}),
+      new InterpolateHtmlPlugin(HtmlWebpackPlugin, {
+        PUBLIC_URL: paths.publicUrlOrPath.slice(0, -1),
+      }),
       isEnvProduction &&
         new MiniCssExtractPlugin({
           // Options similar to the same options in webpackOptions.output
