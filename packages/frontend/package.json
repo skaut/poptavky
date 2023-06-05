@@ -59,8 +59,8 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "prebuild": "rimraf build/*",
-    "build:public": "mkdir -p build && cp -r public/* build/",
+    "prebuild": "rimraf dist/*",
+    "build:public": "mkdir -p dist && cp -r public/* dist/",
     "build:webpack": "NODE_ENV=production npx webpack --config=config/webpack.config.js",
     "build": "run-p -c --aggregate-output build:*",
     "lint": "NODE_ENV=development eslint --color jest.config.js 'config/**/*' 'src/**/*'",

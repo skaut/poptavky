@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: "frontend"
-          path: packages/frontend/build
+          path: packages/frontend/dist
 
   deploy:
     name: "Deploy frontend"
@@ -55,13 +55,13 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: "frontend"
-          path: packages/frontend/build
+          path: packages/frontend/dist
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.2
         with:
           branch: gh-pages
-          folder: packages/frontend/build
+          folder: packages/frontend/dist
           clean: true
           clean-exclude: |
             CNAME
