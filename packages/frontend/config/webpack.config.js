@@ -1,4 +1,3 @@
-const path = require("path")
 const resolve = require("resolve")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
@@ -33,65 +32,21 @@ const hasJsxRuntime = (() => {
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
 module.exports = function (webpackEnv) {
+  const mode =
+    process.env.NODE_ENV ?? (webpackEnv.development ? "development" : "production");
   const isEnvDevelopment = webpackEnv === "development"
   const isEnvProduction = !isEnvDevelopment
 
-  // Variable used for enabling profiling in Production
-  // passed into alias object. Uses a flag if passed into the build command
-  const isEnvProductionProfile =
-    isEnvProduction && process.argv.includes("--profile")
-
   return {
-    target: ["browserslist"],
-    // Webpack noise constrained to errors and warnings
-    stats: "errors-warnings",
-    mode: isEnvProduction ? "production" : isEnvDevelopment && "development",
-    // Stop compilation early in production
-    bail: isEnvProduction,
-    devtool: isEnvProduction
-      ? shouldUseSourceMap
-        ? "source-map"
-        : false
-      : isEnvDevelopment && "cheap-module-source-map",
-    // These are the "entry points" to our application.
-    // This means they will be the "root" imports that are included in JS bundle.
+    mode,
+    devtool: mode === "development" ? "source-map" : false,
     entry: paths.appIndexJs,
     output: {
-      // The build folder.
-      path: paths.appBuild,
-      // Add /* filename */ comments to generated require()s in the output.
-      pathinfo: isEnvDevelopment,
-      // There will be one main bundle, and one file per asynchronous chunk.
-      // In development, it does not produce real files.
-      filename: isEnvProduction
-        ? "static/js/[name].[contenthash:8].js"
-        : isEnvDevelopment && "static/js/bundle.js",
-      // There are also additional JS chunk files if you use code splitting.
-      chunkFilename: isEnvProduction
-        ? "static/js/[name].[contenthash:8].chunk.js"
-        : isEnvDevelopment && "static/js/[name].chunk.js",
-      assetModuleFilename: "static/media/[name].[hash][ext]",
-      // webpack uses `publicPath` to determine where the app is being served from.
-      // It requires a trailing slash, or the file assets will get an incorrect path.
-      // We inferred the "public path" (such as / or /my-project) from homepage.
-      publicPath: paths.publicUrlOrPath,
-      // Point sourcemap entries to original disk location (format as URL on Windows)
-      devtoolModuleFilenameTemplate: isEnvProduction
-        ? (info) =>
-            path
-              .relative(paths.appSrc, info.absoluteResourcePath)
-              .replace(/\\/g, "/")
-        : isEnvDevelopment &&
-          ((info) =>
-            path.resolve(info.absoluteResourcePath).replace(/\\/g, "/")),
-    },
-    infrastructureLogging: {
-      level: "none",
+      filename: "static/js/[name].[contenthash:8].js",
     },
     optimization: {
       minimize: isEnvProduction,
       minimizer: [
-        // This is only used in production mode
         new TerserPlugin({
           extractComments: false,
           terserOptions: {
@@ -104,16 +59,6 @@ module.exports = function (webpackEnv) {
     },
     resolve: {
       extensions: [".js", ".ts", ".tsx"],
-      alias: {
-        // Support React Native Web
-        // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
-        "react-native": "react-native-web",
-        // Allows for better profiling with ReactDevTools
-        ...(isEnvProductionProfile && {
-          "react-dom$": "react-dom/profiling",
-          "scheduler/tracing": "scheduler/tracing-profiling",
-        }),
-      },
     },
     module: {
       strictExportPresence: true,
