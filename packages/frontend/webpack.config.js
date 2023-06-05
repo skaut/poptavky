@@ -5,8 +5,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
 
 module.exports = function (env) {
   const mode =
-    process.env.NODE_ENV ??
-    (env.development ? "development" : "production")
+    process.env.NODE_ENV ?? (env.development ? "development" : "production")
 
   return {
     mode,
@@ -22,9 +21,7 @@ module.exports = function (env) {
       rules: [
         {
           test: /\.svg$/,
-          use: [
-            "@svgr/webpack",
-          ],
+          use: ["@svgr/webpack"],
         },
         {
           test: /\.tsx?$/,
@@ -44,9 +41,7 @@ module.exports = function (env) {
               loader: "postcss-loader",
               options: {
                 postcssOptions: {
-                  plugins: [
-                    "postcss-preset-env",
-                  ],
+                  plugins: ["postcss-preset-env"],
                 },
               },
             },
