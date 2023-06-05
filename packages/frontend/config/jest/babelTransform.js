@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 const babelJest = require("babel-jest").default
 
 const hasJsxRuntime = (() => {

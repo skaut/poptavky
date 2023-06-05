@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import { theme } from "../theme"
 import { ExtLink, LinkProps } from "./ExtLink"
 
-interface Props extends LinkProps {}
+type Props = LinkProps
 
 export const Button: React.FC<Props> = (props) => <ButtonWrapper {...props} />
 

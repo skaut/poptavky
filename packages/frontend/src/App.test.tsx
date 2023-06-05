@@ -13,7 +13,7 @@ describe("App", () => {
     window.scrollTo = jest.fn()
   })
 
-  it("should render correctly", async () => {
+  it("should render correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -85,7 +85,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should handle error gracefully", async () => {
+  it("should handle error gracefully", () => {
     mocked(swr).default.mockReturnValue({
       data: undefined,
       error: true,
