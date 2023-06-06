@@ -3,6 +3,7 @@
     "module": "es2020",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "target": "es5",
     "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
@@ -11,6 +12,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "sourceMap": true,
-    "strict": true,
+    "strict": true
   }
 }
