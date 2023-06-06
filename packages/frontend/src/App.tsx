@@ -13,7 +13,7 @@ import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
 import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
 
 export const App = (): React.JSX.Element => {
-  const { data, error } = useSWR<ProjectListings, never>(
+  const { data, error } = useSWR<ProjectListings, unknown>(
     config.dataApiUrl,
     async (url: string) => {
       const res = await fetch(url)
