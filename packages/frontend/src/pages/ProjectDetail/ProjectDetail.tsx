@@ -10,7 +10,7 @@ import { Section } from "../../components/Layout"
 import { ProjectBox } from "../../components/ProjectBox"
 import { ProjectLinks } from "../../components/ProjectLinks"
 import { H1, LargeParagraph, Mark } from "../../components/Typography"
-import { ProjectListings } from "../../interfaces/ProjectListings"
+import type { ProjectListings } from "../../interfaces/ProjectListings"
 import { getProject } from "../../utils/getProject"
 
 export const ProjectDetail = ({ data }: { data: ProjectListings }) => {

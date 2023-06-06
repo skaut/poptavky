@@ -1,4 +1,4 @@
-import { ProjectIssueWithProjectInfo } from "../utils/getAllIssues"
+import type { ProjectIssueWithProjectInfo } from "../utils/getAllIssues"
 import { getIssueLink } from "../utils/getIssueLink"
 import { getProjectLink } from "../utils/getProjectLink"
 import { ArticleBox } from "./ArticleBox"

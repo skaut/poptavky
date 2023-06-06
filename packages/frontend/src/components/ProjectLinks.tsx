@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import type { ReactNode } from "react"
 import { AiFillGithub } from "react-icons/ai"
 import { BiBookAlt } from "react-icons/bi"
 import { BsFillPersonFill } from "react-icons/bs"
@@ -9,7 +9,7 @@ import { ImEarth } from "react-icons/im"
 import { MdWebAsset } from "react-icons/md"
 import { MdChecklist } from "react-icons/md"
 
-import { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo"
+import type { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo"
 import { ExtLink } from "./ExtLink"
 import { Mark, Paragraph, SmallLink } from "./Typography"
 
@@ -19,7 +19,7 @@ export interface LinkType {
   icon?: ReactNode
 }
 
-export const links: LinkType[] = [
+export const links: Array<LinkType> = [
   {
     type: "email",
     label: "E-mail",

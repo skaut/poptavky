@@ -9,7 +9,7 @@ interface NavigationItem {
   isActive?: boolean
 }
 
-export const Navigation = ({ items }: { items: NavigationItem[] }) => (
+export const Navigation = ({ items }: { items: Array<NavigationItem> }) => (
   <nav>
     <Container>
       {items.map((item, index) => (

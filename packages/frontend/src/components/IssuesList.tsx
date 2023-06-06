@@ -4,10 +4,10 @@ import ReactMarkdown from "react-markdown"
 import { Link } from "react-router-dom"
 import remarkGfm from "remark-gfm"
 
-import { Project } from "../interfaces/Project"
-import { ProjectInfo } from "../interfaces/ProjectInfo"
-import { ProjectIssue } from "../interfaces/ProjectIssue"
-import { ProjectListing } from "../interfaces/ProjectListing"
+import type { Project } from "../interfaces/Project"
+import type { ProjectInfo } from "../interfaces/ProjectInfo"
+import type { ProjectIssue } from "../interfaces/ProjectIssue"
+import type { ProjectListing } from "../interfaces/ProjectListing"
 import { theme } from "../theme"
 import { getIssueLink } from "../utils/getIssueLink"
 import { H3 } from "./Typography"
@@ -16,7 +16,7 @@ export const IssuesList = ({
   issues,
   project,
 }: {
-  issues: ProjectIssue[]
+  issues: Array<ProjectIssue>
   project: ProjectListing | (Project & ProjectInfo)
 }) => (
   <>

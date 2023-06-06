@@ -1,4 +1,4 @@
-import { ProjectListing } from "../interfaces/ProjectListing"
+import type { ProjectListing } from "../interfaces/ProjectListing"
 import { getProjectLink } from "../utils/getProjectLink"
 import { ArticleBox } from "./ArticleBox"
 

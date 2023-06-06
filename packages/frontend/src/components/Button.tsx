@@ -1,7 +1,8 @@
 import styled from "@emotion/styled"
 
 import { theme } from "../theme"
-import { ExtLink, LinkProps } from "./ExtLink"
+import type { LinkProps } from "./ExtLink"
+import { ExtLink } from "./ExtLink"
 
 export const Button = (props: LinkProps) => <ButtonWrapper {...props} />
 

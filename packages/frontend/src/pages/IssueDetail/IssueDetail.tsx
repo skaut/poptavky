@@ -20,7 +20,7 @@ import {
   Mark,
   Paragraph,
 } from "../../components/Typography"
-import { ProjectListings } from "../../interfaces/ProjectListings"
+import type { ProjectListings } from "../../interfaces/ProjectListings"
 import { theme } from "../../theme"
 import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
 import { getIssueWithProject } from "../../utils/getIssueWithProject"

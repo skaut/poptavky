@@ -21,7 +21,7 @@ export const ArticleBox = ({
   subtitleLink?: string
   subtitleDescription?: string
   description: string
-  tags?: string[]
+  tags?: Array<string>
 }) => (
   <ThinArticle>
     <H2>{link ? <Link to={link}>{title}</Link> : title}</H2>

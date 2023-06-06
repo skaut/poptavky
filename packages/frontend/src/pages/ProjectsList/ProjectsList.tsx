@@ -1,5 +1,5 @@
 import { Project } from "../../components/Project"
-import { ProjectListings } from "../../interfaces/ProjectListings"
+import type { ProjectListings } from "../../interfaces/ProjectListings"
 
 export const ProjectsList = ({ data }: { data: ProjectListings }) => (
   <>

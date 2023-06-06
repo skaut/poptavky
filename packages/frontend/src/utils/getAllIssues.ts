@@ -1,7 +1,7 @@
-import { Project } from "../interfaces/Project"
-import { ProjectInfo } from "../interfaces/ProjectInfo"
-import { ProjectIssue } from "../interfaces/ProjectIssue"
-import { ProjectListings } from "../interfaces/ProjectListings"
+import type { Project } from "../interfaces/Project"
+import type { ProjectInfo } from "../interfaces/ProjectInfo"
+import type { ProjectIssue } from "../interfaces/ProjectIssue"
+import type { ProjectListings } from "../interfaces/ProjectListings"
 
 export interface ProjectIssueWithProjectInfo extends ProjectIssue {
   project: Project & ProjectInfo
@@ -14,7 +14,7 @@ interface Query extends Partial<Project> {
 export const getIssuesWithProjectInfo = (
   projectListings: ProjectListings,
   query?: Query
-): ProjectIssueWithProjectInfo[] =>
+): Array<ProjectIssueWithProjectInfo> =>
   projectListings.projects
     .filter(
       (project) =>
