@@ -7,19 +7,20 @@ import { testData } from "../testData"
 
 const project = testData.projects[0]
 const issue = project.issues[0]
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const issueWithProject = getIssueWithProject(
   testData,
   project.owner,
   project.repo,
   issue.number
-)
+)!
 
 describe("Issue component", () => {
   test("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
-          <Issue issue={issueWithProject!} />
+          <Issue issue={issueWithProject} />
         </MemoryRouter>
       )
       .toJSON()
@@ -30,7 +31,7 @@ describe("Issue component", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
-          <Issue hideTags issue={issueWithProject!} />
+          <Issue hideTags issue={issueWithProject} />
         </MemoryRouter>
       )
       .toJSON()

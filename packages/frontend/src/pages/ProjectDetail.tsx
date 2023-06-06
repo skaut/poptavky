@@ -24,7 +24,7 @@ export const ProjectDetail = ({
     project: string
     issue: string
   }>()
-  const project = getProject(data, projectOwner!, projectRepo!)
+  const project = getProject(data, projectOwner, projectRepo)
 
   if (!project) {
     return (

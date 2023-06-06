@@ -3,8 +3,8 @@ import type { ProjectIssueWithProjectInfo } from "./getAllIssues"
 
 export const getIssueWithProject = (
   projectListings: ProjectListings,
-  projectOwner: string,
-  projectRepo: string,
+  projectOwner: string | undefined,
+  projectRepo: string | undefined,
   issueNumber: number
 ): ProjectIssueWithProjectInfo | undefined => {
   const project = projectListings.projects.find(
