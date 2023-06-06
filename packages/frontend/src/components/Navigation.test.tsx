@@ -1,9 +1,10 @@
-import renderer from "react-test-renderer"
-import { Navigation } from "./Navigation"
 import { MemoryRouter } from "react-router-dom"
+import renderer from "react-test-renderer"
+
+import { Navigation } from "./Navigation"
 
 describe("Navigation component", () => {
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
@@ -24,7 +25,7 @@ describe("Navigation component", () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
-  it("should render correctly wyth active item", () => {
+  test("should render correctly wyth active item", () => {
     const tree = renderer
       .create(
         <MemoryRouter>

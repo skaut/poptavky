@@ -1,10 +1,10 @@
-import renderer from "react-test-renderer"
+import { mocked } from "jest-mock"
 import { MemoryRouter } from "react-router-dom"
+import renderer from "react-test-renderer"
+import * as swr from "swr"
+
 import { App } from "./App"
 import { testData } from "./testData"
-import { mocked } from "jest-mock"
-
-import * as swr from "swr"
 
 jest.mock("swr")
 
@@ -13,7 +13,7 @@ describe("App", () => {
     window.scrollTo = jest.fn()
   })
 
-  it("should render correctly", async () => {
+  test("should render correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -31,7 +31,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should render projects correctly", () => {
+  test("should render projects correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -49,7 +49,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should render project listing correctly", () => {
+  test("should render project listing correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -67,7 +67,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should render issue listing correctly", () => {
+  test("should render issue listing correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -85,7 +85,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should handle error gracefully", async () => {
+  test("should handle error gracefully", () => {
     mocked(swr).default.mockReturnValue({
       data: undefined,
       error: true,

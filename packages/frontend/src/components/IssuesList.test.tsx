@@ -1,12 +1,13 @@
-import renderer from "react-test-renderer"
-import { IssuesList } from "./IssuesList"
-import { testData } from "../testData"
 import { MemoryRouter } from "react-router-dom"
+import renderer from "react-test-renderer"
+
+import { testData } from "../testData"
+import { IssuesList } from "./IssuesList"
 
 const project = testData.projects[0]
 
 describe("IssuesList component", () => {
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
@@ -16,7 +17,7 @@ describe("IssuesList component", () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
-  it("should render correctly without link", () => {
+  test("should render correctly without link", () => {
     const tree = renderer
       .create(
         <MemoryRouter>

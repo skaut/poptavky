@@ -1,32 +1,37 @@
 /** @jsxImportSource @emotion/react */
-import React from "react"
-import { useParams } from "react-router"
+import { css } from "@emotion/react"
+import type React from "react"
 import { AiFillGithub } from "react-icons/ai"
+import ReactMarkdown from "react-markdown"
+import { useParams } from "react-router"
+import { Link } from "react-router-dom"
+import remarkGfm from "remark-gfm"
+
+import { Button } from "../../components/Button"
+import { ColoredTag } from "../../components/ColoredTag"
+import { ExtLink } from "../../components/ExtLink"
+import { IssuesList } from "../../components/IssuesList"
+import { Section } from "../../components/Layout"
+import { ProjectBox } from "../../components/ProjectBox"
+import { ProjectLinks } from "../../components/ProjectLinks"
 import {
   H1,
   H2,
-  Paragraph,
-  Mark,
   LargeParagraph,
+  Mark,
+  Paragraph,
 } from "../../components/Typography"
-import { ExtLink } from "../../components/ExtLink"
+import type { ProjectListings } from "../../interfaces/ProjectListings"
+import { theme } from "../../theme"
+import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
 import { getIssueWithProject } from "../../utils/getIssueWithProject"
 import { getProjectLink } from "../../utils/getProjectLink"
-import { Link } from "react-router-dom"
-import { ColoredTag } from "../../components/ColoredTag"
-import { ProjectBox } from "../../components/ProjectBox"
-import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
-import { css } from "@emotion/react"
-import { theme } from "../../theme"
-import ReactMarkdown from "react-markdown"
-import remarkGfm from "remark-gfm"
-import { Button } from "../../components/Button"
-import { ProjectListings } from "../../interfaces/ProjectListings"
-import { ProjectLinks } from "../../components/ProjectLinks"
-import { IssuesList } from "../../components/IssuesList"
-import { Section } from "../../components/Layout"
 
-export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
+export const IssueDetail = ({
+  data,
+}: {
+  data: ProjectListings
+}): React.JSX.Element => {
   const {
     owner: projectOwner,
     project: projectRepo,
@@ -85,7 +90,7 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
             margin-top: -16px;
           `}
         >
-          {issue.link && (
+          {issue.link !== undefined && (
             <ExtLink href={issue.link}>
               <AiFillGithub size={20} />
               &nbsp;GitHub
@@ -103,10 +108,14 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
             </ReactMarkdown>
           </LargeParagraph>
         </div>
-        <Mark>Zaujala tě poptávka?</Mark>
-        <Button href={`mailto:${issue.project.maintainers[0].email}`}>
-          Napiš nám
-        </Button>
+        {issue.project.maintainers[0].email !== undefined && (
+          <>
+            <Mark>Zaujala tě poptávka?</Mark>
+            <Button href={`mailto:${issue.project.maintainers[0].email}`}>
+              Napiš nám
+            </Button>
+          </>
+        )}
       </Section>
       <Section
         css={css`
@@ -126,7 +135,7 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
             </ReactMarkdown>
           </Paragraph>
           {issue.project.tags?.map((tag) => (
-            <ColoredTag key={tag} isLight>
+            <ColoredTag isLight key={tag}>
               {tag}
             </ColoredTag>
           ))}

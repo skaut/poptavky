@@ -1,44 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should all issues except one 1`] = `
-Array [
-  Object {
-    "description": "When editing and selecting a folder with videos, the editor could display a notice that setting videos to \\"Anyone can view\\" will speed them up.
+[
+  {
+    "description": "When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
 
 Depends on #792",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/873",
     "number": 1,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -47,7 +47,7 @@ Depends on #792",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -56,43 +56,43 @@ Depends on #792",
     },
     "title": "Add hint to set videos to public",
   },
-  Object {
+  {
     "description": "When in a situation that there is a Google Drive shortcut somewhere in the gallery, the plugin displays the folder and it works for browsing. However, when looking at the shortcut as a member of its parent directory and when being inside the directory and looking at its name in the breadcrumbs, one uses the shortcut name, whereas the other uses the original folder name (when they differ).
 
 This is a bug and both should show the shortcut name.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/745",
     "number": 2,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -101,7 +101,7 @@ This is a bug and both should show the shortcut name.",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -110,43 +110,43 @@ This is a bug and both should show the shortcut name.",
     },
     "title": "If a shortcut name differs from the original, the name in gallery and breadcrumbs differs",
   },
-  Object {
+  {
     "description": "When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: \`Directory &quot;Galerie ODYWEB&quot; wasn&#039;t found - it may have been deleted or renamed.\` Instead, it should verify that the path is valid and if it's not, should display a warning (and possibly move you to either the root directory, or the closest valid ancestor - however, this should not lead to you accidentally changing the gallery!)
 
 Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/683",
     "number": 3,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -155,7 +155,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -164,41 +164,41 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     },
     "title": "Editing doesn't check path validity",
   },
-  Object {
+  {
     "description": "Ctrl+click on a gallery item (subfolder) or breadcrumbs should open in a new tab",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/571",
     "number": 4,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -207,7 +207,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -216,41 +216,41 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     },
     "title": "Ctrl-click on folders does not work",
   },
-  Object {
+  {
     "description": "Currently, images aren't listed in the editor - both block and TinyMCE plugin. This often confuses users.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/257",
     "number": 6,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -259,7 +259,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -268,41 +268,41 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     },
     "title": "Add images to the block",
   },
-  Object {
+  {
     "description": "In the image grid, we should add an overlay to signify that an item is a video (for example a big play icon).",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/235",
     "number": 7,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -311,7 +311,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -320,41 +320,41 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     },
     "title": "Add video overlay",
   },
-  Object {
+  {
     "description": "https://codecov.io/gh/skaut/skaut-google-drive-gallery",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/164",
     "number": 8,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -363,7 +363,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -372,7 +372,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     },
     "title": "Increase test coverage",
   },
-  Object {
+  {
     "description": "If the active theme contains
 \`\`\`php
 add_theme_support( 'editor-styles' );
@@ -382,37 +382,37 @@ its styles are also applied to the block editor, which then looks weird. We shou
 Example of such theme is the Twenty Seventeen theme.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/98",
     "number": 9,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -421,53 +421,53 @@ Example of such theme is the Twenty Seventeen theme.",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
         "google",
       ],
     },
-    "title": "Themes with \\"editor-styles\\" support change the look of the block editor",
+    "title": "Themes with "editor-styles" support change the look of the block editor",
   },
-  Object {
+  {
     "description": "https://napoveda.skaut.cz/dobryweb/en-skaut-google-drive-gallery/en-get-google-application
 https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-google-aplikace
 
 Google changed the consent screen layout and require some form of verification.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/92",
     "number": 10,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -476,7 +476,7 @@ Google changed the consent screen layout and require some form of verification."
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -485,41 +485,41 @@ Google changed the consent screen layout and require some form of verification."
     },
     "title": "Google app creation manual is outdated",
   },
-  Object {
+  {
     "description": "Currently, the first image in a directory is used for its preview.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/54",
     "number": 11,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -528,7 +528,7 @@ Google changed the consent screen layout and require some form of verification."
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -537,7 +537,7 @@ Google changed the consent screen layout and require some form of verification."
     },
     "title": "Directory preview images",
   },
-  Object {
+  {
     "description": "Go over the design of:
 - [ ] gallery view https://github.com/skaut/skaut-google-drive-gallery/issues/36
 - [ ] preview
@@ -547,42 +547,42 @@ Google changed the consent screen layout and require some form of verification."
 - [ ] options page
 - [ ] WP.org plugin page
 - [ ] TinyMCE & Gutenberg editor plugins
-- [ ] TinyMCE & Gutenberg \\"Authentication failed\\" dialogs
+- [ ] TinyMCE & Gutenberg "Authentication failed" dialogs
 
 Everything on the frontend needs to work at least with the default WP template and DSW templates.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/33",
     "number": 12,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -591,7 +591,7 @@ Everything on the frontend needs to work at least with the default WP template a
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -600,41 +600,41 @@ Everything on the frontend needs to work at least with the default WP template a
     },
     "title": "UX & design audit",
   },
-  Object {
+  {
     "description": "",
     "link": "https://github.com/skaut/skautis-integration/issues/115",
     "number": 1,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -643,7 +643,7 @@ Everything on the frontend needs to work at least with the default WP template a
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -652,42 +652,42 @@ Everything on the frontend needs to work at least with the default WP template a
     },
     "title": "User management smart table is not smart when the registration module is enabled",
   },
-  Object {
+  {
     "description": "![image](https://user-images.githubusercontent.com/8988898/130583907-9aaf6288-2129-42dd-88ef-0a27b0c7ddd1.png)
 ",
     "link": "https://github.com/skaut/skautis-integration/issues/109",
     "number": 2,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -696,7 +696,7 @@ Everything on the frontend needs to work at least with the default WP template a
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -705,43 +705,43 @@ Everything on the frontend needs to work at least with the default WP template a
     },
     "title": "Chyba v zobrazení",
   },
-  Object {
+  {
     "description": "Musíme pořešit, jak nejlépe integrovat náš plugin s WP 5.x a hlavně Gutenbergem.
 
 Skrývání bloků, celých stránek... atd",
     "link": "https://github.com/skaut/skautis-integration/issues/70",
     "number": 3,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -750,7 +750,7 @@ Skrývání bloků, celých stránek... atd",
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -759,41 +759,41 @@ Skrývání bloků, celých stránek... atd",
     },
     "title": "WordPress 5.x + Gutenberg",
   },
-  Object {
+  {
     "description": "Co do WordPressu tahat i profilové fotky, co si lidi do skautISu přidávají. Aby u profilu nějakou fotku měli...",
     "link": "https://github.com/skaut/skautis-integration/issues/43",
     "number": 4,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -802,7 +802,7 @@ Skrývání bloků, celých stránek... atd",
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -811,44 +811,44 @@ Skrývání bloků, celých stránek... atd",
     },
     "title": "Profilové fotky",
   },
-  Object {
+  {
     "description": "modul pro nábory se zobrazením náborové mapy
 příklad: http://is.skaut.cz/napoveda/programatori.Hotove-reseni-MapAdvertising-Interaktivni-mapa-naborovych-informaci-zakladni.ashx
 
 Otevírám k tomu diskuzi...",
     "link": "https://github.com/skaut/skautis-integration/issues/25",
     "number": 6,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -857,57 +857,57 @@ Otevírám k tomu diskuzi...",
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
         "skautis",
       ],
     },
-    "title": "Modul \\"Nábory\\"",
+    "title": "Modul "Nábory"",
   },
 ]
 `;
 
 exports[`should get all issues 1`] = `
-Array [
-  Object {
-    "description": "When editing and selecting a folder with videos, the editor could display a notice that setting videos to \\"Anyone can view\\" will speed them up.
+[
+  {
+    "description": "When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
 
 Depends on #792",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/873",
     "number": 1,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -916,7 +916,7 @@ Depends on #792",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -925,43 +925,43 @@ Depends on #792",
     },
     "title": "Add hint to set videos to public",
   },
-  Object {
+  {
     "description": "When in a situation that there is a Google Drive shortcut somewhere in the gallery, the plugin displays the folder and it works for browsing. However, when looking at the shortcut as a member of its parent directory and when being inside the directory and looking at its name in the breadcrumbs, one uses the shortcut name, whereas the other uses the original folder name (when they differ).
 
 This is a bug and both should show the shortcut name.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/745",
     "number": 2,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -970,7 +970,7 @@ This is a bug and both should show the shortcut name.",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -979,43 +979,43 @@ This is a bug and both should show the shortcut name.",
     },
     "title": "If a shortcut name differs from the original, the name in gallery and breadcrumbs differs",
   },
-  Object {
+  {
     "description": "When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: \`Directory &quot;Galerie ODYWEB&quot; wasn&#039;t found - it may have been deleted or renamed.\` Instead, it should verify that the path is valid and if it's not, should display a warning (and possibly move you to either the root directory, or the closest valid ancestor - however, this should not lead to you accidentally changing the gallery!)
 
 Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/683",
     "number": 3,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1024,7 +1024,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1033,41 +1033,41 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     },
     "title": "Editing doesn't check path validity",
   },
-  Object {
+  {
     "description": "Ctrl+click on a gallery item (subfolder) or breadcrumbs should open in a new tab",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/571",
     "number": 4,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1076,7 +1076,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1085,7 +1085,7 @@ Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3",
     },
     "title": "Ctrl-click on folders does not work",
   },
-  Object {
+  {
     "description": "https://wordpress.org/support/topic/folder-link-instead-of-folder-name/
 
 Basically, instead of searching for the folder in WP, you'd just paste the link to it into the editor and the plugin would figure out the path (Google Drive files now return a list of parents, so it could be done.)
@@ -1093,37 +1093,37 @@ Basically, instead of searching for the folder in WP, you'd just paste the link 
 Depends on #111.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/311",
     "number": 5,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1132,7 +1132,7 @@ Depends on #111.",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1141,41 +1141,41 @@ Depends on #111.",
     },
     "title": "Add option to specify gallery by a Drive link",
   },
-  Object {
+  {
     "description": "Currently, images aren't listed in the editor - both block and TinyMCE plugin. This often confuses users.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/257",
     "number": 6,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1184,7 +1184,7 @@ Depends on #111.",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1193,41 +1193,41 @@ Depends on #111.",
     },
     "title": "Add images to the block",
   },
-  Object {
+  {
     "description": "In the image grid, we should add an overlay to signify that an item is a video (for example a big play icon).",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/235",
     "number": 7,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1236,7 +1236,7 @@ Depends on #111.",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1245,41 +1245,41 @@ Depends on #111.",
     },
     "title": "Add video overlay",
   },
-  Object {
+  {
     "description": "https://codecov.io/gh/skaut/skaut-google-drive-gallery",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/164",
     "number": 8,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1288,7 +1288,7 @@ Depends on #111.",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1297,7 +1297,7 @@ Depends on #111.",
     },
     "title": "Increase test coverage",
   },
-  Object {
+  {
     "description": "If the active theme contains
 \`\`\`php
 add_theme_support( 'editor-styles' );
@@ -1307,37 +1307,37 @@ its styles are also applied to the block editor, which then looks weird. We shou
 Example of such theme is the Twenty Seventeen theme.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/98",
     "number": 9,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1346,53 +1346,53 @@ Example of such theme is the Twenty Seventeen theme.",
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
         "google",
       ],
     },
-    "title": "Themes with \\"editor-styles\\" support change the look of the block editor",
+    "title": "Themes with "editor-styles" support change the look of the block editor",
   },
-  Object {
+  {
     "description": "https://napoveda.skaut.cz/dobryweb/en-skaut-google-drive-gallery/en-get-google-application
 https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery/cs-ziskani-google-aplikace
 
 Google changed the consent screen layout and require some form of verification.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/92",
     "number": 10,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1401,7 +1401,7 @@ Google changed the consent screen layout and require some form of verification."
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1410,41 +1410,41 @@ Google changed the consent screen layout and require some form of verification."
     },
     "title": "Google app creation manual is outdated",
   },
-  Object {
+  {
     "description": "Currently, the first image in a directory is used for its preview.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/54",
     "number": 11,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1453,7 +1453,7 @@ Google changed the consent screen layout and require some form of verification."
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1462,7 +1462,7 @@ Google changed the consent screen layout and require some form of verification."
     },
     "title": "Directory preview images",
   },
-  Object {
+  {
     "description": "Go over the design of:
 - [ ] gallery view https://github.com/skaut/skaut-google-drive-gallery/issues/36
 - [ ] preview
@@ -1472,42 +1472,42 @@ Google changed the consent screen layout and require some form of verification."
 - [ ] options page
 - [ ] WP.org plugin page
 - [ ] TinyMCE & Gutenberg editor plugins
-- [ ] TinyMCE & Gutenberg \\"Authentication failed\\" dialogs
+- [ ] TinyMCE & Gutenberg "Authentication failed" dialogs
 
 Everything on the frontend needs to work at least with the default WP template and DSW templates.",
     "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/33",
     "number": 12,
-    "project": Object {
-      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i \\"náhodná veřejnost\\" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
-      "links": Array [
-        Object {
+    "project": {
+      "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:mlha@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
         },
-        Object {
+        {
           "type": "demo",
           "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
         },
-        Object {
+        {
           "name": "skaut/skaut-google-drive-gallery",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skaut-google-drive-gallery",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1516,7 +1516,7 @@ Everything on the frontend needs to work at least with the default WP template a
       "owner": "skaut",
       "repo": "skaut-google-drive-gallery",
       "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1525,41 +1525,41 @@ Everything on the frontend needs to work at least with the default WP template a
     },
     "title": "UX & design audit",
   },
-  Object {
+  {
     "description": "",
     "link": "https://github.com/skaut/skautis-integration/issues/115",
     "number": 1,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1568,7 +1568,7 @@ Everything on the frontend needs to work at least with the default WP template a
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1577,42 +1577,42 @@ Everything on the frontend needs to work at least with the default WP template a
     },
     "title": "User management smart table is not smart when the registration module is enabled",
   },
-  Object {
+  {
     "description": "![image](https://user-images.githubusercontent.com/8988898/130583907-9aaf6288-2129-42dd-88ef-0a27b0c7ddd1.png)
 ",
     "link": "https://github.com/skaut/skautis-integration/issues/109",
     "number": 2,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1621,7 +1621,7 @@ Everything on the frontend needs to work at least with the default WP template a
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1630,43 +1630,43 @@ Everything on the frontend needs to work at least with the default WP template a
     },
     "title": "Chyba v zobrazení",
   },
-  Object {
+  {
     "description": "Musíme pořešit, jak nejlépe integrovat náš plugin s WP 5.x a hlavně Gutenbergem.
 
 Skrývání bloků, celých stránek... atd",
     "link": "https://github.com/skaut/skautis-integration/issues/70",
     "number": 3,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1675,7 +1675,7 @@ Skrývání bloků, celých stránek... atd",
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1684,41 +1684,41 @@ Skrývání bloků, celých stránek... atd",
     },
     "title": "WordPress 5.x + Gutenberg",
   },
-  Object {
+  {
     "description": "Co do WordPressu tahat i profilové fotky, co si lidi do skautISu přidávají. Aby u profilu nějakou fotku měli...",
     "link": "https://github.com/skaut/skautis-integration/issues/43",
     "number": 4,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1727,7 +1727,7 @@ Skrývání bloků, celých stránek... atd",
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1736,41 +1736,41 @@ Skrývání bloků, celých stránek... atd",
     },
     "title": "Profilové fotky",
   },
-  Object {
+  {
     "description": "Přidat Select2 do výběru pravidel v shortcode.",
     "link": "https://github.com/skaut/skautis-integration/issues/39",
     "number": 5,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1779,7 +1779,7 @@ Skrývání bloků, celých stránek... atd",
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
@@ -1788,44 +1788,44 @@ Skrývání bloků, celých stránek... atd",
     },
     "title": "Výběry pravidel v shortcode",
   },
-  Object {
+  {
     "description": "modul pro nábory se zobrazením náborové mapy
 příklad: http://is.skaut.cz/napoveda/programatori.Hotove-reseni-MapAdvertising-Interaktivni-mapa-naborovych-informaci-zakladni.ashx
 
 Otevírám k tomu diskuzi...",
     "link": "https://github.com/skaut/skautis-integration/issues/25",
     "number": 6,
-    "project": Object {
+    "project": {
       "description": "Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.",
-      "links": Array [
-        Object {
+      "links": [
+        {
           "type": "email",
           "uri": "mailto:kalich@skaut.cz",
         },
-        Object {
+        {
           "type": "homepage",
           "uri": "https://wordpress.org/plugins/skautis-integration/",
         },
-        Object {
+        {
           "type": "issue-tracker",
           "uri": "https://github.com/skaut/skautis-integration/issues",
         },
-        Object {
+        {
           "type": "docs",
           "uri": "https://napoveda.skaut.cz/skautis/skautis-integration",
         },
-        Object {
+        {
           "name": "skaut/skautis-integration",
           "type": "github-repo",
           "uri": "https://github.com/skaut/skautis-integration",
         },
       ],
-      "maintainers": Array [
-        Object {
+      "maintainers": [
+        {
           "email": "kalich@skaut.cz",
           "name": "Michal Janata – Kalich",
         },
-        Object {
+        {
           "email": "mlha@skaut.cz",
           "name": "Marek Dědič – Mlha",
         },
@@ -1834,14 +1834,14 @@ Otevírám k tomu diskuzi...",
       "owner": "skaut",
       "repo": "skautis-integration",
       "short-description": "Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby.",
-      "tags": Array [
+      "tags": [
         "wordpress",
         "php",
         "javascript",
         "skautis",
       ],
     },
-    "title": "Modul \\"Nábory\\"",
+    "title": "Modul "Nábory"",
   },
 ]
 `;

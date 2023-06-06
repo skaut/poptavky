@@ -1,6 +1,6 @@
-import { Project } from "./Project"
-import { ProjectInfo } from "./ProjectInfo"
-import { ProjectIssue } from "./ProjectIssue"
+import type { Project } from "./Project"
+import type { ProjectInfo } from "./ProjectInfo"
+import type { ProjectIssue } from "./ProjectIssue"
 
 export type ProjectListing = Project & {
   info: ProjectInfo

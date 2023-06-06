@@ -1,16 +1,18 @@
-import React, { ReactNode } from "react"
+import type { ReactNode } from "react"
+import type React from "react"
 import { AiFillGithub } from "react-icons/ai"
-import { MdWebAsset } from "react-icons/md"
-import { GrMail } from "react-icons/gr"
 import { BiBookAlt } from "react-icons/bi"
-import { FaSlack, FaFacebook } from "react-icons/fa"
-import { MdChecklist } from "react-icons/md"
-import { ImEarth } from "react-icons/im"
-import { HiOutlineDocumentText } from "react-icons/hi"
 import { BsFillPersonFill } from "react-icons/bs"
+import { FaFacebook, FaSlack } from "react-icons/fa"
+import { GrMail } from "react-icons/gr"
+import { HiOutlineDocumentText } from "react-icons/hi"
+import { ImEarth } from "react-icons/im"
+import { MdWebAsset } from "react-icons/md"
+import { MdChecklist } from "react-icons/md"
+
+import type { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo"
 import { ExtLink } from "./ExtLink"
-import { Paragraph, Mark, SmallLink } from "./Typography"
-import { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo"
+import { Mark, Paragraph, SmallLink } from "./Typography"
 
 export interface LinkType {
   type: ProjectInfoLink["type"]
@@ -18,7 +20,7 @@ export interface LinkType {
   icon?: ReactNode
 }
 
-export const links: LinkType[] = [
+export const links: Array<LinkType> = [
   {
     type: "email",
     label: "E-mail",
@@ -71,9 +73,11 @@ export const links: LinkType[] = [
   },
 ]
 
-export const ProjectLinks: React.FC<{
+export const ProjectLinks = ({
+  projectInfo,
+}: {
   projectInfo: ProjectInfo
-}> = ({ projectInfo }) => (
+}): React.JSX.Element => (
   <>
     <Paragraph>
       <Mark>
@@ -81,11 +85,16 @@ export const ProjectLinks: React.FC<{
         &nbsp;
         {projectInfo.maintainers.length > 1 ? "Správci:" : "Správce:"}
       </Mark>
-      {projectInfo.maintainers.map((person) => (
-        <SmallLink key={person.email}>
-          <ExtLink href={`mailto:${person.email}`}>{person.name}</ExtLink>
-        </SmallLink>
-      ))}
+      {projectInfo.maintainers
+        .filter(
+          (person): person is { name: string; email: string } =>
+            person.email !== undefined
+        )
+        .map((person) => (
+          <SmallLink key={person.email}>
+            <ExtLink href={`mailto:${person.email}`}>{person.name}</ExtLink>
+          </SmallLink>
+        ))}
     </Paragraph>
     {links.map((link) => {
       const currentLink = projectInfo.links.find(

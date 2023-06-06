@@ -1,1 +1,6 @@
-/// <reference types="react-scripts" />
+/// <reference types="node" />
+
+declare module "*.svg" {
+  const src: string
+  export default src
+}

@@ -1,5 +1,5 @@
-import { ProjectListings } from "../interfaces/ProjectListings"
-import { ProjectIssueWithProjectInfo } from "./getAllIssues"
+import type { ProjectListings } from "../interfaces/ProjectListings"
+import type { ProjectIssueWithProjectInfo } from "./getAllIssues"
 
 export const getIssueWithProject = (
   projectListings: ProjectListings,

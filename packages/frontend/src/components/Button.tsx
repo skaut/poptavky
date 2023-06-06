@@ -1,11 +1,13 @@
-import React from "react"
 import styled from "@emotion/styled"
+import type React from "react"
+
 import { theme } from "../theme"
-import { ExtLink, LinkProps } from "./ExtLink"
+import type { LinkProps } from "./ExtLink"
+import { ExtLink } from "./ExtLink"
 
-interface Props extends LinkProps {}
-
-export const Button: React.FC<Props> = (props) => <ButtonWrapper {...props} />
+export const Button = (props: LinkProps): React.JSX.Element => (
+  <ButtonWrapper {...props} />
+)
 
 const ButtonWrapper = styled(ExtLink)`
   display: inline-block;

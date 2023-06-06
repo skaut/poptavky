@@ -11,20 +11,20 @@ interface ProjectInfoLinkSlack {
 }
 
 interface ProjectInfoLinkNamed {
-  type: "github-repo" | "facebook-page" | "facebook-group"
+  type: "facebook-group" | "facebook-page" | "github-repo"
   uri: string
   name: string
 }
 
 interface ProjectInfoLinkOther {
-  type: "email" | "homepage" | "demo" | "issue-tracker" | "wiki" | "docs"
+  type: "demo" | "docs" | "email" | "homepage" | "issue-tracker" | "wiki"
   uri: string
 }
 
 export type ProjectInfoLink =
-  | ProjectInfoLinkSlack
   | ProjectInfoLinkNamed
   | ProjectInfoLinkOther
+  | ProjectInfoLinkSlack
 
 export interface ProjectInfo {
   name: string

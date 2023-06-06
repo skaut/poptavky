@@ -1,20 +1,13 @@
-import React from "react"
-import ReactMarkdown from "react-markdown"
 import styled from "@emotion/styled"
-import { ColoredTag } from "./ColoredTag"
+import type React from "react"
+import ReactMarkdown from "react-markdown"
 import { Link } from "react-router-dom"
-import { Article, H2, Paragraph } from "./Typography"
 import remarkGfm from "remark-gfm"
 
-export const ArticleBox: React.FC<{
-  title: string
-  link?: string
-  subtitle?: string
-  subtitleLink?: string
-  subtitleDescription?: string
-  description: string
-  tags?: string[]
-}> = ({
+import { ColoredTag } from "./ColoredTag"
+import { Article, H2, Paragraph } from "./Typography"
+
+export const ArticleBox = ({
   title,
   link,
   subtitle,
@@ -22,12 +15,20 @@ export const ArticleBox: React.FC<{
   subtitleDescription,
   description,
   tags,
-}) => (
+}: {
+  title: string
+  link?: string
+  subtitle?: string
+  subtitleLink?: string
+  subtitleDescription?: string
+  description: string
+  tags?: Array<string>
+}): React.JSX.Element => (
   <ThinArticle>
-    <H2>{link ? <Link to={link}>{title}</Link> : title}</H2>
+    <H2>{link !== undefined ? <Link to={link}>{title}</Link> : title}</H2>
     <ProjectName>
-      {subtitle && subtitleLink && (
-        <Link to={subtitleLink} title={subtitleDescription}>
+      {subtitle !== undefined && subtitleLink !== undefined && (
+        <Link title={subtitleDescription} to={subtitleLink}>
           {subtitle}
         </Link>
       )}
@@ -40,6 +41,14 @@ export const ArticleBox: React.FC<{
     ))}
   </ThinArticle>
 )
+
+ArticleBox.defaultProps = {
+  link: undefined,
+  subtitle: undefined,
+  subtitleDescription: undefined,
+  subtitleLink: undefined,
+  tags: [],
+}
 
 const ProjectName = styled("p")`
   margin: 0 0 0.6em;

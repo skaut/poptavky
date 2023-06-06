@@ -1,5 +1,5 @@
-import { ProjectListing } from "../interfaces/ProjectListing"
-import { ProjectListings } from "../interfaces/ProjectListings"
+import type { ProjectListing } from "../interfaces/ProjectListing"
+import type { ProjectListings } from "../interfaces/ProjectListings"
 
 export const getProject = (
   projectLisstings: ProjectListings,

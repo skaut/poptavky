@@ -1,13 +1,18 @@
-import React from "react"
-import { ArticleBox } from "./ArticleBox"
-import { getProjectLink } from "../utils/getProjectLink"
-import { ProjectListing } from "../interfaces/ProjectListing"
+import type React from "react"
 
-export const Project: React.FC<{ project: ProjectListing }> = ({ project }) => (
+import type { ProjectListing } from "../interfaces/ProjectListing"
+import { getProjectLink } from "../utils/getProjectLink"
+import { ArticleBox } from "./ArticleBox"
+
+export const Project = ({
+  project,
+}: {
+  project: ProjectListing
+}): React.JSX.Element => (
   <ArticleBox
-    title={project.info.name}
-    link={getProjectLink(project)}
     description={project.info.description}
+    link={getProjectLink(project)}
     tags={project.info.tags}
+    title={project.info.name}
   />
 )

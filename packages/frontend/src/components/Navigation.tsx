@@ -1,5 +1,7 @@
 import styled from "@emotion/styled"
+import type React from "react"
 import { NavLink } from "react-router-dom"
+
 import { theme } from "../theme"
 
 interface NavigationItem {
@@ -8,13 +10,15 @@ interface NavigationItem {
   isActive?: boolean
 }
 
-export const Navigation: React.FC<{ items: NavigationItem[] }> = ({
+export const Navigation = ({
   items,
-}) => (
+}: {
+  items: Array<NavigationItem>
+}): React.JSX.Element => (
   <nav>
     <Container>
-      {items.map((item, index) => (
-        <NavigationLink key={index} to={item.link} end>
+      {items.map((item) => (
+        <NavigationLink end key={item.link} to={item.link}>
           {item.title}
         </NavigationLink>
       ))}
