@@ -77,7 +77,7 @@
     "react/jsx-no-useless-fragment": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-sort-props": "off",
-    "react/no-array-index-key": "off",
+    "react/no-array-index-key": "error",
     "react/no-danger": "error",
     "react/no-invalid-html-attribute": "error",
     "react/no-namespace": "error",

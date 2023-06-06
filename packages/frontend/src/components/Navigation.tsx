@@ -17,8 +17,8 @@ export const Navigation = ({
 }): React.JSX.Element => (
   <nav>
     <Container>
-      {items.map((item, index) => (
-        <NavigationLink key={index} to={item.link} end>
+      {items.map((item) => (
+        <NavigationLink key={item.link} to={item.link} end>
           {item.title}
         </NavigationLink>
       ))}
