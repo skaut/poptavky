@@ -1,5 +1,5 @@
-import styled from "@emotion/styled"
 import { css } from "@emotion/react"
+import styled from "@emotion/styled"
 import stringToColor from "string-to-color"
 
 export const ColoredTag = styled("span")(

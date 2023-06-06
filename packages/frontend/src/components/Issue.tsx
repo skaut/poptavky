@@ -1,7 +1,7 @@
 import { ProjectIssueWithProjectInfo } from "../utils/getAllIssues"
-import { ArticleBox } from "./ArticleBox"
 import { getIssueLink } from "../utils/getIssueLink"
 import { getProjectLink } from "../utils/getProjectLink"
+import { ArticleBox } from "./ArticleBox"
 
 export const Issue = ({
   issue,

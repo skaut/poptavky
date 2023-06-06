@@ -1,7 +1,8 @@
-import renderer from "react-test-renderer"
-import { ProjectsList } from "./ProjectsList"
-import { testData } from "../../testData"
 import { MemoryRouter } from "react-router-dom"
+import renderer from "react-test-renderer"
+
+import { testData } from "../../testData"
+import { ProjectsList } from "./ProjectsList"
 
 describe("ProjectsList page", () => {
   it("should render correctly", () => {

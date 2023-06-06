@@ -1,9 +1,10 @@
-import styled from "@emotion/styled"
 import { Global } from "@emotion/react"
+import styled from "@emotion/styled"
+import { Link, Outlet } from "react-router-dom"
+
+import { globalStyles } from "../globalStyles"
 import logo from "../images/logo.svg"
 import { theme } from "../theme"
-import { globalStyles } from "../globalStyles"
-import { Link, Outlet } from "react-router-dom"
 import { ScrollToTop } from "./ScrollToTop"
 
 export const Container = () => (

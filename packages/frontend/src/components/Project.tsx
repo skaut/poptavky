@@ -1,6 +1,6 @@
-import { ArticleBox } from "./ArticleBox"
-import { getProjectLink } from "../utils/getProjectLink"
 import { ProjectListing } from "../interfaces/ProjectListing"
+import { getProjectLink } from "../utils/getProjectLink"
+import { ArticleBox } from "./ArticleBox"
 
 export const Project = ({ project }: { project: ProjectListing }) => (
   <ArticleBox

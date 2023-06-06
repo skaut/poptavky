@@ -1,6 +1,7 @@
-import renderer from "react-test-renderer"
-import { Navigation } from "./Navigation"
 import { MemoryRouter } from "react-router-dom"
+import renderer from "react-test-renderer"
+
+import { Navigation } from "./Navigation"
 
 describe("Navigation component", () => {
   it("should render correctly", () => {

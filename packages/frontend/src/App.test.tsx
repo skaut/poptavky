@@ -1,10 +1,10 @@
-import renderer from "react-test-renderer"
+import { mocked } from "jest-mock"
 import { MemoryRouter } from "react-router-dom"
+import renderer from "react-test-renderer"
+import * as swr from "swr"
+
 import { App } from "./App"
 import { testData } from "./testData"
-import { mocked } from "jest-mock"
-
-import * as swr from "swr"
 
 jest.mock("swr")
 

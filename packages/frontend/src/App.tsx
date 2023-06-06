@@ -1,14 +1,15 @@
 /** @jsxImportSource @emotion/react */
-import useSWR from "swr"
 import { Route, Routes } from "react-router-dom"
-import { IssuesList } from "./pages/IssuesList/IssuesList"
-import { IssueDetail } from "./pages/IssueDetail/IssueDetail"
-import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
-import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
+import useSWR from "swr"
+
 import { Container } from "./components/Container"
 import { Navigation } from "./components/Navigation"
 import { config } from "./config"
 import { ProjectListings } from "./interfaces/ProjectListings"
+import { IssueDetail } from "./pages/IssueDetail/IssueDetail"
+import { IssuesList } from "./pages/IssuesList/IssuesList"
+import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
+import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
 
 export const App = () => {
   const { data, error } = useSWR<ProjectListings, never>(

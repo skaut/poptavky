@@ -1,9 +1,10 @@
-import ReactMarkdown from "react-markdown"
 import styled from "@emotion/styled"
-import { ColoredTag } from "./ColoredTag"
+import ReactMarkdown from "react-markdown"
 import { Link } from "react-router-dom"
-import { Article, H2, Paragraph } from "./Typography"
 import remarkGfm from "remark-gfm"
+
+import { ColoredTag } from "./ColoredTag"
+import { Article, H2, Paragraph } from "./Typography"
 
 export const ArticleBox = ({
   title,

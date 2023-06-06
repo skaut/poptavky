@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
 import { Issue } from "../../components/Issue"
 import { ProjectListings } from "../../interfaces/ProjectListings"
+import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
 
 export const IssuesList = ({ data }: { data: ProjectListings }) => {
   const issues = getIssuesWithProjectInfo(data)

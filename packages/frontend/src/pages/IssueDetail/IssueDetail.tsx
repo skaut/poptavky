@@ -1,29 +1,30 @@
 /** @jsxImportSource @emotion/react */
-import { useParams } from "react-router"
+import { css } from "@emotion/react"
 import { AiFillGithub } from "react-icons/ai"
+import ReactMarkdown from "react-markdown"
+import { useParams } from "react-router"
+import { Link } from "react-router-dom"
+import remarkGfm from "remark-gfm"
+
+import { Button } from "../../components/Button"
+import { ColoredTag } from "../../components/ColoredTag"
+import { ExtLink } from "../../components/ExtLink"
+import { IssuesList } from "../../components/IssuesList"
+import { Section } from "../../components/Layout"
+import { ProjectBox } from "../../components/ProjectBox"
+import { ProjectLinks } from "../../components/ProjectLinks"
 import {
   H1,
   H2,
-  Paragraph,
-  Mark,
   LargeParagraph,
+  Mark,
+  Paragraph,
 } from "../../components/Typography"
-import { ExtLink } from "../../components/ExtLink"
+import { ProjectListings } from "../../interfaces/ProjectListings"
+import { theme } from "../../theme"
+import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
 import { getIssueWithProject } from "../../utils/getIssueWithProject"
 import { getProjectLink } from "../../utils/getProjectLink"
-import { Link } from "react-router-dom"
-import { ColoredTag } from "../../components/ColoredTag"
-import { ProjectBox } from "../../components/ProjectBox"
-import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
-import { css } from "@emotion/react"
-import { theme } from "../../theme"
-import ReactMarkdown from "react-markdown"
-import remarkGfm from "remark-gfm"
-import { Button } from "../../components/Button"
-import { ProjectListings } from "../../interfaces/ProjectListings"
-import { ProjectLinks } from "../../components/ProjectLinks"
-import { IssuesList } from "../../components/IssuesList"
-import { Section } from "../../components/Layout"
 
 export const IssueDetail = ({ data }: { data: ProjectListings }) => {
   const {

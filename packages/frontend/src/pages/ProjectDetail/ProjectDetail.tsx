@@ -1,16 +1,17 @@
 /** @jsxImportSource @emotion/react */
-import { useParams } from "react-router"
-import { H1, LargeParagraph, Mark } from "../../components/Typography"
-import { ColoredTag } from "../../components/ColoredTag"
-import { getProject } from "../../utils/getProject"
 import { css } from "@emotion/react"
 import ReactMarkdown from "react-markdown"
-import { ProjectListings } from "../../interfaces/ProjectListings"
-import { ProjectLinks } from "../../components/ProjectLinks"
-import { IssuesList } from "../../components/IssuesList"
-import { ProjectBox } from "../../components/ProjectBox"
-import { Section } from "../../components/Layout"
+import { useParams } from "react-router"
 import remarkGfm from "remark-gfm"
+
+import { ColoredTag } from "../../components/ColoredTag"
+import { IssuesList } from "../../components/IssuesList"
+import { Section } from "../../components/Layout"
+import { ProjectBox } from "../../components/ProjectBox"
+import { ProjectLinks } from "../../components/ProjectLinks"
+import { H1, LargeParagraph, Mark } from "../../components/Typography"
+import { ProjectListings } from "../../interfaces/ProjectListings"
+import { getProject } from "../../utils/getProject"
 
 export const ProjectDetail = ({ data }: { data: ProjectListings }) => {
   const { owner: projectOwner, project: projectRepo } = useParams<{

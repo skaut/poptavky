@@ -1,8 +1,9 @@
+import { MemoryRouter } from "react-router-dom"
 import renderer from "react-test-renderer"
-import { Issue } from "./Issue"
+
 import { testData } from "../testData"
 import { getIssueWithProject } from "../utils/getIssueWithProject"
-import { MemoryRouter } from "react-router-dom"
+import { Issue } from "./Issue"
 
 const project = testData.projects[0]
 const issue = project.issues[0]

@@ -2,14 +2,15 @@
 import { css } from "@emotion/react"
 import ReactMarkdown from "react-markdown"
 import { Link } from "react-router-dom"
+import remarkGfm from "remark-gfm"
+
+import { Project } from "../interfaces/Project"
+import { ProjectInfo } from "../interfaces/ProjectInfo"
+import { ProjectIssue } from "../interfaces/ProjectIssue"
+import { ProjectListing } from "../interfaces/ProjectListing"
 import { theme } from "../theme"
 import { getIssueLink } from "../utils/getIssueLink"
 import { H3 } from "./Typography"
-import { ProjectIssue } from "../interfaces/ProjectIssue"
-import { ProjectListing } from "../interfaces/ProjectListing"
-import { Project } from "../interfaces/Project"
-import { ProjectInfo } from "../interfaces/ProjectInfo"
-import remarkGfm from "remark-gfm"
 
 export const IssuesList = ({
   issues,

@@ -1,16 +1,17 @@
 import { ReactNode } from "react"
 import { AiFillGithub } from "react-icons/ai"
-import { MdWebAsset } from "react-icons/md"
-import { GrMail } from "react-icons/gr"
 import { BiBookAlt } from "react-icons/bi"
-import { FaSlack, FaFacebook } from "react-icons/fa"
-import { MdChecklist } from "react-icons/md"
-import { ImEarth } from "react-icons/im"
-import { HiOutlineDocumentText } from "react-icons/hi"
 import { BsFillPersonFill } from "react-icons/bs"
-import { ExtLink } from "./ExtLink"
-import { Paragraph, Mark, SmallLink } from "./Typography"
+import { FaFacebook, FaSlack } from "react-icons/fa"
+import { GrMail } from "react-icons/gr"
+import { HiOutlineDocumentText } from "react-icons/hi"
+import { ImEarth } from "react-icons/im"
+import { MdWebAsset } from "react-icons/md"
+import { MdChecklist } from "react-icons/md"
+
 import { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo"
+import { ExtLink } from "./ExtLink"
+import { Mark, Paragraph, SmallLink } from "./Typography"
 
 export interface LinkType {
   type: ProjectInfoLink["type"]

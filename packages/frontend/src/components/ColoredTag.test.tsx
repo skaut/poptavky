@@ -1,4 +1,5 @@
 import renderer from "react-test-renderer"
+
 import { ColoredTag } from "./ColoredTag"
 
 describe("ColoredTag component", () => {
