@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import type React from "react"
 import { AiFillGithub } from "react-icons/ai"
 import ReactMarkdown from "react-markdown"
 import { useParams } from "react-router"
@@ -26,7 +27,11 @@ import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
 import { getIssueWithProject } from "../../utils/getIssueWithProject"
 import { getProjectLink } from "../../utils/getProjectLink"
 
-export const IssueDetail = ({ data }: { data: ProjectListings }) => {
+export const IssueDetail = ({
+  data,
+}: {
+  data: ProjectListings
+}): React.JSX.Element => {
   const {
     owner: projectOwner,
     project: projectRepo,

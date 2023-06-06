@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import type React from "react"
 import ReactMarkdown from "react-markdown"
 import { Link } from "react-router-dom"
 import remarkGfm from "remark-gfm"
@@ -22,7 +23,7 @@ export const ArticleBox = ({
   subtitleDescription?: string
   description: string
   tags?: Array<string>
-}) => (
+}): React.JSX.Element => (
   <ThinArticle>
     <H2>{link ? <Link to={link}>{title}</Link> : title}</H2>
     <ProjectName>

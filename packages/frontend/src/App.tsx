@@ -1,4 +1,5 @@
 /** @jsxImportSource @emotion/react */
+import type React from "react"
 import { Route, Routes } from "react-router-dom"
 import useSWR from "swr"
 
@@ -11,7 +12,7 @@ import { IssuesList } from "./pages/IssuesList/IssuesList"
 import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
 import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
 
-export const App = () => {
+export const App = (): React.JSX.Element => {
   const { data, error } = useSWR<ProjectListings, never>(
     config.dataApiUrl,
     async (url: string) => {

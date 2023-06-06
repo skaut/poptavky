@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import type React from "react"
 import ReactMarkdown from "react-markdown"
 import { Link } from "react-router-dom"
 import remarkGfm from "remark-gfm"
@@ -18,7 +19,7 @@ export const IssuesList = ({
 }: {
   issues: Array<ProjectIssue>
   project: ProjectListing | (Project & ProjectInfo)
-}) => (
+}): React.JSX.Element => (
   <>
     {issues.map((issue) => (
       <article

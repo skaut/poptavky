@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import type React from "react"
 import ReactMarkdown from "react-markdown"
 import { useParams } from "react-router"
 import remarkGfm from "remark-gfm"
@@ -13,7 +14,11 @@ import { H1, LargeParagraph, Mark } from "../../components/Typography"
 import type { ProjectListings } from "../../interfaces/ProjectListings"
 import { getProject } from "../../utils/getProject"
 
-export const ProjectDetail = ({ data }: { data: ProjectListings }) => {
+export const ProjectDetail = ({
+  data,
+}: {
+  data: ProjectListings
+}): React.JSX.Element => {
   const { owner: projectOwner, project: projectRepo } = useParams<{
     owner: string
     project: string

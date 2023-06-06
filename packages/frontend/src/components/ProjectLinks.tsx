@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+import type React from "react"
 import { AiFillGithub } from "react-icons/ai"
 import { BiBookAlt } from "react-icons/bi"
 import { BsFillPersonFill } from "react-icons/bs"
@@ -72,7 +73,11 @@ export const links: Array<LinkType> = [
   },
 ]
 
-export const ProjectLinks = ({ projectInfo }: { projectInfo: ProjectInfo }) => (
+export const ProjectLinks = ({
+  projectInfo,
+}: {
+  projectInfo: ProjectInfo
+}): React.JSX.Element => (
   <>
     <Paragraph>
       <Mark>

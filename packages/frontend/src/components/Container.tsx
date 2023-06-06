@@ -1,5 +1,6 @@
 import { Global } from "@emotion/react"
 import styled from "@emotion/styled"
+import type React from "react"
 import { Link, Outlet } from "react-router-dom"
 
 import { globalStyles } from "../globalStyles"
@@ -7,7 +8,7 @@ import logo from "../images/logo.svg"
 import { theme } from "../theme"
 import { ScrollToTop } from "./ScrollToTop"
 
-export const Container = () => (
+export const Container = (): React.JSX.Element => (
   <WrapperDiv>
     <Global styles={globalStyles} />
     <Link to="/" title="domů">

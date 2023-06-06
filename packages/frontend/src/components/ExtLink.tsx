@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
+import type React from "react"
 
 export interface LinkProps {
   children?: React.ReactNode
@@ -14,7 +15,7 @@ export const ExtLink = ({
   title,
   targetSelf,
   className,
-}: LinkProps) => (
+}: LinkProps): React.JSX.Element => (
   <a
     className={className}
     href={href}

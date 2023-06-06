@@ -1,3 +1,5 @@
+import type React from "react"
+
 import type { ProjectIssueWithProjectInfo } from "../utils/getAllIssues"
 import { getIssueLink } from "../utils/getIssueLink"
 import { getProjectLink } from "../utils/getProjectLink"
@@ -9,7 +11,7 @@ export const Issue = ({
 }: {
   issue: ProjectIssueWithProjectInfo
   hideTags?: boolean
-}) => (
+}): React.JSX.Element => (
   <ArticleBox
     title={issue.title}
     link={getIssueLink(issue)}
