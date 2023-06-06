@@ -81,11 +81,16 @@ export const ProjectLinks: React.FC<{
         &nbsp;
         {projectInfo.maintainers.length > 1 ? "Správci:" : "Správce:"}
       </Mark>
-      {projectInfo.maintainers.map((person) => (
-        <SmallLink key={person.email}>
-          <ExtLink href={`mailto:${person.email}`}>{person.name}</ExtLink>
-        </SmallLink>
-      ))}
+      {projectInfo.maintainers
+        .filter(
+          (person): person is { name: string; email: string } =>
+            person.email !== undefined
+        )
+        .map((person) => (
+          <SmallLink key={person.email}>
+            <ExtLink href={`mailto:${person.email}`}>{person.name}</ExtLink>
+          </SmallLink>
+        ))}
     </Paragraph>
     {links.map((link) => {
       const currentLink = projectInfo.links.find(

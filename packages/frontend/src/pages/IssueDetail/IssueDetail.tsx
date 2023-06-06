@@ -103,10 +103,14 @@ export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
             </ReactMarkdown>
           </LargeParagraph>
         </div>
-        <Mark>Zaujala tě poptávka?</Mark>
-        <Button href={`mailto:${issue.project.maintainers[0].email}`}>
-          Napiš nám
-        </Button>
+        {issue.project.maintainers[0].email !== undefined && (
+          <>
+            <Mark>Zaujala tě poptávka?</Mark>
+            <Button href={`mailto:${issue.project.maintainers[0].email}`}>
+              Napiš nám
+            </Button>
+          </>
+        )}
       </Section>
       <Section
         css={css`
