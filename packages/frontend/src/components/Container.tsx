@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { Global } from "@emotion/react"
-import logo from "../images/logo.svg?url"
+import logo from "../images/logo.svg"
 import { theme } from "../theme"
 import { globalStyles } from "../globalStyles"
 import { Link, Outlet } from "react-router-dom"

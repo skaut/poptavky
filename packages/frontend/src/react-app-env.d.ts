@@ -1,6 +1,6 @@
 /// <reference types="node" />
 
-declare module "*.svg?url" {
+declare module "*.svg" {
   const src: string
   export default src
 }

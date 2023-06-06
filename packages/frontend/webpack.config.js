@@ -22,9 +22,8 @@ module.exports = function (env) {
     module: {
       rules: [
         {
-          test: /\.svg$/i,
+          test: /\.svg$/,
           type: "asset",
-          resourceQuery: /url/,
         },
         {
           test: /\.tsx?$/,
