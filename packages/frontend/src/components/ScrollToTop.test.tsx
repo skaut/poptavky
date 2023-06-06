@@ -25,8 +25,8 @@ describe("ScrollToTop", () => {
       </MemoryRouter>
     )
     expect(global.scrollTo).not.toHaveBeenCalled()
-    const link = await root.root.findByProps({ className: "the-link" })
-    await user.click(link.instance)
+    const link = root.root.findByProps({ className: "the-link" })
+    await user.click(link.instance as Element)
     expect(global.scrollTo).toHaveBeenCalledWith(0, 0)
   })
 })
