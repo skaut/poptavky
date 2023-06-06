@@ -28,6 +28,11 @@
     "simple-import-sort/exports": "error",
     "react/no-unknown-property": ["error", { "ignore": ["css"] }]
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "overrides": [
     {
       "parserOptions": {
