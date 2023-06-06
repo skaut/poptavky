@@ -20,7 +20,7 @@ export const App = (): React.JSX.Element => {
       return res.json()
     }
   )
-  if (error) {
+  if (error !== undefined) {
     return <div>Nepodařilo se načíst data webu.</div>
   }
   if (!data) {

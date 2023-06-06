@@ -19,8 +19,8 @@ export const getIssuesWithProjectInfo = (
     .filter(
       (project) =>
         !query ||
-        ((!query.owner || query.owner === project.owner) &&
-          (!query.repo || query.repo === project.repo))
+        ((query.owner === undefined || query.owner === project.owner) &&
+          (query.repo === undefined || query.repo === project.repo))
     )
     .flatMap((project) =>
       project.issues

@@ -90,7 +90,7 @@ export const IssueDetail = ({
             margin-top: -16px;
           `}
         >
-          {issue.link && (
+          {issue.link !== undefined && (
             <ExtLink href={issue.link}>
               <AiFillGithub size={20} />
               &nbsp;GitHub

@@ -19,6 +19,6 @@ export const Issue = ({
     subtitleDescription={issue.project["short-description"]}
     subtitleLink={getProjectLink(issue.project)}
     description={issue.description}
-    tags={!hideTags ? issue.project.tags : []}
+    tags={hideTags !== true ? issue.project.tags : []}
   />
 )
