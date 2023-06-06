@@ -12,6 +12,21 @@ import { IssuesList } from "./pages/IssuesList/IssuesList"
 import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
 import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
 
+const AppNavigation = (): React.JSX.Element => (
+  <Navigation
+    items={[
+      {
+        title: "Poptávky",
+        link: "/",
+      },
+      {
+        title: "Projekty",
+        link: "/projekty",
+      },
+    ]}
+  />
+)
+
 export const App = (): React.JSX.Element => {
   const { data, error } = useSWR<ProjectListings, unknown>(
     config.dataApiUrl,
@@ -26,20 +41,6 @@ export const App = (): React.JSX.Element => {
   if (!data) {
     return <div>Načítají se data webu.</div>
   }
-  const AppNavigation = (): React.JSX.Element => (
-    <Navigation
-      items={[
-        {
-          title: "Poptávky",
-          link: "/",
-        },
-        {
-          title: "Projekty",
-          link: "/projekty",
-        },
-      ]}
-    />
-  )
   return (
     <Routes>
       <Route path="/" element={<Container />}>
