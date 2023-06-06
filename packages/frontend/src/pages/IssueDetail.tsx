@@ -7,25 +7,25 @@ import { useParams } from "react-router"
 import { Link } from "react-router-dom"
 import remarkGfm from "remark-gfm"
 
-import { Button } from "../../components/Button"
-import { ColoredTag } from "../../components/ColoredTag"
-import { ExtLink } from "../../components/ExtLink"
-import { IssuesList } from "../../components/IssuesList"
-import { Section } from "../../components/Layout"
-import { ProjectBox } from "../../components/ProjectBox"
-import { ProjectLinks } from "../../components/ProjectLinks"
+import { Button } from "../components/Button"
+import { ColoredTag } from "../components/ColoredTag"
+import { ExtLink } from "../components/ExtLink"
+import { IssuesList } from "../components/IssuesList"
+import { Section } from "../components/Layout"
+import { ProjectBox } from "../components/ProjectBox"
+import { ProjectLinks } from "../components/ProjectLinks"
 import {
   H1,
   H2,
   LargeParagraph,
   Mark,
   Paragraph,
-} from "../../components/Typography"
-import type { ProjectListings } from "../../interfaces/ProjectListings"
-import { theme } from "../../theme"
-import { getIssuesWithProjectInfo } from "../../utils/getAllIssues"
-import { getIssueWithProject } from "../../utils/getIssueWithProject"
-import { getProjectLink } from "../../utils/getProjectLink"
+} from "../components/Typography"
+import type { ProjectListings } from "../interfaces/ProjectListings"
+import { theme } from "../theme"
+import { getIssuesWithProjectInfo } from "../utils/getAllIssues"
+import { getIssueWithProject } from "../utils/getIssueWithProject"
+import { getProjectLink } from "../utils/getProjectLink"
 
 export const IssueDetail = ({
   data,

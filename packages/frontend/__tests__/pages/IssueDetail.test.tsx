@@ -1,19 +1,22 @@
 import { MemoryRouter, Route, Routes } from "react-router-dom"
 import renderer from "react-test-renderer"
 
-import { testData } from "../../testData"
-import { ProjectDetail } from "../../../src/pages/ProjectDetail/ProjectDetail"
+import { testData } from "../testData"
+import { IssueDetail } from "../../src/pages/IssueDetail"
 
 const project = testData.projects[0]
+const issue = project.issues[0]
 
-describe("ProjectDetail page", () => {
+describe("IssueDetail page", () => {
   test("should render correctly", () => {
     const tree = renderer.create(
-      <MemoryRouter initialEntries={[`/${project.owner}/${project.repo}`]}>
+      <MemoryRouter
+        initialEntries={[`/${project.owner}/${project.repo}/${issue.number}`]}
+      >
         <Routes>
           <Route
-            element={<ProjectDetail data={testData} />}
-            path="/:owner/:project"
+            element={<IssueDetail data={testData} />}
+            path="/:owner/:project/:issue"
           />
         </Routes>
       </MemoryRouter>
@@ -23,11 +26,11 @@ describe("ProjectDetail page", () => {
 
   test("should render correctly if there is no related issue", () => {
     const tree = renderer.create(
-      <MemoryRouter initialEntries={[`/owner/repo`]}>
+      <MemoryRouter initialEntries={[`/${project.owner}/${project.repo}/0`]}>
         <Routes>
           <Route
-            element={<ProjectDetail data={testData} />}
-            path="/:owner/:project"
+            element={<IssueDetail data={testData} />}
+            path="/:owner/:project/:issue"
           />
         </Routes>
       </MemoryRouter>
