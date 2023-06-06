@@ -1,1 +1,2 @@
-export default "test-file-stub"
+const filename = "test-file-stub"
+export default filename
