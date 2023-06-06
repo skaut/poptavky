@@ -24,7 +24,7 @@ describe("ExtLink component", () => {
   test("should render correctly with custom class", () => {
     const tree = renderer
       .create(
-        <ExtLink href="http://www.somewhere.com" className="myClassName">
+        <ExtLink className="myClassName" href="http://www.somewhere.com">
           Link somewhere
         </ExtLink>
       )

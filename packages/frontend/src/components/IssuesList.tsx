@@ -23,13 +23,13 @@ export const IssuesList = ({
   <>
     {issues.map((issue) => (
       <article
-        key={issue.number}
         css={css`
           margin: 12px 0 24px;
           img {
             max-width: 100%;
           }
         `}
+        key={issue.number}
       >
         <H3>
           <Link

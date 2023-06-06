@@ -11,9 +11,9 @@ import { ScrollToTop } from "./ScrollToTop"
 export const Container = (): React.JSX.Element => (
   <WrapperDiv>
     <Global styles={globalStyles} />
-    <Link to="/" title="domů">
+    <Link title="domů" to="/">
       <Header>
-        <Logo src={logo} alt="logo" />
+        <Logo alt="logo" src={logo} />
         <Title>IT poptávky</Title>
       </Header>
     </Link>

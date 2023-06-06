@@ -14,7 +14,7 @@ export const IssuesList = ({
   return (
     <>
       {issues.map((issue) => (
-        <Issue key={issue.link} issue={issue} />
+        <Issue issue={issue} key={issue.link} />
       ))}
     </>
   )

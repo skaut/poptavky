@@ -76,7 +76,7 @@
     "react/jsx-no-leaked-render": "error",
     "react/jsx-no-useless-fragment": "error",
     "react/jsx-pascal-case": "error",
-    "react/jsx-sort-props": "off",
+    "react/jsx-sort-props": "error",
     "react/no-array-index-key": "error",
     "react/no-danger": "error",
     "react/no-invalid-html-attribute": "error",

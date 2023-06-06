@@ -18,7 +18,7 @@ export const Navigation = ({
   <nav>
     <Container>
       {items.map((item) => (
-        <NavigationLink key={item.link} to={item.link} end>
+        <NavigationLink end key={item.link} to={item.link}>
           {item.title}
         </NavigationLink>
       ))}

@@ -10,9 +10,9 @@ export const Project = ({
   project: ProjectListing
 }): React.JSX.Element => (
   <ArticleBox
-    title={project.info.name}
-    link={getProjectLink(project)}
     description={project.info.description}
+    link={getProjectLink(project)}
     tags={project.info.tags}
+    title={project.info.name}
   />
 )

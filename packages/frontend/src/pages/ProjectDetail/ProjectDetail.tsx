@@ -69,7 +69,7 @@ export const ProjectDetail = ({
               </ReactMarkdown>
             </LargeParagraph>
             {project.info.tags?.map((tag) => (
-              <ColoredTag key={tag} isLight>
+              <ColoredTag isLight key={tag}>
                 {tag}
               </ColoredTag>
             ))}

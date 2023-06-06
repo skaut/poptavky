@@ -15,14 +15,14 @@ describe("ScrollToTop", () => {
         <ScrollToTop />
         <Routes>
           <Route
-            path="home"
             element={
-              <Link to="/about" className="the-link">
+              <Link className="the-link" to="/about">
                 Linkage
               </Link>
             }
+            path="home"
           />
-          <Route path="about" element={<h1>About</h1>} />
+          <Route element={<h1>About</h1>} path="about" />
         </Routes>
       </MemoryRouter>
     )

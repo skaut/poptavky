@@ -15,8 +15,8 @@ describe("IssueDetail page", () => {
       >
         <Routes>
           <Route
-            path="/:owner/:project/:issue"
             element={<IssueDetail data={testData} />}
+            path="/:owner/:project/:issue"
           />
         </Routes>
       </MemoryRouter>
@@ -29,8 +29,8 @@ describe("IssueDetail page", () => {
       <MemoryRouter initialEntries={[`/${project.owner}/${project.repo}/0`]}>
         <Routes>
           <Route
-            path="/:owner/:project/:issue"
             element={<IssueDetail data={testData} />}
+            path="/:owner/:project/:issue"
           />
         </Routes>
       </MemoryRouter>

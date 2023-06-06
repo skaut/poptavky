@@ -24,7 +24,7 @@ describe("Button component", () => {
   test("should render correctly with custom class", () => {
     const tree = renderer
       .create(
-        <Button href="http://www.somewhere.com" className="myClassName">
+        <Button className="myClassName" href="http://www.somewhere.com">
           Link somewhere
         </Button>
       )

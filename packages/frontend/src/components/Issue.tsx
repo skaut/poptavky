@@ -13,12 +13,12 @@ export const Issue = ({
   hideTags?: boolean
 }): React.JSX.Element => (
   <ArticleBox
-    title={issue.title}
+    description={issue.description}
     link={getIssueLink(issue)}
     subtitle={issue.project.name}
     subtitleDescription={issue.project["short-description"]}
     subtitleLink={getProjectLink(issue.project)}
-    description={issue.description}
     tags={hideTags !== true ? issue.project.tags : []}
+    title={issue.title}
   />
 )

@@ -28,7 +28,7 @@ export const ArticleBox = ({
     <H2>{link !== undefined ? <Link to={link}>{title}</Link> : title}</H2>
     <ProjectName>
       {subtitle !== undefined && subtitleLink !== undefined && (
-        <Link to={subtitleLink} title={subtitleDescription}>
+        <Link title={subtitleDescription} to={subtitleLink}>
           {subtitle}
         </Link>
       )}

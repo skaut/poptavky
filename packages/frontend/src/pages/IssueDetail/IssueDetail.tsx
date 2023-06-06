@@ -135,7 +135,7 @@ export const IssueDetail = ({
             </ReactMarkdown>
           </Paragraph>
           {issue.project.tags?.map((tag) => (
-            <ColoredTag key={tag} isLight>
+            <ColoredTag isLight key={tag}>
               {tag}
             </ColoredTag>
           ))}

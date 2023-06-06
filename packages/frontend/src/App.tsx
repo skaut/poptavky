@@ -43,29 +43,29 @@ export const App = (): React.JSX.Element => {
   }
   return (
     <Routes>
-      <Route path="/" element={<Container />}>
+      <Route element={<Container />} path="/">
         <Route
-          path="projekty"
           element={
             <div>
               <AppNavigation />
               <ProjectsList data={data} />
             </div>
           }
+          path="projekty"
         />
         <Route
-          path=":owner/:project/:issue"
           element={<IssueDetail data={data} />}
+          path=":owner/:project/:issue"
         />
-        <Route path=":owner/:project" element={<ProjectDetail data={data} />} />
+        <Route element={<ProjectDetail data={data} />} path=":owner/:project" />
         <Route
-          path="/"
           element={
             <div>
               <AppNavigation />
               <IssuesList data={data} />
             </div>
           }
+          path="/"
         />
       </Route>
     </Routes>

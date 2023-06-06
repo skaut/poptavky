@@ -30,7 +30,7 @@ describe("Issue component", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
-          <Issue issue={issueWithProject!} hideTags />
+          <Issue hideTags issue={issueWithProject!} />
         </MemoryRouter>
       )
       .toJSON()
