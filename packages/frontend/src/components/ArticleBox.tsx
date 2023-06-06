@@ -42,6 +42,14 @@ export const ArticleBox = ({
   </ThinArticle>
 )
 
+ArticleBox.defaultProps = {
+  link: undefined,
+  subtitle: undefined,
+  subtitleDescription: undefined,
+  subtitleLink: undefined,
+  tags: [],
+}
+
 const ProjectName = styled("p")`
   margin: 0 0 0.6em;
   * {

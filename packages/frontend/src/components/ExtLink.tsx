@@ -3,10 +3,10 @@ import { css } from "@emotion/react"
 import type React from "react"
 
 export interface LinkProps {
-  children?: React.ReactNode
-  href?: string
+  children: React.ReactNode
+  href: string
   title?: string
-  targetSelf?: true
+  targetSelf?: boolean
   className?: string
 }
 export const ExtLink = ({
@@ -20,7 +20,7 @@ export const ExtLink = ({
     className={className}
     href={href}
     title={title}
-    {...(!targetSelf
+    {...(targetSelf !== true
       ? {
           target: "_blank",
           rel: "noreferrer noopener",
@@ -34,3 +34,9 @@ export const ExtLink = ({
     {children}
   </a>
 )
+
+ExtLink.defaultProps = {
+  className: "",
+  targetSelf: false,
+  title: "",
+}

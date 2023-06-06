@@ -22,3 +22,7 @@ export const Issue = ({
     title={issue.title}
   />
 )
+
+Issue.defaultProps = {
+  hideTags: false,
+}
