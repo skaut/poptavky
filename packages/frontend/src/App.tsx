@@ -9,12 +9,16 @@ import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
 import { Container } from "./components/Container"
 import { Navigation } from "./components/Navigation"
 import { config } from "./config"
+import { ProjectListings } from "./interfaces/ProjectListings"
 
 export const App: React.FC = () => {
-  const { data, error } = useSWR(config.dataApiUrl, async (...args) => {
-    const res = await fetch(...args)
-    return res.json()
-  })
+  const { data, error } = useSWR<ProjectListings, never>(
+    config.dataApiUrl,
+    async (url: string) => {
+      const res = await fetch(url)
+      return res.json()
+    }
+  )
   if (error) {
     return <div>Nepodařilo se načíst data webu.</div>
   }
