@@ -10,10 +10,10 @@ it("should get project", () => {
 
 it("should not get project if there is no existing owner", () => {
   const result = getProject(testData, "", project.repo)
-  expect(result).toBe(undefined)
+  expect(result).toBeUndefined()
 })
 
 it("should not get project if there is no existing repo", () => {
   const result = getProject(testData, project.owner, "")
-  expect(result).toBe(undefined)
+  expect(result).toBeUndefined()
 })

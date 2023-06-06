@@ -20,7 +20,7 @@ it("should not get issue with project if there is no existing owner", () => {
     project.repo,
     project.issues[0].number
   )
-  expect(result).toBe(undefined)
+  expect(result).toBeUndefined()
 })
 
 it("should not get issue with project if there is no existing repo", () => {
@@ -30,10 +30,10 @@ it("should not get issue with project if there is no existing repo", () => {
     "",
     project.issues[0].number
   )
-  expect(result).toBe(undefined)
+  expect(result).toBeUndefined()
 })
 
 it("should not get issue with project if there is no existing issue number", () => {
   const result = getIssueWithProject(testData, project.owner, project.repo, 99)
-  expect(result).toBe(undefined)
+  expect(result).toBeUndefined()
 })
