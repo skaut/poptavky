@@ -33,7 +33,6 @@
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/explicit-member-accessibility": "error",
     "@typescript-eslint/explicit-module-boundary-types": "error",
-    "@typescript-eslint/member-delimiter-style": "off",
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/method-signature-style": ["error", "method"],
     "@typescript-eslint/no-base-to-string": "error",
