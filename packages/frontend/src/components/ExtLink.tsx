@@ -36,7 +36,7 @@ export const ExtLink = ({
 )
 
 ExtLink.defaultProps = {
-  className: "",
+  className: undefined,
   targetSelf: false,
-  title: "",
+  title: undefined,
 }
