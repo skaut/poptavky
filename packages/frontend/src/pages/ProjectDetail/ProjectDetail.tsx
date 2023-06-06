@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import React from "react"
 import { useParams } from "react-router"
 import { H1, LargeParagraph, Mark } from "../../components/Typography"
 import { ColoredTag } from "../../components/ColoredTag"
@@ -13,9 +12,7 @@ import { ProjectBox } from "../../components/ProjectBox"
 import { Section } from "../../components/Layout"
 import remarkGfm from "remark-gfm"
 
-export const ProjectDetail: React.FC<{ data: ProjectListings }> = ({
-  data,
-}) => {
+export const ProjectDetail = ({ data }: { data: ProjectListings }) => {
   const { owner: projectOwner, project: projectRepo } = useParams<{
     owner: string
     project: string

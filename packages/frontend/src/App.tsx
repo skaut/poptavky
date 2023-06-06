@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import React from "react"
 import useSWR from "swr"
 import { Route, Routes } from "react-router-dom"
 import { IssuesList } from "./pages/IssuesList/IssuesList"
@@ -11,7 +10,7 @@ import { Navigation } from "./components/Navigation"
 import { config } from "./config"
 import { ProjectListings } from "./interfaces/ProjectListings"
 
-export const App: React.FC = () => {
+export const App = () => {
   const { data, error } = useSWR<ProjectListings, never>(
     config.dataApiUrl,
     async (url: string) => {

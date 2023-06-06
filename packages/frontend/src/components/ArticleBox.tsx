@@ -1,4 +1,3 @@
-import React from "react"
 import ReactMarkdown from "react-markdown"
 import styled from "@emotion/styled"
 import { ColoredTag } from "./ColoredTag"
@@ -6,15 +5,7 @@ import { Link } from "react-router-dom"
 import { Article, H2, Paragraph } from "./Typography"
 import remarkGfm from "remark-gfm"
 
-export const ArticleBox: React.FC<{
-  title: string
-  link?: string
-  subtitle?: string
-  subtitleLink?: string
-  subtitleDescription?: string
-  description: string
-  tags?: string[]
-}> = ({
+export const ArticleBox = ({
   title,
   link,
   subtitle,
@@ -22,6 +13,14 @@ export const ArticleBox: React.FC<{
   subtitleDescription,
   description,
   tags,
+}: {
+  title: string
+  link?: string
+  subtitle?: string
+  subtitleLink?: string
+  subtitleDescription?: string
+  description: string
+  tags?: string[]
 }) => (
   <ThinArticle>
     <H2>{link ? <Link to={link}>{title}</Link> : title}</H2>

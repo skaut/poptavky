@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import { ReactNode } from "react"
 import { AiFillGithub } from "react-icons/ai"
 import { MdWebAsset } from "react-icons/md"
 import { GrMail } from "react-icons/gr"
@@ -71,9 +71,7 @@ export const links: LinkType[] = [
   },
 ]
 
-export const ProjectLinks: React.FC<{
-  projectInfo: ProjectInfo
-}> = ({ projectInfo }) => (
+export const ProjectLinks = ({ projectInfo }: { projectInfo: ProjectInfo }) => (
   <>
     <Paragraph>
       <Mark>

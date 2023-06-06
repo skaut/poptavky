@@ -1,13 +1,15 @@
-import React from "react"
 import { ProjectIssueWithProjectInfo } from "../utils/getAllIssues"
 import { ArticleBox } from "./ArticleBox"
 import { getIssueLink } from "../utils/getIssueLink"
 import { getProjectLink } from "../utils/getProjectLink"
 
-export const Issue: React.FC<{
+export const Issue = ({
+  issue,
+  hideTags,
+}: {
   issue: ProjectIssueWithProjectInfo
   hideTags?: boolean
-}> = ({ issue, hideTags }) => (
+}) => (
   <ArticleBox
     title={issue.title}
     link={getIssueLink(issue)}

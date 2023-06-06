@@ -8,13 +8,13 @@ export interface LinkProps {
   targetSelf?: true
   className?: string
 }
-export const ExtLink: React.FC<LinkProps> = ({
+export const ExtLink = ({
   children,
   href,
   title,
   targetSelf,
   className,
-}) => (
+}: LinkProps) => (
   <a
     className={className}
     href={href}

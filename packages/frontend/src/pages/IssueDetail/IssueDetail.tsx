@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import React from "react"
 import { useParams } from "react-router"
 import { AiFillGithub } from "react-icons/ai"
 import {
@@ -26,7 +25,7 @@ import { ProjectLinks } from "../../components/ProjectLinks"
 import { IssuesList } from "../../components/IssuesList"
 import { Section } from "../../components/Layout"
 
-export const IssueDetail: React.FC<{ data: ProjectListings }> = ({ data }) => {
+export const IssueDetail = ({ data }: { data: ProjectListings }) => {
   const {
     owner: projectOwner,
     project: projectRepo,

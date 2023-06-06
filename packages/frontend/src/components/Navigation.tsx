@@ -8,9 +8,7 @@ interface NavigationItem {
   isActive?: boolean
 }
 
-export const Navigation: React.FC<{ items: NavigationItem[] }> = ({
-  items,
-}) => (
+export const Navigation = ({ items }: { items: NavigationItem[] }) => (
   <nav>
     <Container>
       {items.map((item, index) => (

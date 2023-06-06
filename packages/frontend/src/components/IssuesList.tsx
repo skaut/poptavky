@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react"
-import React from "react"
 import ReactMarkdown from "react-markdown"
 import { Link } from "react-router-dom"
 import { theme } from "../theme"
@@ -12,10 +11,13 @@ import { Project } from "../interfaces/Project"
 import { ProjectInfo } from "../interfaces/ProjectInfo"
 import remarkGfm from "remark-gfm"
 
-export const IssuesList: React.FC<{
+export const IssuesList = ({
+  issues,
+  project,
+}: {
   issues: ProjectIssue[]
   project: ProjectListing | (Project & ProjectInfo)
-}> = ({ issues, project }) => (
+}) => (
   <>
     {issues.map((issue) => (
       <article
