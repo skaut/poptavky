@@ -1,8 +1,8 @@
 import { MemoryRouter, Route, Routes } from "react-router-dom"
 import renderer from "react-test-renderer"
 
-import { testData } from "../testData"
 import { ProjectDetail } from "../../src/pages/ProjectDetail"
+import { testData } from "../testData"
 
 const project = testData.projects[0]
 

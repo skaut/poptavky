@@ -1,5 +1,5 @@
-import { testData } from "../testData"
 import { getIssuesWithProjectInfo } from "../../src/utils/getAllIssues"
+import { testData } from "../testData"
 
 test("should get all issues", () => {
   const result = getIssuesWithProjectInfo(testData)

@@ -1,5 +1,5 @@
-import { testData } from "../testData"
 import { getIssueWithProject } from "../../src/utils/getIssueWithProject"
+import { testData } from "../testData"
 
 const project = testData.projects[0]
 
