@@ -26,7 +26,7 @@ export const App = (): React.JSX.Element => {
   if (!data) {
     return <div>Načítají se data webu.</div>
   }
-  const AppNavigation = () => (
+  const AppNavigation = (): React.JSX.Element => (
     <Navigation
       items={[
         {
