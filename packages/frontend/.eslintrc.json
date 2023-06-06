@@ -12,10 +12,13 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "react-app",
-    "react-app/jest",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:prettier/recommended"
   ],
+  "rules": {
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }]
+  },
   "overrides": [
     {
       "parserOptions": {
