@@ -73,7 +73,7 @@
     "react/jsx-fragments": "error",
     "react/jsx-handler-names": "error",
     "react/jsx-no-constructed-context-values": "error",
-    "react/jsx-no-leaked-render": "off",
+    "react/jsx-no-leaked-render": "error",
     "react/jsx-no-useless-fragment": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-props-no-spreading": "off",
