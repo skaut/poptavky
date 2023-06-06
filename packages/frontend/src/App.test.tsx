@@ -10,7 +10,7 @@ jest.mock("swr")
 
 describe("App", () => {
   beforeAll(() => {
-    jest.spyOn(window, "scrollTo").mockImplementation()
+    window.scrollTo = jest.fn()
   })
 
   test("should render correctly", () => {

@@ -138,7 +138,6 @@
         ],
         "jest/prefer-expect-resolves": "error",
         "jest/prefer-hooks-on-top": "error",
-        "jest/prefer-spy-on": "error",
         "jest/prefer-strict-equal": "error",
         "jest/require-hook": "error",
         "jest/require-to-throw-message": "error",

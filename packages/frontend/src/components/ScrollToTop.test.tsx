@@ -4,7 +4,7 @@ import renderer from "react-test-renderer"
 
 import { ScrollToTop } from "./ScrollToTop"
 
-jest.spyOn(global, "scrollTo").mockImplementation()
+global.scrollTo = jest.fn()
 
 describe("ScrollToTop", () => {
   test("calls window.scrollTo when route changes", async () => {
