@@ -7,7 +7,7 @@
     "browser": true,
     "node": false
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["deprecation", "@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -19,6 +19,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "deprecation/deprecation": "warn",
     "react/no-unknown-property": ["error", { "ignore": ["css"] }]
   },
   "overrides": [
@@ -28,6 +29,7 @@
       },
       "files": ["webpack.config.js"],
       "rules": {
+        "deprecation/deprecation": "off",
         "@typescript-eslint/await-thenable": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-implied-eval": "off",
