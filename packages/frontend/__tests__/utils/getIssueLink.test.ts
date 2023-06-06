@@ -1,5 +1,5 @@
+import { getIssueLink } from "../../src/utils/getIssueLink"
 import { testData } from "../testData"
-import { getIssueLink } from "./getIssueLink"
 
 test("should get issue link", () => {
   const project = testData.projects[0]

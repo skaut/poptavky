@@ -1,4 +1,4 @@
-import type { ProjectListings } from "./interfaces/ProjectListings"
+import type { ProjectListings } from "../src/interfaces/ProjectListings"
 
 export const testData: ProjectListings = {
   projects: [

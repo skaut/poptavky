@@ -5,14 +5,14 @@ import ReactMarkdown from "react-markdown"
 import { useParams } from "react-router"
 import remarkGfm from "remark-gfm"
 
-import { ColoredTag } from "../../components/ColoredTag"
-import { IssuesList } from "../../components/IssuesList"
-import { Section } from "../../components/Layout"
-import { ProjectBox } from "../../components/ProjectBox"
-import { ProjectLinks } from "../../components/ProjectLinks"
-import { H1, LargeParagraph, Mark } from "../../components/Typography"
-import type { ProjectListings } from "../../interfaces/ProjectListings"
-import { getProject } from "../../utils/getProject"
+import { ColoredTag } from "../components/ColoredTag"
+import { IssuesList } from "../components/IssuesList"
+import { Section } from "../components/Layout"
+import { ProjectBox } from "../components/ProjectBox"
+import { ProjectLinks } from "../components/ProjectLinks"
+import { H1, LargeParagraph, Mark } from "../components/Typography"
+import type { ProjectListings } from "../interfaces/ProjectListings"
+import { getProject } from "../utils/getProject"
 
 export const ProjectDetail = ({
   data,

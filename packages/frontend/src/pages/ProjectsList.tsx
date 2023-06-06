@@ -1,7 +1,7 @@
 import type React from "react"
 
-import { Project } from "../../components/Project"
-import type { ProjectListings } from "../../interfaces/ProjectListings"
+import { Project } from "../components/Project"
+import type { ProjectListings } from "../interfaces/ProjectListings"
 
 export const ProjectsList = ({
   data,

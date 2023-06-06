@@ -1,14 +1,14 @@
 import { MemoryRouter } from "react-router-dom"
 import renderer from "react-test-renderer"
 
-import { testData } from "../../testData"
-import { IssuesList } from "./IssuesList"
+import { ProjectsList } from "../../src/pages/ProjectsList"
+import { testData } from "../testData"
 
-describe("IssuesList page", () => {
+describe("ProjectsList page", () => {
   test("should render correctly", () => {
     const tree = renderer.create(
       <MemoryRouter>
-        <IssuesList data={testData} />
+        <ProjectsList data={testData} />
       </MemoryRouter>
     )
     expect(tree).toMatchSnapshot()

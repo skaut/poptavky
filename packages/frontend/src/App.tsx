@@ -7,10 +7,10 @@ import { Container } from "./components/Container"
 import { Navigation } from "./components/Navigation"
 import { config } from "./config"
 import type { ProjectListings } from "./interfaces/ProjectListings"
-import { IssueDetail } from "./pages/IssueDetail/IssueDetail"
-import { IssuesList } from "./pages/IssuesList/IssuesList"
-import { ProjectDetail } from "./pages/ProjectDetail/ProjectDetail"
-import { ProjectsList } from "./pages/ProjectsList/ProjectsList"
+import { IssueDetail } from "./pages/IssueDetail"
+import { IssuesList } from "./pages/IssuesList"
+import { ProjectDetail } from "./pages/ProjectDetail"
+import { ProjectsList } from "./pages/ProjectsList"
 
 const AppNavigation = (): React.JSX.Element => (
   <Navigation

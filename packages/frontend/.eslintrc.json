@@ -144,7 +144,7 @@
       }
     },
     {
-      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "files": ["__tests__/**/*.test.ts", "__test__/**/*.test.tsx"],
       "extends": [
         "plugin:jest/recommended",
         "plugin:jest/style"

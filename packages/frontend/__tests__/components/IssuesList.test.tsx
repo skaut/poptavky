@@ -1,8 +1,8 @@
 import { MemoryRouter } from "react-router-dom"
 import renderer from "react-test-renderer"
 
+import { IssuesList } from "../../src/components/IssuesList"
 import { testData } from "../testData"
-import { IssuesList } from "./IssuesList"
 
 const project = testData.projects[0]
 

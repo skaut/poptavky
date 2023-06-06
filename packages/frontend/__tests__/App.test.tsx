@@ -3,7 +3,7 @@ import { MemoryRouter } from "react-router-dom"
 import renderer from "react-test-renderer"
 import * as swr from "swr"
 
-import { App } from "./App"
+import { App } from "../src/App"
 import { testData } from "./testData"
 
 jest.mock("swr")
