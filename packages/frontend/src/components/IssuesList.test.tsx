@@ -7,7 +7,7 @@ import { IssuesList } from "./IssuesList"
 const project = testData.projects[0]
 
 describe("IssuesList component", () => {
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
@@ -17,7 +17,7 @@ describe("IssuesList component", () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
-  it("should render correctly without link", () => {
+  test("should render correctly without link", () => {
     const tree = renderer
       .create(
         <MemoryRouter>

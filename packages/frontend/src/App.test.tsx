@@ -10,10 +10,10 @@ jest.mock("swr")
 
 describe("App", () => {
   beforeAll(() => {
-    window.scrollTo = jest.fn()
+    jest.spyOn(window, "scrollTo").mockImplementation()
   })
 
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -31,7 +31,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should render projects correctly", () => {
+  test("should render projects correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -49,7 +49,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should render project listing correctly", () => {
+  test("should render project listing correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -67,7 +67,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should render issue listing correctly", () => {
+  test("should render issue listing correctly", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -85,7 +85,7 @@ describe("App", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should handle error gracefully", () => {
+  test("should handle error gracefully", () => {
     mocked(swr).default.mockReturnValue({
       data: undefined,
       error: true,

@@ -3,7 +3,7 @@ import { getIssueWithProject } from "./getIssueWithProject"
 
 const project = testData.projects[0]
 
-it("should get issue with project", () => {
+test("should get issue with project", () => {
   const result = getIssueWithProject(
     testData,
     project.owner,
@@ -13,7 +13,7 @@ it("should get issue with project", () => {
   expect(result).toMatchSnapshot()
 })
 
-it("should not get issue with project if there is no existing owner", () => {
+test("should not get issue with project if there is no existing owner", () => {
   const result = getIssueWithProject(
     testData,
     "",
@@ -23,7 +23,7 @@ it("should not get issue with project if there is no existing owner", () => {
   expect(result).toBeUndefined()
 })
 
-it("should not get issue with project if there is no existing repo", () => {
+test("should not get issue with project if there is no existing repo", () => {
   const result = getIssueWithProject(
     testData,
     project.owner,
@@ -33,7 +33,7 @@ it("should not get issue with project if there is no existing repo", () => {
   expect(result).toBeUndefined()
 })
 
-it("should not get issue with project if there is no existing issue number", () => {
+test("should not get issue with project if there is no existing issue number", () => {
   const result = getIssueWithProject(testData, project.owner, project.repo, 99)
   expect(result).toBeUndefined()
 })

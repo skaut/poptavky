@@ -15,7 +15,7 @@ const issueWithProject = getIssueWithProject(
 )
 
 describe("Issue component", () => {
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
@@ -26,7 +26,7 @@ describe("Issue component", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should render correctly without tags", () => {
+  test("should render correctly without tags", () => {
     const tree = renderer
       .create(
         <MemoryRouter>

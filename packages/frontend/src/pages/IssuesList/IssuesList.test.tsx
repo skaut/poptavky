@@ -5,7 +5,7 @@ import { testData } from "../../testData"
 import { IssuesList } from "./IssuesList"
 
 describe("IssuesList page", () => {
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     const tree = renderer.create(
       <MemoryRouter>
         <IssuesList data={testData} />

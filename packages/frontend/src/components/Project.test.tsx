@@ -7,7 +7,7 @@ import { Project } from "./Project"
 const project = testData.projects[0]
 
 describe("Project component", () => {
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     const tree = renderer
       .create(
         <MemoryRouter>

@@ -57,6 +57,35 @@
         "@typescript-eslint/restrict-template-expressions": "off",
         "@typescript-eslint/unbound-method": "off"
       }
+    },
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest/style"
+      ],
+      "rules": {
+        "jest/consistent-test-it": ["error", {"withinDescribe": "test"}],
+        "jest/no-duplicate-hooks": "error",
+        "jest/no-if": "error",
+        "jest/no-test-return-statement": "error",
+        "jest/prefer-called-with": "error",
+        "jest/prefer-expect-assertions": [
+          "error",
+          {
+            "onlyFunctionsWithAsyncKeyword": true,
+            "onlyFunctionsWithExpectInLoop": true,
+            "onlyFunctionsWithExpectInCallback": true
+          }
+        ],
+        "jest/prefer-expect-resolves": "error",
+        "jest/prefer-hooks-on-top": "error",
+        "jest/prefer-spy-on": "error",
+        "jest/prefer-strict-equal": "error",
+        "jest/require-hook": "error",
+        "jest/require-to-throw-message": "error",
+        "jest/unbound-method": "error"
+      }
     }
   ]
 }

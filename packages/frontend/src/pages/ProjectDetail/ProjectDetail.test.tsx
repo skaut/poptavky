@@ -7,7 +7,7 @@ import { ProjectDetail } from "./ProjectDetail"
 const project = testData.projects[0]
 
 describe("ProjectDetail page", () => {
-  it("should render correctly", () => {
+  test("should render correctly", () => {
     const tree = renderer.create(
       <MemoryRouter initialEntries={[`/${project.owner}/${project.repo}`]}>
         <Routes>
@@ -21,7 +21,7 @@ describe("ProjectDetail page", () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it("should render correctly if there is no related issue", () => {
+  test("should render correctly if there is no related issue", () => {
     const tree = renderer.create(
       <MemoryRouter initialEntries={[`/owner/repo`]}>
         <Routes>

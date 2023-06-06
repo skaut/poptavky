@@ -4,10 +4,11 @@ import renderer from "react-test-renderer"
 
 import { ScrollToTop } from "./ScrollToTop"
 
-global.scrollTo = jest.fn()
+jest.spyOn(global, "scrollTo").mockImplementation()
 
 describe("ScrollToTop", () => {
-  it("calls window.scrollTo when route changes", async () => {
+  test("calls window.scrollTo when route changes", async () => {
+    expect.assertions(2)
     const user = userEvent.setup()
     const root = renderer.create(
       <MemoryRouter initialEntries={["/home"]}>
