@@ -2,7 +2,7 @@ import userEvent from "@testing-library/user-event"
 import { Link, MemoryRouter, Route, Routes } from "react-router-dom"
 import renderer from "react-test-renderer"
 
-import { ScrollToTop } from "./ScrollToTop"
+import { ScrollToTop } from "../../src/components/ScrollToTop"
 
 global.scrollTo = jest.fn()
 

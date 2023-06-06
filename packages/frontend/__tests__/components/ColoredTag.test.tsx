@@ -1,6 +1,6 @@
 import renderer from "react-test-renderer"
 
-import { ColoredTag } from "./ColoredTag"
+import { ColoredTag } from "../../src/components/ColoredTag"
 
 describe("ColoredTag component", () => {
   test("should render correctly", () => {

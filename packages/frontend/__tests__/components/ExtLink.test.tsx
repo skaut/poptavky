@@ -1,6 +1,6 @@
 import renderer from "react-test-renderer"
 
-import { ExtLink } from "./ExtLink"
+import { ExtLink } from "../../src/components/ExtLink"
 
 describe("ExtLink component", () => {
   test("should render correctly", () => {

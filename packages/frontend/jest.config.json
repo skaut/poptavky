@@ -7,7 +7,7 @@
     "!src/globalStyles.ts"
   ],
   "setupFilesAfterEnv": [
-    "<rootDir>/src/setupTests.ts"
+    "<rootDir>/__tests__/setupTests.ts"
   ],
   "testMatch": [
     "<rootDir>/__tests__/**/*.test.{js,jsx,ts,tsx}"

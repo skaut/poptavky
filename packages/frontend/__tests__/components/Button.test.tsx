@@ -1,6 +1,6 @@
 import renderer from "react-test-renderer"
 
-import { Button } from "./Button"
+import { Button } from "../../src/components/Button"
 
 describe("Button component", () => {
   test("should render correctly", () => {

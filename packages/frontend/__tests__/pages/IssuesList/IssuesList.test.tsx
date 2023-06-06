@@ -2,7 +2,7 @@ import { MemoryRouter } from "react-router-dom"
 import renderer from "react-test-renderer"
 
 import { testData } from "../../testData"
-import { IssuesList } from "./IssuesList"
+import { IssuesList } from "../../../src/pages/IssuesList/IssuesList"
 
 describe("IssuesList page", () => {
   test("should render correctly", () => {
