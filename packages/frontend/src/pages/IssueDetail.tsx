@@ -40,8 +40,8 @@ export const IssueDetail = ({
 
   const issue = getIssueWithProject(
     data,
-    projectOwner!,
-    projectRepo!,
+    projectOwner,
+    projectRepo,
     Number(issueNumber)
   )
   const projectIssues = getIssuesWithProjectInfo(data, {
