@@ -16,7 +16,8 @@
     "url": "git+https://github.com/skaut/poptavky.git"
   },
   "scripts": {
-    "prebuild": "rimraf dist/*",
+    "clean": "rimraf dist/*",
+    "prebuild": "npm run clean",
     "build:public": "mkdir -p dist && cp -r public/* dist/",
     "build:webpack": "webpack",
     "build": "run-p -c --aggregate-output build:*",
