@@ -2,7 +2,7 @@
 import { css } from "@emotion/react"
 import type React from "react"
 import ReactMarkdown from "react-markdown"
-import { useParams } from "react-router"
+import { useParams } from "react-router-dom"
 import remarkGfm from "remark-gfm"
 
 import { ColoredTag } from "../components/ColoredTag"
