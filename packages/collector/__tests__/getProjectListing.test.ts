@@ -29,7 +29,7 @@ test("getProjectListing gets a value", async () => {
   mocked(getProjectIssues).mockResolvedValue(issues);
   mocked(getProjectVisibility).mockResolvedValue(true);
   await expect(getProjectListing(project)).resolves.toStrictEqual(
-    Object.assign({}, project, { info, issues })
+    Object.assign({}, project, { info, issues }),
   );
   expect(mocked(getProjectInfo).mock.calls).toHaveLength(1);
   expect(mocked(getProjectInfo).mock.calls[0][0]).toStrictEqual(project);
@@ -39,6 +39,6 @@ test("getProjectListing gets a value", async () => {
   expect(mocked(getProjectIssues).mock.calls[0][0]).toStrictEqual(project);
   expect(mocked(getProjectIssues).mock.calls[0][1]).toBe(true);
   expect(mocked(getProjectIssues).mock.calls[0][2]).toStrictEqual(
-    info["help-issue-label"]
+    info["help-issue-label"],
   );
 });

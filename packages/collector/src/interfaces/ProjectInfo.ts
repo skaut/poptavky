@@ -41,7 +41,7 @@ export interface ProjectInfo {
 
 function assertIsProjectInfoMaintainer(
   maintainer: unknown,
-  errorFn: (e: string) => PoptavkyError
+  errorFn: (e: string) => PoptavkyError,
 ): asserts maintainer is ProjectInfoMaintainer {
   if (typeof maintainer !== "object" || maintainer === null) {
     throw errorFn("The maintainer isn't a valid object.");
@@ -59,7 +59,7 @@ function assertIsProjectInfoMaintainer(
 
 function assertIsProjectInfoLink(
   link: unknown,
-  errorFn: (e: string) => PoptavkyError
+  errorFn: (e: string) => PoptavkyError,
 ): asserts link is ProjectInfoLink {
   if (typeof link !== "object" || link === null) {
     throw errorFn("The link isn't a valid object.");
@@ -100,7 +100,7 @@ function assertIsProjectInfoLink(
     }
   } else if (
     !["email", "homepage", "demo", "issue-tracker", "wiki", "docs"].includes(
-      link.type
+      link.type,
     )
   ) {
     throw errorFn("The link type is unsupported.");
@@ -109,7 +109,7 @@ function assertIsProjectInfoLink(
 
 export function assertIsProjectInfo(
   info: unknown,
-  errorFn = (e: string): ProjectInfoError => new ProjectInfoError(e)
+  errorFn = (e: string): ProjectInfoError => new ProjectInfoError(e),
 ): asserts info is ProjectInfo {
   if (typeof info !== "object" || info === null) {
     throw errorFn("The file doesn't contain a valid object.");
@@ -119,17 +119,17 @@ export function assertIsProjectInfo(
   }
   if (!("short-description" in info)) {
     throw errorFn(
-      'The file doesn\'t contain the required field "short-description".'
+      'The file doesn\'t contain the required field "short-description".',
     );
   }
   if (!("description" in info)) {
     throw errorFn(
-      'The file doesn\'t contain the required field "description".'
+      'The file doesn\'t contain the required field "description".',
     );
   }
   if (!("maintainers" in info)) {
     throw errorFn(
-      'The file doesn\'t contain the required field "maintainers".'
+      'The file doesn\'t contain the required field "maintainers".',
     );
   }
   if (!("links" in info)) {
@@ -152,7 +152,7 @@ export function assertIsProjectInfo(
   }
   for (const maintainer of info.maintainers) {
     assertIsProjectInfoMaintainer(maintainer, (e) =>
-      errorFn('A "maintainer" field item is invalid: ' + e)
+      errorFn('A "maintainer" field item is invalid: ' + e),
     );
   }
   if (!Array.isArray(info.links)) {
@@ -163,7 +163,7 @@ export function assertIsProjectInfo(
   }
   for (const link of info.links) {
     assertIsProjectInfoLink(link, (e) =>
-      errorFn('A "link" field item is invalid: ' + e)
+      errorFn('A "link" field item is invalid: ' + e),
     );
   }
   if ("help-issue-label" in info) {
