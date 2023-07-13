@@ -5,7 +5,7 @@ import type { Project } from "./interfaces/Project";
 import type { ProjectListing } from "./interfaces/ProjectListing";
 
 export async function getProjectListing(
-  project: Project
+  project: Project,
 ): Promise<ProjectListing> {
   const info = await getProjectInfo(project);
   const publicRepo = await getProjectVisibility(project);
@@ -15,7 +15,7 @@ export async function getProjectListing(
     issues: await getProjectIssues(
       project,
       publicRepo,
-      info["help-issue-label"]
+      info["help-issue-label"],
     ),
   };
 }

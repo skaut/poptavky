@@ -8,7 +8,7 @@ export interface GlobalConfig {
 
 export function assertIsGlobalConfig(
   config: unknown,
-  errorFn = (e: string): GlobalConfigError => new GlobalConfigError(e)
+  errorFn = (e: string): GlobalConfigError => new GlobalConfigError(e),
 ): asserts config is GlobalConfig {
   if (typeof config !== "object" || config === null) {
     throw errorFn("The file doesn't contain a valid object.");
@@ -21,7 +21,7 @@ export function assertIsGlobalConfig(
   }
   for (const project of config.projects) {
     assertIsProject(project, (e) =>
-      errorFn('A "project" field item is invalid: ' + e)
+      errorFn('A "project" field item is invalid: ' + e),
     );
   }
 }

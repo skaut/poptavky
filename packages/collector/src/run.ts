@@ -20,7 +20,7 @@ export async function run(): Promise<void> {
             "/" +
             project.repo +
             ". " +
-            (e as PoptavkyError).message
+            (e as PoptavkyError).message,
         );
       }
     }

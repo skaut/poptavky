@@ -15,7 +15,7 @@ test("getGlobalConfig loads a file", () => {
 
 test("getGlobalConfig reads a file", () => {
   mocked(fs).readFileSync.mockReturnValue(
-    '{"projects": [{"owner": "OWNER1", "repo": "REPO1"}, {"owner": "OWNER2", "repo": "REPO2"}]}'
+    '{"projects": [{"owner": "OWNER1", "repo": "REPO1"}, {"owner": "OWNER2", "repo": "REPO2"}]}',
   );
   expect(getGlobalConfig()).toStrictEqual({
     projects: [

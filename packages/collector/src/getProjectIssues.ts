@@ -6,7 +6,7 @@ import { octokit } from "./octokit";
 export async function getProjectIssues(
   project: Project,
   publicRepo: boolean,
-  issueLabel: string | undefined
+  issueLabel: string | undefined,
 ): Promise<Array<ProjectIssue>> {
   issueLabel = issueLabel ?? "help wanted";
   const issues = await octokit.rest.issues
