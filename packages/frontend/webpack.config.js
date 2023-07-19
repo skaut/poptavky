@@ -14,6 +14,7 @@ module.exports = function (env) {
     devtool: mode === "development" ? "source-map" : false,
     plugins: [
       new HtmlWebpackPlugin({
+        base: "https://itpoptavky.skaut.cz",
         template: "./src/html/index.html",
       }),
       new MiniCssExtractPlugin(),
