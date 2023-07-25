@@ -76,7 +76,7 @@ export const links: Array<LinkType> = [
 export const ProjectLinks = ({
   projectInfo,
 }: {
-  projectInfo: ProjectInfo
+  readonly projectInfo: ProjectInfo
 }): React.JSX.Element => (
   <>
     <Paragraph>
