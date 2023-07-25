@@ -7,7 +7,7 @@ import { ArticleBox } from "./ArticleBox"
 export const Project = ({
   project,
 }: {
-  project: ProjectListing
+  readonly project: ProjectListing
 }): React.JSX.Element => (
   <ArticleBox
     description={project.info.description}

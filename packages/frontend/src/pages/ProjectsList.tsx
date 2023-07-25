@@ -6,7 +6,7 @@ import type { ProjectListings } from "../interfaces/ProjectListings"
 export const ProjectsList = ({
   data,
 }: {
-  data: ProjectListings
+  readonly data: ProjectListings
 }): React.JSX.Element => (
   <>
     {data.projects.map((project) => (

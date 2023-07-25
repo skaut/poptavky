@@ -17,7 +17,7 @@ import { getProject } from "../utils/getProject"
 export const ProjectDetail = ({
   data,
 }: {
-  data: ProjectListings
+  readonly data: ProjectListings
 }): React.JSX.Element => {
   const { owner: projectOwner, project: projectRepo } = useParams<{
     owner: string

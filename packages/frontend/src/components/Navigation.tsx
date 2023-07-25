@@ -13,7 +13,7 @@ interface NavigationItem {
 export const Navigation = ({
   items,
 }: {
-  items: Array<NavigationItem>
+  readonly items: Array<NavigationItem>
 }): React.JSX.Element => (
   <nav>
     <Container>

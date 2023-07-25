@@ -8,7 +8,7 @@ import { getIssuesWithProjectInfo } from "../utils/getAllIssues"
 export const IssuesList = ({
   data,
 }: {
-  data: ProjectListings
+  readonly data: ProjectListings
 }): React.JSX.Element => {
   const issues = getIssuesWithProjectInfo(data)
   return (
