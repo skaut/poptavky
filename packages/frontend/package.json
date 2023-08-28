@@ -34,7 +34,7 @@
     "react-router-dom": "^6.15.0",
     "remark-gfm": "^3.0.1",
     "string-to-color": "^2.2.2",
-    "swr": "^2.2.1"
+    "swr": "^2.2.2"
   },
   "devDependencies": {
     "@emotion/jest": "^11.11.0",
