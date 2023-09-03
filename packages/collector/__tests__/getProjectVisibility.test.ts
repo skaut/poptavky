@@ -1,4 +1,4 @@
-import * as nock from "nock";
+import nock from "nock";
 
 import { VisibilityError } from "../src/exceptions/VisibilityError";
 import { getProjectVisibility } from "../src/getProjectVisibility";
