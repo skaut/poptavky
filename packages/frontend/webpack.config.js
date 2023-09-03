@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
+const { SubresourceIntegrityPlugin } = require("webpack-subresource-integrity")
 
 module.exports = function (env) {
   const mode =
@@ -14,9 +15,11 @@ module.exports = function (env) {
     devtool: mode === "development" ? "source-map" : false,
     plugins: [
       new HtmlWebpackPlugin({
+        base: "https://itpoptavky.skaut.cz",
         template: "./src/html/index.html",
       }),
       new MiniCssExtractPlugin(),
+      new SubresourceIntegrityPlugin(),
       new ForkTsCheckerWebpackPlugin(),
     ],
     module: {

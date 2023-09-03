@@ -30,7 +30,7 @@ import { getProjectLink } from "../utils/getProjectLink"
 export const IssueDetail = ({
   data,
 }: {
-  data: ProjectListings
+  readonly data: ProjectListings
 }): React.JSX.Element => {
   const {
     owner: projectOwner,

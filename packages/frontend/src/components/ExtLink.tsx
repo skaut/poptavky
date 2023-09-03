@@ -3,11 +3,11 @@ import { css } from "@emotion/react"
 import type React from "react"
 
 export interface LinkProps {
-  children: React.ReactNode
-  href: string
-  title?: string
-  targetSelf?: boolean
-  className?: string
+  readonly children: React.ReactNode
+  readonly href: string
+  readonly title?: string
+  readonly targetSelf?: boolean
+  readonly className?: string
 }
 export const ExtLink = ({
   children,
