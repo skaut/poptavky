@@ -10,12 +10,15 @@ export default {
   coverageDirectory: "coverage",
   coverageProvider: "babel",
   setupFiles: ["<rootDir>/__tests__/setup.ts"],
-  preset: "ts-jest/presets/default-esm",
   globals: {
     "ts-jest": {
       tsconfig: "<rootDir>/test.tsconfig.json",
     },
   },
+  transform: {
+    "^.+\\.[jt]s$": "ts-jest",
+  },
+  transformIgnorePatterns: ["node_modules/(?!node-fetch)/"],
   resetMocks: true,
   testMatch: ["<rootDir>/__tests__/**/*.test.ts"],
 };
