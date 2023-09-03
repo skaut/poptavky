@@ -1,4 +1,4 @@
-import * as nock from "nock";
+import nock from "nock";
 
 import { ProjectInfoError } from "../src/exceptions/ProjectInfoError";
 import { getProjectInfo } from "../src/getProjectInfo";

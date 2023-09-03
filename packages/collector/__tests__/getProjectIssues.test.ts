@@ -1,4 +1,4 @@
-import * as nock from "nock";
+import nock from "nock";
 
 import { IssueListError } from "../src/exceptions/IssueListError";
 import { getProjectIssues } from "../src/getProjectIssues";
