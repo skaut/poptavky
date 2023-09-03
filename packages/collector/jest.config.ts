@@ -10,13 +10,13 @@ export default {
   coverageDirectory: "coverage",
   coverageProvider: "babel",
   setupFiles: ["<rootDir>/__tests__/setup.ts"],
-  globals: {
-    "ts-jest": {
-      tsconfig: "<rootDir>/test.tsconfig.json",
-    },
-  },
   transform: {
-    "^.+\\.[jt]s$": "ts-jest",
+    "^.+\\.[jt]s$": [
+      "ts-jest",
+      {
+        tsconfig: "<rootDir>/test.tsconfig.json",
+      },
+    ],
   },
   transformIgnorePatterns: ["node_modules/(?!node-fetch)/"],
   resetMocks: true,
