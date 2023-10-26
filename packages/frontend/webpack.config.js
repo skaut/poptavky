@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
 const { SubresourceIntegrityPlugin } = require("webpack-subresource-integrity")
 
-module.exports = function (env) {
+module.exports = (env) => {
   const mode =
     process.env.NODE_ENV ?? (env.development ? "development" : "production")
 

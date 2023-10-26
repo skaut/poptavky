@@ -8,7 +8,10 @@
     "node": false
   },
   "plugins": [
+    "compat",
     "deprecation",
+    "jest",
+    "prefer-arrow-functions",
     "simple-import-sort",
     "@typescript-eslint"
   ],
@@ -21,8 +24,18 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "deprecation/deprecation": "warn",
+    "arrow-body-style": ["error", "as-needed"],
+    "camelcase": "error",
     "no-warning-comments": "warn",
+    "strict": ["error", "never"],
+    "compat/compat": "warn",
+    "deprecation/deprecation": "warn",
+    "prefer-arrow-functions/prefer-arrow-functions": [
+      "error",
+      {
+        "allowNamedFunctions": true
+      }
+    ],
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
