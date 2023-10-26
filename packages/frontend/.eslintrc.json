@@ -9,6 +9,7 @@
   },
   "plugins": [
     "deprecation",
+    "jest",
     "prefer-arrow-functions",
     "simple-import-sort",
     "@typescript-eslint"
