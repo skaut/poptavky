@@ -8,6 +8,7 @@
     "node": false
   },
   "plugins": [
+    "compat",
     "deprecation",
     "jest",
     "prefer-arrow-functions",
@@ -27,6 +28,7 @@
     "camelcase": "error",
     "no-warning-comments": "warn",
     "strict": ["error", "never"],
+    "compat/compat": "warn",
     "deprecation/deprecation": "warn",
     "prefer-arrow-functions/prefer-arrow-functions": [
       "error",
