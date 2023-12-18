@@ -22,7 +22,7 @@
     "@octokit/core": "^5.0.2",
     "@octokit/plugin-rest-endpoint-methods": "^10.2.0",
     "ts-custom-error": "^3.3.1",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/jest": "^29.5.10",
