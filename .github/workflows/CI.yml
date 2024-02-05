@@ -72,6 +72,7 @@ jobs:
         uses: codecov/codecov-action@v4.0.1
         with:
           flags: collector
+          token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
 
   frontend-build:
@@ -159,4 +160,5 @@ jobs:
         uses: codecov/codecov-action@v4.0.1
         with:
           flags: frontend
+          token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
