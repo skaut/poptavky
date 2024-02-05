@@ -69,9 +69,11 @@ jobs:
           npm test
 
       - name: "Upload coverage results"
-        uses: codecov/codecov-action@v3.1.5
+        uses: codecov/codecov-action@v4.0.1
         with:
           flags: collector
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
 
   frontend-build:
     name: "Build frontend"
@@ -155,6 +157,8 @@ jobs:
           npm run test
 
       - name: "Upload coverage results"
-        uses: codecov/codecov-action@v3.1.5
+        uses: codecov/codecov-action@v4.0.1
         with:
           flags: frontend
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
