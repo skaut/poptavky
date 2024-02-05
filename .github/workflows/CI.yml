@@ -72,6 +72,7 @@ jobs:
         uses: codecov/codecov-action@v4.0.1
         with:
           flags: collector
+          fail_ci_if_error: true
 
   frontend-build:
     name: "Build frontend"
@@ -158,3 +159,4 @@ jobs:
         uses: codecov/codecov-action@v4.0.1
         with:
           flags: frontend
+          fail_ci_if_error: true
