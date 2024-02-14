@@ -7,6 +7,17 @@ import remarkGfm from "remark-gfm"
 import { ColoredTag } from "./ColoredTag"
 import { Article, H2, Paragraph } from "./Typography"
 
+const ThinArticle = styled(Article)`
+  max-width: 600px;
+`
+
+const ProjectName = styled("p")`
+  margin: 0 0 0.6em;
+  * {
+    font-size: 0.8rem;
+  }
+`
+
 export const ArticleBox = ({
   title,
   link,
@@ -49,14 +60,3 @@ ArticleBox.defaultProps = {
   subtitleLink: undefined,
   tags: [],
 }
-
-const ProjectName = styled("p")`
-  margin: 0 0 0.6em;
-  * {
-    font-size: 0.8rem;
-  }
-`
-
-const ThinArticle = styled(Article)`
-  max-width: 600px;
-`
