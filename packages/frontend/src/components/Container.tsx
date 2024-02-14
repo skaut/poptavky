@@ -8,6 +8,30 @@ import logo from "../images/logo.svg";
 import { theme } from "../theme";
 import { ScrollToTop } from "./ScrollToTop";
 
+const WrapperDiv = styled("div")`
+  max-width: ${theme.layout.width}px;
+  padding: 0 16px;
+  margin: 0 auto;
+`;
+
+const Header = styled("header")`
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 0 auto;
+  padding: 16px 0;
+`;
+
+const Logo = styled("img")`
+  max-height: 100%;
+`;
+
+const Title = styled("h1")`
+  font-family: themix;
+  font-size: 20px;
+  margin: 0 0 0 24px;
+`;
+
 export const Container = (): React.JSX.Element => (
   <WrapperDiv>
     <Global styles={globalStyles} />
@@ -23,27 +47,3 @@ export const Container = (): React.JSX.Element => (
     </main>
   </WrapperDiv>
 );
-
-const WrapperDiv = styled("div")`
-  max-width: ${theme.layout.width}px;
-  padding: 0 16px;
-  margin: 0 auto;
-`;
-
-const Header = styled("header")`
-  display: flex;
-  align-items: center;
-  height: 60px;
-  margin: 0 auto;
-  padding: 16px 0;
-`;
-
-const Title = styled("h1")`
-  font-family: themix;
-  font-size: 20px;
-  margin: 0 0 0 24px;
-`;
-
-const Logo = styled("img")`
-  max-height: 100%;
-`;
