@@ -55,7 +55,6 @@
     "@typescript-eslint/explicit-member-accessibility": "error",
     "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/init-declarations": "error",
-    "@typescript-eslint/max-params": "error",
     "@typescript-eslint/member-ordering": "error",
     "@typescript-eslint/method-signature-style": ["error", "method"],
     "@typescript-eslint/naming-convention": "error",
