@@ -6,6 +6,7 @@ import nodeFetch from "node-fetch";
 nock.disableNetConnect();
 
 jest.mock("../src/octokit", () => {
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   const OctokitWithRest = Octokit.plugin(restEndpointMethods);
   return {
     octokit: new OctokitWithRest({
