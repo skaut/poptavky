@@ -13,7 +13,7 @@ const config: JestConfigWithTsJest = {
   coverageProvider: "babel",
   setupFiles: ["<rootDir>/__tests__/setup.ts"],
   transform: {
-    // eslint-disable-next-line @typescript-eslint/naming-convention
+    // eslint-disable-next-line @typescript-eslint/naming-convention -- Regexp key
     "^.+\\.[jt]s$": [
       "ts-jest",
       {
