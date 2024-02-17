@@ -5,10 +5,10 @@ import type { GlobalConfig } from "./interfaces/GlobalConfig";
 import { assertIsGlobalConfig } from "./interfaces/GlobalConfig";
 
 export function getGlobalConfig(): GlobalConfig {
-  let contents = "";
+  let contents = undefined;
   try {
     const rawContents = fs.readFileSync("../../config.json", "utf8");
-    contents = JSON.parse(rawContents); // eslint-disable-line @typescript-eslint/no-unsafe-assignment
+    contents = JSON.parse(rawContents) as unknown;
   } catch (e) {
     throw new GlobalConfigError(String(e));
   }

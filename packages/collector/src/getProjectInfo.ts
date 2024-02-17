@@ -20,7 +20,6 @@ export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
   }
   let info: unknown = undefined;
   try {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     info = JSON.parse(Buffer.from(encodedContent, "base64").toString());
   } catch (e) {
     throw new ProjectInfoError((e as SyntaxError).message);
