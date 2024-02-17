@@ -7,7 +7,7 @@ import { testData } from "../testData"
 
 const project = testData.projects[0]
 const issue = project.issues[0]
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- Checked in the test
 const issueWithProject = getIssueWithProject(
   testData,
   project.owner,
@@ -17,6 +17,7 @@ const issueWithProject = getIssueWithProject(
 
 describe("Issue component", () => {
   test("should render correctly", () => {
+    expect(issue).not.toBeNull()
     const tree = renderer
       .create(
         <MemoryRouter>
