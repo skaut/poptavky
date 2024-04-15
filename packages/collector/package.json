@@ -22,7 +22,7 @@
     "@octokit/core": "^6.1.2",
     "@octokit/plugin-rest-endpoint-methods": "^12.2.2",
     "ts-custom-error": "^3.3.1",
-    "ts-node": "^10.9.2"
+    "tsx": "^4.7.2"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
@@ -50,6 +50,6 @@
     "lint:eslint": "eslint --color 'jest.config.ts' 'src/**/*' '__tests__/**/*'",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "jest",
-    "collect": "ts-node -T src/index.ts"
+    "collect": "tsx src/index.ts"
   }
 }
