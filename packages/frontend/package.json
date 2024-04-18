@@ -22,7 +22,8 @@
     "build:webpack": "webpack",
     "build": "run-p -c --aggregate-output build:*",
     "lint": "eslint --color webpack.config.js 'src/**/*' '__mocks__/**/*' '__tests__/**/*'",
-    "test": "jest"
+    "test": "jest",
+    "test-accept": "jest --updateSnapshot"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
