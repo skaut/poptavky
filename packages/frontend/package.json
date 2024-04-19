@@ -22,14 +22,15 @@
     "build:webpack": "webpack",
     "build": "run-p -c --aggregate-output build:*",
     "lint": "eslint --color webpack.config.js 'src/**/*' '__mocks__/**/*' '__tests__/**/*'",
-    "test": "jest"
+    "test": "jest",
+    "test-accept": "jest --updateSnapshot"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
+    "react-icons": "^5.1.0",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.22.3",
     "remark-gfm": "^4.0.0",
