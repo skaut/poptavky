@@ -29,7 +29,7 @@ jobs:
 
       - name: "Install NPM dependencies"
         run: |
-          npm ci --no-dev
+          npm ci --omit=dev
 
       - name: "Collect"
         run: |
