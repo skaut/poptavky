@@ -19,11 +19,12 @@
   },
   "dependencies": {
     "@actions/core": "^1.10.1",
-    "@octokit/core": "^5.2.0",
-    "@octokit/plugin-rest-endpoint-methods": "^10.4.1",
+    "@octokit/core": "^6.1.2",
+    "@octokit/plugin-rest-endpoint-methods": "^13.1.1",
     "ts-custom-error": "^3.3.1",
-    "ts-node": "^10.9.2"
+    "tsx": "^4.7.2"
   },
+  "type": "module",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
@@ -50,6 +51,6 @@
     "lint:eslint": "eslint --color 'jest.config.ts' 'src/**/*' '__tests__/**/*'",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "jest",
-    "collect": "ts-node -T src/index.ts"
+    "collect": "tsx src/index.ts"
   }
 }
