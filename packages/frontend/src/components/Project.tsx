@@ -1,13 +1,13 @@
-import type React from "react"
+import type React from "react";
 
-import type { ProjectListing } from "../interfaces/ProjectListing"
-import { getProjectLink } from "../utils/getProjectLink"
-import { ArticleBox } from "./ArticleBox"
+import type { ProjectListing } from "../interfaces/ProjectListing";
+import { getProjectLink } from "../utils/getProjectLink";
+import { ArticleBox } from "./ArticleBox";
 
 export const Project = ({
   project,
 }: {
-  readonly project: ProjectListing
+  readonly project: ProjectListing;
 }): React.JSX.Element => (
   <ArticleBox
     description={project.info.description}
@@ -15,4 +15,4 @@ export const Project = ({
     tags={project.info.tags}
     title={project.info.name}
   />
-)
+);

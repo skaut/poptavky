@@ -1,13 +1,13 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
-import type React from "react"
+import { css } from "@emotion/react";
+import type React from "react";
 
 export interface LinkProps {
-  readonly children: React.ReactNode
-  readonly href: string
-  readonly title?: string
-  readonly targetSelf?: boolean
-  readonly className?: string
+  readonly children: React.ReactNode;
+  readonly href: string;
+  readonly title?: string;
+  readonly targetSelf?: boolean;
+  readonly className?: string;
 }
 export const ExtLink = ({
   children,
@@ -33,10 +33,10 @@ export const ExtLink = ({
   >
     {children}
   </a>
-)
+);
 
 ExtLink.defaultProps = {
   className: undefined,
   targetSelf: false,
   title: undefined,
-}
+};

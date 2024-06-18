@@ -1,16 +1,16 @@
-import type React from "react"
+import type React from "react";
 
-import type { ProjectIssueWithProjectInfo } from "../utils/getAllIssues"
-import { getIssueLink } from "../utils/getIssueLink"
-import { getProjectLink } from "../utils/getProjectLink"
-import { ArticleBox } from "./ArticleBox"
+import type { ProjectIssueWithProjectInfo } from "../utils/getAllIssues";
+import { getIssueLink } from "../utils/getIssueLink";
+import { getProjectLink } from "../utils/getProjectLink";
+import { ArticleBox } from "./ArticleBox";
 
 export const Issue = ({
   issue,
   hideTags,
 }: {
-  readonly issue: ProjectIssueWithProjectInfo
-  readonly hideTags?: boolean
+  readonly issue: ProjectIssueWithProjectInfo;
+  readonly hideTags?: boolean;
 }): React.JSX.Element => (
   <ArticleBox
     description={issue.description}
@@ -21,8 +21,8 @@ export const Issue = ({
     tags={hideTags !== true ? issue.project.tags : []}
     title={issue.title}
   />
-)
+);
 
 Issue.defaultProps = {
   hideTags: false,
-}
+};

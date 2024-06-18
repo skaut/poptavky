@@ -1,5 +1,5 @@
-import type { Project } from "./Project"
+import type { Project } from "./Project";
 
 export interface GlobalConfig {
-  projects: Array<Project>
+  projects: Array<Project>;
 }

@@ -1,4 +1,4 @@
-import type { Project } from "../interfaces/Project"
+import type { Project } from "../interfaces/Project";
 
 export const getProjectLink = ({ owner, repo }: Project): string =>
-  `/${owner}/${repo}`
+  `/${owner}/${repo}`;

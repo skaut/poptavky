@@ -1,16 +1,16 @@
 /** @jsxImportSource @emotion/react */
-import type React from "react"
-import { Route, Routes } from "react-router-dom"
-import useSWR from "swr"
+import type React from "react";
+import { Route, Routes } from "react-router-dom";
+import useSWR from "swr";
 
-import { Container } from "./components/Container"
-import { Navigation } from "./components/Navigation"
-import { config } from "./config"
-import type { ProjectListings } from "./interfaces/ProjectListings"
-import { IssueDetail } from "./pages/IssueDetail"
-import { IssuesList } from "./pages/IssuesList"
-import { ProjectDetail } from "./pages/ProjectDetail"
-import { ProjectsList } from "./pages/ProjectsList"
+import { Container } from "./components/Container";
+import { Navigation } from "./components/Navigation";
+import { config } from "./config";
+import type { ProjectListings } from "./interfaces/ProjectListings";
+import { IssueDetail } from "./pages/IssueDetail";
+import { IssuesList } from "./pages/IssuesList";
+import { ProjectDetail } from "./pages/ProjectDetail";
+import { ProjectsList } from "./pages/ProjectsList";
 
 const AppNavigation = (): React.JSX.Element => (
   <Navigation
@@ -25,21 +25,21 @@ const AppNavigation = (): React.JSX.Element => (
       },
     ]}
   />
-)
+);
 
 export const App = (): React.JSX.Element => {
   const { data, error } = useSWR<ProjectListings, unknown>(
     config.dataApiUrl,
     async (url: string) => {
-      const res = await fetch(url)
-      return res.json()
-    }
-  )
+      const res = await fetch(url);
+      return res.json();
+    },
+  );
   if (error !== undefined) {
-    return <div>Nepodařilo se načíst data webu.</div>
+    return <div>Nepodařilo se načíst data webu.</div>;
   }
   if (!data) {
-    return <div>Načítají se data webu.</div>
+    return <div>Načítají se data webu.</div>;
   }
   return (
     <Routes>
@@ -69,5 +69,5 @@ export const App = (): React.JSX.Element => {
         />
       </Route>
     </Routes>
-  )
-}
+  );
+};

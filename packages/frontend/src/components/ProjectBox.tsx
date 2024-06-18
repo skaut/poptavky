@@ -1,6 +1,6 @@
-import styled from "@emotion/styled"
+import styled from "@emotion/styled";
 
-import { theme } from "../theme"
+import { theme } from "../theme";
 
 export const ProjectBox = styled("div")`
   color: white;
@@ -16,4 +16,4 @@ export const ProjectBox = styled("div")`
     background-color: white;
     color: ${theme.colors.brand};
   }
-`
+`;

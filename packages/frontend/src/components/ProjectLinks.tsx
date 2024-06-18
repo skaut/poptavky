@@ -1,23 +1,23 @@
-import type { ReactNode } from "react"
-import type React from "react"
-import { AiFillGithub } from "react-icons/ai"
-import { BiBookAlt } from "react-icons/bi"
-import { BsFillPersonFill } from "react-icons/bs"
-import { FaFacebook, FaSlack } from "react-icons/fa"
-import { GrMail } from "react-icons/gr"
-import { HiOutlineDocumentText } from "react-icons/hi"
-import { ImEarth } from "react-icons/im"
-import { MdWebAsset } from "react-icons/md"
-import { MdChecklist } from "react-icons/md"
+import type { ReactNode } from "react";
+import type React from "react";
+import { AiFillGithub } from "react-icons/ai";
+import { BiBookAlt } from "react-icons/bi";
+import { BsFillPersonFill } from "react-icons/bs";
+import { FaFacebook, FaSlack } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
+import { HiOutlineDocumentText } from "react-icons/hi";
+import { ImEarth } from "react-icons/im";
+import { MdWebAsset } from "react-icons/md";
+import { MdChecklist } from "react-icons/md";
 
-import type { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo"
-import { ExtLink } from "./ExtLink"
-import { Mark, Paragraph, SmallLink } from "./Typography"
+import type { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo";
+import { ExtLink } from "./ExtLink";
+import { Mark, Paragraph, SmallLink } from "./Typography";
 
 export interface LinkType {
-  type: ProjectInfoLink["type"]
-  label: string
-  icon?: ReactNode
+  type: ProjectInfoLink["type"];
+  label: string;
+  icon?: ReactNode;
 }
 
 export const links: Array<LinkType> = [
@@ -71,12 +71,12 @@ export const links: Array<LinkType> = [
     label: "Wiki",
     icon: <BiBookAlt />,
   },
-]
+];
 
 export const ProjectLinks = ({
   projectInfo,
 }: {
-  readonly projectInfo: ProjectInfo
+  readonly projectInfo: ProjectInfo;
 }): React.JSX.Element => (
   <>
     <Paragraph>
@@ -88,7 +88,7 @@ export const ProjectLinks = ({
       {projectInfo.maintainers
         .filter(
           (person): person is { name: string; email: string } =>
-            person.email !== undefined
+            person.email !== undefined,
         )
         .map((person) => (
           <SmallLink key={person.email}>
@@ -98,12 +98,12 @@ export const ProjectLinks = ({
     </Paragraph>
     {links.map((link) => {
       const currentLink = projectInfo.links.find(
-        (item) => item.type === link.type
-      )
+        (item) => item.type === link.type,
+      );
       if (!currentLink) {
-        return undefined
+        return undefined;
       }
-      const url = new URL(currentLink.uri)
+      const url = new URL(currentLink.uri);
       return (
         <Paragraph key={link.type}>
           <Mark>
@@ -115,7 +115,7 @@ export const ProjectLinks = ({
             </ExtLink>
           </SmallLink>
         </Paragraph>
-      )
+      );
     })}
   </>
-)
+);

@@ -1,10 +1,10 @@
-import { MemoryRouter, Route, Routes } from "react-router-dom"
-import renderer from "react-test-renderer"
+import { MemoryRouter, Route, Routes } from "react-router-dom";
+import renderer from "react-test-renderer";
 
-import { ProjectDetail } from "../../src/pages/ProjectDetail"
-import { testData } from "../testData"
+import { ProjectDetail } from "../../src/pages/ProjectDetail";
+import { testData } from "../testData";
 
-const project = testData.projects[0]
+const project = testData.projects[0];
 
 describe("ProjectDetail page", () => {
   test("should render correctly", () => {
@@ -16,10 +16,10 @@ describe("ProjectDetail page", () => {
             path="/:owner/:project"
           />
         </Routes>
-      </MemoryRouter>
-    )
-    expect(tree).toMatchSnapshot()
-  })
+      </MemoryRouter>,
+    );
+    expect(tree).toMatchSnapshot();
+  });
 
   test("should render correctly if there is no related issue", () => {
     const tree = renderer.create(
@@ -30,8 +30,8 @@ describe("ProjectDetail page", () => {
             path="/:owner/:project"
           />
         </Routes>
-      </MemoryRouter>
-    )
-    expect(tree).toMatchSnapshot()
-  })
-})
+      </MemoryRouter>,
+    );
+    expect(tree).toMatchSnapshot();
+  });
+});

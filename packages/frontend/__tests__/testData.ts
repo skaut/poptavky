@@ -1,4 +1,4 @@
-import type { ProjectListings } from "../src/interfaces/ProjectListings"
+import type { ProjectListings } from "../src/interfaces/ProjectListings";
 
 export const testData: ProjectListings = {
   projects: [
@@ -223,4 +223,4 @@ export const testData: ProjectListings = {
       ],
     },
   ],
-}
+};
