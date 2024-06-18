@@ -7,6 +7,8 @@ import remarkGfm from "remark-gfm";
 import { ColoredTag } from "./ColoredTag";
 import { Article, H2, Paragraph } from "./Typography";
 
+const emptyArray: Array<string> = [];
+
 export const ArticleBox = ({
   title,
   link = undefined,
@@ -14,7 +16,7 @@ export const ArticleBox = ({
   subtitleLink = undefined,
   subtitleDescription = undefined,
   description,
-  tags = [],
+  tags = emptyArray,
 }: {
   readonly title: string;
   readonly link?: string;
