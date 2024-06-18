@@ -51,14 +51,12 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v4
 
-      - name: "Cache NPM dependencies"
-        uses: actions/cache@v4
+      - name: "Setup Node"
+        uses: actions/setup-node@v4
         with:
-          path: "~/.npm"
-          key: npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-          restore-keys: |
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-${{ hashFiles('package.json') }}
-            npm-dependencies-${{ runner.os }}-${{ env.cache-version }}-
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: 'packages/collector/package-lock.json'
 
       - name: "Install NPM dependencies"
         run: |
