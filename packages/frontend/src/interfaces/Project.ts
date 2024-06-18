@@ -1,4 +1,4 @@
 export interface Project {
-  owner: string
-  repo: string
+  owner: string;
+  repo: string;
 }

@@ -1,14 +1,14 @@
 /* eslint-env node */
 
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const TerserPlugin = require("terser-webpack-plugin")
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin")
-const { SubresourceIntegrityPlugin } = require("webpack-subresource-integrity")
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+const { SubresourceIntegrityPlugin } = require("webpack-subresource-integrity");
 
 module.exports = (env) => {
   const mode =
-    process.env.NODE_ENV ?? (env.development ? "development" : "production")
+    process.env.NODE_ENV ?? (env.development ? "development" : "production");
 
   return {
     mode,
@@ -74,5 +74,5 @@ module.exports = (env) => {
         }),
       ],
     },
-  }
-}
+  };
+};

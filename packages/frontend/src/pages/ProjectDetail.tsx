@@ -1,37 +1,37 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
-import type React from "react"
-import ReactMarkdown from "react-markdown"
-import { useParams } from "react-router-dom"
-import remarkGfm from "remark-gfm"
+import { css } from "@emotion/react";
+import type React from "react";
+import ReactMarkdown from "react-markdown";
+import { useParams } from "react-router-dom";
+import remarkGfm from "remark-gfm";
 
-import { ColoredTag } from "../components/ColoredTag"
-import { IssuesList } from "../components/IssuesList"
-import { Section } from "../components/Layout"
-import { ProjectBox } from "../components/ProjectBox"
-import { ProjectLinks } from "../components/ProjectLinks"
-import { H1, LargeParagraph, Mark } from "../components/Typography"
-import type { ProjectListings } from "../interfaces/ProjectListings"
-import { getProject } from "../utils/getProject"
+import { ColoredTag } from "../components/ColoredTag";
+import { IssuesList } from "../components/IssuesList";
+import { Section } from "../components/Layout";
+import { ProjectBox } from "../components/ProjectBox";
+import { ProjectLinks } from "../components/ProjectLinks";
+import { H1, LargeParagraph, Mark } from "../components/Typography";
+import type { ProjectListings } from "../interfaces/ProjectListings";
+import { getProject } from "../utils/getProject";
 
 export const ProjectDetail = ({
   data,
 }: {
-  readonly data: ProjectListings
+  readonly data: ProjectListings;
 }): React.JSX.Element => {
   const { owner: projectOwner, project: projectRepo } = useParams<{
-    owner: string
-    project: string
-    issue: string
-  }>()
-  const project = getProject(data, projectOwner, projectRepo)
+    owner: string;
+    project: string;
+    issue: string;
+  }>();
+  const project = getProject(data, projectOwner, projectRepo);
 
   if (!project) {
     return (
       <h1>
         Projekt {projectOwner}/{projectRepo} zde není.
       </h1>
-    )
+    );
   }
 
   return (
@@ -96,5 +96,5 @@ export const ProjectDetail = ({
         </Section>
       )}
     </div>
-  )
-}
+  );
+};

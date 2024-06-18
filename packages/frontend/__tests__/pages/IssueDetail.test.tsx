@@ -1,11 +1,11 @@
-import { MemoryRouter, Route, Routes } from "react-router-dom"
-import renderer from "react-test-renderer"
+import { MemoryRouter, Route, Routes } from "react-router-dom";
+import renderer from "react-test-renderer";
 
-import { IssueDetail } from "../../src/pages/IssueDetail"
-import { testData } from "../testData"
+import { IssueDetail } from "../../src/pages/IssueDetail";
+import { testData } from "../testData";
 
-const project = testData.projects[0]
-const issue = project.issues[0]
+const project = testData.projects[0];
+const issue = project.issues[0];
 
 describe("IssueDetail page", () => {
   test("should render correctly", () => {
@@ -19,10 +19,10 @@ describe("IssueDetail page", () => {
             path="/:owner/:project/:issue"
           />
         </Routes>
-      </MemoryRouter>
-    )
-    expect(tree).toMatchSnapshot()
-  })
+      </MemoryRouter>,
+    );
+    expect(tree).toMatchSnapshot();
+  });
 
   test("should render correctly if there is no related issue", () => {
     const tree = renderer.create(
@@ -33,8 +33,8 @@ describe("IssueDetail page", () => {
             path="/:owner/:project/:issue"
           />
         </Routes>
-      </MemoryRouter>
-    )
-    expect(tree).toMatchSnapshot()
-  })
-})
+      </MemoryRouter>,
+    );
+    expect(tree).toMatchSnapshot();
+  });
+});

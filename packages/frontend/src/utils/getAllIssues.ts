@@ -1,26 +1,26 @@
-import type { Project } from "../interfaces/Project"
-import type { ProjectInfo } from "../interfaces/ProjectInfo"
-import type { ProjectIssue } from "../interfaces/ProjectIssue"
-import type { ProjectListings } from "../interfaces/ProjectListings"
+import type { Project } from "../interfaces/Project";
+import type { ProjectInfo } from "../interfaces/ProjectInfo";
+import type { ProjectIssue } from "../interfaces/ProjectIssue";
+import type { ProjectListings } from "../interfaces/ProjectListings";
 
 export interface ProjectIssueWithProjectInfo extends ProjectIssue {
-  project: Project & ProjectInfo
+  project: Project & ProjectInfo;
 }
 
 interface Query extends Partial<Project> {
-  omitIssueNumber?: number
+  omitIssueNumber?: number;
 }
 
 export const getIssuesWithProjectInfo = (
   projectListings: ProjectListings,
-  query?: Query
+  query?: Query,
 ): Array<ProjectIssueWithProjectInfo> =>
   projectListings.projects
     .filter(
       (project) =>
         !query ||
         ((query.owner === undefined || query.owner === project.owner) &&
-          (query.repo === undefined || query.repo === project.repo))
+          (query.repo === undefined || query.repo === project.repo)),
     )
     .flatMap((project) =>
       project.issues
@@ -32,5 +32,5 @@ export const getIssuesWithProjectInfo = (
             repo: project.repo,
             ...project.info,
           },
-        }))
-    )
+        })),
+    );

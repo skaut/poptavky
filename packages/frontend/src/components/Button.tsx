@@ -1,13 +1,13 @@
-import styled from "@emotion/styled"
-import type React from "react"
+import styled from "@emotion/styled";
+import type React from "react";
 
-import { theme } from "../theme"
-import type { LinkProps } from "./ExtLink"
-import { ExtLink } from "./ExtLink"
+import { theme } from "../theme";
+import type { LinkProps } from "./ExtLink";
+import { ExtLink } from "./ExtLink";
 
 export const Button = (props: LinkProps): React.JSX.Element => (
   <ButtonWrapper {...props} />
-)
+);
 
 const ButtonWrapper = styled(ExtLink)`
   display: inline-block;
@@ -19,4 +19,4 @@ const ButtonWrapper = styled(ExtLink)`
   border-radius: 10px;
   box-shadow: 0 0 0 ${theme.colors.gray};
   transition: box-shadow 300ms;
-`
+`;

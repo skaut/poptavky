@@ -1,6 +1,6 @@
-import { css } from "@emotion/react"
-import styled from "@emotion/styled"
-import stringToColor from "string-to-color"
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
+import stringToColor from "string-to-color";
 
 export const ColoredTag = styled("span")(
   (props: { children: string; isLight?: boolean }) => css`
@@ -12,5 +12,5 @@ export const ColoredTag = styled("span")(
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     ${props.isLight === true ? "border: 1px solid #ffffff55" : ""};
-  `
-)
+  `,
+);

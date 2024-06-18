@@ -1,24 +1,24 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
-import type React from "react"
-import ReactMarkdown from "react-markdown"
-import { Link } from "react-router-dom"
-import remarkGfm from "remark-gfm"
+import { css } from "@emotion/react";
+import type React from "react";
+import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
+import remarkGfm from "remark-gfm";
 
-import type { Project } from "../interfaces/Project"
-import type { ProjectInfo } from "../interfaces/ProjectInfo"
-import type { ProjectIssue } from "../interfaces/ProjectIssue"
-import type { ProjectListing } from "../interfaces/ProjectListing"
-import { theme } from "../theme"
-import { getIssueLink } from "../utils/getIssueLink"
-import { H3 } from "./Typography"
+import type { Project } from "../interfaces/Project";
+import type { ProjectInfo } from "../interfaces/ProjectInfo";
+import type { ProjectIssue } from "../interfaces/ProjectIssue";
+import type { ProjectListing } from "../interfaces/ProjectListing";
+import { theme } from "../theme";
+import { getIssueLink } from "../utils/getIssueLink";
+import { H3 } from "./Typography";
 
 export const IssuesList = ({
   issues,
   project,
 }: {
-  readonly issues: Array<ProjectIssue>
-  readonly project: ProjectListing | (Project & ProjectInfo)
+  readonly issues: Array<ProjectIssue>;
+  readonly project: ProjectListing | (Project & ProjectInfo);
 }): React.JSX.Element => (
   <>
     {issues.map((issue) => (
@@ -60,4 +60,4 @@ export const IssuesList = ({
       </article>
     ))}
   </>
-)
+);

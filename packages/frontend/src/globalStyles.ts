@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react"
+import { css } from "@emotion/react";
 
-import { theme } from "./theme"
+import { theme } from "./theme";
 
 export const globalStyles = css`
   body {
@@ -24,4 +24,4 @@ export const globalStyles = css`
     background-color: ${theme.colors.brand};
     color: white;
   }
-`
+`;

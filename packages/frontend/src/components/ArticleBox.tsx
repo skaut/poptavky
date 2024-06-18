@@ -1,11 +1,11 @@
-import styled from "@emotion/styled"
-import type React from "react"
-import ReactMarkdown from "react-markdown"
-import { Link } from "react-router-dom"
-import remarkGfm from "remark-gfm"
+import styled from "@emotion/styled";
+import type React from "react";
+import ReactMarkdown from "react-markdown";
+import { Link } from "react-router-dom";
+import remarkGfm from "remark-gfm";
 
-import { ColoredTag } from "./ColoredTag"
-import { Article, H2, Paragraph } from "./Typography"
+import { ColoredTag } from "./ColoredTag";
+import { Article, H2, Paragraph } from "./Typography";
 
 export const ArticleBox = ({
   title,
@@ -16,13 +16,13 @@ export const ArticleBox = ({
   description,
   tags,
 }: {
-  readonly title: string
-  readonly link?: string
-  readonly subtitle?: string
-  readonly subtitleLink?: string
-  readonly subtitleDescription?: string
-  readonly description: string
-  readonly tags?: Array<string>
+  readonly title: string;
+  readonly link?: string;
+  readonly subtitle?: string;
+  readonly subtitleLink?: string;
+  readonly subtitleDescription?: string;
+  readonly description: string;
+  readonly tags?: Array<string>;
 }): React.JSX.Element => (
   <ThinArticle>
     <H2>{link !== undefined ? <Link to={link}>{title}</Link> : title}</H2>
@@ -40,7 +40,7 @@ export const ArticleBox = ({
       <ColoredTag key={tag}>{tag}</ColoredTag>
     ))}
   </ThinArticle>
-)
+);
 
 ArticleBox.defaultProps = {
   link: undefined,
@@ -48,15 +48,15 @@ ArticleBox.defaultProps = {
   subtitleDescription: undefined,
   subtitleLink: undefined,
   tags: [],
-}
+};
 
 const ProjectName = styled("p")`
   margin: 0 0 0.6em;
   * {
     font-size: 0.8rem;
   }
-`
+`;
 
 const ThinArticle = styled(Article)`
   max-width: 600px;
-`
+`;

@@ -1,7 +1,7 @@
-import { MemoryRouter } from "react-router-dom"
-import renderer from "react-test-renderer"
+import { MemoryRouter } from "react-router-dom";
+import renderer from "react-test-renderer";
 
-import { Navigation } from "../../src/components/Navigation"
+import { Navigation } from "../../src/components/Navigation";
 
 describe("Navigation component", () => {
   test("should render correctly", () => {
@@ -20,11 +20,11 @@ describe("Navigation component", () => {
               },
             ]}
           />
-        </MemoryRouter>
+        </MemoryRouter>,
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
-  })
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   test("should render correctly wyth active item", () => {
     const tree = renderer
       .create(
@@ -42,9 +42,9 @@ describe("Navigation component", () => {
               },
             ]}
           />
-        </MemoryRouter>
+        </MemoryRouter>,
       )
-      .toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-})
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

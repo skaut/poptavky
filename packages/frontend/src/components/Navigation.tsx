@@ -1,19 +1,19 @@
-import styled from "@emotion/styled"
-import type React from "react"
-import { NavLink } from "react-router-dom"
+import styled from "@emotion/styled";
+import type React from "react";
+import { NavLink } from "react-router-dom";
 
-import { theme } from "../theme"
+import { theme } from "../theme";
 
 interface NavigationItem {
-  title: string
-  link: string
-  isActive?: boolean
+  title: string;
+  link: string;
+  isActive?: boolean;
 }
 
 export const Navigation = ({
   items,
 }: {
-  readonly items: Array<NavigationItem>
+  readonly items: Array<NavigationItem>;
 }): React.JSX.Element => (
   <nav>
     <Container>
@@ -24,7 +24,7 @@ export const Navigation = ({
       ))}
     </Container>
   </nav>
-)
+);
 
 const Container = styled("div")`
   list-style: none;
@@ -32,7 +32,7 @@ const Container = styled("div")`
   margin-bottom: 24px;
   padding: 0 16px;
   border-bottom: 1px solid ${theme.colors.brand};
-`
+`;
 
 const NavigationLink = styled(NavLink)`
   display: block;
@@ -47,4 +47,4 @@ const NavigationLink = styled(NavLink)`
     border-left: 1px solid ${theme.colors.brand};
     background-color: #fff;
   }
-`
+`;

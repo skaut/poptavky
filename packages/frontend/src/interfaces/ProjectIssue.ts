@@ -1,6 +1,6 @@
 export interface ProjectIssue {
-  number: number
-  title: string
-  description: string
-  link?: string
+  number: number;
+  title: string;
+  description: string;
+  link?: string;
 }
