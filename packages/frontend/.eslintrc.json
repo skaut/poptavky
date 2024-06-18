@@ -93,7 +93,7 @@
     "react/no-unstable-nested-components": "error",
     "react/prefer-stateless-function": "error",
     "react/prefer-read-only-props": "error",
-    "react/require-default-props": "error",
+    "react/require-default-props": ["error", { "functions": "defaultArguments" }],
     "react/sort-default-props": "error",
     "react/sort-prop-types": "error",
     "react/style-prop-object": "error",
