@@ -7,14 +7,16 @@ import remarkGfm from "remark-gfm";
 import { ColoredTag } from "./ColoredTag";
 import { Article, H2, Paragraph } from "./Typography";
 
+const emptyArray: Array<string> = [];
+
 export const ArticleBox = ({
   title,
-  link,
-  subtitle,
-  subtitleLink,
-  subtitleDescription,
+  link = undefined,
+  subtitle = undefined,
+  subtitleLink = undefined,
+  subtitleDescription = undefined,
   description,
-  tags,
+  tags = emptyArray,
 }: {
   readonly title: string;
   readonly link?: string;
@@ -36,19 +38,11 @@ export const ArticleBox = ({
     <Paragraph>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{description}</ReactMarkdown>
     </Paragraph>
-    {(tags ?? []).map((tag) => (
+    {tags.map((tag) => (
       <ColoredTag key={tag}>{tag}</ColoredTag>
     ))}
   </ThinArticle>
 );
-
-ArticleBox.defaultProps = {
-  link: undefined,
-  subtitle: undefined,
-  subtitleDescription: undefined,
-  subtitleLink: undefined,
-  tags: [],
-};
 
 const ProjectName = styled("p")`
   margin: 0 0 0.6em;

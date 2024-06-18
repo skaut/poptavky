@@ -7,7 +7,7 @@ import { ArticleBox } from "./ArticleBox";
 
 export const Issue = ({
   issue,
-  hideTags,
+  hideTags = false,
 }: {
   readonly issue: ProjectIssueWithProjectInfo;
   readonly hideTags?: boolean;
@@ -18,11 +18,7 @@ export const Issue = ({
     subtitle={issue.project.name}
     subtitleDescription={issue.project["short-description"]}
     subtitleLink={getProjectLink(issue.project)}
-    tags={hideTags !== true ? issue.project.tags : []}
+    tags={!hideTags ? issue.project.tags : []}
     title={issue.title}
   />
 );
-
-Issue.defaultProps = {
-  hideTags: false,
-};
