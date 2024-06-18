@@ -11,7 +11,9 @@ describe("IssueDetail page", () => {
   test("should render correctly", () => {
     const { container } = render(
       <MemoryRouter
-        initialEntries={[`/${project.owner}/${project.repo}/${issue.number}`]}
+        initialEntries={[
+          `/${project.owner}/${project.repo}/${issue.number.toString()}`,
+        ]}
       >
         <Routes>
           <Route
