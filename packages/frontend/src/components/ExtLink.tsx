@@ -12,9 +12,9 @@ export interface LinkProps {
 export const ExtLink = ({
   children,
   href,
-  title,
-  targetSelf,
-  className,
+  title = undefined,
+  targetSelf = false,
+  className = undefined,
 }: LinkProps): React.JSX.Element => (
   <a
     className={className}
@@ -34,9 +34,3 @@ export const ExtLink = ({
     {children}
   </a>
 );
-
-ExtLink.defaultProps = {
-  className: undefined,
-  targetSelf: false,
-  title: undefined,
-};

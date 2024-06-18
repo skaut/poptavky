@@ -9,12 +9,12 @@ import { Article, H2, Paragraph } from "./Typography";
 
 export const ArticleBox = ({
   title,
-  link,
-  subtitle,
-  subtitleLink,
-  subtitleDescription,
+  link = undefined,
+  subtitle = undefined,
+  subtitleLink = undefined,
+  subtitleDescription = undefined,
   description,
-  tags,
+  tags = [],
 }: {
   readonly title: string;
   readonly link?: string;
@@ -41,14 +41,6 @@ export const ArticleBox = ({
     ))}
   </ThinArticle>
 );
-
-ArticleBox.defaultProps = {
-  link: undefined,
-  subtitle: undefined,
-  subtitleDescription: undefined,
-  subtitleLink: undefined,
-  tags: [],
-};
 
 const ProjectName = styled("p")`
   margin: 0 0 0.6em;
