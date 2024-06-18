@@ -21,7 +21,7 @@
     "build:public": "mkdir -p dist && cp -r public/* dist/",
     "build:webpack": "webpack",
     "build": "run-p -c --aggregate-output build:*",
-    "lint": "eslint --color webpack.config.js 'src/**/*' '__mocks__/**/*' '__tests__/**/*'",
+    "lint": "eslint --color \"src/**/*\" \"__mocks__/**/*\" \"__tests__/**/*\" \"*.config.{js,ts}\"",
     "test": "jest",
     "test-accept": "jest --updateSnapshot"
   },
