@@ -48,7 +48,7 @@
   },
   "scripts": {
     "lint:typecheck": "tsc  --noEmit",
-    "lint:eslint": "eslint --color 'jest.config.ts' 'src/**/*' '__tests__/**/*'",
+    "lint:eslint": "eslint --color \"src/**/*\" \"__tests__/**/*\" \"*.config.{js,ts}\"",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "jest",
     "collect": "tsx src/index.ts"

@@ -1,6 +1,5 @@
-import type { JestConfigWithTsJest } from "ts-jest";
-
-const config: JestConfigWithTsJest = {
+/** @type {import('ts-jest').JestConfigWithTsJest} */
+export default {
   collectCoverage: true,
   collectCoverageFrom: [
     "src/**/*",
@@ -25,5 +24,3 @@ const config: JestConfigWithTsJest = {
   resetMocks: true,
   testMatch: ["<rootDir>/__tests__/**/*.test.ts"],
 };
-
-export default config;
