@@ -36,7 +36,7 @@ export const ArticleBox = ({
     <Paragraph>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{description}</ReactMarkdown>
     </Paragraph>
-    {(tags ?? []).map((tag) => (
+    {tags.map((tag) => (
       <ColoredTag key={tag}>{tag}</ColoredTag>
     ))}
   </ThinArticle>

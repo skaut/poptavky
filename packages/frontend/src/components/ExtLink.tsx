@@ -20,7 +20,7 @@ export const ExtLink = ({
     className={className}
     href={href}
     title={title}
-    {...(targetSelf !== true
+    {...(!targetSelf
       ? {
           target: "_blank",
           rel: "noreferrer noopener",
