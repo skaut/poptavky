@@ -1,50 +1,46 @@
+import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import renderer from "react-test-renderer";
 
 import { Navigation } from "../../src/components/Navigation";
 
 describe("Navigation component", () => {
   test("should render correctly", () => {
-    const tree = renderer
-      .create(
-        <MemoryRouter>
-          <Navigation
-            items={[
-              {
-                title: "Poptávky",
-                link: "/",
-              },
-              {
-                title: "Projekty",
-                link: "/projekty",
-              },
-            ]}
-          />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter>
+        <Navigation
+          items={[
+            {
+              title: "Poptávky",
+              link: "/",
+            },
+            {
+              title: "Projekty",
+              link: "/projekty",
+            },
+          ]}
+        />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
   test("should render correctly wyth active item", () => {
-    const tree = renderer
-      .create(
-        <MemoryRouter>
-          <Navigation
-            items={[
-              {
-                title: "Poptávky",
-                link: "/",
-              },
-              {
-                title: "Projekty",
-                link: "/projekty",
-                isActive: true,
-              },
-            ]}
-          />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter>
+        <Navigation
+          items={[
+            {
+              title: "Poptávky",
+              link: "/",
+            },
+            {
+              title: "Projekty",
+              link: "/projekty",
+              isActive: true,
+            },
+          ]}
+        />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

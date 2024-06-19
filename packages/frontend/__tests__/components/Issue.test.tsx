@@ -1,5 +1,5 @@
+import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import renderer from "react-test-renderer";
 
 import { Issue } from "../../src/components/Issue";
 import { getIssueWithProject } from "../../src/utils/getIssueWithProject";
@@ -18,24 +18,20 @@ const issueWithProject = getIssueWithProject(
 describe("Issue component", () => {
   test("should render correctly", () => {
     expect(issue).not.toBeNull();
-    const tree = renderer
-      .create(
-        <MemoryRouter>
-          <Issue issue={issueWithProject} />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter>
+        <Issue issue={issueWithProject} />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render correctly without tags", () => {
-    const tree = renderer
-      .create(
-        <MemoryRouter>
-          <Issue hideTags issue={issueWithProject} />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter>
+        <Issue hideTags issue={issueWithProject} />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

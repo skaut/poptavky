@@ -178,51 +178,51 @@ exports[`ProjectDetail page should render correctly 1`] = `
 }
 
 <div
-  className="emotion-0"
+  class="emotion-0"
 >
   <section
-    className="emotion-1"
+    class="emotion-1"
   >
     <div
-      className="emotion-2"
+      class="emotion-2"
     >
       <h1
-        className="emotion-3"
+        class="emotion-3"
       >
         WordPress plugin: Galerie obrázků a videí z Google Disku
       </h1>
       <div
-        className="emotion-4"
+        class="emotion-4"
       >
         <p
-          className="emotion-5"
+          class="emotion-5"
         >
           Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
         </p>
         <p
-          className="emotion-5"
+          class="emotion-5"
         >
           <p>
             Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
           </p>
         </p>
         <span
-          className="emotion-7"
+          class="emotion-7"
         >
           wordpress
         </span>
         <span
-          className="emotion-8"
+          class="emotion-8"
         >
           php
         </span>
         <span
-          className="emotion-9"
+          class="emotion-9"
         >
           javascript
         </span>
         <span
-          className="emotion-10"
+          class="emotion-10"
         >
           google
         </span>
@@ -230,24 +230,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
     </div>
   </section>
   <section
-    className="emotion-11"
+    class="emotion-11"
   >
     <p
-      className="emotion-12"
+      class="emotion-12"
     >
       <span
-        className="emotion-13"
+        class="emotion-13"
       >
         <svg
           fill="currentColor"
           height="1em"
           stroke="currentColor"
-          strokeWidth="0"
-          style={
-            {
-              "color": undefined,
-            }
-          }
+          stroke-width="0"
           viewBox="0 0 16 16"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
@@ -260,10 +255,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         Správce:
       </span>
       <span
-        className="emotion-14"
+        class="emotion-14"
       >
         <a
-          className="emotion-15"
+          class="emotion-15"
           href="mailto:mlha@skaut.cz"
           rel="noreferrer noopener"
           target="_blank"
@@ -273,28 +268,23 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-12"
+      class="emotion-12"
     >
       <span
-        className="emotion-13"
+        class="emotion-13"
       >
         <svg
           fill="currentColor"
           height="1em"
           stroke="currentColor"
-          strokeWidth="0"
-          style={
-            {
-              "color": undefined,
-            }
-          }
+          stroke-width="0"
           viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"
-            fillRule="evenodd"
+            fill-rule="evenodd"
           />
         </svg>
          
@@ -302,10 +292,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-14"
+        class="emotion-14"
       >
         <a
-          className="emotion-15"
+          class="emotion-15"
           href="mailto:mlha@skaut.cz"
           rel="noreferrer noopener"
           target="_blank"
@@ -315,21 +305,16 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-12"
+      class="emotion-12"
     >
       <span
-        className="emotion-13"
+        class="emotion-13"
       >
         <svg
           fill="currentColor"
           height="1em"
           stroke="currentColor"
-          strokeWidth="0"
-          style={
-            {
-              "color": undefined,
-            }
-          }
+          stroke-width="0"
           viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
@@ -347,10 +332,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-14"
+        class="emotion-14"
       >
         <a
-          className="emotion-15"
+          class="emotion-15"
           href="https://demo-skaut-google-drive-gallery.skauting.cz/"
           rel="noreferrer noopener"
           target="_blank"
@@ -360,30 +345,25 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-12"
+      class="emotion-12"
     >
       <span
-        className="emotion-13"
+        class="emotion-13"
       >
         <svg
           aria-hidden="true"
           fill="none"
           height="1em"
           stroke="currentColor"
-          strokeWidth="2"
-          style={
-            {
-              "color": undefined,
-            }
-          }
+          stroke-width="2"
           viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
         </svg>
          
@@ -391,10 +371,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-14"
+        class="emotion-14"
       >
         <a
-          className="emotion-15"
+          class="emotion-15"
           href="https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery"
           rel="noreferrer noopener"
           target="_blank"
@@ -404,21 +384,16 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-12"
+      class="emotion-12"
     >
       <span
-        className="emotion-13"
+        class="emotion-13"
       >
         <svg
           fill="currentColor"
           height="1em"
           stroke="currentColor"
-          strokeWidth="0"
-          style={
-            {
-              "color": undefined,
-            }
-          }
+          stroke-width="0"
           viewBox="0 0 1024 1024"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
@@ -432,10 +407,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-14"
+        class="emotion-14"
       >
         <a
-          className="emotion-15"
+          class="emotion-15"
           href="https://github.com/skaut/skaut-google-drive-gallery"
           rel="noreferrer noopener"
           target="_blank"
@@ -445,21 +420,16 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-12"
+      class="emotion-12"
     >
       <span
-        className="emotion-13"
+        class="emotion-13"
       >
         <svg
           fill="currentColor"
           height="1em"
           stroke="currentColor"
-          strokeWidth="0"
-          style={
-            {
-              "color": undefined,
-            }
-          }
+          stroke-width="0"
           version="1.1"
           viewBox="0 0 16 16"
           width="1em"
@@ -474,10 +444,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-14"
+        class="emotion-14"
       >
         <a
-          className="emotion-15"
+          class="emotion-15"
           href="https://wordpress.org/plugins/skaut-google-drive-gallery/"
           rel="noreferrer noopener"
           target="_blank"
@@ -487,21 +457,16 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </span>
     </p>
     <p
-      className="emotion-12"
+      class="emotion-12"
     >
       <span
-        className="emotion-13"
+        class="emotion-13"
       >
         <svg
           fill="currentColor"
           height="1em"
           stroke="currentColor"
-          strokeWidth="0"
-          style={
-            {
-              "color": undefined,
-            }
-          }
+          stroke-width="0"
           viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
@@ -519,10 +484,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        className="emotion-14"
+        class="emotion-14"
       >
         <a
-          className="emotion-15"
+          class="emotion-15"
           href="https://github.com/skaut/skaut-google-drive-gallery/issues"
           rel="noreferrer noopener"
           target="_blank"
@@ -533,28 +498,27 @@ exports[`ProjectDetail page should render correctly 1`] = `
     </p>
   </section>
   <section
-    className="emotion-40"
+    class="emotion-40"
   >
     <span
-      className="emotion-13"
+      class="emotion-13"
     >
       Poptávky u projektu:
     </span>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/1"
-          onClick={[Function]}
         >
           Add hint to set videos to public
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           1
@@ -570,20 +534,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/2"
-          onClick={[Function]}
         >
           If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           2
@@ -599,20 +562,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/3"
-          onClick={[Function]}
         >
           Editing doesn't check path validity
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           3
@@ -632,20 +594,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/4"
-          onClick={[Function]}
         >
           Ctrl-click on folders does not work
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           4
@@ -656,20 +617,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/5"
-          onClick={[Function]}
         >
           Add option to specify gallery by a Drive link
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           5
@@ -694,20 +654,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/6"
-          onClick={[Function]}
         >
           Add images to the block
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           6
@@ -718,20 +677,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/7"
-          onClick={[Function]}
         >
           Add video overlay
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           7
@@ -742,20 +700,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/8"
-          onClick={[Function]}
         >
           Increase test coverage
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           8
@@ -770,20 +727,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/9"
-          onClick={[Function]}
         >
           Themes with "editor-styles" support change the look of the block editor
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           9
@@ -796,7 +752,7 @@ exports[`ProjectDetail page should render correctly 1`] = `
 
       <pre>
         <code
-          className="language-php"
+          class="language-php"
         >
           add_theme_support( 'editor-styles' );
 
@@ -814,20 +770,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/10"
-          onClick={[Function]}
         >
           Google app creation manual is outdated
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           10
@@ -854,20 +809,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/11"
-          onClick={[Function]}
         >
           Directory preview images
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           11
@@ -878,20 +832,19 @@ exports[`ProjectDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      className="emotion-42"
+      class="emotion-42"
     >
       <h3
-        className="emotion-43"
+        class="emotion-43"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/12"
-          onClick={[Function]}
         >
           UX & design audit
         </a>
          
         <span
-          className="emotion-44"
+          class="emotion-44"
         >
           #
           12
@@ -903,16 +856,15 @@ exports[`ProjectDetail page should render correctly 1`] = `
       
 
       <ul
-        className="contains-task-list"
+        class="contains-task-list"
       >
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            
@@ -926,11 +878,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            
@@ -939,11 +890,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            
@@ -952,11 +902,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            
@@ -965,11 +914,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            
@@ -978,11 +926,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            
@@ -991,11 +938,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            
@@ -1004,11 +950,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            
@@ -1017,11 +962,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
         
 
         <li
-          className="task-list-item"
+          class="task-list-item"
         >
           <input
-            checked={false}
-            disabled={true}
+            disabled=""
             type="checkbox"
           />
            

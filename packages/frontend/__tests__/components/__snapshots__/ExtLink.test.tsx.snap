@@ -13,7 +13,7 @@ exports[`ExtLink component should render correctly 1`] = `
 }
 
 <a
-  className="emotion-0"
+  class="emotion-0"
   href="http://www.somewhere.com"
   rel="noreferrer noopener"
   target="_blank"
@@ -35,7 +35,7 @@ exports[`ExtLink component should render correctly with custom class 1`] = `
 }
 
 <a
-  className="myClassName emotion-0"
+  class="myClassName emotion-0"
   href="http://www.somewhere.com"
   rel="noreferrer noopener"
   target="_blank"
@@ -57,7 +57,7 @@ exports[`ExtLink component should render correctly with target self 1`] = `
 }
 
 <a
-  className="emotion-0"
+  class="emotion-0"
   href="http://www.somewhere.com"
 >
   Link somewhere
@@ -77,7 +77,7 @@ exports[`ExtLink component should render correctly with title 1`] = `
 }
 
 <a
-  className="emotion-0"
+  class="emotion-0"
   href="http://www.somewhere.com"
   rel="noreferrer noopener"
   target="_blank"

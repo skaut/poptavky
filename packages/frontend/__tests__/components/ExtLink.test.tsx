@@ -1,45 +1,39 @@
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 
 import { ExtLink } from "../../src/components/ExtLink";
 
 describe("ExtLink component", () => {
   test("should render correctly", () => {
-    const tree = renderer
-      .create(<ExtLink href="http://www.somewhere.com">Link somewhere</ExtLink>)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <ExtLink href="http://www.somewhere.com">Link somewhere</ExtLink>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render correctly with title", () => {
-    const tree = renderer
-      .create(
-        <ExtLink href="http://www.somewhere.com" title="myTitle">
-          Link somewhere
-        </ExtLink>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <ExtLink href="http://www.somewhere.com" title="myTitle">
+        Link somewhere
+      </ExtLink>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render correctly with custom class", () => {
-    const tree = renderer
-      .create(
-        <ExtLink className="myClassName" href="http://www.somewhere.com">
-          Link somewhere
-        </ExtLink>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <ExtLink className="myClassName" href="http://www.somewhere.com">
+        Link somewhere
+      </ExtLink>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render correctly with target self", () => {
-    const tree = renderer
-      .create(
-        <ExtLink href="http://www.somewhere.com" targetSelf>
-          Link somewhere
-        </ExtLink>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <ExtLink href="http://www.somewhere.com" targetSelf>
+        Link somewhere
+      </ExtLink>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

@@ -143,23 +143,22 @@ exports[`App should render correctly 1`] = `
 }
 
 <div
-  className="emotion-0"
+  class="emotion-0"
 >
   <a
     href="/"
-    onClick={[Function]}
     title="domů"
   >
     <header
-      className="emotion-1"
+      class="emotion-1"
     >
       <img
         alt="logo"
-        className="emotion-2"
+        class="emotion-2"
         src="test-file-stub"
       />
       <h1
-        className="emotion-3"
+        class="emotion-3"
       >
         IT poptávky
       </h1>
@@ -169,51 +168,47 @@ exports[`App should render correctly 1`] = `
     <div>
       <nav>
         <div
-          className="emotion-4"
+          class="emotion-4"
         >
           <a
             aria-current="page"
-            className="emotion-5 active"
+            class="emotion-5 active"
             href="/"
-            onClick={[Function]}
           >
             Poptávky
           </a>
           <a
-            className="emotion-5"
+            class="emotion-5"
             href="/projekty"
-            onClick={[Function]}
           >
             Projekty
           </a>
         </div>
       </nav>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/1"
-            onClick={[Function]}
           >
             Add hint to set videos to public
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
@@ -225,52 +220,50 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/2"
-            onClick={[Function]}
           >
             If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             When in a situation that there is a Google Drive shortcut somewhere in the gallery, the plugin displays the folder and it works for browsing. However, when looking at the shortcut as a member of its parent directory and when being inside the directory and looking at its name in the breadcrumbs, one uses the shortcut name, whereas the other uses the original folder name (when they differ).
@@ -282,52 +275,50 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/3"
-            onClick={[Function]}
           >
             Editing doesn't check path validity
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: 
@@ -343,104 +334,100 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/4"
-            onClick={[Function]}
           >
             Ctrl-click on folders does not work
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Ctrl+click on a gallery item (subfolder) or breadcrumbs should open in a new tab
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/5"
-            onClick={[Function]}
           >
             Add option to specify gallery by a Drive link
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             <a
@@ -461,156 +448,150 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/6"
-            onClick={[Function]}
           >
             Add images to the block
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Currently, images aren't listed in the editor - both block and TinyMCE plugin. This often confuses users.
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/7"
-            onClick={[Function]}
           >
             Add video overlay
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             In the image grid, we should add an overlay to signify that an item is a video (for example a big play icon).
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/8"
-            onClick={[Function]}
           >
             Increase test coverage
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             <a
@@ -621,52 +602,50 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/9"
-            onClick={[Function]}
           >
             Themes with "editor-styles" support change the look of the block editor
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             If the active theme contains
@@ -675,7 +654,7 @@ exports[`App should render correctly 1`] = `
 
           <pre>
             <code
-              className="language-php"
+              class="language-php"
             >
               add_theme_support( 'editor-styles' );
 
@@ -693,52 +672,50 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/10"
-            onClick={[Function]}
           >
             Google app creation manual is outdated
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             <a
@@ -761,104 +738,100 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/11"
-            onClick={[Function]}
           >
             Directory preview images
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Currently, the first image in a directory is used for its preview.
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/12"
-            onClick={[Function]}
           >
             UX & design audit
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Go over the design of:
@@ -866,16 +839,15 @@ exports[`App should render correctly 1`] = `
           
 
           <ul
-            className="contains-task-list"
+            class="contains-task-list"
           >
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -889,11 +861,10 @@ exports[`App should render correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -902,11 +873,10 @@ exports[`App should render correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -915,11 +885,10 @@ exports[`App should render correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -928,11 +897,10 @@ exports[`App should render correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -941,11 +909,10 @@ exports[`App should render correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -954,11 +921,10 @@ exports[`App should render correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -967,11 +933,10 @@ exports[`App should render correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -980,11 +945,10 @@ exports[`App should render correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -1000,100 +964,96 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skautis-integration/1"
-            onClick={[Function]}
           >
             User management smart table is not smart when the registration module is enabled
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skautis-integration"
-            onClick={[Function]}
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
             WordPress plugin: SkautIS integrace
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         />
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-110"
+          class="emotion-110"
         >
           skautis
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skautis-integration/2"
-            onClick={[Function]}
           >
             Chyba v zobrazení
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skautis-integration"
-            onClick={[Function]}
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
             WordPress plugin: SkautIS integrace
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             <img
@@ -1103,52 +1063,50 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-110"
+          class="emotion-110"
         >
           skautis
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skautis-integration/3"
-            onClick={[Function]}
           >
             WordPress 5.x + Gutenberg
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skautis-integration"
-            onClick={[Function]}
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
             WordPress plugin: SkautIS integrace
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Musíme pořešit, jak nejlépe integrovat náš plugin s WP 5.x a hlavně Gutenbergem.
@@ -1160,156 +1118,150 @@ exports[`App should render correctly 1`] = `
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-110"
+          class="emotion-110"
         >
           skautis
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skautis-integration/4"
-            onClick={[Function]}
           >
             Profilové fotky
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skautis-integration"
-            onClick={[Function]}
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
             WordPress plugin: SkautIS integrace
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Co do WordPressu tahat i profilové fotky, co si lidi do skautISu přidávají. Aby u profilu nějakou fotku měli...
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-110"
+          class="emotion-110"
         >
           skautis
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skautis-integration/5"
-            onClick={[Function]}
           >
             Výběry pravidel v shortcode
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skautis-integration"
-            onClick={[Function]}
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
             WordPress plugin: SkautIS integrace
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Přidat Select2 do výběru pravidel v shortcode.
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-110"
+          class="emotion-110"
         >
           skautis
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skautis-integration/6"
-            onClick={[Function]}
           >
             Modul "Nábory"
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
             href="/skaut/skautis-integration"
-            onClick={[Function]}
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
             WordPress plugin: SkautIS integrace
           </a>
         </p>
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             modul pro nábory se zobrazením náborové mapy
@@ -1327,22 +1279,22 @@ příklad:
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-110"
+          class="emotion-110"
         >
           skautis
         </span>
@@ -1602,23 +1554,22 @@ exports[`App should render issue listing correctly 1`] = `
 }
 
 <div
-  className="emotion-0"
+  class="emotion-0"
 >
   <a
     href="/"
-    onClick={[Function]}
     title="domů"
   >
     <header
-      className="emotion-1"
+      class="emotion-1"
     >
       <img
         alt="logo"
-        className="emotion-2"
+        class="emotion-2"
         src="test-file-stub"
       />
       <h1
-        className="emotion-3"
+        class="emotion-3"
       >
         IT poptávky
       </h1>
@@ -1626,49 +1577,44 @@ exports[`App should render issue listing correctly 1`] = `
   </a>
   <main>
     <div
-      className="emotion-4"
+      class="emotion-4"
     >
       <section
-        className="emotion-5"
+        class="emotion-5"
       >
         <span
-          className="emotion-6"
+          class="emotion-6"
         >
           Poptávka:
         </span>
         <h1
-          className="emotion-7"
+          class="emotion-7"
         >
           Editing doesn't check path validity
            
           <span
-            className="emotion-8"
+            class="emotion-8"
           >
             #
             3
           </span>
         </h1>
         <div
-          className="emotion-9"
+          class="emotion-9"
         >
           <a
-            className="emotion-10"
+            class="emotion-10"
             href="https://github.com/skaut/skaut-google-drive-gallery/issues/683"
             rel="noreferrer noopener"
             target="_blank"
           >
             <svg
               fill="currentColor"
-              height={20}
+              height="20"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 1024 1024"
-              width={20}
+              width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -1679,10 +1625,10 @@ exports[`App should render issue listing correctly 1`] = `
           </a>
         </div>
         <div
-          className="emotion-11"
+          class="emotion-11"
         >
           <p
-            className="emotion-12"
+            class="emotion-12"
           >
             <p>
               When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: 
@@ -1699,12 +1645,12 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </div>
         <span
-          className="emotion-6"
+          class="emotion-6"
         >
           Zaujala tě poptávka?
         </span>
         <a
-          className="emotion-14"
+          class="emotion-14"
           href="mailto:mlha@skaut.cz"
           rel="noreferrer noopener"
           target="_blank"
@@ -1713,79 +1659,73 @@ exports[`App should render issue listing correctly 1`] = `
         </a>
       </section>
       <section
-        className="emotion-15"
+        class="emotion-15"
       >
         <div
-          className="emotion-16"
+          class="emotion-16"
         >
           <span
-            className="emotion-6"
+            class="emotion-6"
           >
             Projekt:
           </span>
           <h2
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery"
-              onClick={[Function]}
             >
               WordPress plugin: Galerie obrázků a videí z Google Disku
             </a>
           </h2>
           <p
-            className="emotion-19"
+            class="emotion-19"
           >
             Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
           </p>
           <p
-            className="emotion-19"
+            class="emotion-19"
           >
             <p>
               Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
             </p>
           </p>
           <span
-            className="emotion-21"
+            class="emotion-21"
           >
             wordpress
           </span>
           <span
-            className="emotion-22"
+            class="emotion-22"
           >
             php
           </span>
           <span
-            className="emotion-23"
+            class="emotion-23"
           >
             javascript
           </span>
           <span
-            className="emotion-24"
+            class="emotion-24"
           >
             google
           </span>
         </div>
       </section>
       <section
-        className="emotion-25"
+        class="emotion-25"
       >
         <p
-          className="emotion-19"
+          class="emotion-19"
         >
           <span
-            className="emotion-6"
+            class="emotion-6"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 16 16"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -1798,10 +1738,10 @@ exports[`App should render issue listing correctly 1`] = `
             Správce:
           </span>
           <span
-            className="emotion-28"
+            class="emotion-28"
           >
             <a
-              className="emotion-10"
+              class="emotion-10"
               href="mailto:mlha@skaut.cz"
               rel="noreferrer noopener"
               target="_blank"
@@ -1811,28 +1751,23 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-19"
+          class="emotion-19"
         >
           <span
-            className="emotion-6"
+            class="emotion-6"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"
-                fillRule="evenodd"
+                fill-rule="evenodd"
               />
             </svg>
              
@@ -1840,10 +1775,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-28"
+            class="emotion-28"
           >
             <a
-              className="emotion-10"
+              class="emotion-10"
               href="mailto:mlha@skaut.cz"
               rel="noreferrer noopener"
               target="_blank"
@@ -1853,21 +1788,16 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-19"
+          class="emotion-19"
         >
           <span
-            className="emotion-6"
+            class="emotion-6"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -1885,10 +1815,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-28"
+            class="emotion-28"
           >
             <a
-              className="emotion-10"
+              class="emotion-10"
               href="https://demo-skaut-google-drive-gallery.skauting.cz/"
               rel="noreferrer noopener"
               target="_blank"
@@ -1898,30 +1828,25 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-19"
+          class="emotion-19"
         >
           <span
-            className="emotion-6"
+            class="emotion-6"
           >
             <svg
               aria-hidden="true"
               fill="none"
               height="1em"
               stroke="currentColor"
-              strokeWidth="2"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="2"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
             </svg>
              
@@ -1929,10 +1854,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-28"
+            class="emotion-28"
           >
             <a
-              className="emotion-10"
+              class="emotion-10"
               href="https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery"
               rel="noreferrer noopener"
               target="_blank"
@@ -1942,21 +1867,16 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-19"
+          class="emotion-19"
         >
           <span
-            className="emotion-6"
+            class="emotion-6"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 1024 1024"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -1970,10 +1890,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-28"
+            class="emotion-28"
           >
             <a
-              className="emotion-10"
+              class="emotion-10"
               href="https://github.com/skaut/skaut-google-drive-gallery"
               rel="noreferrer noopener"
               target="_blank"
@@ -1983,21 +1903,16 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-19"
+          class="emotion-19"
         >
           <span
-            className="emotion-6"
+            class="emotion-6"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               version="1.1"
               viewBox="0 0 16 16"
               width="1em"
@@ -2012,10 +1927,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-28"
+            class="emotion-28"
           >
             <a
-              className="emotion-10"
+              class="emotion-10"
               href="https://wordpress.org/plugins/skaut-google-drive-gallery/"
               rel="noreferrer noopener"
               target="_blank"
@@ -2025,21 +1940,16 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-19"
+          class="emotion-19"
         >
           <span
-            className="emotion-6"
+            class="emotion-6"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -2057,10 +1967,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-28"
+            class="emotion-28"
           >
             <a
-              className="emotion-10"
+              class="emotion-10"
               href="https://github.com/skaut/skaut-google-drive-gallery/issues"
               rel="noreferrer noopener"
               target="_blank"
@@ -2071,28 +1981,27 @@ exports[`App should render issue listing correctly 1`] = `
         </p>
       </section>
       <section
-        className="emotion-54"
+        class="emotion-54"
       >
         <span
-          className="emotion-6"
+          class="emotion-6"
         >
           Další poptávky projektu:
         </span>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/1"
-              onClick={[Function]}
             >
               Add hint to set videos to public
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               1
@@ -2108,20 +2017,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/2"
-              onClick={[Function]}
             >
               If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               2
@@ -2137,20 +2045,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/4"
-              onClick={[Function]}
             >
               Ctrl-click on folders does not work
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               4
@@ -2161,20 +2068,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/5"
-              onClick={[Function]}
             >
               Add option to specify gallery by a Drive link
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               5
@@ -2199,20 +2105,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/6"
-              onClick={[Function]}
             >
               Add images to the block
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               6
@@ -2223,20 +2128,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/7"
-              onClick={[Function]}
             >
               Add video overlay
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               7
@@ -2247,20 +2151,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/8"
-              onClick={[Function]}
             >
               Increase test coverage
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               8
@@ -2275,20 +2178,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/9"
-              onClick={[Function]}
             >
               Themes with "editor-styles" support change the look of the block editor
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               9
@@ -2301,7 +2203,7 @@ exports[`App should render issue listing correctly 1`] = `
 
           <pre>
             <code
-              className="language-php"
+              class="language-php"
             >
               add_theme_support( 'editor-styles' );
 
@@ -2319,20 +2221,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/10"
-              onClick={[Function]}
             >
               Google app creation manual is outdated
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               10
@@ -2359,20 +2260,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/11"
-              onClick={[Function]}
             >
               Directory preview images
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               11
@@ -2383,20 +2283,19 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-56"
+          class="emotion-56"
         >
           <h3
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/12"
-              onClick={[Function]}
             >
               UX & design audit
             </a>
              
             <span
-              className="emotion-58"
+              class="emotion-58"
             >
               #
               12
@@ -2408,16 +2307,15 @@ exports[`App should render issue listing correctly 1`] = `
           
 
           <ul
-            className="contains-task-list"
+            class="contains-task-list"
           >
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2431,11 +2329,10 @@ exports[`App should render issue listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2444,11 +2341,10 @@ exports[`App should render issue listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2457,11 +2353,10 @@ exports[`App should render issue listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2470,11 +2365,10 @@ exports[`App should render issue listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2483,11 +2377,10 @@ exports[`App should render issue listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2496,11 +2389,10 @@ exports[`App should render issue listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2509,11 +2401,10 @@ exports[`App should render issue listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2522,11 +2413,10 @@ exports[`App should render issue listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -2755,23 +2645,22 @@ exports[`App should render project listing correctly 1`] = `
 }
 
 <div
-  className="emotion-0"
+  class="emotion-0"
 >
   <a
     href="/"
-    onClick={[Function]}
     title="domů"
   >
     <header
-      className="emotion-1"
+      class="emotion-1"
     >
       <img
         alt="logo"
-        className="emotion-2"
+        class="emotion-2"
         src="test-file-stub"
       />
       <h1
-        className="emotion-3"
+        class="emotion-3"
       >
         IT poptávky
       </h1>
@@ -2779,51 +2668,51 @@ exports[`App should render project listing correctly 1`] = `
   </a>
   <main>
     <div
-      className="emotion-4"
+      class="emotion-4"
     >
       <section
-        className="emotion-5"
+        class="emotion-5"
       >
         <div
-          className="emotion-6"
+          class="emotion-6"
         >
           <h1
-            className="emotion-7"
+            class="emotion-7"
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </h1>
           <div
-            className="emotion-8"
+            class="emotion-8"
           >
             <p
-              className="emotion-9"
+              class="emotion-9"
             >
               Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
             </p>
             <p
-              className="emotion-9"
+              class="emotion-9"
             >
               <p>
                 Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
               </p>
             </p>
             <span
-              className="emotion-11"
+              class="emotion-11"
             >
               wordpress
             </span>
             <span
-              className="emotion-12"
+              class="emotion-12"
             >
               php
             </span>
             <span
-              className="emotion-13"
+              class="emotion-13"
             >
               javascript
             </span>
             <span
-              className="emotion-14"
+              class="emotion-14"
             >
               google
             </span>
@@ -2831,24 +2720,19 @@ exports[`App should render project listing correctly 1`] = `
         </div>
       </section>
       <section
-        className="emotion-15"
+        class="emotion-15"
       >
         <p
-          className="emotion-16"
+          class="emotion-16"
         >
           <span
-            className="emotion-17"
+            class="emotion-17"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 16 16"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -2861,10 +2745,10 @@ exports[`App should render project listing correctly 1`] = `
             Správce:
           </span>
           <span
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
-              className="emotion-19"
+              class="emotion-19"
               href="mailto:mlha@skaut.cz"
               rel="noreferrer noopener"
               target="_blank"
@@ -2874,28 +2758,23 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-16"
+          class="emotion-16"
         >
           <span
-            className="emotion-17"
+            class="emotion-17"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"
-                fillRule="evenodd"
+                fill-rule="evenodd"
               />
             </svg>
              
@@ -2903,10 +2782,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
-              className="emotion-19"
+              class="emotion-19"
               href="mailto:mlha@skaut.cz"
               rel="noreferrer noopener"
               target="_blank"
@@ -2916,21 +2795,16 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-16"
+          class="emotion-16"
         >
           <span
-            className="emotion-17"
+            class="emotion-17"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -2948,10 +2822,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
-              className="emotion-19"
+              class="emotion-19"
               href="https://demo-skaut-google-drive-gallery.skauting.cz/"
               rel="noreferrer noopener"
               target="_blank"
@@ -2961,30 +2835,25 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-16"
+          class="emotion-16"
         >
           <span
-            className="emotion-17"
+            class="emotion-17"
           >
             <svg
               aria-hidden="true"
               fill="none"
               height="1em"
               stroke="currentColor"
-              strokeWidth="2"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="2"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
             </svg>
              
@@ -2992,10 +2861,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
-              className="emotion-19"
+              class="emotion-19"
               href="https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery"
               rel="noreferrer noopener"
               target="_blank"
@@ -3005,21 +2874,16 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-16"
+          class="emotion-16"
         >
           <span
-            className="emotion-17"
+            class="emotion-17"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 1024 1024"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -3033,10 +2897,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
-              className="emotion-19"
+              class="emotion-19"
               href="https://github.com/skaut/skaut-google-drive-gallery"
               rel="noreferrer noopener"
               target="_blank"
@@ -3046,21 +2910,16 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-16"
+          class="emotion-16"
         >
           <span
-            className="emotion-17"
+            class="emotion-17"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               version="1.1"
               viewBox="0 0 16 16"
               width="1em"
@@ -3075,10 +2934,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
-              className="emotion-19"
+              class="emotion-19"
               href="https://wordpress.org/plugins/skaut-google-drive-gallery/"
               rel="noreferrer noopener"
               target="_blank"
@@ -3088,21 +2947,16 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </p>
         <p
-          className="emotion-16"
+          class="emotion-16"
         >
           <span
-            className="emotion-17"
+            class="emotion-17"
           >
             <svg
               fill="currentColor"
               height="1em"
               stroke="currentColor"
-              strokeWidth="0"
-              style={
-                {
-                  "color": undefined,
-                }
-              }
+              stroke-width="0"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -3120,10 +2974,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            className="emotion-18"
+            class="emotion-18"
           >
             <a
-              className="emotion-19"
+              class="emotion-19"
               href="https://github.com/skaut/skaut-google-drive-gallery/issues"
               rel="noreferrer noopener"
               target="_blank"
@@ -3134,28 +2988,27 @@ exports[`App should render project listing correctly 1`] = `
         </p>
       </section>
       <section
-        className="emotion-44"
+        class="emotion-44"
       >
         <span
-          className="emotion-17"
+          class="emotion-17"
         >
           Poptávky u projektu:
         </span>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/1"
-              onClick={[Function]}
             >
               Add hint to set videos to public
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               1
@@ -3171,20 +3024,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/2"
-              onClick={[Function]}
             >
               If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               2
@@ -3200,20 +3052,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/3"
-              onClick={[Function]}
             >
               Editing doesn't check path validity
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               3
@@ -3233,20 +3084,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/4"
-              onClick={[Function]}
             >
               Ctrl-click on folders does not work
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               4
@@ -3257,20 +3107,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/5"
-              onClick={[Function]}
             >
               Add option to specify gallery by a Drive link
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               5
@@ -3295,20 +3144,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/6"
-              onClick={[Function]}
             >
               Add images to the block
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               6
@@ -3319,20 +3167,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/7"
-              onClick={[Function]}
             >
               Add video overlay
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               7
@@ -3343,20 +3190,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/8"
-              onClick={[Function]}
             >
               Increase test coverage
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               8
@@ -3371,20 +3217,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/9"
-              onClick={[Function]}
             >
               Themes with "editor-styles" support change the look of the block editor
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               9
@@ -3397,7 +3242,7 @@ exports[`App should render project listing correctly 1`] = `
 
           <pre>
             <code
-              className="language-php"
+              class="language-php"
             >
               add_theme_support( 'editor-styles' );
 
@@ -3415,20 +3260,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/10"
-              onClick={[Function]}
             >
               Google app creation manual is outdated
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               10
@@ -3455,20 +3299,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/11"
-              onClick={[Function]}
             >
               Directory preview images
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               11
@@ -3479,20 +3322,19 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          className="emotion-46"
+          class="emotion-46"
         >
           <h3
-            className="emotion-47"
+            class="emotion-47"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/12"
-              onClick={[Function]}
             >
               UX & design audit
             </a>
              
             <span
-              className="emotion-48"
+              class="emotion-48"
             >
               #
               12
@@ -3504,16 +3346,15 @@ exports[`App should render project listing correctly 1`] = `
           
 
           <ul
-            className="contains-task-list"
+            class="contains-task-list"
           >
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3527,11 +3368,10 @@ exports[`App should render project listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3540,11 +3380,10 @@ exports[`App should render project listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3553,11 +3392,10 @@ exports[`App should render project listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3566,11 +3404,10 @@ exports[`App should render project listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3579,11 +3416,10 @@ exports[`App should render project listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3592,11 +3428,10 @@ exports[`App should render project listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3605,11 +3440,10 @@ exports[`App should render project listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3618,11 +3452,10 @@ exports[`App should render project listing correctly 1`] = `
             
 
             <li
-              className="task-list-item"
+              class="task-list-item"
             >
               <input
-                checked={false}
-                disabled={true}
+                disabled=""
                 type="checkbox"
               />
                
@@ -3780,23 +3613,22 @@ exports[`App should render projects correctly 1`] = `
 }
 
 <div
-  className="emotion-0"
+  class="emotion-0"
 >
   <a
     href="/"
-    onClick={[Function]}
     title="domů"
   >
     <header
-      className="emotion-1"
+      class="emotion-1"
     >
       <img
         alt="logo"
-        className="emotion-2"
+        class="emotion-2"
         src="test-file-stub"
       />
       <h1
-        className="emotion-3"
+        class="emotion-3"
       >
         IT poptávky
       </h1>
@@ -3806,109 +3638,105 @@ exports[`App should render projects correctly 1`] = `
     <div>
       <nav>
         <div
-          className="emotion-4"
+          class="emotion-4"
         >
           <a
-            className="emotion-5"
+            class="emotion-5"
             href="/"
-            onClick={[Function]}
           >
             Poptávky
           </a>
           <a
             aria-current="page"
-            className="emotion-5 active"
+            class="emotion-5 active"
             href="/projekty"
-            onClick={[Function]}
           >
             Projekty
           </a>
         </div>
       </nav>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
-            onClick={[Function]}
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         />
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-14"
+          class="emotion-14"
         >
           google
         </span>
       </article>
       <article
-        className="emotion-7"
+        class="emotion-7"
       >
         <h2
-          className="emotion-8"
+          class="emotion-8"
         >
           <a
             href="/skaut/skautis-integration"
-            onClick={[Function]}
           >
             WordPress plugin: SkautIS integrace
           </a>
         </h2>
         <p
-          className="emotion-9"
+          class="emotion-9"
         />
         <p
-          className="emotion-10"
+          class="emotion-10"
         >
           <p>
             Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.
           </p>
         </p>
         <span
-          className="emotion-11"
+          class="emotion-11"
         >
           wordpress
         </span>
         <span
-          className="emotion-12"
+          class="emotion-12"
         >
           php
         </span>
         <span
-          className="emotion-13"
+          class="emotion-13"
         >
           javascript
         </span>
         <span
-          className="emotion-22"
+          class="emotion-22"
         >
           skautis
         </span>
