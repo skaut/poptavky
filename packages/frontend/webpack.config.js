@@ -60,6 +60,7 @@ module.exports = (env) => {
     entry: "./src/index.tsx",
     output: {
       filename: "[name].[contenthash:8].js",
+      crossOriginLoading: "anonymous",
     },
     optimization: {
       minimize: mode === "production",
