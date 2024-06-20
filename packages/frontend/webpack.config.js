@@ -15,7 +15,6 @@ module.exports = (env) => {
     devtool: mode === "development" ? "source-map" : false,
     plugins: [
       new HtmlWebpackPlugin({
-        base: "https://itpoptavky.skaut.cz",
         template: "./src/html/index.html",
       }),
       new MiniCssExtractPlugin(),
@@ -60,6 +59,7 @@ module.exports = (env) => {
     entry: "./src/index.tsx",
     output: {
       filename: "[name].[contenthash:8].js",
+      crossOriginLoading: "anonymous",
     },
     optimization: {
       minimize: mode === "production",
