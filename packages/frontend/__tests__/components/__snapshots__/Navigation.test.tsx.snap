@@ -29,20 +29,18 @@ exports[`Navigation component should render correctly 1`] = `
 
 <nav>
   <div
-    className="emotion-0"
+    class="emotion-0"
   >
     <a
       aria-current="page"
-      className="emotion-1 active"
+      class="emotion-1 active"
       href="/"
-      onClick={[Function]}
     >
       Poptávky
     </a>
     <a
-      className="emotion-1"
+      class="emotion-1"
       href="/projekty"
-      onClick={[Function]}
     >
       Projekty
     </a>
@@ -79,20 +77,18 @@ exports[`Navigation component should render correctly wyth active item 1`] = `
 
 <nav>
   <div
-    className="emotion-0"
+    class="emotion-0"
   >
     <a
       aria-current="page"
-      className="emotion-1 active"
+      class="emotion-1 active"
       href="/"
-      onClick={[Function]}
     >
       Poptávky
     </a>
     <a
-      className="emotion-1"
+      class="emotion-1"
       href="/projekty"
-      onClick={[Function]}
     >
       Projekty
     </a>

@@ -1,6 +1,6 @@
+import { render } from "@testing-library/react";
 import { mocked } from "jest-mock";
 import { MemoryRouter } from "react-router-dom";
-import renderer from "react-test-renderer";
 import * as swr from "swr";
 
 import { App } from "../src/App";
@@ -21,14 +21,12 @@ describe("App", () => {
       isValidating: false,
       isLoading: false,
     });
-    const tree = renderer
-      .create(
-        <MemoryRouter>
-          <App />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render projects correctly", () => {
@@ -39,14 +37,12 @@ describe("App", () => {
       isValidating: false,
       isLoading: false,
     });
-    const tree = renderer
-      .create(
-        <MemoryRouter initialEntries={["/projekty"]}>
-          <App />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter initialEntries={["/projekty"]}>
+        <App />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render project listing correctly", () => {
@@ -57,14 +53,12 @@ describe("App", () => {
       isValidating: false,
       isLoading: false,
     });
-    const tree = renderer
-      .create(
-        <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery"]}>
-          <App />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery"]}>
+        <App />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render issue listing correctly", () => {
@@ -75,14 +69,12 @@ describe("App", () => {
       isValidating: false,
       isLoading: false,
     });
-    const tree = renderer
-      .create(
-        <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery/3"]}>
-          <App />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery/3"]}>
+        <App />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should handle error gracefully", () => {
@@ -93,13 +85,11 @@ describe("App", () => {
       isValidating: false,
       isLoading: false,
     });
-    const tree = renderer
-      .create(
-        <MemoryRouter>
-          <App />
-        </MemoryRouter>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
+    const { container } = render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

@@ -71,31 +71,29 @@ exports[`Issue component should render correctly 1`] = `
 }
 
 <article
-  className="emotion-0"
+  class="emotion-0"
 >
   <h2
-    className="emotion-1"
+    class="emotion-1"
   >
     <a
       href="/skaut/skaut-google-drive-gallery/1"
-      onClick={[Function]}
     >
       Add hint to set videos to public
     </a>
   </h2>
   <p
-    className="emotion-2"
+    class="emotion-2"
   >
     <a
       href="/skaut/skaut-google-drive-gallery"
-      onClick={[Function]}
       title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
     >
       WordPress plugin: Galerie obrázků a videí z Google Disku
     </a>
   </p>
   <p
-    className="emotion-3"
+    class="emotion-3"
   >
     <p>
       When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
@@ -107,22 +105,22 @@ exports[`Issue component should render correctly 1`] = `
     </p>
   </p>
   <span
-    className="emotion-4"
+    class="emotion-4"
   >
     wordpress
   </span>
   <span
-    className="emotion-5"
+    class="emotion-5"
   >
     php
   </span>
   <span
-    className="emotion-6"
+    class="emotion-6"
   >
     javascript
   </span>
   <span
-    className="emotion-7"
+    class="emotion-7"
   >
     google
   </span>
@@ -160,31 +158,29 @@ exports[`Issue component should render correctly without tags 1`] = `
 }
 
 <article
-  className="emotion-0"
+  class="emotion-0"
 >
   <h2
-    className="emotion-1"
+    class="emotion-1"
   >
     <a
       href="/skaut/skaut-google-drive-gallery/1"
-      onClick={[Function]}
     >
       Add hint to set videos to public
     </a>
   </h2>
   <p
-    className="emotion-2"
+    class="emotion-2"
   >
     <a
       href="/skaut/skaut-google-drive-gallery"
-      onClick={[Function]}
       title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
     >
       WordPress plugin: Galerie obrázků a videí z Google Disku
     </a>
   </p>
   <p
-    className="emotion-3"
+    class="emotion-3"
   >
     <p>
       When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.

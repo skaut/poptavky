@@ -12,7 +12,7 @@ exports[`ColoredTag component should render correctly 1`] = `
 }
 
 <span
-  className="emotion-0"
+  class="emotion-0"
 >
   Tag
 </span>

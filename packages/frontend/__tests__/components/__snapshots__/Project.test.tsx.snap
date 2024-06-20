@@ -71,45 +71,44 @@ exports[`Project component should render correctly 1`] = `
 }
 
 <article
-  className="emotion-0"
+  class="emotion-0"
 >
   <h2
-    className="emotion-1"
+    class="emotion-1"
   >
     <a
       href="/skaut/skaut-google-drive-gallery"
-      onClick={[Function]}
     >
       WordPress plugin: Galerie obrázků a videí z Google Disku
     </a>
   </h2>
   <p
-    className="emotion-2"
+    class="emotion-2"
   />
   <p
-    className="emotion-3"
+    class="emotion-3"
   >
     <p>
       Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
     </p>
   </p>
   <span
-    className="emotion-4"
+    class="emotion-4"
   >
     wordpress
   </span>
   <span
-    className="emotion-5"
+    class="emotion-5"
   >
     php
   </span>
   <span
-    className="emotion-6"
+    class="emotion-6"
   >
     javascript
   </span>
   <span
-    className="emotion-7"
+    class="emotion-7"
   >
     google
   </span>
