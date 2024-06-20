@@ -15,6 +15,7 @@ module.exports = (env) => {
     devtool: mode === "development" ? "source-map" : false,
     plugins: [
       new HtmlWebpackPlugin({
+        base: "/",
         template: "./src/html/index.html",
       }),
       new MiniCssExtractPlugin(),
@@ -60,6 +61,9 @@ module.exports = (env) => {
     output: {
       filename: "[name].[contenthash:8].js",
       crossOriginLoading: "anonymous",
+    },
+    devServer: {
+      historyApiFallback: true,
     },
     optimization: {
       minimize: mode === "production",
