@@ -8,7 +8,7 @@ export const Article = styled("article")`
   border-bottom: 1px solid ${theme.colors.brand}10;
 `;
 
-export const Paragraph = styled("p")`
+export const Paragraph = styled("div")`
   margin: 0 0 16px;
   img {
     max-width: 100%;

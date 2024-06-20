@@ -207,7 +207,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -218,7 +218,7 @@ exports[`App should render correctly 1`] = `
           <p>
             Depends on #792
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -262,7 +262,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -273,7 +273,7 @@ exports[`App should render correctly 1`] = `
           <p>
             This is a bug and both should show the shortcut name.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -317,7 +317,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -332,7 +332,7 @@ exports[`App should render correctly 1`] = `
           <p>
             Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -376,13 +376,13 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
             Ctrl+click on a gallery item (subfolder) or breadcrumbs should open in a new tab
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -426,7 +426,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -446,7 +446,7 @@ exports[`App should render correctly 1`] = `
           <p>
             Depends on #111.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -490,13 +490,13 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
             Currently, images aren't listed in the editor - both block and TinyMCE plugin. This often confuses users.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -540,13 +540,13 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
             In the image grid, we should add an overlay to signify that an item is a video (for example a big play icon).
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -590,7 +590,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -600,7 +600,7 @@ exports[`App should render correctly 1`] = `
               https://codecov.io/gh/skaut/skaut-google-drive-gallery
             </a>
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -644,7 +644,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -670,7 +670,7 @@ exports[`App should render correctly 1`] = `
           <p>
             Example of such theme is the Twenty Seventeen theme.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -714,7 +714,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -736,7 +736,7 @@ exports[`App should render correctly 1`] = `
           <p>
             Google changed the consent screen layout and require some form of verification.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -780,13 +780,13 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
             Currently, the first image in a directory is used for its preview.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -830,7 +830,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -962,7 +962,7 @@ exports[`App should render correctly 1`] = `
           <p>
             Everything on the frontend needs to work at least with the default WP template and DSW templates.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -1006,7 +1006,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: SkautIS integrace
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         />
         <span
@@ -1052,7 +1052,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: SkautIS integrace
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -1061,7 +1061,7 @@ exports[`App should render correctly 1`] = `
               src="https://user-images.githubusercontent.com/8988898/130583907-9aaf6288-2129-42dd-88ef-0a27b0c7ddd1.png"
             />
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -1105,7 +1105,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: SkautIS integrace
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -1116,7 +1116,7 @@ exports[`App should render correctly 1`] = `
           <p>
             Skrývání bloků, celých stránek... atd
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -1160,13 +1160,13 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: SkautIS integrace
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
             Co do WordPressu tahat i profilové fotky, co si lidi do skautISu přidávají. Aby u profilu nějakou fotku měli...
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -1210,13 +1210,13 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: SkautIS integrace
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
             Přidat Select2 do výběru pravidel v shortcode.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -1260,7 +1260,7 @@ exports[`App should render correctly 1`] = `
             WordPress plugin: SkautIS integrace
           </a>
         </p>
-        <p
+        <div
           class="emotion-10"
         >
           <p>
@@ -1277,7 +1277,7 @@ příklad:
           <p>
             Otevírám k tomu diskuzi...
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -1627,7 +1627,7 @@ exports[`App should render issue listing correctly 1`] = `
         <div
           class="emotion-11"
         >
-          <p
+          <div
             class="emotion-12"
           >
             <p>
@@ -1642,7 +1642,7 @@ exports[`App should render issue listing correctly 1`] = `
             <p>
               Last tested on 36dc1a10a353ba5bf2b98f33b49b1135a36ae3d3
             </p>
-          </p>
+          </div>
         </div>
         <span
           class="emotion-6"
@@ -1678,18 +1678,18 @@ exports[`App should render issue listing correctly 1`] = `
               WordPress plugin: Galerie obrázků a videí z Google Disku
             </a>
           </h2>
-          <p
+          <div
             class="emotion-19"
           >
             Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
-          </p>
-          <p
+          </div>
+          <div
             class="emotion-19"
           >
             <p>
               Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
             </p>
-          </p>
+          </div>
           <span
             class="emotion-21"
           >
@@ -1715,7 +1715,7 @@ exports[`App should render issue listing correctly 1`] = `
       <section
         class="emotion-25"
       >
-        <p
+        <div
           class="emotion-19"
         >
           <span
@@ -1749,8 +1749,8 @@ exports[`App should render issue listing correctly 1`] = `
               Marek Dědič – Mlha
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-19"
         >
           <span
@@ -1786,8 +1786,8 @@ exports[`App should render issue listing correctly 1`] = `
               mlha@skaut.cz
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-19"
         >
           <span
@@ -1826,8 +1826,8 @@ exports[`App should render issue listing correctly 1`] = `
               demo-skaut-google-drive-gallery.skauting.cz/
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-19"
         >
           <span
@@ -1865,8 +1865,8 @@ exports[`App should render issue listing correctly 1`] = `
               napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-19"
         >
           <span
@@ -1901,8 +1901,8 @@ exports[`App should render issue listing correctly 1`] = `
               github.com/skaut/skaut-google-drive-gallery
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-19"
         >
           <span
@@ -1938,8 +1938,8 @@ exports[`App should render issue listing correctly 1`] = `
               wordpress.org/plugins/skaut-google-drive-gallery/
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-19"
         >
           <span
@@ -1978,7 +1978,7 @@ exports[`App should render issue listing correctly 1`] = `
               github.com/skaut/skaut-google-drive-gallery/issues
             </a>
           </span>
-        </p>
+        </div>
       </section>
       <section
         class="emotion-54"
@@ -2684,18 +2684,18 @@ exports[`App should render project listing correctly 1`] = `
           <div
             class="emotion-8"
           >
-            <p
+            <div
               class="emotion-9"
             >
               Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
-            </p>
-            <p
+            </div>
+            <div
               class="emotion-9"
             >
               <p>
                 Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
               </p>
-            </p>
+            </div>
             <span
               class="emotion-11"
             >
@@ -2722,7 +2722,7 @@ exports[`App should render project listing correctly 1`] = `
       <section
         class="emotion-15"
       >
-        <p
+        <div
           class="emotion-16"
         >
           <span
@@ -2756,8 +2756,8 @@ exports[`App should render project listing correctly 1`] = `
               Marek Dědič – Mlha
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-16"
         >
           <span
@@ -2793,8 +2793,8 @@ exports[`App should render project listing correctly 1`] = `
               mlha@skaut.cz
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-16"
         >
           <span
@@ -2833,8 +2833,8 @@ exports[`App should render project listing correctly 1`] = `
               demo-skaut-google-drive-gallery.skauting.cz/
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-16"
         >
           <span
@@ -2872,8 +2872,8 @@ exports[`App should render project listing correctly 1`] = `
               napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-16"
         >
           <span
@@ -2908,8 +2908,8 @@ exports[`App should render project listing correctly 1`] = `
               github.com/skaut/skaut-google-drive-gallery
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-16"
         >
           <span
@@ -2945,8 +2945,8 @@ exports[`App should render project listing correctly 1`] = `
               wordpress.org/plugins/skaut-google-drive-gallery/
             </a>
           </span>
-        </p>
-        <p
+        </div>
+        <div
           class="emotion-16"
         >
           <span
@@ -2985,7 +2985,7 @@ exports[`App should render project listing correctly 1`] = `
               github.com/skaut/skaut-google-drive-gallery/issues
             </a>
           </span>
-        </p>
+        </div>
       </section>
       <section
         class="emotion-44"
@@ -3670,13 +3670,13 @@ exports[`App should render projects correctly 1`] = `
         <p
           class="emotion-9"
         />
-        <p
+        <div
           class="emotion-10"
         >
           <p>
             Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >
@@ -3713,13 +3713,13 @@ exports[`App should render projects correctly 1`] = `
         <p
           class="emotion-9"
         />
-        <p
+        <div
           class="emotion-10"
         >
           <p>
             Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.
           </p>
-        </p>
+        </div>
         <span
           class="emotion-11"
         >

@@ -270,7 +270,7 @@ exports[`IssueDetail page should render correctly 1`] = `
     <div
       class="emotion-7"
     >
-      <p
+      <div
         class="emotion-8"
       >
         <p>
@@ -281,7 +281,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         <p>
           Depends on #792
         </p>
-      </p>
+      </div>
     </div>
     <span
       class="emotion-2"
@@ -317,18 +317,18 @@ exports[`IssueDetail page should render correctly 1`] = `
           WordPress plugin: Galerie obrázků a videí z Google Disku
         </a>
       </h2>
-      <p
+      <div
         class="emotion-15"
       >
         Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
-      </p>
-      <p
+      </div>
+      <div
         class="emotion-15"
       >
         <p>
           Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
         </p>
-      </p>
+      </div>
       <span
         class="emotion-17"
       >
@@ -354,7 +354,7 @@ exports[`IssueDetail page should render correctly 1`] = `
   <section
     class="emotion-21"
   >
-    <p
+    <div
       class="emotion-15"
     >
       <span
@@ -388,8 +388,8 @@ exports[`IssueDetail page should render correctly 1`] = `
           Marek Dědič – Mlha
         </a>
       </span>
-    </p>
-    <p
+    </div>
+    <div
       class="emotion-15"
     >
       <span
@@ -425,8 +425,8 @@ exports[`IssueDetail page should render correctly 1`] = `
           mlha@skaut.cz
         </a>
       </span>
-    </p>
-    <p
+    </div>
+    <div
       class="emotion-15"
     >
       <span
@@ -465,8 +465,8 @@ exports[`IssueDetail page should render correctly 1`] = `
           demo-skaut-google-drive-gallery.skauting.cz/
         </a>
       </span>
-    </p>
-    <p
+    </div>
+    <div
       class="emotion-15"
     >
       <span
@@ -504,8 +504,8 @@ exports[`IssueDetail page should render correctly 1`] = `
           napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery
         </a>
       </span>
-    </p>
-    <p
+    </div>
+    <div
       class="emotion-15"
     >
       <span
@@ -540,8 +540,8 @@ exports[`IssueDetail page should render correctly 1`] = `
           github.com/skaut/skaut-google-drive-gallery
         </a>
       </span>
-    </p>
-    <p
+    </div>
+    <div
       class="emotion-15"
     >
       <span
@@ -577,8 +577,8 @@ exports[`IssueDetail page should render correctly 1`] = `
           wordpress.org/plugins/skaut-google-drive-gallery/
         </a>
       </span>
-    </p>
-    <p
+    </div>
+    <div
       class="emotion-15"
     >
       <span
@@ -617,7 +617,7 @@ exports[`IssueDetail page should render correctly 1`] = `
           github.com/skaut/skaut-google-drive-gallery/issues
         </a>
       </span>
-    </p>
+    </div>
   </section>
   <section
     class="emotion-50"

@@ -92,7 +92,7 @@ exports[`IssuesList page should render correctly 1`] = `
       WordPress plugin: Galerie obrázků a videí z Google Disku
     </a>
   </p>
-  <p
+  <div
     class="emotion-3"
   >
     <p>
@@ -103,7 +103,7 @@ exports[`IssuesList page should render correctly 1`] = `
     <p>
       Depends on #792
     </p>
-  </p>
+  </div>
   <span
     class="emotion-4"
   >

@@ -45,7 +45,7 @@ exports[`ProjectLinks component should render correctly 1`] = `
   align-items: center;
 }
 
-<p
+<div
   class="emotion-0"
 >
   <span
@@ -79,5 +79,5 @@ exports[`ProjectLinks component should render correctly 1`] = `
       Marek Dědič – Mlha
     </a>
   </span>
-</p>
+</div>
 `;
