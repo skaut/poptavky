@@ -1,6 +1,6 @@
+import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Link, MemoryRouter, Route, Routes } from "react-router-dom";
-import renderer from "react-test-renderer";
 
 import { ScrollToTop } from "../../src/components/ScrollToTop";
 
@@ -8,9 +8,9 @@ global.scrollTo = jest.fn();
 
 describe("ScrollToTop", () => {
   test("calls window.scrollTo when route changes", async () => {
-    expect.assertions(2);
+    expect.assertions(3);
     const user = userEvent.setup();
-    const root = renderer.create(
+    const { getByText } = render(
       <MemoryRouter initialEntries={["/home"]}>
         <ScrollToTop />
         <Routes>
@@ -26,9 +26,9 @@ describe("ScrollToTop", () => {
         </Routes>
       </MemoryRouter>,
     );
-    expect(global.scrollTo).not.toHaveBeenCalled();
-    const link = root.root.findByProps({ className: "the-link" });
-    await user.click(link.instance as Element);
-    expect(global.scrollTo).toHaveBeenCalledWith(0, 0);
+    expect(global.scrollTo).toHaveBeenCalledTimes(1);
+    await user.click(getByText("Linkage"));
+    expect(global.scrollTo).toHaveBeenCalledTimes(2);
+    expect(global.scrollTo).toHaveBeenLastCalledWith(0, 0);
   });
 });
