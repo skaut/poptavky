@@ -5,10 +5,6 @@ import { theme } from "../theme";
 import type { LinkProps } from "./ExtLink";
 import { ExtLink } from "./ExtLink";
 
-export const Button = (props: LinkProps): React.JSX.Element => (
-  <ButtonWrapper {...props} />
-);
-
 const ButtonWrapper = styled(ExtLink)`
   display: inline-block;
   font-size: 1.2rem;
@@ -20,3 +16,7 @@ const ButtonWrapper = styled(ExtLink)`
   box-shadow: 0 0 0 ${theme.colors.gray};
   transition: box-shadow 300ms;
 `;
+
+export const Button = (props: LinkProps): React.JSX.Element => (
+  <ButtonWrapper {...props} />
+);

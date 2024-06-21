@@ -10,22 +10,6 @@ interface NavigationItem {
   isActive?: boolean;
 }
 
-export const Navigation = ({
-  items,
-}: {
-  readonly items: Array<NavigationItem>;
-}): React.JSX.Element => (
-  <nav>
-    <Container>
-      {items.map((item) => (
-        <NavigationLink end key={item.link} to={item.link}>
-          {item.title}
-        </NavigationLink>
-      ))}
-    </Container>
-  </nav>
-);
-
 const Container = styled("div")`
   list-style: none;
   display: flex;
@@ -48,3 +32,19 @@ const NavigationLink = styled(NavLink)`
     background-color: #fff;
   }
 `;
+
+export const Navigation = ({
+  items,
+}: {
+  readonly items: Array<NavigationItem>;
+}): React.JSX.Element => (
+  <nav>
+    <Container>
+      {items.map((item) => (
+        <NavigationLink end key={item.link} to={item.link}>
+          {item.title}
+        </NavigationLink>
+      ))}
+    </Container>
+  </nav>
+);

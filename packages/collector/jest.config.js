@@ -1,6 +1,5 @@
-import type { JestConfigWithTsJest } from "ts-jest";
-
-const config: JestConfigWithTsJest = {
+/** @type {import('ts-jest').JestConfigWithTsJest} */
+export default {
   collectCoverage: true,
   collectCoverageFrom: [
     "src/**/*",
@@ -13,6 +12,7 @@ const config: JestConfigWithTsJest = {
   coverageProvider: "babel",
   setupFiles: ["<rootDir>/__tests__/setup.ts"],
   transform: {
+    // eslint-disable-next-line @typescript-eslint/naming-convention -- Regexp key
     "^.+\\.[jt]s$": [
       "ts-jest",
       {
@@ -24,5 +24,3 @@ const config: JestConfigWithTsJest = {
   resetMocks: true,
   testMatch: ["<rootDir>/__tests__/**/*.test.ts"],
 };
-
-export default config;

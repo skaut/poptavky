@@ -5,7 +5,7 @@ import { octokit } from "./octokit";
 export async function getProjectVisibility(project: Project): Promise<boolean> {
   const rawResponse = await octokit.rest.repos
     .get({ ...project })
-    .catch((e): never => {
+    .catch((e: unknown): never => {
       throw new VisibilityError(String(e));
     });
   return !rawResponse.data.private;

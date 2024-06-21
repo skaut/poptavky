@@ -8,14 +8,14 @@ export const getIssueWithProject = (
   issueNumber: number,
 ): ProjectIssueWithProjectInfo | undefined => {
   const project = projectListings.projects.find(
-    (project) => project.owner === projectOwner && project.repo === projectRepo,
+    (item) => item.owner === projectOwner && item.repo === projectRepo,
   );
 
   if (!project) {
     return;
   }
 
-  const issue = project.issues.find((issue) => issue.number === issueNumber);
+  const issue = project.issues.find((item) => item.number === issueNumber);
 
   if (!issue) {
     return;

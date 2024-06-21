@@ -16,7 +16,7 @@ export async function getProjectIssues(
       per_page: 100,
       labels: issueLabel,
     })
-    .catch((e): never => {
+    .catch((e: unknown): never => {
       throw new IssueListError(String(e));
     });
   return issues.data.map((issue) => ({

@@ -11,7 +11,7 @@ export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
       repo: project.repo,
       path: ".project-info.json",
     })
-    .catch((e): never => {
+    .catch((e: unknown): never => {
       throw new ProjectInfoError(String(e));
     });
   const encodedContent = (rawResponse.data as { content?: string }).content;
