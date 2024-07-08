@@ -22,7 +22,7 @@
     "@octokit/core": "^6.1.2",
     "@octokit/plugin-rest-endpoint-methods": "^13.2.1",
     "ts-custom-error": "^3.3.1",
-    "tsx": "^4.15.7"
+    "tsx": "^4.16.2"
   },
   "type": "module",
   "devDependencies": {
