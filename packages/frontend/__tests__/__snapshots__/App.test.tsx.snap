@@ -14,9 +14,6 @@ exports[`App should render correctly 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -39,9 +36,6 @@ exports[`App should render correctly 1`] = `
 
 .emotion-4 {
   list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 24px;
   padding: 0 16px;
@@ -1312,9 +1306,6 @@ exports[`App should render issue listing correctly 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1351,9 +1342,6 @@ exports[`App should render issue listing correctly 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1384,9 +1372,6 @@ exports[`App should render issue listing correctly 1`] = `
 }
 
 .emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1399,9 +1384,8 @@ exports[`App should render issue listing correctly 1`] = `
 }
 
 .emotion-12 {
-  margin: 0 0 16px;
-  font-size: 18px;
   margin: 0;
+  font-size: 18px;
 }
 
 .emotion-12 img {
@@ -1409,15 +1393,11 @@ exports[`App should render issue listing correctly 1`] = `
 }
 
 .emotion-14 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: inline-block;
   font-size: 1.2rem;
   background-color: #294885;
   color: white;
@@ -1546,11 +1526,6 @@ exports[`App should render issue listing correctly 1`] = `
 
 .emotion-56 img {
   max-width: 100%;
-}
-
-.emotion-58 {
-  color: #999;
-  font-weight: normal;
 }
 
 <div
@@ -2001,7 +1976,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               1
@@ -2029,7 +2004,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               2
@@ -2057,7 +2032,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               4
@@ -2080,7 +2055,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               5
@@ -2117,7 +2092,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               6
@@ -2140,7 +2115,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               7
@@ -2163,7 +2138,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               8
@@ -2190,7 +2165,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               9
@@ -2233,7 +2208,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               10
@@ -2272,7 +2247,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               11
@@ -2295,7 +2270,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               12
@@ -2445,9 +2420,6 @@ exports[`App should render project listing correctly 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2502,11 +2474,10 @@ exports[`App should render project listing correctly 1`] = `
 }
 
 .emotion-7 {
-  color: #294885;
+  color: white;
   margin: 0 0 16px;
   font-family: themix;
   font-size: 2em;
-  color: white;
 }
 
 .emotion-8 {
@@ -2514,9 +2485,8 @@ exports[`App should render project listing correctly 1`] = `
 }
 
 .emotion-9 {
-  margin: 0 0 16px;
-  font-size: 18px;
   margin: 0;
+  font-size: 18px;
 }
 
 .emotion-9 img {
@@ -2583,9 +2553,6 @@ exports[`App should render project listing correctly 1`] = `
 }
 
 .emotion-17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2608,9 +2575,6 @@ exports[`App should render project listing correctly 1`] = `
 }
 
 .emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -3484,9 +3448,6 @@ exports[`App should render projects correctly 1`] = `
 }
 
 .emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -3509,9 +3470,6 @@ exports[`App should render projects correctly 1`] = `
 
 .emotion-4 {
   list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 24px;
   padding: 0 16px;

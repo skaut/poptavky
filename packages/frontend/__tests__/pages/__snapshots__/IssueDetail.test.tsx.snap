@@ -17,9 +17,6 @@ exports[`IssueDetail page should render correctly 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -50,9 +47,6 @@ exports[`IssueDetail page should render correctly 1`] = `
 }
 
 .emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -65,9 +59,8 @@ exports[`IssueDetail page should render correctly 1`] = `
 }
 
 .emotion-8 {
-  margin: 0 0 16px;
-  font-size: 18px;
   margin: 0;
+  font-size: 18px;
 }
 
 .emotion-8 img {
@@ -75,15 +68,11 @@ exports[`IssueDetail page should render correctly 1`] = `
 }
 
 .emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: inline-block;
   font-size: 1.2rem;
   background-color: #294885;
   color: white;
@@ -212,11 +201,6 @@ exports[`IssueDetail page should render correctly 1`] = `
 
 .emotion-52 img {
   max-width: 100%;
-}
-
-.emotion-54 {
-  color: #999;
-  font-weight: normal;
 }
 
 <div
@@ -640,7 +624,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           2
@@ -668,7 +652,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           3
@@ -700,7 +684,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           4
@@ -723,7 +707,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           5
@@ -760,7 +744,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           6
@@ -783,7 +767,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           7
@@ -806,7 +790,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           8
@@ -833,7 +817,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           9
@@ -876,7 +860,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           10
@@ -915,7 +899,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           11
@@ -938,7 +922,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-54"
+          class="emotion-4"
         >
           #
           12
