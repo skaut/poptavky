@@ -35,11 +35,10 @@ exports[`ProjectDetail page should render correctly 1`] = `
 }
 
 .emotion-3 {
-  color: #294885;
+  color: white;
   margin: 0 0 16px;
   font-family: themix;
   font-size: 2em;
-  color: white;
 }
 
 .emotion-4 {
@@ -47,9 +46,8 @@ exports[`ProjectDetail page should render correctly 1`] = `
 }
 
 .emotion-5 {
-  margin: 0 0 16px;
-  font-size: 18px;
   margin: 0;
+  font-size: 18px;
 }
 
 .emotion-5 img {
@@ -116,9 +114,6 @@ exports[`ProjectDetail page should render correctly 1`] = `
 }
 
 .emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -141,9 +136,6 @@ exports[`ProjectDetail page should render correctly 1`] = `
 }
 
 .emotion-15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
