@@ -1548,11 +1548,6 @@ exports[`App should render issue listing correctly 1`] = `
   max-width: 100%;
 }
 
-.emotion-58 {
-  color: #999;
-  font-weight: normal;
-}
-
 <div
   class="emotion-0"
 >
@@ -2001,7 +1996,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               1
@@ -2029,7 +2024,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               2
@@ -2057,7 +2052,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               4
@@ -2080,7 +2075,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               5
@@ -2117,7 +2112,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               6
@@ -2140,7 +2135,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               7
@@ -2163,7 +2158,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               8
@@ -2190,7 +2185,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               9
@@ -2233,7 +2228,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               10
@@ -2272,7 +2267,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               11
@@ -2295,7 +2290,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-58"
+              class="emotion-8"
             >
               #
               12
