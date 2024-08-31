@@ -7,5 +7,6 @@ test("should get issue link", () => {
     project: { ...project, ...project.info },
     ...project.issues[1],
   });
+
   expect(result).toBe("/skaut/skaut-google-drive-gallery/2");
 });
