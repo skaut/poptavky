@@ -23,7 +23,8 @@ jest.mock("../src/getGlobalConfig");
 jest.mock("../src/getProjectListing");
 
 const globalConfig0 = { projects: [{ owner: "OWNER", repo: "REPO0" }] };
-const listing0 = Object.assign({}, globalConfig0.projects[0], {
+const listing0 = {
+  ...globalConfig0.projects[0],
   info: {
     name: "NAME0",
     "short-description": "DESC",
@@ -35,7 +36,7 @@ const listing0 = Object.assign({}, globalConfig0.projects[0], {
     { number: 1, title: "1_TITLE", description: "1_DESCRIPTION" },
     { number: 2, title: "2_TITLE", description: "2_DESCRIPTION" },
   ],
-});
+};
 
 const globalConfig1 = {
   projects: [
@@ -43,7 +44,8 @@ const globalConfig1 = {
     { owner: "OWNER", repo: "REPO1" },
   ],
 };
-const listing1 = Object.assign({}, globalConfig1.projects[1], {
+const listing1 = {
+  ...globalConfig1.projects[1],
   info: {
     name: "NAME1",
     "short-description": "DESC",
@@ -52,7 +54,7 @@ const listing1 = Object.assign({}, globalConfig1.projects[1], {
     links: [{ type: "email", uri: "mailto:test@example.test" }],
   } as ProjectInfo,
   issues: [],
-});
+};
 
 beforeEach(() => {
   mocked(fs).writeFileSync.mockReturnValue(undefined);
