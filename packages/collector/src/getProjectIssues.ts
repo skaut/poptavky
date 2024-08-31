@@ -8,13 +8,13 @@ export async function getProjectIssues(
   publicRepo: boolean,
   issueLabel: string | undefined,
 ): Promise<Array<ProjectIssue>> {
-  issueLabel ??= "help wanted";
+  const safeIssueLabel = issueLabel ?? "help wanted";
   const issues = await octokit.rest.issues
     .listForRepo({
       owner: project.owner,
       repo: project.repo,
       per_page: 100,
-      labels: issueLabel,
+      labels: safeIssueLabel,
     })
     .catch((e: unknown): never => {
       throw new IssueListError(String(e));
