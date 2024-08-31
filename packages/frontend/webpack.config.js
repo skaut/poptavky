@@ -24,11 +24,11 @@ module.exports = (env) => {
     module: {
       rules: [
         {
-          test: /\.svg$/,
+          test: /\.svg$/u,
           type: "asset",
         },
         {
-          test: /\.tsx?$/,
+          test: /\.tsx?$/u,
           use: {
             loader: "ts-loader",
             options: {
@@ -37,7 +37,7 @@ module.exports = (env) => {
           },
         },
         {
-          test: /\.css$/,
+          test: /\.css$/u,
           use: [
             MiniCssExtractPlugin.loader,
             "css-loader",
