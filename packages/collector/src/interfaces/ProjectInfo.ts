@@ -152,7 +152,7 @@ export function assertIsProjectInfo(
   }
   for (const maintainer of info.maintainers) {
     assertIsProjectInfoMaintainer(maintainer, (e) =>
-      errorFn('A "maintainer" field item is invalid: ' + e),
+      errorFn(`A "maintainer" field item is invalid: ${e}`),
     );
   }
   if (!Array.isArray(info.links)) {
@@ -163,7 +163,7 @@ export function assertIsProjectInfo(
   }
   for (const link of info.links) {
     assertIsProjectInfoLink(link, (e) =>
-      errorFn('A "link" field item is invalid: ' + e),
+      errorFn(`A "link" field item is invalid: ${e}`),
     );
   }
   if ("help-issue-label" in info) {

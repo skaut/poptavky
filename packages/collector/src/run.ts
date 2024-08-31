@@ -15,12 +15,7 @@ export async function run(): Promise<void> {
         listings.projects.push(await getProjectListing(project));
       } catch (e) {
         core.error(
-          "There was an error while processing the project " +
-            project.owner +
-            "/" +
-            project.repo +
-            ". " +
-            (e as PoptavkyError).message,
+          `There was an error while processing the project ${project.owner}/${project.repo}. ${(e as PoptavkyError).message}`,
         );
       }
     }

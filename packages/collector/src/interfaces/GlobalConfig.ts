@@ -20,7 +20,7 @@ export function assertIsGlobalConfig(
   }
   for (const project of config.projects) {
     assertIsProject(project, (e) =>
-      errorFn('A "project" field item is invalid: ' + e),
+      errorFn(`A "project" field item is invalid: ${e}`),
     );
   }
 }
