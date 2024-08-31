@@ -22,9 +22,9 @@ export const ProjectDetail = ({
   readonly data: ProjectListings;
 }): React.JSX.Element => {
   const { owner: projectOwner, project: projectRepo } = useParams<{
+    issue: string;
     owner: string;
     project: string;
-    issue: string;
   }>();
   const project = getProject(data, projectOwner, projectRepo);
 

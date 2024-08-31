@@ -87,7 +87,7 @@ export const ProjectLinks = ({
       </Mark>
       {projectInfo.maintainers
         .filter(
-          (person): person is { name: string; email: string } =>
+          (person): person is { email: string; name: string } =>
             person.email !== undefined,
         )
         .map((person) => (

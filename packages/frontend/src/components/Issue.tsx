@@ -10,8 +10,8 @@ export const Issue = ({
   issue,
   hideTags = false,
 }: {
-  readonly issue: ProjectIssueWithProjectInfo;
   readonly hideTags?: boolean;
+  readonly issue: ProjectIssueWithProjectInfo;
 }): React.JSX.Element => (
   <ArticleBox
     description={issue.description}

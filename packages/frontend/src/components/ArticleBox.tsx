@@ -30,13 +30,13 @@ export const ArticleBox = ({
   description,
   tags = emptyArray,
 }: {
-  readonly title: string;
+  readonly description: string;
   readonly link?: string;
   readonly subtitle?: string;
-  readonly subtitleLink?: string;
   readonly subtitleDescription?: string;
-  readonly description: string;
+  readonly subtitleLink?: string;
   readonly tags?: Array<string>;
+  readonly title: string;
 }): React.JSX.Element => (
   <ThinArticle>
     <H2>{link !== undefined ? <Link to={link}>{title}</Link> : title}</H2>

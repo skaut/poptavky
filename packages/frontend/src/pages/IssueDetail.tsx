@@ -37,7 +37,7 @@ export const IssueDetail = ({
     owner: projectOwner,
     project: projectRepo,
     issue: issueNumber,
-  } = useParams<{ owner: string; project: string; issue: string }>();
+  } = useParams<{ issue: string; owner: string; project: string }>();
 
   const issue = getIssueWithProject(
     data,
