@@ -1,5 +1,6 @@
-import { ProjectInfoError } from "./exceptions/ProjectInfoError";
 import type { Project } from "./interfaces/Project";
+
+import { ProjectInfoError } from "./exceptions/ProjectInfoError";
 import {
   assertIsProjectInfo,
   type ProjectInfo,

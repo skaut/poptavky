@@ -1,5 +1,6 @@
-import { VisibilityError } from "../src/exceptions/VisibilityError";
 import type { Project } from "./interfaces/Project";
+
+import { VisibilityError } from "../src/exceptions/VisibilityError";
 import { octokit } from "./octokit";
 
 export async function getProjectVisibility(project: Project): Promise<boolean> {
