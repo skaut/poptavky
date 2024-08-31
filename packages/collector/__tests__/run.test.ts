@@ -129,9 +129,7 @@ test("run handes local error gracefully", async () => {
   expect.assertions(8);
 
   mocked(getGlobalConfig).mockReturnValue(globalConfig1);
-  mocked(getProjectListing).mockImplementationOnce(() => {
-    throw new Error();
-  });
+  mocked(getProjectListing).mockRejectedValueOnce(new Error());
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
   await run();
 
