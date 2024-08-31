@@ -15,9 +15,9 @@ import { ExtLink } from "./ExtLink";
 import { Mark, Paragraph, SmallLink } from "./Typography";
 
 export interface LinkType {
-  type: ProjectInfoLink["type"];
-  label: string;
   icon?: React.ReactNode;
+  label: string;
+  type: ProjectInfoLink["type"];
 }
 
 export const links: Array<LinkType> = [

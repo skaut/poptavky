@@ -5,10 +5,10 @@ import { css } from "@emotion/react";
 
 export interface LinkProps {
   readonly children: React.ReactNode;
-  readonly href: string;
-  readonly title?: string;
-  readonly targetSelf?: boolean;
   readonly className?: string;
+  readonly href: string;
+  readonly targetSelf?: boolean;
+  readonly title?: string;
 }
 export const ExtLink = ({
   children,

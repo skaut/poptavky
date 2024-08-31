@@ -6,9 +6,9 @@ import { NavLink } from "react-router-dom";
 import { theme } from "../theme";
 
 interface NavigationItem {
-  title: string;
-  link: string;
   isActive?: boolean;
+  link: string;
+  title: string;
 }
 
 const Container = styled("div")`
