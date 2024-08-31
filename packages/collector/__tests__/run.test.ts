@@ -7,7 +7,12 @@ import { getProjectListing } from "../src/getProjectListing";
 import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
 import { run } from "../src/run";
 
-jest.mock("fs", () => ({
+jest.mock<{
+  promises: {
+    access: jest.Mock;
+  };
+  writeFileSync: jest.Mock;
+}>("fs", () => ({
   promises: {
     access: jest.fn(),
   },
