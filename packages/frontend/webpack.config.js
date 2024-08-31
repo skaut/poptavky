@@ -6,7 +6,8 @@ const { SubresourceIntegrityPlugin } = require("webpack-subresource-integrity");
 
 module.exports = (env) => {
   const mode =
-    process.env.NODE_ENV ?? (env.development ? "development" : "production");
+    process.env.NODE_ENV ??
+    (env.development === true ? "development" : "production");
 
   return {
     mode,
