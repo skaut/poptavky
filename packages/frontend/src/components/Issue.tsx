@@ -1,6 +1,7 @@
 import type React from "react";
 
 import type { ProjectIssueWithProjectInfo } from "../utils/getAllIssues";
+
 import { getIssueLink } from "../utils/getIssueLink";
 import { getProjectLink } from "../utils/getProjectLink";
 import { ArticleBox } from "./ArticleBox";

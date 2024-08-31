@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import type React from "react";
+
+import { css } from "@emotion/react";
 
 export interface LinkProps {
   readonly children: React.ReactNode;

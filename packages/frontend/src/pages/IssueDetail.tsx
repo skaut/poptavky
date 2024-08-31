@@ -1,10 +1,13 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import type React from "react";
+
+import { css } from "@emotion/react";
 import { AiFillGithub } from "react-icons/ai";
 import ReactMarkdown from "react-markdown";
 import { Link, useParams } from "react-router-dom";
 import remarkGfm from "remark-gfm";
+
+import type { ProjectListings } from "../interfaces/ProjectListings";
 
 import { Button } from "../components/Button";
 import { ColoredTag } from "../components/ColoredTag";
@@ -20,7 +23,6 @@ import {
   Mark,
   Paragraph,
 } from "../components/Typography";
-import type { ProjectListings } from "../interfaces/ProjectListings";
 import { theme } from "../theme";
 import { getIssuesWithProjectInfo } from "../utils/getAllIssues";
 import { getIssueWithProject } from "../utils/getIssueWithProject";

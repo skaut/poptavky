@@ -1,12 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import type React from "react";
+
 import { Route, Routes } from "react-router-dom";
 import useSWR from "swr";
+
+import type { ProjectListings } from "./interfaces/ProjectListings";
 
 import { Container } from "./components/Container";
 import { Navigation } from "./components/Navigation";
 import { config } from "./config";
-import type { ProjectListings } from "./interfaces/ProjectListings";
 import { IssueDetail } from "./pages/IssueDetail";
 import { IssuesList } from "./pages/IssuesList";
 import { ProjectDetail } from "./pages/ProjectDetail";

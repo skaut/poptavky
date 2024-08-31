@@ -1,6 +1,7 @@
+import type React from "react";
+
 import { Global } from "@emotion/react";
 import styled from "@emotion/styled";
-import type React from "react";
 import { Link, Outlet } from "react-router-dom";
 
 import { globalStyles } from "../globalStyles";

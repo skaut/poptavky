@@ -1,4 +1,5 @@
 import type React from "react";
+
 import { AiFillGithub } from "react-icons/ai";
 import { BiBookAlt } from "react-icons/bi";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -9,6 +10,7 @@ import { ImEarth } from "react-icons/im";
 import { MdChecklist, MdWebAsset } from "react-icons/md";
 
 import type { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo";
+
 import { ExtLink } from "./ExtLink";
 import { Mark, Paragraph, SmallLink } from "./Typography";
 

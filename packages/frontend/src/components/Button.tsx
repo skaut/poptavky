@@ -1,5 +1,6 @@
-import styled from "@emotion/styled";
 import type React from "react";
+
+import styled from "@emotion/styled";
 
 import { theme } from "../theme";
 import { ExtLink, type LinkProps } from "./ExtLink";
