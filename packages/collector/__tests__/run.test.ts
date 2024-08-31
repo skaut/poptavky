@@ -57,9 +57,11 @@ beforeEach(() => {
 
 test("run works", async () => {
   expect.assertions(7);
+
   mocked(getGlobalConfig).mockReturnValue(globalConfig0);
   mocked(getProjectListing).mockResolvedValue(listing0);
   await run();
+
   expect(mocked(getProjectListing).mock.calls).toHaveLength(
     globalConfig0.projects.length,
   );
@@ -77,10 +79,12 @@ test("run works", async () => {
 
 test("run works with multiple repos", async () => {
   expect.assertions(8);
+
   mocked(getGlobalConfig).mockReturnValue(globalConfig1);
   mocked(getProjectListing).mockResolvedValueOnce(listing0);
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
   await run();
+
   expect(mocked(getProjectListing).mock.calls).toHaveLength(
     globalConfig1.projects.length,
   );
@@ -101,12 +105,14 @@ test("run works with multiple repos", async () => {
 
 test("run handles global error gracefully", async () => {
   expect.assertions(3);
+
   mocked(getGlobalConfig).mockImplementation(() => {
     throw new Error();
   });
   mocked(getProjectListing).mockResolvedValueOnce(listing0);
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
   await run();
+
   expect(mocked(fs).writeFileSync.mock.calls).toHaveLength(0);
   expect(mocked(core).error.mock.calls).toHaveLength(0);
   expect(mocked(core).setFailed.mock.calls).toHaveLength(1);
@@ -114,12 +120,14 @@ test("run handles global error gracefully", async () => {
 
 test("run handes local error gracefully", async () => {
   expect.assertions(8);
+
   mocked(getGlobalConfig).mockReturnValue(globalConfig1);
   mocked(getProjectListing).mockImplementationOnce(() => {
     throw new Error();
   });
   mocked(getProjectListing).mockResolvedValueOnce(listing1);
   await run();
+
   expect(mocked(getProjectListing).mock.calls).toHaveLength(
     globalConfig1.projects.length,
   );

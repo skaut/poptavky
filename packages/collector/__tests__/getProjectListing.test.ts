@@ -25,9 +25,11 @@ const issues = [
 
 test("getProjectListing gets a value", async () => {
   expect.assertions(9);
+
   mocked(getProjectInfo).mockResolvedValue(info);
   mocked(getProjectIssues).mockResolvedValue(issues);
   mocked(getProjectVisibility).mockResolvedValue(true);
+
   await expect(getProjectListing(project)).resolves.toStrictEqual(
     Object.assign({}, project, { info, issues }),
   );

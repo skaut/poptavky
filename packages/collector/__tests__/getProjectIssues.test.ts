@@ -96,12 +96,14 @@ describe("Working issue listing", () => {
 
 test("getProjectIssues auto-populates body", async () => {
   expect.assertions(1);
+
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/issues")
     .query((actualQueryObject) => actualQueryObject.labels === "help-wanted")
     .reply(200, [
       { number: 1, title: "CORRECT", html_url: "https://example.test" },
     ]);
+
   await expect(
     getProjectIssues({ owner: "OWNER", repo: "REPO" }, true, "help-wanted"),
   ).resolves.toStrictEqual([
@@ -112,17 +114,21 @@ test("getProjectIssues auto-populates body", async () => {
       link: "https://example.test",
     },
   ]);
+
   nock.cleanAll();
 });
 
 test("getProjectIssues fails gracefully on connection issues", async () => {
   expect.assertions(1);
+
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/issues")
     .query(true)
     .reply(404);
+
   await expect(async () =>
     getProjectIssues({ owner: "OWNER", repo: "REPO" }, true, "help-wanted"),
   ).rejects.toThrow(IssueListError);
+
   nock.cleanAll();
 });

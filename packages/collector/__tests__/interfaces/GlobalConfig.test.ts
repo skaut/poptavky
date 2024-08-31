@@ -3,6 +3,7 @@ import { assertIsGlobalConfig } from "../../src/interfaces/GlobalConfig";
 
 test("GlobalConfig recognizes valid config", () => {
   const config = { projects: [] };
+
   expect(() => {
     assertIsGlobalConfig(config);
   }).not.toThrow();
@@ -10,6 +11,7 @@ test("GlobalConfig recognizes valid config", () => {
 
 test("GlobalConfig requires object input", () => {
   const config = false;
+
   expect(() => {
     assertIsGlobalConfig(config);
   }).toThrow(GlobalConfigError);
@@ -17,6 +19,7 @@ test("GlobalConfig requires object input", () => {
 
 test("GlobalConfig cannot be null", () => {
   const config = null;
+
   expect(() => {
     assertIsGlobalConfig(config);
   }).toThrow(GlobalConfigError);
@@ -24,6 +27,7 @@ test("GlobalConfig cannot be null", () => {
 
 test("GlobalConfig requires the projects field", () => {
   const config = {};
+
   expect(() => {
     assertIsGlobalConfig(config);
   }).toThrow(GlobalConfigError);
@@ -31,6 +35,7 @@ test("GlobalConfig requires the projects field", () => {
 
 test("GlobalConfig requires the projects field to be an array", () => {
   const config = { projects: "" };
+
   expect(() => {
     assertIsGlobalConfig(config);
   }).toThrow(GlobalConfigError);
@@ -38,6 +43,7 @@ test("GlobalConfig requires the projects field to be an array", () => {
 
 test("GlobalConfig requires the projects field to be an array of projects", () => {
   const config = { projects: [{}] };
+
   expect(() => {
     assertIsGlobalConfig(config);
   }).toThrow(GlobalConfigError);
@@ -45,6 +51,7 @@ test("GlobalConfig requires the projects field to be an array of projects", () =
 
 test("GlobalConfig uses custom errors", () => {
   const config = { projects: "" };
+
   expect(() => {
     assertIsGlobalConfig(config, () => {
       throw new Error("My error");
