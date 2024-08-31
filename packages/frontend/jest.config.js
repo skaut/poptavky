@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 /** @type {import('jest').Config} */
 module.exports = {
   collectCoverage: true,
