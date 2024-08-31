@@ -6,28 +6,13 @@ import useSWR from "swr";
 
 import type { ProjectListings } from "./interfaces/ProjectListings";
 
+import { AppNavigation } from "./components/AppNavigation";
 import { Container } from "./components/Container";
-import { Navigation } from "./components/Navigation";
 import { config } from "./config";
 import { IssueDetail } from "./pages/IssueDetail";
 import { IssuesList } from "./pages/IssuesList";
 import { ProjectDetail } from "./pages/ProjectDetail";
 import { ProjectsList } from "./pages/ProjectsList";
-
-const AppNavigation = (): React.JSX.Element => (
-  <Navigation
-    items={[
-      {
-        link: "/",
-        title: "Poptávky",
-      },
-      {
-        link: "/projekty",
-        title: "Projekty",
-      },
-    ]}
-  />
-);
 
 export const App = (): React.JSX.Element => {
   const { data, error } = useSWR<ProjectListings, unknown>(
