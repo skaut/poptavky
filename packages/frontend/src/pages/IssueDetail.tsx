@@ -3,8 +3,7 @@ import { css } from "@emotion/react";
 import type React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import ReactMarkdown from "react-markdown";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import remarkGfm from "remark-gfm";
 
 import { Button } from "../components/Button";

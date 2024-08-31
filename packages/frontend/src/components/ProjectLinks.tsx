@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import type React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { BiBookAlt } from "react-icons/bi";
@@ -7,8 +6,7 @@ import { FaFacebook, FaSlack } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { ImEarth } from "react-icons/im";
-import { MdWebAsset } from "react-icons/md";
-import { MdChecklist } from "react-icons/md";
+import { MdChecklist, MdWebAsset } from "react-icons/md";
 
 import type { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo";
 import { ExtLink } from "./ExtLink";
@@ -17,7 +15,7 @@ import { Mark, Paragraph, SmallLink } from "./Typography";
 export interface LinkType {
   type: ProjectInfoLink["type"];
   label: string;
-  icon?: ReactNode;
+  icon?: React.ReactNode;
 }
 
 export const links: Array<LinkType> = [
