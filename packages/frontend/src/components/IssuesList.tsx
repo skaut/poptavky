@@ -18,7 +18,7 @@ export const IssuesList = ({
   project,
 }: {
   readonly issues: Array<ProjectIssue>;
-  readonly project: ProjectListing | (Project & ProjectInfo);
+  readonly project: (Project & ProjectInfo) | ProjectListing;
 }): React.JSX.Element => (
   <>
     {issues.map((issue) => (
