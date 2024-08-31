@@ -10,12 +10,12 @@ describe("Navigation component", () => {
         <Navigation
           items={[
             {
-              title: "Poptávky",
               link: "/",
+              title: "Poptávky",
             },
             {
-              title: "Projekty",
               link: "/projekty",
+              title: "Projekty",
             },
           ]}
         />
@@ -29,13 +29,13 @@ describe("Navigation component", () => {
         <Navigation
           items={[
             {
-              title: "Poptávky",
               link: "/",
+              title: "Poptávky",
             },
             {
-              title: "Projekty",
-              link: "/projekty",
               isActive: true,
+              link: "/projekty",
+              title: "Projekty",
             },
           ]}
         />

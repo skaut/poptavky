@@ -22,13 +22,13 @@ const ProjectName = styled("p")`
 const emptyArray: Array<string> = [];
 
 export const ArticleBox = ({
-  title,
+  description,
   link = undefined,
   subtitle = undefined,
-  subtitleLink = undefined,
   subtitleDescription = undefined,
-  description,
+  subtitleLink = undefined,
   tags = emptyArray,
+  title,
 }: {
   readonly description: string;
   readonly link?: string;

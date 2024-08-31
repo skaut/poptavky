@@ -17,9 +17,9 @@ describe("App", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
-      mutate: jest.fn(),
-      isValidating: false,
       isLoading: false,
+      isValidating: false,
+      mutate: jest.fn(),
     });
     const { container } = render(
       <MemoryRouter>
@@ -33,9 +33,9 @@ describe("App", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
-      mutate: jest.fn(),
-      isValidating: false,
       isLoading: false,
+      isValidating: false,
+      mutate: jest.fn(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/projekty"]}>
@@ -49,9 +49,9 @@ describe("App", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
-      mutate: jest.fn(),
-      isValidating: false,
       isLoading: false,
+      isValidating: false,
+      mutate: jest.fn(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery"]}>
@@ -65,9 +65,9 @@ describe("App", () => {
     mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
-      mutate: jest.fn(),
-      isValidating: false,
       isLoading: false,
+      isValidating: false,
+      mutate: jest.fn(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery/3"]}>
@@ -81,9 +81,9 @@ describe("App", () => {
     mocked(swr).default.mockReturnValue({
       data: undefined,
       error: true,
-      mutate: jest.fn(),
-      isValidating: false,
       isLoading: false,
+      isValidating: false,
+      mutate: jest.fn(),
     });
     const { container } = render(
       <MemoryRouter>

@@ -10,17 +10,12 @@ module.exports = (env) => {
     (env.development === true ? "development" : "production");
 
   return {
-    mode,
+    devServer: {
+      historyApiFallback: true,
+    },
     devtool: mode === "development" ? "source-map" : false,
-    plugins: [
-      new HtmlWebpackPlugin({
-        base: "/",
-        template: "./src/html/index.html",
-      }),
-      new MiniCssExtractPlugin(),
-      new SubresourceIntegrityPlugin(),
-      new ForkTsCheckerWebpackPlugin(),
-    ],
+    entry: "./src/index.tsx",
+    mode,
     module: {
       rules: [
         {
@@ -53,17 +48,6 @@ module.exports = (env) => {
         },
       ],
     },
-    resolve: {
-      extensions: [".js", ".ts", ".tsx"],
-    },
-    entry: "./src/index.tsx",
-    output: {
-      filename: "[name].[contenthash:8].js",
-      crossOriginLoading: "anonymous",
-    },
-    devServer: {
-      historyApiFallback: true,
-    },
     optimization: {
       minimize: mode === "production",
       minimizer: [
@@ -76,6 +60,22 @@ module.exports = (env) => {
           },
         }),
       ],
+    },
+    output: {
+      crossOriginLoading: "anonymous",
+      filename: "[name].[contenthash:8].js",
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        base: "/",
+        template: "./src/html/index.html",
+      }),
+      new MiniCssExtractPlugin(),
+      new SubresourceIntegrityPlugin(),
+      new ForkTsCheckerWebpackPlugin(),
+    ],
+    resolve: {
+      extensions: [".js", ".ts", ".tsx"],
     },
   };
 };

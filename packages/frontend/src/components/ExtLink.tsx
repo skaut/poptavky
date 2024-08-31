@@ -12,10 +12,10 @@ export interface LinkProps {
 }
 export const ExtLink = ({
   children,
-  href,
-  title = undefined,
-  targetSelf = false,
   className = undefined,
+  href,
+  targetSelf = false,
+  title = undefined,
 }: LinkProps): React.JSX.Element => (
   <a
     className={className}
@@ -23,8 +23,8 @@ export const ExtLink = ({
     title={title}
     {...(!targetSelf
       ? {
-          target: "_blank",
           rel: "noreferrer noopener",
+          target: "_blank",
         }
       : {})}
     css={css`

@@ -22,54 +22,54 @@ export interface LinkType {
 
 export const links: Array<LinkType> = [
   {
-    type: "email",
-    label: "E-mail",
     icon: <GrMail />,
+    label: "E-mail",
+    type: "email",
   },
   {
-    type: "demo",
-    label: "Demo",
     icon: <MdWebAsset />,
+    label: "Demo",
+    type: "demo",
   },
   {
-    type: "docs",
-    label: "Dokumentace",
     icon: <HiOutlineDocumentText />,
+    label: "Dokumentace",
+    type: "docs",
   },
   {
-    type: "facebook-group",
+    icon: <FaFacebook />,
     label: "Skupina na facebooku",
-    icon: <FaFacebook />,
+    type: "facebook-group",
   },
   {
-    type: "facebook-page",
+    icon: <FaFacebook />,
     label: "Stránka na facebooku",
-    icon: <FaFacebook />,
+    type: "facebook-page",
   },
   {
-    type: "github-repo",
-    label: "Repozitář",
     icon: <AiFillGithub />,
+    label: "Repozitář",
+    type: "github-repo",
   },
   {
-    type: "homepage",
-    label: "Web",
     icon: <ImEarth />,
+    label: "Web",
+    type: "homepage",
   },
   {
-    type: "issue-tracker",
-    label: "Issue tracker",
     icon: <MdChecklist />,
+    label: "Issue tracker",
+    type: "issue-tracker",
   },
   {
-    type: "slack",
-    label: "Slack",
     icon: <FaSlack />,
+    label: "Slack",
+    type: "slack",
   },
   {
-    type: "wiki",
-    label: "Wiki",
     icon: <BiBookAlt />,
+    label: "Wiki",
+    type: "wiki",
   },
 ];
 

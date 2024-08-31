@@ -7,8 +7,8 @@ import { getProjectLink } from "../utils/getProjectLink";
 import { ArticleBox } from "./ArticleBox";
 
 export const Issue = ({
-  issue,
   hideTags = false,
+  issue,
 }: {
   readonly hideTags?: boolean;
   readonly issue: ProjectIssueWithProjectInfo;

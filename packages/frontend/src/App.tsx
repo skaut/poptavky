@@ -18,12 +18,12 @@ const AppNavigation = (): React.JSX.Element => (
   <Navigation
     items={[
       {
-        title: "Poptávky",
         link: "/",
+        title: "Poptávky",
       },
       {
-        title: "Projekty",
         link: "/projekty",
+        title: "Projekty",
       },
     ]}
   />

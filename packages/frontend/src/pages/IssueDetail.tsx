@@ -34,9 +34,9 @@ export const IssueDetail = ({
   readonly data: ProjectListings;
 }): React.JSX.Element => {
   const {
+    issue: issueNumber,
     owner: projectOwner,
     project: projectRepo,
-    issue: issueNumber,
   } = useParams<{ issue: string; owner: string; project: string }>();
 
   const issue = getIssueWithProject(
@@ -46,9 +46,9 @@ export const IssueDetail = ({
     Number(issueNumber),
   );
   const projectIssues = getIssuesWithProjectInfo(data, {
+    omitIssueNumber: issue?.number,
     owner: projectOwner,
     repo: projectRepo,
-    omitIssueNumber: issue?.number,
   });
 
   if (!issue) {
