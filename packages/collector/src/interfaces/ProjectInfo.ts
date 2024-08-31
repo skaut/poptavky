@@ -91,7 +91,7 @@ function assertIsProjectInfoLink(
       throw errorFn('The field "channel" is not a string.');
     }
   } else if (
-    ["github-repo", "facebook-page", "facebook-group"].includes(link.type)
+    ["facebook-group", "facebook-page", "github-repo"].includes(link.type)
   ) {
     if (!("name" in link)) {
       throw errorFn('The link doesn\'t contain the field "name".');
@@ -100,7 +100,7 @@ function assertIsProjectInfoLink(
       throw errorFn('The field "name" is not a string.');
     }
   } else if (
-    !["email", "homepage", "demo", "issue-tracker", "wiki", "docs"].includes(
+    !["demo", "docs", "email", "homepage", "issue-tracker", "wiki"].includes(
       link.type,
     )
   ) {
