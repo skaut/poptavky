@@ -147,7 +147,7 @@ export function assertIsProjectInfo(
   if (!Array.isArray(info.maintainers)) {
     throw errorFn('The field "maintainers" is not an array.');
   }
-  if (info.maintainers.length == 0) {
+  if (info.maintainers.length === 0) {
     throw errorFn('The field "maintainers" is empty.');
   }
   for (const maintainer of info.maintainers) {
@@ -158,7 +158,7 @@ export function assertIsProjectInfo(
   if (!Array.isArray(info.links)) {
     throw errorFn('The field "links" is not an array.');
   }
-  if (info.links.length == 0) {
+  if (info.links.length === 0) {
     throw errorFn('The field "links" is empty.');
   }
   for (const link of info.links) {
