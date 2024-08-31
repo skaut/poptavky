@@ -32,7 +32,7 @@ export const App = (): React.JSX.Element => {
     config.dataApiUrl,
     async (url: string) => {
       const res = await fetch(url);
-      return res.json();
+      return res.json() as Promise<ProjectListings>;
     },
   );
   if (error !== undefined) {
