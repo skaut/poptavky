@@ -1,6 +1,5 @@
 import { GlobalConfigError } from "../exceptions/GlobalConfigError";
-import type { Project } from "./Project";
-import { assertIsProject } from "./Project";
+import { assertIsProject, type Project } from "./Project";
 
 export interface GlobalConfig {
   projects: Array<Project>;
