@@ -11,8 +11,8 @@ export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
   const rawResponse = await octokit.rest.repos
     .getContent({
       owner: project.owner,
-      repo: project.repo,
       path: ".project-info.json",
+      repo: project.repo,
     })
     .catch((e: unknown): never => {
       throw new ProjectInfoError(String(e));

@@ -10,7 +10,9 @@ export default {
   ],
   coverageDirectory: "coverage",
   coverageProvider: "babel",
+  resetMocks: true,
   setupFiles: ["<rootDir>/__tests__/setup.ts"],
+  testMatch: ["<rootDir>/__tests__/**/*.test.ts"],
   transform: {
     // eslint-disable-next-line @typescript-eslint/naming-convention -- Regexp key
     "^.+\\.[jt]s$": [
@@ -21,6 +23,4 @@ export default {
     ],
   },
   transformIgnorePatterns: ["node_modules/(?!node-fetch)/"],
-  resetMocks: true,
-  testMatch: ["<rootDir>/__tests__/**/*.test.ts"],
 };

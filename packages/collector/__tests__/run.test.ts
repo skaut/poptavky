@@ -27,15 +27,15 @@ const globalConfig0 = { projects: [{ owner: "OWNER", repo: "REPO0" }] };
 const listing0 = {
   ...globalConfig0.projects[0],
   info: {
+    description: "DESCRIPTION",
+    links: [{ type: "email", uri: "mailto:test@example.test" }],
+    maintainers: [{ name: "MAINTAINER" }],
     name: "NAME0",
     "short-description": "DESC",
-    description: "DESCRIPTION",
-    maintainers: [{ name: "MAINTAINER" }],
-    links: [{ type: "email", uri: "mailto:test@example.test" }],
   } as ProjectInfo,
   issues: [
-    { number: 1, title: "1_TITLE", description: "1_DESCRIPTION" },
-    { number: 2, title: "2_TITLE", description: "2_DESCRIPTION" },
+    { description: "1_DESCRIPTION", number: 1, title: "1_TITLE" },
+    { description: "2_DESCRIPTION", number: 2, title: "2_TITLE" },
   ],
 };
 
@@ -48,11 +48,11 @@ const globalConfig1 = {
 const listing1 = {
   ...globalConfig1.projects[1],
   info: {
+    description: "DESCRIPTION",
+    links: [{ type: "email", uri: "mailto:test@example.test" }],
+    maintainers: [{ name: "MAINTAINER" }],
     name: "NAME1",
     "short-description": "DESC",
-    description: "DESCRIPTION",
-    maintainers: [{ name: "MAINTAINER" }],
-    links: [{ type: "email", uri: "mailto:test@example.test" }],
   } as ProjectInfo,
   issues: [],
 };

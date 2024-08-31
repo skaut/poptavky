@@ -12,18 +12,18 @@ export async function getProjectIssues(
   const safeIssueLabel = issueLabel ?? "help wanted";
   const issues = await octokit.rest.issues
     .listForRepo({
-      owner: project.owner,
-      repo: project.repo,
-      per_page: 100,
       labels: safeIssueLabel,
+      owner: project.owner,
+      per_page: 100,
+      repo: project.repo,
     })
     .catch((e: unknown): never => {
       throw new IssueListError(String(e));
     });
   return issues.data.map((issue) => ({
-    number: issue.number,
-    title: issue.title,
     description: issue.body ?? "",
     link: publicRepo ? issue.html_url : undefined,
+    number: issue.number,
+    title: issue.title,
   }));
 }

@@ -4,11 +4,11 @@ import { ProjectInfoError } from "../src/exceptions/ProjectInfoError";
 import { getProjectInfo } from "../src/getProjectInfo";
 
 const config = {
+  description: "DESCRIPTION",
+  links: [{ type: "email", uri: "mailto:test@example.test" }],
+  maintainers: [{ name: "MAINTAINER" }],
   name: "NAME",
   "short-description": "DESC",
-  description: "DESCRIPTION",
-  maintainers: [{ name: "MAINTAINER" }],
-  links: [{ type: "email", uri: "mailto:test@example.test" }],
 };
 
 test("getProjectInfo gets a value", async () => {

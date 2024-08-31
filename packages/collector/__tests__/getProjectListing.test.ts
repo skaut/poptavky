@@ -13,15 +13,15 @@ jest.mock("../src/getProjectVisibility");
 
 const project = { owner: "OWNER", repo: "REPO" };
 const info: ProjectInfo = {
+  description: "DESCRIPTION",
+  links: [{ type: "email", uri: "mailto:test@example.test" }],
+  maintainers: [{ name: "MAINTAINER" }],
   name: "NAME",
   "short-description": "DESC",
-  description: "DESCRIPTION",
-  maintainers: [{ name: "MAINTAINER" }],
-  links: [{ type: "email", uri: "mailto:test@example.test" }],
 };
 const issues = [
-  { number: 1, title: "1_TITLE", description: "1_DESCRIPTION" },
-  { number: 2, title: "2_TITLE", description: "2_DESCRIPTION" },
+  { description: "1_DESCRIPTION", number: 1, title: "1_TITLE" },
+  { description: "2_DESCRIPTION", number: 2, title: "2_TITLE" },
 ];
 
 test("getProjectListing gets a value", async () => {
