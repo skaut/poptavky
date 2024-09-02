@@ -10,6 +10,7 @@ test("should get issue with project", () => {
     project.repo,
     project.issues[0].number,
   );
+
   expect(result).toMatchSnapshot();
 });
 
@@ -20,6 +21,7 @@ test("should not get issue with project if there is no existing owner", () => {
     project.repo,
     project.issues[0].number,
   );
+
   expect(result).toBeUndefined();
 });
 
@@ -30,10 +32,12 @@ test("should not get issue with project if there is no existing repo", () => {
     "",
     project.issues[0].number,
   );
+
   expect(result).toBeUndefined();
 });
 
 test("should not get issue with project if there is no existing issue number", () => {
   const result = getIssueWithProject(testData, project.owner, project.repo, 99);
+
   expect(result).toBeUndefined();
 });

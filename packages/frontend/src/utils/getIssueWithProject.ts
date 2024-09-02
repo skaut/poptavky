@@ -12,13 +12,13 @@ export const getIssueWithProject = (
   );
 
   if (!project) {
-    return;
+    return undefined;
   }
 
   const issue = project.issues.find((item) => item.number === issueNumber);
 
   if (!issue) {
-    return;
+    return undefined;
   }
 
   return {

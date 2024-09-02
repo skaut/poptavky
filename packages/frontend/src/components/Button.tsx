@@ -1,9 +1,9 @@
-import styled from "@emotion/styled";
 import type React from "react";
 
+import styled from "@emotion/styled";
+
 import { theme } from "../theme";
-import type { LinkProps } from "./ExtLink";
-import { ExtLink } from "./ExtLink";
+import { ExtLink, type LinkProps } from "./ExtLink";
 
 const ButtonWrapper = styled(ExtLink)`
   display: inline-block;

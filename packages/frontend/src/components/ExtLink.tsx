@@ -1,20 +1,21 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import type React from "react";
+
+import { css } from "@emotion/react";
 
 export interface LinkProps {
   readonly children: React.ReactNode;
-  readonly href: string;
-  readonly title?: string;
-  readonly targetSelf?: boolean;
   readonly className?: string;
+  readonly href: string;
+  readonly targetSelf?: boolean;
+  readonly title?: string;
 }
 export const ExtLink = ({
   children,
-  href,
-  title = undefined,
-  targetSelf = false,
   className = undefined,
+  href,
+  targetSelf = false,
+  title = undefined,
 }: LinkProps): React.JSX.Element => (
   <a
     className={className}
@@ -22,8 +23,8 @@ export const ExtLink = ({
     title={title}
     {...(!targetSelf
       ? {
-          target: "_blank",
           rel: "noreferrer noopener",
+          target: "_blank",
         }
       : {})}
     css={css`

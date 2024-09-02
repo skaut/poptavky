@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
 import type React from "react";
+
 import { AiFillGithub } from "react-icons/ai";
 import { BiBookAlt } from "react-icons/bi";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -7,69 +7,69 @@ import { FaFacebook, FaSlack } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { ImEarth } from "react-icons/im";
-import { MdWebAsset } from "react-icons/md";
-import { MdChecklist } from "react-icons/md";
+import { MdChecklist, MdWebAsset } from "react-icons/md";
 
 import type { ProjectInfo, ProjectInfoLink } from "../interfaces/ProjectInfo";
+
 import { ExtLink } from "./ExtLink";
 import { Mark, Paragraph, SmallLink } from "./Typography";
 
 export interface LinkType {
-  type: ProjectInfoLink["type"];
+  icon?: React.ReactNode;
   label: string;
-  icon?: ReactNode;
+  type: ProjectInfoLink["type"];
 }
 
 export const links: Array<LinkType> = [
   {
-    type: "email",
-    label: "E-mail",
     icon: <GrMail />,
+    label: "E-mail",
+    type: "email",
   },
   {
-    type: "demo",
-    label: "Demo",
     icon: <MdWebAsset />,
+    label: "Demo",
+    type: "demo",
   },
   {
-    type: "docs",
-    label: "Dokumentace",
     icon: <HiOutlineDocumentText />,
+    label: "Dokumentace",
+    type: "docs",
   },
   {
-    type: "facebook-group",
+    icon: <FaFacebook />,
     label: "Skupina na facebooku",
-    icon: <FaFacebook />,
+    type: "facebook-group",
   },
   {
-    type: "facebook-page",
+    icon: <FaFacebook />,
     label: "Stránka na facebooku",
-    icon: <FaFacebook />,
+    type: "facebook-page",
   },
   {
-    type: "github-repo",
-    label: "Repozitář",
     icon: <AiFillGithub />,
+    label: "Repozitář",
+    type: "github-repo",
   },
   {
-    type: "homepage",
-    label: "Web",
     icon: <ImEarth />,
+    label: "Web",
+    type: "homepage",
   },
   {
-    type: "issue-tracker",
-    label: "Issue tracker",
     icon: <MdChecklist />,
+    label: "Issue tracker",
+    type: "issue-tracker",
   },
   {
-    type: "slack",
-    label: "Slack",
     icon: <FaSlack />,
+    label: "Slack",
+    type: "slack",
   },
   {
-    type: "wiki",
-    label: "Wiki",
     icon: <BiBookAlt />,
+    label: "Wiki",
+    type: "wiki",
   },
 ];
 
@@ -87,7 +87,7 @@ export const ProjectLinks = ({
       </Mark>
       {projectInfo.maintainers
         .filter(
-          (person): person is { name: string; email: string } =>
+          (person): person is { email: string; name: string } =>
             person.email !== undefined,
         )
         .map((person) => (

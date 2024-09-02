@@ -1,38 +1,25 @@
 /** @jsxImportSource @emotion/react */
 import type React from "react";
+
 import { Route, Routes } from "react-router-dom";
 import useSWR from "swr";
 
-import { Container } from "./components/Container";
-import { Navigation } from "./components/Navigation";
-import { config } from "./config";
 import type { ProjectListings } from "./interfaces/ProjectListings";
+
+import { AppNavigation } from "./components/AppNavigation";
+import { Container } from "./components/Container";
+import { config } from "./config";
 import { IssueDetail } from "./pages/IssueDetail";
 import { IssuesList } from "./pages/IssuesList";
 import { ProjectDetail } from "./pages/ProjectDetail";
 import { ProjectsList } from "./pages/ProjectsList";
-
-const AppNavigation = (): React.JSX.Element => (
-  <Navigation
-    items={[
-      {
-        title: "Poptávky",
-        link: "/",
-      },
-      {
-        title: "Projekty",
-        link: "/projekty",
-      },
-    ]}
-  />
-);
 
 export const App = (): React.JSX.Element => {
   const { data, error } = useSWR<ProjectListings, unknown>(
     config.dataApiUrl,
     async (url: string) => {
       const res = await fetch(url);
-      return res.json();
+      return res.json() as Promise<ProjectListings>;
     },
   );
   if (error !== undefined) {

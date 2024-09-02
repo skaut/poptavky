@@ -1,11 +1,13 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import type React from "react";
+
+import { css } from "@emotion/react";
 import { AiFillGithub } from "react-icons/ai";
 import ReactMarkdown from "react-markdown";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import remarkGfm from "remark-gfm";
+
+import type { ProjectListings } from "../interfaces/ProjectListings";
 
 import { Button } from "../components/Button";
 import { ColoredTag } from "../components/ColoredTag";
@@ -21,7 +23,6 @@ import {
   Mark,
   Paragraph,
 } from "../components/Typography";
-import type { ProjectListings } from "../interfaces/ProjectListings";
 import { theme } from "../theme";
 import { getIssuesWithProjectInfo } from "../utils/getAllIssues";
 import { getIssueWithProject } from "../utils/getIssueWithProject";
@@ -33,10 +34,10 @@ export const IssueDetail = ({
   readonly data: ProjectListings;
 }): React.JSX.Element => {
   const {
+    issue: issueNumber,
     owner: projectOwner,
     project: projectRepo,
-    issue: issueNumber,
-  } = useParams<{ owner: string; project: string; issue: string }>();
+  } = useParams<{ issue: string; owner: string; project: string }>();
 
   const issue = getIssueWithProject(
     data,
@@ -45,9 +46,9 @@ export const IssueDetail = ({
     Number(issueNumber),
   );
   const projectIssues = getIssuesWithProjectInfo(data, {
+    omitIssueNumber: issue?.number,
     owner: projectOwner,
     repo: projectRepo,
-    omitIssueNumber: issue?.number,
   });
 
   if (!issue) {

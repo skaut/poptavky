@@ -1,35 +1,29 @@
-/* eslint-env node */
-
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const { SubresourceIntegrityPlugin } = require("webpack-subresource-integrity");
 
 module.exports = (env) => {
   const mode =
-    process.env.NODE_ENV ?? (env.development ? "development" : "production");
+    process.env.NODE_ENV ??
+    (env.development === true ? "development" : "production");
 
   return {
-    mode,
+    devServer: {
+      historyApiFallback: true,
+    },
     devtool: mode === "development" ? "source-map" : false,
-    plugins: [
-      new HtmlWebpackPlugin({
-        base: "/",
-        template: "./src/html/index.html",
-      }),
-      new MiniCssExtractPlugin(),
-      new SubresourceIntegrityPlugin(),
-      new ForkTsCheckerWebpackPlugin(),
-    ],
+    entry: "./src/index.tsx",
+    mode,
     module: {
       rules: [
         {
-          test: /\.svg$/,
+          test: /\.svg$/u,
           type: "asset",
         },
         {
-          test: /\.tsx?$/,
+          test: /\.tsx?$/u,
           use: {
             loader: "ts-loader",
             options: {
@@ -38,7 +32,7 @@ module.exports = (env) => {
           },
         },
         {
-          test: /\.css$/,
+          test: /\.css$/u,
           use: [
             MiniCssExtractPlugin.loader,
             "css-loader",
@@ -54,17 +48,6 @@ module.exports = (env) => {
         },
       ],
     },
-    resolve: {
-      extensions: [".js", ".ts", ".tsx"],
-    },
-    entry: "./src/index.tsx",
-    output: {
-      filename: "[name].[contenthash:8].js",
-      crossOriginLoading: "anonymous",
-    },
-    devServer: {
-      historyApiFallback: true,
-    },
     optimization: {
       minimize: mode === "production",
       minimizer: [
@@ -77,6 +60,22 @@ module.exports = (env) => {
           },
         }),
       ],
+    },
+    output: {
+      crossOriginLoading: "anonymous",
+      filename: "[name].[contenthash:8].js",
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        base: "/",
+        template: "./src/html/index.html",
+      }),
+      new MiniCssExtractPlugin(),
+      new SubresourceIntegrityPlugin(),
+      new ForkTsCheckerWebpackPlugin(),
+    ],
+    resolve: {
+      extensions: [".js", ".ts", ".tsx"],
     },
   };
 };

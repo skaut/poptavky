@@ -1,5 +1,6 @@
-import styled from "@emotion/styled";
 import type React from "react";
+
+import styled from "@emotion/styled";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 import remarkGfm from "remark-gfm";
@@ -21,21 +22,21 @@ const ProjectName = styled("p")`
 const emptyArray: Array<string> = [];
 
 export const ArticleBox = ({
-  title,
+  description,
   link = undefined,
   subtitle = undefined,
-  subtitleLink = undefined,
   subtitleDescription = undefined,
-  description,
+  subtitleLink = undefined,
   tags = emptyArray,
+  title,
 }: {
-  readonly title: string;
+  readonly description: string;
   readonly link?: string;
   readonly subtitle?: string;
-  readonly subtitleLink?: string;
   readonly subtitleDescription?: string;
-  readonly description: string;
+  readonly subtitleLink?: string;
   readonly tags?: Array<string>;
+  readonly title: string;
 }): React.JSX.Element => (
   <ThinArticle>
     <H2>{link !== undefined ? <Link to={link}>{title}</Link> : title}</H2>
