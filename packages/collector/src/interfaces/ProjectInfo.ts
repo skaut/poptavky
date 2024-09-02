@@ -1,22 +1,23 @@
 import type { PoptavkyError } from "../exceptions/PoptavkyError";
+
 import { ProjectInfoError } from "../exceptions/ProjectInfoError";
 
 interface ProjectInfoMaintainer {
-  name: string;
   email?: string;
+  name: string;
 }
 
 interface ProjectInfoLinkSlack {
+  channel: string;
+  space: string;
   type: "slack";
   uri: string;
-  space: string;
-  channel: string;
 }
 
 interface ProjectInfoLinkNamed {
+  name: string;
   type: "facebook-group" | "facebook-page" | "github-repo";
   uri: string;
-  name: string;
 }
 
 interface ProjectInfoLinkOther {
@@ -30,12 +31,12 @@ type ProjectInfoLink =
   | ProjectInfoLinkSlack;
 
 export interface ProjectInfo {
+  description: string;
+  "help-issue-label"?: string;
+  links: Array<ProjectInfoLink>;
+  maintainers: Array<ProjectInfoMaintainer>;
   name: string;
   "short-description": string;
-  description: string;
-  maintainers: Array<ProjectInfoMaintainer>;
-  links: Array<ProjectInfoLink>;
-  "help-issue-label"?: string;
   tags?: Array<string>;
 }
 
@@ -90,7 +91,7 @@ function assertIsProjectInfoLink(
       throw errorFn('The field "channel" is not a string.');
     }
   } else if (
-    ["github-repo", "facebook-page", "facebook-group"].includes(link.type)
+    ["facebook-group", "facebook-page", "github-repo"].includes(link.type)
   ) {
     if (!("name" in link)) {
       throw errorFn('The link doesn\'t contain the field "name".');
@@ -99,7 +100,7 @@ function assertIsProjectInfoLink(
       throw errorFn('The field "name" is not a string.');
     }
   } else if (
-    !["email", "homepage", "demo", "issue-tracker", "wiki", "docs"].includes(
+    !["demo", "docs", "email", "homepage", "issue-tracker", "wiki"].includes(
       link.type,
     )
   ) {
@@ -147,23 +148,23 @@ export function assertIsProjectInfo(
   if (!Array.isArray(info.maintainers)) {
     throw errorFn('The field "maintainers" is not an array.');
   }
-  if (info.maintainers.length == 0) {
+  if (info.maintainers.length === 0) {
     throw errorFn('The field "maintainers" is empty.');
   }
   for (const maintainer of info.maintainers) {
     assertIsProjectInfoMaintainer(maintainer, (e) =>
-      errorFn('A "maintainer" field item is invalid: ' + e),
+      errorFn(`A "maintainer" field item is invalid: ${e}`),
     );
   }
   if (!Array.isArray(info.links)) {
     throw errorFn('The field "links" is not an array.');
   }
-  if (info.links.length == 0) {
+  if (info.links.length === 0) {
     throw errorFn('The field "links" is empty.');
   }
   for (const link of info.links) {
     assertIsProjectInfoLink(link, (e) =>
-      errorFn('A "link" field item is invalid: ' + e),
+      errorFn(`A "link" field item is invalid: ${e}`),
     );
   }
   if ("help-issue-label" in info) {

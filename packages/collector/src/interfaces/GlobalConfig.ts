@@ -1,6 +1,5 @@
 import { GlobalConfigError } from "../exceptions/GlobalConfigError";
-import type { Project } from "./Project";
-import { assertIsProject } from "./Project";
+import { assertIsProject, type Project } from "./Project";
 
 export interface GlobalConfig {
   projects: Array<Project>;
@@ -21,7 +20,7 @@ export function assertIsGlobalConfig(
   }
   for (const project of config.projects) {
     assertIsProject(project, (e) =>
-      errorFn('A "project" field item is invalid: ' + e),
+      errorFn(`A "project" field item is invalid: ${e}`),
     );
   }
 }

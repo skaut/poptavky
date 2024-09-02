@@ -1,6 +1,7 @@
-import { IssueListError } from "./exceptions/IssueListError";
 import type { Project } from "./interfaces/Project";
 import type { ProjectIssue } from "./interfaces/ProjectIssue";
+
+import { IssueListError } from "./exceptions/IssueListError";
 import { octokit } from "./octokit";
 
 export async function getProjectIssues(
@@ -8,21 +9,21 @@ export async function getProjectIssues(
   publicRepo: boolean,
   issueLabel: string | undefined,
 ): Promise<Array<ProjectIssue>> {
-  issueLabel = issueLabel ?? "help wanted";
+  const safeIssueLabel = issueLabel ?? "help wanted";
   const issues = await octokit.rest.issues
     .listForRepo({
+      labels: safeIssueLabel,
       owner: project.owner,
-      repo: project.repo,
       per_page: 100,
-      labels: issueLabel,
+      repo: project.repo,
     })
     .catch((e: unknown): never => {
       throw new IssueListError(String(e));
     });
   return issues.data.map((issue) => ({
-    number: issue.number,
-    title: issue.title,
     description: issue.body ?? "",
     link: publicRepo ? issue.html_url : undefined,
+    number: issue.number,
+    title: issue.title,
   }));
 }

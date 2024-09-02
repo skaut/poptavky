@@ -1,15 +1,18 @@
-import { ProjectInfoError } from "./exceptions/ProjectInfoError";
 import type { Project } from "./interfaces/Project";
-import type { ProjectInfo } from "./interfaces/ProjectInfo";
-import { assertIsProjectInfo } from "./interfaces/ProjectInfo";
+
+import { ProjectInfoError } from "./exceptions/ProjectInfoError";
+import {
+  assertIsProjectInfo,
+  type ProjectInfo,
+} from "./interfaces/ProjectInfo";
 import { octokit } from "./octokit";
 
 export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
   const rawResponse = await octokit.rest.repos
     .getContent({
       owner: project.owner,
-      repo: project.repo,
       path: ".project-info.json",
+      repo: project.repo,
     })
     .catch((e: unknown): never => {
       throw new ProjectInfoError(String(e));
