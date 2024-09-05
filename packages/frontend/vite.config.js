@@ -1,6 +1,6 @@
-const legacy = require("@vitejs/plugin-legacy");
-const react = require("@vitejs/plugin-react");
-const { defineConfig } = require("vite");
+import legacy from "@vitejs/plugin-legacy";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {

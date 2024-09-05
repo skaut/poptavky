@@ -1,5 +1,5 @@
 /** @type {import('jest').Config} */
-module.exports = {
+export default {
   collectCoverage: true,
   collectCoverageFrom: [
     "src/**/*.{ts,tsx}",

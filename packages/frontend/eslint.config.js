@@ -1,18 +1,18 @@
-const js = require("@eslint/js");
-const eslintComments = require("@eslint-community/eslint-plugin-eslint-comments");
-const commentsConfig = require("@eslint-community/eslint-plugin-eslint-comments/configs");
-const compat = require("eslint-plugin-compat");
-const jest = require("eslint-plugin-jest");
-const perfectionist = require("eslint-plugin-perfectionist");
-const preferArrowFunctions = require("eslint-plugin-prefer-arrow-functions");
-const prettierRecommended = require("eslint-plugin-prettier/recommended");
-const react = require("eslint-plugin-react");
-const globals = require("globals");
-const tseslint = require("typescript-eslint");
+import js from "@eslint/js";
+import eslintComments from "@eslint-community/eslint-plugin-eslint-comments";
+import commentsConfig from "@eslint-community/eslint-plugin-eslint-comments/configs";
+import compat from "eslint-plugin-compat";
+import jest from "eslint-plugin-jest";
+import perfectionist from "eslint-plugin-perfectionist";
+import preferArrowFunctions from "eslint-plugin-prefer-arrow-functions";
+import prettierRecommended from "eslint-plugin-prettier/recommended";
+import react from "eslint-plugin-react";
+import globals from "globals";
+import tseslint from "typescript-eslint";
 
 /* eslint-disable @typescript-eslint/naming-convention -- Not applicable to this file */
 
-module.exports = tseslint.config(
+export default tseslint.config(
   js.configs.recommended,
   prettierRecommended,
   commentsConfig.recommended,
@@ -284,7 +284,6 @@ module.exports = tseslint.config(
     files: ["**/*.js"],
     rules: {
       "@typescript-eslint/explicit-function-return-type": "off",
-      "@typescript-eslint/no-require-imports": "off",
       "@typescript-eslint/no-unsafe-argument": "off",
       "@typescript-eslint/no-unsafe-assignment": "off",
       "@typescript-eslint/no-unsafe-member-access": "off",
