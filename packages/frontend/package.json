@@ -15,6 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/skaut/poptavky.git"
   },
+  "type": "module",
   "scripts": {
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean",
