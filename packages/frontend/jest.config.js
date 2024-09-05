@@ -17,14 +17,10 @@ module.exports = {
   testMatch: ["<rootDir>/__tests__/**/*.test.{js,jsx,ts,tsx}"],
   transform: {
     // eslint-disable-next-line @typescript-eslint/naming-convention -- The key is a glob matching files
-    "^.+\\.jsx?$": [
-      "babel-jest",
-      {
-        presets: ["react-app"],
-      },
-    ],
-    // eslint-disable-next-line @typescript-eslint/naming-convention -- The key is a glob matching files
-    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.(j|t)sx?$": ["ts-jest", { tsconfig: "test.tsconfig.json" }],
   },
-  transformIgnorePatterns: ["node_modules/(?!react-markdown)/"],
+  transformIgnorePatterns: [
+    "node_modules/(?!react-markdown)/",
+    "node_modules/@testing-library/",
+  ],
 };
