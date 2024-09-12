@@ -9,8 +9,6 @@
     "sourceMap": true,
     "target": "es2019",
 
-    "skipLibCheck": true,
-
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "exactOptionalPropertyTypes": true,
