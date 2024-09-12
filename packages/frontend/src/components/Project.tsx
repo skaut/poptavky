@@ -13,7 +13,7 @@ export const Project = ({
   <ArticleBox
     description={project.info.description}
     link={getProjectLink(project)}
-    tags={project.info.tags}
+    tags={project.info.tags ?? []}
     title={project.info.name}
   />
 );
