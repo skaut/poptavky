@@ -1,17 +1,23 @@
 {
   "compilerOptions": {
-    "module": "es2020",
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "target": "es5",
-    "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es5",
+
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
     "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "sourceMap": true,
     "strict": true
   }
 }
