@@ -7,7 +7,9 @@ describe("Working issue listing", () => {
   beforeEach(() => {
     nock("https://api.github.com")
       .get("/repos/OWNER/REPO/issues")
-      .query((actualQueryObject) => actualQueryObject.labels === "help-wanted")
+      .query(
+        (actualQueryObject) => actualQueryObject["labels"] === "help-wanted",
+      )
       .reply(200, [
         {
           body: "BODY_C",
@@ -18,7 +20,9 @@ describe("Working issue listing", () => {
       ]);
     nock("https://api.github.com")
       .get("/repos/OWNER/REPO/issues")
-      .query((actualQueryObject) => actualQueryObject.labels === "help wanted")
+      .query(
+        (actualQueryObject) => actualQueryObject["labels"] === "help wanted",
+      )
       .reply(200, [
         {
           body: "BODY_I",
@@ -99,7 +103,7 @@ test("getProjectIssues auto-populates body", async () => {
 
   nock("https://api.github.com")
     .get("/repos/OWNER/REPO/issues")
-    .query((actualQueryObject) => actualQueryObject.labels === "help-wanted")
+    .query((actualQueryObject) => actualQueryObject["labels"] === "help-wanted")
     .reply(200, [
       { html_url: "https://example.test", number: 1, title: "CORRECT" },
     ]);
