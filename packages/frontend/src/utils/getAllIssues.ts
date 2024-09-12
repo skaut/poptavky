@@ -8,7 +8,7 @@ export interface ProjectIssueWithProjectInfo extends ProjectIssue {
 }
 
 interface Query extends Partial<Project> {
-  omitIssueNumber?: number;
+  omitIssueNumber: number | undefined;
 }
 
 export const getIssuesWithProjectInfo = (

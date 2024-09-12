@@ -47,8 +47,8 @@ export const IssueDetail = ({
   );
   const projectIssues = getIssuesWithProjectInfo(data, {
     omitIssueNumber: issue?.number,
-    owner: projectOwner,
-    repo: projectRepo,
+    ...(projectOwner !== undefined && { owner: projectOwner }),
+    ...(projectRepo !== undefined && { repo: projectRepo }),
   });
 
   if (!issue) {
