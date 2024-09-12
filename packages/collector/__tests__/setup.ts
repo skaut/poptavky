@@ -10,7 +10,7 @@ jest.mock("../src/octokit", () => {
   const OctokitWithRest = Octokit.plugin(restEndpointMethods);
   return {
     octokit: new OctokitWithRest({
-      auth: process.env.PAT,
+      auth: process.env["PAT"],
       request: {
         fetch: nodeFetch,
       },
