@@ -22,7 +22,7 @@ export async function getProjectIssues(
     });
   return issues.data.map((issue) => ({
     description: issue.body ?? "",
-    link: publicRepo ? issue.html_url : undefined,
+    ...(publicRepo && { link: issue.html_url }),
     number: issue.number,
     title: issue.title,
   }));
