@@ -20,8 +20,9 @@ describe("IssuesList component", () => {
       <MemoryRouter>
         <IssuesList
           issues={project.issues.map((issue) => ({
-            ...issue,
-            link: undefined,
+            description: issue.description,
+            number: issue.number,
+            title: issue.title,
           }))}
           project={project}
         />
