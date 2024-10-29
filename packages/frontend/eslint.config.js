@@ -238,9 +238,12 @@ export default tseslint.config(
     },
   },
   {
-    extends: [jest.recommended, jest.style],
+    ...jest.configs["flat/recommended"],
+    ...jest.configs["flat/style"],
     files: ["__tests__/**/*.test.ts", "__test__/**/*.test.tsx"],
     rules: {
+      ...jest.configs["flat/recommended"].rules,
+      ...jest.configs["flat/style"].rules,
       "jest/consistent-test-it": ["error", { withinDescribe: "test" }],
       "jest/no-conditional-in-test": "error",
       "jest/no-confusing-set-timeout": "error",
