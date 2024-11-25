@@ -3,7 +3,7 @@ import type React from "react";
 
 import { css } from "@emotion/react";
 import ReactMarkdown from "react-markdown";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import remarkGfm from "remark-gfm";
 
 import type { Project } from "../interfaces/Project";

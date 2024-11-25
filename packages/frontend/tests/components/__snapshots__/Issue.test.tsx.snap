@@ -8,6 +8,7 @@ exports[`Issue component > should render correctly 1`] = `
     class="css-ttb6we"
   >
     <a
+      data-discover="true"
       href="/skaut/skaut-google-drive-gallery/1"
     >
       Add hint to set videos to public
@@ -17,6 +18,7 @@ exports[`Issue component > should render correctly 1`] = `
     class="css-8e8b4u"
   >
     <a
+      data-discover="true"
       href="/skaut/skaut-google-drive-gallery"
       title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
     >
@@ -66,6 +68,7 @@ exports[`Issue component > should render correctly without tags 1`] = `
     class="css-ttb6we"
   >
     <a
+      data-discover="true"
       href="/skaut/skaut-google-drive-gallery/1"
     >
       Add hint to set videos to public
@@ -75,6 +78,7 @@ exports[`Issue component > should render correctly without tags 1`] = `
     class="css-8e8b4u"
   >
     <a
+      data-discover="true"
       href="/skaut/skaut-google-drive-gallery"
       title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
     >

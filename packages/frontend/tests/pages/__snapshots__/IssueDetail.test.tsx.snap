@@ -94,6 +94,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery"
         >
           WordPress plugin: Galerie obrázků a videí z Google Disku
@@ -416,6 +417,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/2"
         >
           If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
@@ -444,6 +446,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/3"
         >
           Editing doesn't check path validity
@@ -476,6 +479,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/4"
         >
           Ctrl-click on folders does not work
@@ -499,6 +503,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/5"
         >
           Add option to specify gallery by a Drive link
@@ -536,6 +541,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/6"
         >
           Add images to the block
@@ -559,6 +565,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/7"
         >
           Add video overlay
@@ -582,6 +589,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/8"
         >
           Increase test coverage
@@ -609,6 +617,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/9"
         >
           Themes with "editor-styles" support change the look of the block editor
@@ -652,6 +661,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/10"
         >
           Google app creation manual is outdated
@@ -691,6 +701,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/11"
         >
           Directory preview images
@@ -714,6 +725,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
         class="css-ttb6we"
       >
         <a
+          data-discover="true"
           href="/skaut/skaut-google-drive-gallery/12"
         >
           UX & design audit

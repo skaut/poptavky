@@ -8,6 +8,7 @@ exports[`Project component > should render correctly 1`] = `
     class="css-ttb6we"
   >
     <a
+      data-discover="true"
       href="/skaut/skaut-google-drive-gallery"
     >
       WordPress plugin: Galerie obrázků a videí z Google Disku
