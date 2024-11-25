@@ -1,14 +1,17 @@
-interface ProjectInfoMaintainer {
-  email?: string;
+export interface ProjectInfo {
+  description: string;
+  "help-issue-label"?: string;
+  links: Array<ProjectInfoLink>;
+  maintainers: Array<ProjectInfoMaintainer>;
   name: string;
+  "short-description": string;
+  tags?: Array<string>;
 }
 
-interface ProjectInfoLinkSlack {
-  channel: string;
-  space: string;
-  type: "slack";
-  uri: string;
-}
+export type ProjectInfoLink =
+  | ProjectInfoLinkNamed
+  | ProjectInfoLinkOther
+  | ProjectInfoLinkSlack;
 
 interface ProjectInfoLinkNamed {
   name: string;
@@ -21,17 +24,14 @@ interface ProjectInfoLinkOther {
   uri: string;
 }
 
-export type ProjectInfoLink =
-  | ProjectInfoLinkNamed
-  | ProjectInfoLinkOther
-  | ProjectInfoLinkSlack;
+interface ProjectInfoLinkSlack {
+  channel: string;
+  space: string;
+  type: "slack";
+  uri: string;
+}
 
-export interface ProjectInfo {
-  description: string;
-  "help-issue-label"?: string;
-  links: Array<ProjectInfoLink>;
-  maintainers: Array<ProjectInfoMaintainer>;
+interface ProjectInfoMaintainer {
+  email?: string;
   name: string;
-  "short-description": string;
-  tags?: Array<string>;
 }
