@@ -2,17 +2,20 @@ import type { PoptavkyError } from "../exceptions/PoptavkyError";
 
 import { ProjectInfoError } from "../exceptions/ProjectInfoError";
 
-interface ProjectInfoMaintainer {
-  email?: string;
+export interface ProjectInfo {
+  description: string;
+  "help-issue-label"?: string;
+  links: Array<ProjectInfoLink>;
+  maintainers: Array<ProjectInfoMaintainer>;
   name: string;
+  "short-description": string;
+  tags?: Array<string>;
 }
 
-interface ProjectInfoLinkSlack {
-  channel: string;
-  space: string;
-  type: "slack";
-  uri: string;
-}
+type ProjectInfoLink =
+  | ProjectInfoLinkNamed
+  | ProjectInfoLinkOther
+  | ProjectInfoLinkSlack;
 
 interface ProjectInfoLinkNamed {
   name: string;
@@ -25,87 +28,16 @@ interface ProjectInfoLinkOther {
   uri: string;
 }
 
-type ProjectInfoLink =
-  | ProjectInfoLinkNamed
-  | ProjectInfoLinkOther
-  | ProjectInfoLinkSlack;
+interface ProjectInfoLinkSlack {
+  channel: string;
+  space: string;
+  type: "slack";
+  uri: string;
+}
 
-export interface ProjectInfo {
-  description: string;
-  "help-issue-label"?: string;
-  links: Array<ProjectInfoLink>;
-  maintainers: Array<ProjectInfoMaintainer>;
+interface ProjectInfoMaintainer {
+  email?: string;
   name: string;
-  "short-description": string;
-  tags?: Array<string>;
-}
-
-function assertIsProjectInfoMaintainer(
-  maintainer: unknown,
-  errorFn: (e: string) => PoptavkyError,
-): asserts maintainer is ProjectInfoMaintainer {
-  if (typeof maintainer !== "object" || maintainer === null) {
-    throw errorFn("The maintainer isn't a valid object.");
-  }
-  if (!("name" in maintainer)) {
-    throw errorFn('The maintainer doesn\'t contain the required field "name".');
-  }
-  if (typeof maintainer.name !== "string") {
-    throw errorFn('The field "name" is not a string.');
-  }
-  if ("email" in maintainer && typeof maintainer.email !== "string") {
-    throw errorFn('The field "email" is not a string.');
-  }
-}
-
-function assertIsProjectInfoLink(
-  link: unknown,
-  errorFn: (e: string) => PoptavkyError,
-): asserts link is ProjectInfoLink {
-  if (typeof link !== "object" || link === null) {
-    throw errorFn("The link isn't a valid object.");
-  }
-  if (!("type" in link)) {
-    throw errorFn('The link doesn\'t contain the required field "type".');
-  }
-  if (!("uri" in link)) {
-    throw errorFn('The link doesn\'t contain the required field "uri".');
-  }
-  if (typeof link.type !== "string") {
-    throw errorFn('The field "type" is not a string.');
-  }
-  if (typeof link.uri !== "string") {
-    throw errorFn('The field "uri" is not a string.');
-  }
-  if (link.type === "slack") {
-    if (!("space" in link)) {
-      throw errorFn('The link doesn\'t contain the field "space".');
-    }
-    if (!("channel" in link)) {
-      throw errorFn('The link doesn\'t contain the field "channel".');
-    }
-    if (typeof link.space !== "string") {
-      throw errorFn('The field "space" is not a string.');
-    }
-    if (typeof link.channel !== "string") {
-      throw errorFn('The field "channel" is not a string.');
-    }
-  } else if (
-    ["facebook-group", "facebook-page", "github-repo"].includes(link.type)
-  ) {
-    if (!("name" in link)) {
-      throw errorFn('The link doesn\'t contain the field "name".');
-    }
-    if (typeof link.name !== "string") {
-      throw errorFn('The field "name" is not a string.');
-    }
-  } else if (
-    !["demo", "docs", "email", "homepage", "issue-tracker", "wiki"].includes(
-      link.type,
-    )
-  ) {
-    throw errorFn("The link type is unsupported.");
-  }
 }
 
 export function assertIsProjectInfo(
@@ -184,5 +116,73 @@ export function assertIsProjectInfo(
         throw errorFn('A "tags" field item is not a string.');
       }
     }
+  }
+}
+
+function assertIsProjectInfoLink(
+  link: unknown,
+  errorFn: (e: string) => PoptavkyError,
+): asserts link is ProjectInfoLink {
+  if (typeof link !== "object" || link === null) {
+    throw errorFn("The link isn't a valid object.");
+  }
+  if (!("type" in link)) {
+    throw errorFn('The link doesn\'t contain the required field "type".');
+  }
+  if (!("uri" in link)) {
+    throw errorFn('The link doesn\'t contain the required field "uri".');
+  }
+  if (typeof link.type !== "string") {
+    throw errorFn('The field "type" is not a string.');
+  }
+  if (typeof link.uri !== "string") {
+    throw errorFn('The field "uri" is not a string.');
+  }
+  if (link.type === "slack") {
+    if (!("space" in link)) {
+      throw errorFn('The link doesn\'t contain the field "space".');
+    }
+    if (!("channel" in link)) {
+      throw errorFn('The link doesn\'t contain the field "channel".');
+    }
+    if (typeof link.space !== "string") {
+      throw errorFn('The field "space" is not a string.');
+    }
+    if (typeof link.channel !== "string") {
+      throw errorFn('The field "channel" is not a string.');
+    }
+  } else if (
+    ["facebook-group", "facebook-page", "github-repo"].includes(link.type)
+  ) {
+    if (!("name" in link)) {
+      throw errorFn('The link doesn\'t contain the field "name".');
+    }
+    if (typeof link.name !== "string") {
+      throw errorFn('The field "name" is not a string.');
+    }
+  } else if (
+    !["demo", "docs", "email", "homepage", "issue-tracker", "wiki"].includes(
+      link.type,
+    )
+  ) {
+    throw errorFn("The link type is unsupported.");
+  }
+}
+
+function assertIsProjectInfoMaintainer(
+  maintainer: unknown,
+  errorFn: (e: string) => PoptavkyError,
+): asserts maintainer is ProjectInfoMaintainer {
+  if (typeof maintainer !== "object" || maintainer === null) {
+    throw errorFn("The maintainer isn't a valid object.");
+  }
+  if (!("name" in maintainer)) {
+    throw errorFn('The maintainer doesn\'t contain the required field "name".');
+  }
+  if (typeof maintainer.name !== "string") {
+    throw errorFn('The field "name" is not a string.');
+  }
+  if ("email" in maintainer && typeof maintainer.email !== "string") {
+    throw errorFn('The field "email" is not a string.');
   }
 }
