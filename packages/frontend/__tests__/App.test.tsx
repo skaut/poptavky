@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { mocked } from "jest-mock";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router";
 import * as swr from "swr";
 
 import { App } from "../src/App";
