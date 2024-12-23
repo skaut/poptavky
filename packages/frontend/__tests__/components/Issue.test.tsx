@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router";
 
 import { Issue } from "../../src/components/Issue";
 import { getIssueWithProject } from "../../src/utils/getIssueWithProject";
