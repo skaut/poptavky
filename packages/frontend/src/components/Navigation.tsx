@@ -1,7 +1,7 @@
 import type React from "react";
 
 import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 
 import { theme } from "../theme";
 
