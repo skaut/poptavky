@@ -8,7 +8,6 @@ export default {
     "!src/globalStyles.ts",
   ],
   moduleNameMapper: {
-    // eslint-disable-next-line @typescript-eslint/naming-convention -- The key is a glob matching files
     "\\.svg$": "<rootDir>/__mocks__/fileMock.ts",
   },
   resetMocks: true,
@@ -16,7 +15,6 @@ export default {
   testEnvironment: "jsdom",
   testMatch: ["<rootDir>/__tests__/**/*.test.{js,jsx,ts,tsx}"],
   transform: {
-    // eslint-disable-next-line @typescript-eslint/naming-convention -- The key is a glob matching files
     "^.+\\.(j|t)sx?$": ["ts-jest", { tsconfig: "test.tsconfig.json" }],
   },
   transformIgnorePatterns: [

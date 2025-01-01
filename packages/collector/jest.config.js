@@ -14,7 +14,6 @@ export default {
   setupFiles: ["<rootDir>/__tests__/setup.ts"],
   testMatch: ["<rootDir>/__tests__/**/*.test.ts"],
   transform: {
-    // eslint-disable-next-line @typescript-eslint/naming-convention -- Regexp key
     "^.+\\.[jt]s$": [
       "ts-jest",
       {
