@@ -1,0 +1,97 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Issue component > should render correctly 1`] = `
+<article
+  class="css-1vye5q3"
+>
+  <h2
+    class="css-ttb6we"
+  >
+    <a
+      href="/skaut/skaut-google-drive-gallery/1"
+    >
+      Add hint to set videos to public
+    </a>
+  </h2>
+  <p
+    class="css-8e8b4u"
+  >
+    <a
+      href="/skaut/skaut-google-drive-gallery"
+      title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
+    >
+      WordPress plugin: Galerie obrázků a videí z Google Disku
+    </a>
+  </p>
+  <div
+    class="css-eh7qde"
+  >
+    <p>
+      When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+    </p>
+    
+
+    <p>
+      Depends on #792
+    </p>
+  </div>
+  <span
+    class="css-13stjo4"
+  >
+    wordpress
+  </span>
+  <span
+    class="css-jbr3xn"
+  >
+    php
+  </span>
+  <span
+    class="css-d3t46l"
+  >
+    javascript
+  </span>
+  <span
+    class="css-1n2mvc3"
+  >
+    google
+  </span>
+</article>
+`;
+
+exports[`Issue component > should render correctly without tags 1`] = `
+<article
+  class="css-1vye5q3"
+>
+  <h2
+    class="css-ttb6we"
+  >
+    <a
+      href="/skaut/skaut-google-drive-gallery/1"
+    >
+      Add hint to set videos to public
+    </a>
+  </h2>
+  <p
+    class="css-8e8b4u"
+  >
+    <a
+      href="/skaut/skaut-google-drive-gallery"
+      title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
+    >
+      WordPress plugin: Galerie obrázků a videí z Google Disku
+    </a>
+  </p>
+  <div
+    class="css-eh7qde"
+  >
+    <p>
+      When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+    </p>
+    
+
+    <p>
+      Depends on #792
+    </p>
+  </div>
+</article>
+`;

@@ -1,0 +1,58 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should get issue with project 1`] = `
+{
+  "description": "When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+
+Depends on #792",
+  "link": "https://github.com/skaut/skaut-google-drive-gallery/issues/873",
+  "number": 1,
+  "project": {
+    "description": "Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.",
+    "links": [
+      {
+        "type": "email",
+        "uri": "mailto:mlha@skaut.cz",
+      },
+      {
+        "type": "homepage",
+        "uri": "https://wordpress.org/plugins/skaut-google-drive-gallery/",
+      },
+      {
+        "type": "demo",
+        "uri": "https://demo-skaut-google-drive-gallery.skauting.cz/",
+      },
+      {
+        "type": "issue-tracker",
+        "uri": "https://github.com/skaut/skaut-google-drive-gallery/issues",
+      },
+      {
+        "type": "docs",
+        "uri": "https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery",
+      },
+      {
+        "name": "skaut/skaut-google-drive-gallery",
+        "type": "github-repo",
+        "uri": "https://github.com/skaut/skaut-google-drive-gallery",
+      },
+    ],
+    "maintainers": [
+      {
+        "email": "mlha@skaut.cz",
+        "name": "Marek Dědič – Mlha",
+      },
+    ],
+    "name": "WordPress plugin: Galerie obrázků a videí z Google Disku",
+    "owner": "skaut",
+    "repo": "skaut-google-drive-gallery",
+    "short-description": "Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.",
+    "tags": [
+      "wordpress",
+      "php",
+      "javascript",
+      "google",
+    ],
+  },
+  "title": "Add hint to set videos to public",
+}
+`;

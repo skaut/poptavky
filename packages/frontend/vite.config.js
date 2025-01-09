@@ -8,4 +8,8 @@ export default defineConfig({
   },
   plugins: [legacy(), react()],
   root: "src",
+  test: {
+    environment: "jsdom",
+    root: ".",
+  },
 });

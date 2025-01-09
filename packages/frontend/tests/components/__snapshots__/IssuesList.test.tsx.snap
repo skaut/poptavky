@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IssuesList component > should render correctly 1`] = `
+<article
+  class="css-1ftk3g5"
+>
+  <h3
+    class="css-ttb6we"
+  >
+    <a
+      href="/skaut/skaut-google-drive-gallery/1"
+    >
+      Add hint to set videos to public
+    </a>
+     
+    <span
+      class="css-2sw73i"
+    >
+      #
+      1
+    </span>
+  </h3>
+  <p>
+    When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+  </p>
+  
+
+  <p>
+    Depends on #792
+  </p>
+</article>
+`;
+
+exports[`IssuesList component > should render correctly without link 1`] = `
+<article
+  class="css-1ftk3g5"
+>
+  <h3
+    class="css-ttb6we"
+  >
+    <a
+      href="/skaut/skaut-google-drive-gallery/1"
+    >
+      Add hint to set videos to public
+    </a>
+     
+    <span
+      class="css-2sw73i"
+    >
+      #
+      1
+    </span>
+  </h3>
+  <p>
+    When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
+  </p>
+  
+
+  <p>
+    Depends on #792
+  </p>
+</article>
+`;
