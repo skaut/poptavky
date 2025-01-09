@@ -48,7 +48,7 @@
     "@testing-library/user-event": "^14.5.2",
     "@types/react-dom": "^18.3.1",
     "@types/react-test-renderer": "^19.0.0",
-    "@vitejs/plugin-legacy": "^5.4.3",
+    "@vitejs/plugin-legacy": "^6.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-v8": "^2.1.8",
     "@vitest/eslint-plugin": "^1.1.24",
@@ -66,7 +66,7 @@
     "rimraf": "^6.0.1",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.19.1",
-    "vite": "^5.4.11",
+    "vite": "^6.0.7",
     "vitest": "^2.1.8"
   },
   "browserslist": {
