@@ -1,247 +1,34 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`IssueDetail page should render correctly 1`] = `
-@media (min-width: 850px) {
-  .emotion-0 {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    -webkit-column-gap: 36px;
-    column-gap: 36px;
-  }
-}
-
-.emotion-1 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  grid-column: 1/span 2;
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #999;
-  font-size: 0.8em;
-}
-
-.emotion-2 svg {
-  margin-right: 0.2em;
-}
-
-.emotion-3 {
-  color: #294885;
-  margin: 0 0 16px;
-  font-family: themix;
-  font-size: 2em;
-}
-
-.emotion-4 {
-  color: #999;
-  font-weight: normal;
-}
-
-.emotion-5 {
-  margin-top: -16px;
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-7 {
-  max-width: 750px;
-}
-
-.emotion-8 {
-  margin: 0 0 16px;
-  font-size: 18px;
-  margin: 0;
-}
-
-.emotion-8 img {
-  max-width: 100%;
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: inline-block;
-  font-size: 1.2rem;
-  background-color: #294885;
-  color: white;
-  margin-top: 0.2rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 0 #999;
-  -webkit-transition: box-shadow 300ms;
-  transition: box-shadow 300ms;
-}
-
-.emotion-11 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  max-width: 600px;
-  grid-column: 1/1;
-}
-
-.emotion-12 {
-  color: white;
-  background-color: #294885;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.emotion-12 * {
-  color: white;
-}
-
-.emotion-12 *::selection {
-  background-color: white;
-  color: #294885;
-}
-
-.emotion-14 {
-  color: #294885;
-  margin: 0 0 12px;
-  font-family: themix;
-}
-
-.emotion-15 {
-  margin: 0 0 16px;
-}
-
-.emotion-15 img {
-  max-width: 100%;
-}
-
-.emotion-17 {
-  background-color: #894cc033;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-18 {
-  background-color: #6d52b833;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-19 {
-  background-color: #8b843b33;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-20 {
-  background-color: #d293ff33;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-21 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  max-width: 500px;
-  grid-column: 2/2;
-}
-
-@media (min-width: 850px) {
-  .emotion-21 {
-    border: none;
-  }
-}
-
-.emotion-24 a {
-  display: block;
-  font-size: 0.9em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.emotion-50 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  max-width: 450px;
-  grid-column: 1/1;
-}
-
-.emotion-52 {
-  margin: 12px 0 24px;
-}
-
-.emotion-52 img {
-  max-width: 100%;
-}
-
+exports[`IssueDetail page > should render correctly 1`] = `
 <div
-  class="emotion-0"
+  class="css-b50td5"
 >
   <section
-    class="emotion-1"
+    class="css-v7vhcp"
   >
     <span
-      class="emotion-2"
+      class="css-1yhrhbp"
     >
       Poptávka:
     </span>
     <h1
-      class="emotion-3"
+      class="css-cq0erp"
     >
       Add hint to set videos to public
        
       <span
-        class="emotion-4"
+        class="css-2sw73i"
       >
         #
         1
       </span>
     </h1>
     <div
-      class="emotion-5"
+      class="css-dqbpti"
     >
       <a
-        class="emotion-6"
+        class="css-ti9e4i"
         href="https://github.com/skaut/skaut-google-drive-gallery/issues/873"
         rel="noreferrer noopener"
         target="_blank"
@@ -263,10 +50,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </a>
     </div>
     <div
-      class="emotion-7"
+      class="css-1ihxe9c"
     >
       <div
-        class="emotion-8"
+        class="css-equ9nv"
       >
         <p>
           When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
@@ -279,12 +66,12 @@ exports[`IssueDetail page should render correctly 1`] = `
       </div>
     </div>
     <span
-      class="emotion-2"
+      class="css-1yhrhbp"
     >
       Zaujala tě poptávka?
     </span>
     <a
-      class="emotion-10"
+      class="css-1jr5wp3"
       href="mailto:mlha@skaut.cz"
       rel="noreferrer noopener"
       target="_blank"
@@ -293,18 +80,18 @@ exports[`IssueDetail page should render correctly 1`] = `
     </a>
   </section>
   <section
-    class="emotion-11"
+    class="css-64djbl"
   >
     <div
-      class="emotion-12"
+      class="css-1wr42l4"
     >
       <span
-        class="emotion-2"
+        class="css-1yhrhbp"
       >
         Projekt:
       </span>
       <h2
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery"
@@ -313,47 +100,47 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
       </h2>
       <div
-        class="emotion-15"
+        class="css-eh7qde"
       >
         Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
       </div>
       <div
-        class="emotion-15"
+        class="css-eh7qde"
       >
         <p>
           Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
         </p>
       </div>
       <span
-        class="emotion-17"
+        class="css-wss5kh"
       >
         wordpress
       </span>
       <span
-        class="emotion-18"
+        class="css-esfqv6"
       >
         php
       </span>
       <span
-        class="emotion-19"
+        class="css-6duviy"
       >
         javascript
       </span>
       <span
-        class="emotion-20"
+        class="css-cmhqw"
       >
         google
       </span>
     </div>
   </section>
   <section
-    class="emotion-21"
+    class="css-1xo3opi"
   >
     <div
-      class="emotion-15"
+      class="css-eh7qde"
     >
       <span
-        class="emotion-2"
+        class="css-1yhrhbp"
       >
         <svg
           fill="currentColor"
@@ -372,10 +159,10 @@ exports[`IssueDetail page should render correctly 1`] = `
         Správce:
       </span>
       <span
-        class="emotion-24"
+        class="css-ttfb9s"
       >
         <a
-          class="emotion-6"
+          class="css-ti9e4i"
           href="mailto:mlha@skaut.cz"
           rel="noreferrer noopener"
           target="_blank"
@@ -385,10 +172,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="emotion-15"
+      class="css-eh7qde"
     >
       <span
-        class="emotion-2"
+        class="css-1yhrhbp"
       >
         <svg
           fill="currentColor"
@@ -409,10 +196,10 @@ exports[`IssueDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        class="emotion-24"
+        class="css-ttfb9s"
       >
         <a
-          class="emotion-6"
+          class="css-ti9e4i"
           href="mailto:mlha@skaut.cz"
           rel="noreferrer noopener"
           target="_blank"
@@ -422,10 +209,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="emotion-15"
+      class="css-eh7qde"
     >
       <span
-        class="emotion-2"
+        class="css-1yhrhbp"
       >
         <svg
           fill="currentColor"
@@ -449,10 +236,10 @@ exports[`IssueDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        class="emotion-24"
+        class="css-ttfb9s"
       >
         <a
-          class="emotion-6"
+          class="css-ti9e4i"
           href="https://demo-skaut-google-drive-gallery.skauting.cz/"
           rel="noreferrer noopener"
           target="_blank"
@@ -462,10 +249,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="emotion-15"
+      class="css-eh7qde"
     >
       <span
-        class="emotion-2"
+        class="css-1yhrhbp"
       >
         <svg
           aria-hidden="true"
@@ -488,10 +275,10 @@ exports[`IssueDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        class="emotion-24"
+        class="css-ttfb9s"
       >
         <a
-          class="emotion-6"
+          class="css-ti9e4i"
           href="https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery"
           rel="noreferrer noopener"
           target="_blank"
@@ -501,10 +288,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="emotion-15"
+      class="css-eh7qde"
     >
       <span
-        class="emotion-2"
+        class="css-1yhrhbp"
       >
         <svg
           fill="currentColor"
@@ -524,10 +311,10 @@ exports[`IssueDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        class="emotion-24"
+        class="css-ttfb9s"
       >
         <a
-          class="emotion-6"
+          class="css-ti9e4i"
           href="https://github.com/skaut/skaut-google-drive-gallery"
           rel="noreferrer noopener"
           target="_blank"
@@ -537,10 +324,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="emotion-15"
+      class="css-eh7qde"
     >
       <span
-        class="emotion-2"
+        class="css-1yhrhbp"
       >
         <svg
           fill="currentColor"
@@ -561,10 +348,10 @@ exports[`IssueDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        class="emotion-24"
+        class="css-ttfb9s"
       >
         <a
-          class="emotion-6"
+          class="css-ti9e4i"
           href="https://wordpress.org/plugins/skaut-google-drive-gallery/"
           rel="noreferrer noopener"
           target="_blank"
@@ -574,10 +361,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="emotion-15"
+      class="css-eh7qde"
     >
       <span
-        class="emotion-2"
+        class="css-1yhrhbp"
       >
         <svg
           fill="currentColor"
@@ -601,10 +388,10 @@ exports[`IssueDetail page should render correctly 1`] = `
         :
       </span>
       <span
-        class="emotion-24"
+        class="css-ttfb9s"
       >
         <a
-          class="emotion-6"
+          class="css-ti9e4i"
           href="https://github.com/skaut/skaut-google-drive-gallery/issues"
           rel="noreferrer noopener"
           target="_blank"
@@ -615,18 +402,18 @@ exports[`IssueDetail page should render correctly 1`] = `
     </div>
   </section>
   <section
-    class="emotion-50"
+    class="css-z5ryhi"
   >
     <span
-      class="emotion-2"
+      class="css-1yhrhbp"
     >
       Další poptávky projektu:
     </span>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/2"
@@ -635,7 +422,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           2
@@ -651,10 +438,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/3"
@@ -663,7 +450,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           3
@@ -683,10 +470,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/4"
@@ -695,7 +482,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           4
@@ -706,10 +493,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/5"
@@ -718,7 +505,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           5
@@ -743,10 +530,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/6"
@@ -755,7 +542,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           6
@@ -766,10 +553,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/7"
@@ -778,7 +565,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           7
@@ -789,10 +576,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/8"
@@ -801,7 +588,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           8
@@ -816,10 +603,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/9"
@@ -828,7 +615,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           9
@@ -859,10 +646,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/10"
@@ -871,7 +658,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           10
@@ -898,10 +685,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/11"
@@ -910,7 +697,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           11
@@ -921,10 +708,10 @@ exports[`IssueDetail page should render correctly 1`] = `
       </p>
     </article>
     <article
-      class="emotion-52"
+      class="css-1ftk3g5"
     >
       <h3
-        class="emotion-14"
+        class="css-ttb6we"
       >
         <a
           href="/skaut/skaut-google-drive-gallery/12"
@@ -933,7 +720,7 @@ exports[`IssueDetail page should render correctly 1`] = `
         </a>
          
         <span
-          class="emotion-4"
+          class="css-2sw73i"
         >
           #
           12
@@ -1073,7 +860,7 @@ exports[`IssueDetail page should render correctly 1`] = `
 </div>
 `;
 
-exports[`IssueDetail page should render correctly if there is no related issue 1`] = `
+exports[`IssueDetail page > should render correctly if there is no related issue 1`] = `
 <h1>
   Poptávka 
   skaut

@@ -1,16 +1,20 @@
 import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
+import { describe, expect, test } from "vitest";
 
-import { IssuesList } from "../../src/pages/IssuesList";
+import { ProjectsList } from "../../src/pages/ProjectsList";
 import { testData } from "../testData";
 
-describe("IssuesList page", () => {
+describe("ProjectsList page", () => {
   test("should render correctly", () => {
+    expect.assertions(1);
+
     const { container } = render(
       <MemoryRouter>
-        <IssuesList data={testData} />
+        <ProjectsList data={testData} />
       </MemoryRouter>,
     );
+
     expect(container.firstChild).toMatchSnapshot();
   });
 });
