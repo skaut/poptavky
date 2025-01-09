@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
+import { describe, expect, test } from "vitest";
 
 import { Issue } from "../../src/components/Issue";
 import { getIssueWithProject } from "../../src/utils/getIssueWithProject";
@@ -17,21 +18,27 @@ const issueWithProject = getIssueWithProject(
 
 describe("Issue component", () => {
   test("should render correctly", () => {
+    expect.assertions(2);
     expect(issue).not.toBeNull();
+
     const { container } = render(
       <MemoryRouter>
         <Issue issue={issueWithProject} />
       </MemoryRouter>,
     );
+
     expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render correctly without tags", () => {
+    expect.assertions(1);
+
     const { container } = render(
       <MemoryRouter>
         <Issue hideTags issue={issueWithProject} />
       </MemoryRouter>,
     );
+
     expect(container.firstChild).toMatchSnapshot();
   });
 });

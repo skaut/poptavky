@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navigation component > should render correctly 1`] = `
+<nav>
+  <div
+    class="css-1otv0s7"
+  >
+    <a
+      aria-current="page"
+      class="css-nqd2p0 active"
+      href="/"
+    >
+      Poptávky
+    </a>
+    <a
+      class="css-nqd2p0"
+      href="/projekty"
+    >
+      Projekty
+    </a>
+  </div>
+</nav>
+`;
+
+exports[`Navigation component > should render correctly with active item 1`] = `
+<nav>
+  <div
+    class="css-1otv0s7"
+  >
+    <a
+      aria-current="page"
+      class="css-nqd2p0 active"
+      href="/"
+    >
+      Poptávky
+    </a>
+    <a
+      class="css-nqd2p0"
+      href="/projekty"
+    >
+      Projekty
+    </a>
+  </div>
+</nav>
+`;
