@@ -26,6 +26,7 @@
     "lint": "run-p -c --aggregate-output lint:*",
     "start": "vite",
     "test": "vitest",
+    "test-coverage": "vitest run --coverage",
     "test-accept": "vitest run --update"
   },
   "dependencies": {
