@@ -1,7 +1,11 @@
+import { expect, test } from "vitest";
+
 import { getIssueLink } from "../../src/utils/getIssueLink";
 import { testData } from "../testData";
 
 test("should get issue link", () => {
+  expect.assertions(1);
+
   const project = testData.projects[0];
   const result = getIssueLink({
     project: { ...project, ...project.info },
