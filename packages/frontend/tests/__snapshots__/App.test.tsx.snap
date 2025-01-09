@@ -1,164 +1,29 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`App should handle error gracefully 1`] = `
+exports[`App > should handle error gracefully 1`] = `
 <div>
   Nepodařilo se načíst data webu.
 </div>
 `;
 
-exports[`App should render correctly 1`] = `
-.emotion-0 {
-  max-width: 1000px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 60px;
-  margin: 0 auto;
-  padding: 16px 0;
-}
-
-.emotion-2 {
-  max-height: 100%;
-}
-
-.emotion-3 {
-  font-family: themix;
-  font-size: 20px;
-  margin: 0 0 0 24px;
-}
-
-.emotion-4 {
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 24px;
-  padding: 0 16px;
-  border-bottom: 1px solid #294885;
-}
-
-.emotion-5 {
-  display: block;
-  padding: 0.2em 0.8em;
-  margin-bottom: -1px;
-  border: 1px solid transparent;
-  border-radius: 5px 5px 0 0;
-}
-
-.emotion-5.active {
-  border-top: 1px solid #294885;
-  border-right: 1px solid #294885;
-  border-left: 1px solid #294885;
-  background-color: #fff;
-}
-
-.emotion-7 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #29488510;
-  max-width: 600px;
-}
-
-.emotion-8 {
-  color: #294885;
-  margin: 0 0 12px;
-  font-family: themix;
-}
-
-.emotion-9 {
-  margin: 0 0 0.6em;
-}
-
-.emotion-9 * {
-  font-size: 0.8rem;
-}
-
-.emotion-10 {
-  margin: 0 0 16px;
-}
-
-.emotion-10 img {
-  max-width: 100%;
-}
-
-.emotion-11 {
-  background-color: #894cc033;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
-.emotion-12 {
-  background-color: #6d52b833;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
-.emotion-13 {
-  background-color: #8b843b33;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
-.emotion-14 {
-  background-color: #d293ff33;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
-.emotion-110 {
-  background-color: #6317e833;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
+exports[`App > should render correctly 1`] = `
 <div
-  class="emotion-0"
+  class="css-16eqj7k"
 >
   <a
     href="/"
     title="domů"
   >
     <header
-      class="emotion-1"
+      class="css-1dq65fi"
     >
       <img
         alt="logo"
-        class="emotion-2"
-        src="test-file-stub"
+        class="css-1f1xid"
+        src="/src/images/logo.svg"
       />
       <h1
-        class="emotion-3"
+        class="css-1hydvxl"
       >
         IT poptávky
       </h1>
@@ -168,17 +33,17 @@ exports[`App should render correctly 1`] = `
     <div>
       <nav>
         <div
-          class="emotion-4"
+          class="css-1otv0s7"
         >
           <a
             aria-current="page"
-            class="emotion-5 active"
+            class="css-nqd2p0 active"
             href="/"
           >
             Poptávky
           </a>
           <a
-            class="emotion-5"
+            class="css-nqd2p0"
             href="/projekty"
           >
             Projekty
@@ -186,10 +51,10 @@ exports[`App should render correctly 1`] = `
         </div>
       </nav>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/1"
@@ -198,7 +63,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -208,7 +73,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             When editing and selecting a folder with videos, the editor could display a notice that setting videos to "Anyone can view" will speed them up.
@@ -220,31 +85,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/2"
@@ -253,7 +118,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -263,7 +128,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             When in a situation that there is a Google Drive shortcut somewhere in the gallery, the plugin displays the folder and it works for browsing. However, when looking at the shortcut as a member of its parent directory and when being inside the directory and looking at its name in the breadcrumbs, one uses the shortcut name, whereas the other uses the original folder name (when they differ).
@@ -275,31 +140,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/3"
@@ -308,7 +173,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -318,7 +183,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: 
@@ -334,31 +199,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/4"
@@ -367,7 +232,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -377,38 +242,38 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Ctrl+click on a gallery item (subfolder) or breadcrumbs should open in a new tab
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/5"
@@ -417,7 +282,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -427,7 +292,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             <a
@@ -448,31 +313,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/6"
@@ -481,7 +346,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -491,38 +356,38 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Currently, images aren't listed in the editor - both block and TinyMCE plugin. This often confuses users.
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/7"
@@ -531,7 +396,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -541,38 +406,38 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             In the image grid, we should add an overlay to signify that an item is a video (for example a big play icon).
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/8"
@@ -581,7 +446,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -591,7 +456,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             <a
@@ -602,31 +467,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/9"
@@ -635,7 +500,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -645,7 +510,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             If the active theme contains
@@ -672,31 +537,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/10"
@@ -705,7 +570,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -715,7 +580,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             <a
@@ -738,31 +603,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/11"
@@ -771,7 +636,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -781,38 +646,38 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Currently, the first image in a directory is used for its preview.
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery/12"
@@ -821,7 +686,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -831,7 +696,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Go over the design of:
@@ -964,31 +829,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skautis-integration/1"
@@ -997,7 +862,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skautis-integration"
@@ -1007,34 +872,34 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         />
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-110"
+          class="css-vv149a"
         >
           skautis
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skautis-integration/2"
@@ -1043,7 +908,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skautis-integration"
@@ -1053,7 +918,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             <img
@@ -1063,31 +928,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-110"
+          class="css-vv149a"
         >
           skautis
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skautis-integration/3"
@@ -1096,7 +961,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skautis-integration"
@@ -1106,7 +971,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Musíme pořešit, jak nejlépe integrovat náš plugin s WP 5.x a hlavně Gutenbergem.
@@ -1118,31 +983,31 @@ exports[`App should render correctly 1`] = `
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-110"
+          class="css-vv149a"
         >
           skautis
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skautis-integration/4"
@@ -1151,7 +1016,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skautis-integration"
@@ -1161,38 +1026,38 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Co do WordPressu tahat i profilové fotky, co si lidi do skautISu přidávají. Aby u profilu nějakou fotku měli...
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-110"
+          class="css-vv149a"
         >
           skautis
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skautis-integration/5"
@@ -1201,7 +1066,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skautis-integration"
@@ -1211,38 +1076,38 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Přidat Select2 do výběru pravidel v shortcode.
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-110"
+          class="css-vv149a"
         >
           skautis
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skautis-integration/6"
@@ -1251,7 +1116,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         >
           <a
             href="/skaut/skautis-integration"
@@ -1261,7 +1126,7 @@ exports[`App should render correctly 1`] = `
           </a>
         </p>
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             modul pro nábory se zobrazením náborové mapy
@@ -1279,22 +1144,22 @@ příklad:
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-110"
+          class="css-vv149a"
         >
           skautis
         </span>
@@ -1304,267 +1169,24 @@ příklad:
 </div>
 `;
 
-exports[`App should render issue listing correctly 1`] = `
-.emotion-0 {
-  max-width: 1000px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 60px;
-  margin: 0 auto;
-  padding: 16px 0;
-}
-
-.emotion-2 {
-  max-height: 100%;
-}
-
-.emotion-3 {
-  font-family: themix;
-  font-size: 20px;
-  margin: 0 0 0 24px;
-}
-
-@media (min-width: 850px) {
-  .emotion-4 {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    -webkit-column-gap: 36px;
-    column-gap: 36px;
-  }
-}
-
-.emotion-5 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  grid-column: 1/span 2;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #999;
-  font-size: 0.8em;
-}
-
-.emotion-6 svg {
-  margin-right: 0.2em;
-}
-
-.emotion-7 {
-  color: #294885;
-  margin: 0 0 16px;
-  font-family: themix;
-  font-size: 2em;
-}
-
-.emotion-8 {
-  color: #999;
-  font-weight: normal;
-}
-
-.emotion-9 {
-  margin-top: -16px;
-}
-
-.emotion-10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-11 {
-  max-width: 750px;
-}
-
-.emotion-12 {
-  margin: 0 0 16px;
-  font-size: 18px;
-  margin: 0;
-}
-
-.emotion-12 img {
-  max-width: 100%;
-}
-
-.emotion-14 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: inline-block;
-  font-size: 1.2rem;
-  background-color: #294885;
-  color: white;
-  margin-top: 0.2rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 0 #999;
-  -webkit-transition: box-shadow 300ms;
-  transition: box-shadow 300ms;
-}
-
-.emotion-15 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  max-width: 600px;
-  grid-column: 1/1;
-}
-
-.emotion-16 {
-  color: white;
-  background-color: #294885;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.emotion-16 * {
-  color: white;
-}
-
-.emotion-16 *::selection {
-  background-color: white;
-  color: #294885;
-}
-
-.emotion-18 {
-  color: #294885;
-  margin: 0 0 12px;
-  font-family: themix;
-}
-
-.emotion-19 {
-  margin: 0 0 16px;
-}
-
-.emotion-19 img {
-  max-width: 100%;
-}
-
-.emotion-21 {
-  background-color: #894cc033;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-22 {
-  background-color: #6d52b833;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-23 {
-  background-color: #8b843b33;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-24 {
-  background-color: #d293ff33;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-25 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  max-width: 500px;
-  grid-column: 2/2;
-}
-
-@media (min-width: 850px) {
-  .emotion-25 {
-    border: none;
-  }
-}
-
-.emotion-28 a {
-  display: block;
-  font-size: 0.9em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.emotion-54 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  max-width: 450px;
-  grid-column: 1/1;
-}
-
-.emotion-56 {
-  margin: 12px 0 24px;
-}
-
-.emotion-56 img {
-  max-width: 100%;
-}
-
+exports[`App > should render issue listing correctly 1`] = `
 <div
-  class="emotion-0"
+  class="css-16eqj7k"
 >
   <a
     href="/"
     title="domů"
   >
     <header
-      class="emotion-1"
+      class="css-1dq65fi"
     >
       <img
         alt="logo"
-        class="emotion-2"
-        src="test-file-stub"
+        class="css-1f1xid"
+        src="/src/images/logo.svg"
       />
       <h1
-        class="emotion-3"
+        class="css-1hydvxl"
       >
         IT poptávky
       </h1>
@@ -1572,33 +1194,33 @@ exports[`App should render issue listing correctly 1`] = `
   </a>
   <main>
     <div
-      class="emotion-4"
+      class="css-b50td5"
     >
       <section
-        class="emotion-5"
+        class="css-v7vhcp"
       >
         <span
-          class="emotion-6"
+          class="css-1yhrhbp"
         >
           Poptávka:
         </span>
         <h1
-          class="emotion-7"
+          class="css-cq0erp"
         >
           Editing doesn't check path validity
            
           <span
-            class="emotion-8"
+            class="css-2sw73i"
           >
             #
             3
           </span>
         </h1>
         <div
-          class="emotion-9"
+          class="css-dqbpti"
         >
           <a
-            class="emotion-10"
+            class="css-ti9e4i"
             href="https://github.com/skaut/skaut-google-drive-gallery/issues/683"
             rel="noreferrer noopener"
             target="_blank"
@@ -1620,10 +1242,10 @@ exports[`App should render issue listing correctly 1`] = `
           </a>
         </div>
         <div
-          class="emotion-11"
+          class="css-1ihxe9c"
         >
           <div
-            class="emotion-12"
+            class="css-equ9nv"
           >
             <p>
               When opening the editor which contains a gallery that is made from a folder that has been renamed or deleted, the editor breaks. It shows: 
@@ -1640,12 +1262,12 @@ exports[`App should render issue listing correctly 1`] = `
           </div>
         </div>
         <span
-          class="emotion-6"
+          class="css-1yhrhbp"
         >
           Zaujala tě poptávka?
         </span>
         <a
-          class="emotion-14"
+          class="css-1jr5wp3"
           href="mailto:mlha@skaut.cz"
           rel="noreferrer noopener"
           target="_blank"
@@ -1654,18 +1276,18 @@ exports[`App should render issue listing correctly 1`] = `
         </a>
       </section>
       <section
-        class="emotion-15"
+        class="css-64djbl"
       >
         <div
-          class="emotion-16"
+          class="css-1wr42l4"
         >
           <span
-            class="emotion-6"
+            class="css-1yhrhbp"
           >
             Projekt:
           </span>
           <h2
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery"
@@ -1674,47 +1296,47 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
           </h2>
           <div
-            class="emotion-19"
+            class="css-eh7qde"
           >
             Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
           </div>
           <div
-            class="emotion-19"
+            class="css-eh7qde"
           >
             <p>
               Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
             </p>
           </div>
           <span
-            class="emotion-21"
+            class="css-wss5kh"
           >
             wordpress
           </span>
           <span
-            class="emotion-22"
+            class="css-esfqv6"
           >
             php
           </span>
           <span
-            class="emotion-23"
+            class="css-6duviy"
           >
             javascript
           </span>
           <span
-            class="emotion-24"
+            class="css-cmhqw"
           >
             google
           </span>
         </div>
       </section>
       <section
-        class="emotion-25"
+        class="css-1xo3opi"
       >
         <div
-          class="emotion-19"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-6"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -1733,10 +1355,10 @@ exports[`App should render issue listing correctly 1`] = `
             Správce:
           </span>
           <span
-            class="emotion-28"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-10"
+              class="css-ti9e4i"
               href="mailto:mlha@skaut.cz"
               rel="noreferrer noopener"
               target="_blank"
@@ -1746,10 +1368,10 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-19"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-6"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -1770,10 +1392,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-28"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-10"
+              class="css-ti9e4i"
               href="mailto:mlha@skaut.cz"
               rel="noreferrer noopener"
               target="_blank"
@@ -1783,10 +1405,10 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-19"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-6"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -1810,10 +1432,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-28"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-10"
+              class="css-ti9e4i"
               href="https://demo-skaut-google-drive-gallery.skauting.cz/"
               rel="noreferrer noopener"
               target="_blank"
@@ -1823,10 +1445,10 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-19"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-6"
+            class="css-1yhrhbp"
           >
             <svg
               aria-hidden="true"
@@ -1849,10 +1471,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-28"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-10"
+              class="css-ti9e4i"
               href="https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery"
               rel="noreferrer noopener"
               target="_blank"
@@ -1862,10 +1484,10 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-19"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-6"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -1885,10 +1507,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-28"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-10"
+              class="css-ti9e4i"
               href="https://github.com/skaut/skaut-google-drive-gallery"
               rel="noreferrer noopener"
               target="_blank"
@@ -1898,10 +1520,10 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-19"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-6"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -1922,10 +1544,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-28"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-10"
+              class="css-ti9e4i"
               href="https://wordpress.org/plugins/skaut-google-drive-gallery/"
               rel="noreferrer noopener"
               target="_blank"
@@ -1935,10 +1557,10 @@ exports[`App should render issue listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-19"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-6"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -1962,10 +1584,10 @@ exports[`App should render issue listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-28"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-10"
+              class="css-ti9e4i"
               href="https://github.com/skaut/skaut-google-drive-gallery/issues"
               rel="noreferrer noopener"
               target="_blank"
@@ -1976,18 +1598,18 @@ exports[`App should render issue listing correctly 1`] = `
         </div>
       </section>
       <section
-        class="emotion-54"
+        class="css-z5ryhi"
       >
         <span
-          class="emotion-6"
+          class="css-1yhrhbp"
         >
           Další poptávky projektu:
         </span>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/1"
@@ -1996,7 +1618,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               1
@@ -2012,10 +1634,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/2"
@@ -2024,7 +1646,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               2
@@ -2040,10 +1662,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/4"
@@ -2052,7 +1674,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               4
@@ -2063,10 +1685,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/5"
@@ -2075,7 +1697,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               5
@@ -2100,10 +1722,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/6"
@@ -2112,7 +1734,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               6
@@ -2123,10 +1745,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/7"
@@ -2135,7 +1757,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               7
@@ -2146,10 +1768,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/8"
@@ -2158,7 +1780,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               8
@@ -2173,10 +1795,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/9"
@@ -2185,7 +1807,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               9
@@ -2216,10 +1838,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/10"
@@ -2228,7 +1850,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               10
@@ -2255,10 +1877,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/11"
@@ -2267,7 +1889,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               11
@@ -2278,10 +1900,10 @@ exports[`App should render issue listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-56"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-18"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/12"
@@ -2290,7 +1912,7 @@ exports[`App should render issue listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-8"
+              class="css-2sw73i"
             >
               #
               12
@@ -2432,230 +2054,24 @@ exports[`App should render issue listing correctly 1`] = `
 </div>
 `;
 
-exports[`App should render project listing correctly 1`] = `
-.emotion-0 {
-  max-width: 1000px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 60px;
-  margin: 0 auto;
-  padding: 16px 0;
-}
-
-.emotion-2 {
-  max-height: 100%;
-}
-
-.emotion-3 {
-  font-family: themix;
-  font-size: 20px;
-  margin: 0 0 0 24px;
-}
-
-@media (min-width: 850px) {
-  .emotion-4 {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    -webkit-column-gap: 36px;
-    column-gap: 36px;
-  }
-}
-
-.emotion-5 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  grid-column: 1/span 2;
-}
-
-.emotion-6 {
-  color: white;
-  background-color: #294885;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.emotion-6 * {
-  color: white;
-}
-
-.emotion-6 *::selection {
-  background-color: white;
-  color: #294885;
-}
-
-.emotion-7 {
-  color: #294885;
-  margin: 0 0 16px;
-  font-family: themix;
-  font-size: 2em;
-  color: white;
-}
-
-.emotion-8 {
-  max-width: 750px;
-}
-
-.emotion-9 {
-  margin: 0 0 16px;
-  font-size: 18px;
-  margin: 0;
-}
-
-.emotion-9 img {
-  max-width: 100%;
-}
-
-.emotion-11 {
-  background-color: #894cc033;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-12 {
-  background-color: #6d52b833;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-13 {
-  background-color: #8b843b33;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-14 {
-  background-color: #d293ff33;
-  color: white;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  border: 1px solid #ffffff55;
-}
-
-.emotion-15 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  max-width: 500px;
-  grid-column: 2/2;
-}
-
-.emotion-16 {
-  margin: 0 0 16px;
-}
-
-.emotion-16 img {
-  max-width: 100%;
-}
-
-.emotion-17 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #999;
-  font-size: 0.8em;
-}
-
-.emotion-17 svg {
-  margin-right: 0.2em;
-}
-
-.emotion-18 a {
-  display: block;
-  font-size: 0.9em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.emotion-19 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-44 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  grid-column: 1/1;
-  grid-row: 2/2;
-}
-
-.emotion-46 {
-  margin: 12px 0 24px;
-}
-
-.emotion-46 img {
-  max-width: 100%;
-}
-
-.emotion-47 {
-  color: #294885;
-  margin: 0 0 12px;
-  font-family: themix;
-}
-
-.emotion-48 {
-  color: #999;
-  font-weight: normal;
-}
-
+exports[`App > should render project listing correctly 1`] = `
 <div
-  class="emotion-0"
+  class="css-16eqj7k"
 >
   <a
     href="/"
     title="domů"
   >
     <header
-      class="emotion-1"
+      class="css-1dq65fi"
     >
       <img
         alt="logo"
-        class="emotion-2"
-        src="test-file-stub"
+        class="css-1f1xid"
+        src="/src/images/logo.svg"
       />
       <h1
-        class="emotion-3"
+        class="css-1hydvxl"
       >
         IT poptávky
       </h1>
@@ -2663,51 +2079,51 @@ exports[`App should render project listing correctly 1`] = `
   </a>
   <main>
     <div
-      class="emotion-4"
+      class="css-b50td5"
     >
       <section
-        class="emotion-5"
+        class="css-v7vhcp"
       >
         <div
-          class="emotion-6"
+          class="css-1wr42l4"
         >
           <h1
-            class="emotion-7"
+            class="css-16e9k9b"
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </h1>
           <div
-            class="emotion-8"
+            class="css-1k2ala8"
           >
             <div
-              class="emotion-9"
+              class="css-equ9nv"
             >
               Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu.
             </div>
             <div
-              class="emotion-9"
+              class="css-equ9nv"
             >
               <p>
                 Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
               </p>
             </div>
             <span
-              class="emotion-11"
+              class="css-wss5kh"
             >
               wordpress
             </span>
             <span
-              class="emotion-12"
+              class="css-esfqv6"
             >
               php
             </span>
             <span
-              class="emotion-13"
+              class="css-6duviy"
             >
               javascript
             </span>
             <span
-              class="emotion-14"
+              class="css-cmhqw"
             >
               google
             </span>
@@ -2715,13 +2131,13 @@ exports[`App should render project listing correctly 1`] = `
         </div>
       </section>
       <section
-        class="emotion-15"
+        class="css-1e3tnes"
       >
         <div
-          class="emotion-16"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-17"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -2740,10 +2156,10 @@ exports[`App should render project listing correctly 1`] = `
             Správce:
           </span>
           <span
-            class="emotion-18"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-19"
+              class="css-ti9e4i"
               href="mailto:mlha@skaut.cz"
               rel="noreferrer noopener"
               target="_blank"
@@ -2753,10 +2169,10 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-16"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-17"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -2777,10 +2193,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-18"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-19"
+              class="css-ti9e4i"
               href="mailto:mlha@skaut.cz"
               rel="noreferrer noopener"
               target="_blank"
@@ -2790,10 +2206,10 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-16"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-17"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -2817,10 +2233,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-18"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-19"
+              class="css-ti9e4i"
               href="https://demo-skaut-google-drive-gallery.skauting.cz/"
               rel="noreferrer noopener"
               target="_blank"
@@ -2830,10 +2246,10 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-16"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-17"
+            class="css-1yhrhbp"
           >
             <svg
               aria-hidden="true"
@@ -2856,10 +2272,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-18"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-19"
+              class="css-ti9e4i"
               href="https://napoveda.skaut.cz/dobryweb/cs-skaut-google-drive-gallery"
               rel="noreferrer noopener"
               target="_blank"
@@ -2869,10 +2285,10 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-16"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-17"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -2892,10 +2308,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-18"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-19"
+              class="css-ti9e4i"
               href="https://github.com/skaut/skaut-google-drive-gallery"
               rel="noreferrer noopener"
               target="_blank"
@@ -2905,10 +2321,10 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-16"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-17"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -2929,10 +2345,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-18"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-19"
+              class="css-ti9e4i"
               href="https://wordpress.org/plugins/skaut-google-drive-gallery/"
               rel="noreferrer noopener"
               target="_blank"
@@ -2942,10 +2358,10 @@ exports[`App should render project listing correctly 1`] = `
           </span>
         </div>
         <div
-          class="emotion-16"
+          class="css-eh7qde"
         >
           <span
-            class="emotion-17"
+            class="css-1yhrhbp"
           >
             <svg
               fill="currentColor"
@@ -2969,10 +2385,10 @@ exports[`App should render project listing correctly 1`] = `
             :
           </span>
           <span
-            class="emotion-18"
+            class="css-ttfb9s"
           >
             <a
-              class="emotion-19"
+              class="css-ti9e4i"
               href="https://github.com/skaut/skaut-google-drive-gallery/issues"
               rel="noreferrer noopener"
               target="_blank"
@@ -2983,18 +2399,18 @@ exports[`App should render project listing correctly 1`] = `
         </div>
       </section>
       <section
-        class="emotion-44"
+        class="css-17viyw0"
       >
         <span
-          class="emotion-17"
+          class="css-1yhrhbp"
         >
           Poptávky u projektu:
         </span>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/1"
@@ -3003,7 +2419,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               1
@@ -3019,10 +2435,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/2"
@@ -3031,7 +2447,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               2
@@ -3047,10 +2463,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/3"
@@ -3059,7 +2475,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               3
@@ -3079,10 +2495,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/4"
@@ -3091,7 +2507,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               4
@@ -3102,10 +2518,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/5"
@@ -3114,7 +2530,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               5
@@ -3139,10 +2555,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/6"
@@ -3151,7 +2567,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               6
@@ -3162,10 +2578,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/7"
@@ -3174,7 +2590,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               7
@@ -3185,10 +2601,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/8"
@@ -3197,7 +2613,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               8
@@ -3212,10 +2628,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/9"
@@ -3224,7 +2640,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               9
@@ -3255,10 +2671,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/10"
@@ -3267,7 +2683,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               10
@@ -3294,10 +2710,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/11"
@@ -3306,7 +2722,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               11
@@ -3317,10 +2733,10 @@ exports[`App should render project listing correctly 1`] = `
           </p>
         </article>
         <article
-          class="emotion-46"
+          class="css-1ftk3g5"
         >
           <h3
-            class="emotion-47"
+            class="css-ttb6we"
           >
             <a
               href="/skaut/skaut-google-drive-gallery/12"
@@ -3329,7 +2745,7 @@ exports[`App should render project listing correctly 1`] = `
             </a>
              
             <span
-              class="emotion-48"
+              class="css-2sw73i"
             >
               #
               12
@@ -3471,159 +2887,24 @@ exports[`App should render project listing correctly 1`] = `
 </div>
 `;
 
-exports[`App should render projects correctly 1`] = `
-.emotion-0 {
-  max-width: 1000px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 60px;
-  margin: 0 auto;
-  padding: 16px 0;
-}
-
-.emotion-2 {
-  max-height: 100%;
-}
-
-.emotion-3 {
-  font-family: themix;
-  font-size: 20px;
-  margin: 0 0 0 24px;
-}
-
-.emotion-4 {
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 24px;
-  padding: 0 16px;
-  border-bottom: 1px solid #294885;
-}
-
-.emotion-5 {
-  display: block;
-  padding: 0.2em 0.8em;
-  margin-bottom: -1px;
-  border: 1px solid transparent;
-  border-radius: 5px 5px 0 0;
-}
-
-.emotion-5.active {
-  border-top: 1px solid #294885;
-  border-right: 1px solid #294885;
-  border-left: 1px solid #294885;
-  background-color: #fff;
-}
-
-.emotion-7 {
-  margin: 0 0 16px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #29488510;
-  max-width: 600px;
-}
-
-.emotion-8 {
-  color: #294885;
-  margin: 0 0 12px;
-  font-family: themix;
-}
-
-.emotion-9 {
-  margin: 0 0 0.6em;
-}
-
-.emotion-9 * {
-  font-size: 0.8rem;
-}
-
-.emotion-10 {
-  margin: 0 0 16px;
-}
-
-.emotion-10 img {
-  max-width: 100%;
-}
-
-.emotion-11 {
-  background-color: #894cc033;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
-.emotion-12 {
-  background-color: #6d52b833;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
-.emotion-13 {
-  background-color: #8b843b33;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
-.emotion-14 {
-  background-color: #d293ff33;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
-.emotion-22 {
-  background-color: #6317e833;
-  color: #444;
-  font-family: themix;
-  font-size: 0.8rem;
-  margin-right: 8px;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-}
-
+exports[`App > should render projects correctly 1`] = `
 <div
-  class="emotion-0"
+  class="css-16eqj7k"
 >
   <a
     href="/"
     title="domů"
   >
     <header
-      class="emotion-1"
+      class="css-1dq65fi"
     >
       <img
         alt="logo"
-        class="emotion-2"
-        src="test-file-stub"
+        class="css-1f1xid"
+        src="/src/images/logo.svg"
       />
       <h1
-        class="emotion-3"
+        class="css-1hydvxl"
       >
         IT poptávky
       </h1>
@@ -3633,17 +2914,17 @@ exports[`App should render projects correctly 1`] = `
     <div>
       <nav>
         <div
-          class="emotion-4"
+          class="css-1otv0s7"
         >
           <a
-            class="emotion-5"
+            class="css-nqd2p0"
             href="/"
           >
             Poptávky
           </a>
           <a
             aria-current="page"
-            class="emotion-5 active"
+            class="css-nqd2p0 active"
             href="/projekty"
           >
             Projekty
@@ -3651,10 +2932,10 @@ exports[`App should render projects correctly 1`] = `
         </div>
       </nav>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skaut-google-drive-gallery"
@@ -3663,41 +2944,41 @@ exports[`App should render projects correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         />
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Galerie obrázků a videí z Google Disku je plugin pro WordPress, který propojí web s Google Diskem. V pluginu se dá vybrat libovolná složku na Google Disku nebo ve Sdíleném disku a plugin z ní vytvoří galerii s obrázky a videi na libovolné stránce či příspěvku na webu. Ze všech složek a podsložek jsou navíc vytvořeny vnořené “podgalerie”. Plugin vzniknul primárně pro potřeby Junáka, oddílů a středisek, ale vyvíjíme ho tzv. Open-Source (otevřeně pro veřejnost) a nabízíme ho v oficiální databázi pluginů pro WordPress. V tuto chvíli (léto 2021) podle statistik WordPressu plugin běží na víc jak 4 000 webových stránek a z kontaktů s uživateli víme, že ho využívají jak oddíly a střediska v Junáku, tak i "náhodná veřejnost" - zvlášť oblíbený se zdá být u skautů z celého světa a profesionálních fotografů, prezentujících svoje fotky.
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-14"
+          class="css-1n2mvc3"
         >
           google
         </span>
       </article>
       <article
-        class="emotion-7"
+        class="css-1vye5q3"
       >
         <h2
-          class="emotion-8"
+          class="css-ttb6we"
         >
           <a
             href="/skaut/skautis-integration"
@@ -3706,32 +2987,32 @@ exports[`App should render projects correctly 1`] = `
           </a>
         </h2>
         <p
-          class="emotion-9"
+          class="css-8e8b4u"
         />
         <div
-          class="emotion-10"
+          class="css-eh7qde"
         >
           <p>
             Plugin zajišťuje propojení skautských webů se skautISem. Dá se přes plugin registrovat, přihlašovat. Dokáže u stránek nastavovat oprávnění podle roli a dalších nastavení ve skautISu. Skrývá obsah podle toho jaká pravidla na stránce jsou nastavená.
           </p>
         </div>
         <span
-          class="emotion-11"
+          class="css-13stjo4"
         >
           wordpress
         </span>
         <span
-          class="emotion-12"
+          class="css-jbr3xn"
         >
           php
         </span>
         <span
-          class="emotion-13"
+          class="css-d3t46l"
         >
           javascript
         </span>
         <span
-          class="emotion-22"
+          class="css-vv149a"
         >
           skautis
         </span>

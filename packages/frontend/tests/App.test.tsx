@@ -1,95 +1,111 @@
 import { render } from "@testing-library/react";
-import { mocked } from "jest-mock";
 import { MemoryRouter } from "react-router-dom";
 import * as swr from "swr";
+import { beforeAll, describe, expect, test, vi } from "vitest";
 
 import { App } from "../src/App";
 import { testData } from "./testData";
 
-jest.mock("swr");
+vi.mock("swr");
 
 describe("App", () => {
   beforeAll(() => {
-    window.scrollTo = jest.fn();
+    // eslint-disable-next-line @typescript-eslint/no-empty-function -- Function mock
+    vi.spyOn(window, "scrollTo").mockImplementation(() => {});
   });
 
   test("should render correctly", () => {
-    mocked(swr).default.mockReturnValue({
+    expect.assertions(1);
+
+    vi.mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
       isLoading: false,
       isValidating: false,
-      mutate: jest.fn(),
+      mutate: vi.fn(),
     });
     const { container } = render(
       <MemoryRouter>
         <App />
       </MemoryRouter>,
     );
+
     expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render projects correctly", () => {
-    mocked(swr).default.mockReturnValue({
+    expect.assertions(1);
+
+    vi.mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
       isLoading: false,
       isValidating: false,
-      mutate: jest.fn(),
+      mutate: vi.fn(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/projekty"]}>
         <App />
       </MemoryRouter>,
     );
+
     expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render project listing correctly", () => {
-    mocked(swr).default.mockReturnValue({
+    expect.assertions(1);
+
+    vi.mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
       isLoading: false,
       isValidating: false,
-      mutate: jest.fn(),
+      mutate: vi.fn(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery"]}>
         <App />
       </MemoryRouter>,
     );
+
     expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should render issue listing correctly", () => {
-    mocked(swr).default.mockReturnValue({
+    expect.assertions(1);
+
+    vi.mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
       isLoading: false,
       isValidating: false,
-      mutate: jest.fn(),
+      mutate: vi.fn(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery/3"]}>
         <App />
       </MemoryRouter>,
     );
+
     expect(container.firstChild).toMatchSnapshot();
   });
 
   test("should handle error gracefully", () => {
-    mocked(swr).default.mockReturnValue({
+    expect.assertions(1);
+
+    vi.mocked(swr).default.mockReturnValue({
       data: undefined,
       error: true,
       isLoading: false,
       isValidating: false,
-      mutate: jest.fn(),
+      mutate: vi.fn(),
     });
     const { container } = render(
       <MemoryRouter>
         <App />
       </MemoryRouter>,
     );
+
     expect(container.firstChild).toMatchSnapshot();
   });
 });
