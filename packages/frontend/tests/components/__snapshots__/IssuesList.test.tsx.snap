@@ -8,6 +8,7 @@ exports[`IssuesList component > should render correctly 1`] = `
     class="css-ttb6we"
   >
     <a
+      data-discover="true"
       href="/skaut/skaut-google-drive-gallery/1"
     >
       Add hint to set videos to public
@@ -39,6 +40,7 @@ exports[`IssuesList component > should render correctly without link 1`] = `
     class="css-ttb6we"
   >
     <a
+      data-discover="true"
       href="/skaut/skaut-google-drive-gallery/1"
     >
       Add hint to set videos to public

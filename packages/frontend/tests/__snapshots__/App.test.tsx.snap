@@ -11,6 +11,7 @@ exports[`App > should render correctly 1`] = `
   class="css-16eqj7k"
 >
   <a
+    data-discover="true"
     href="/"
     title="domů"
   >
@@ -38,12 +39,14 @@ exports[`App > should render correctly 1`] = `
           <a
             aria-current="page"
             class="css-nqd2p0 active"
+            data-discover="true"
             href="/"
           >
             Poptávky
           </a>
           <a
             class="css-nqd2p0"
+            data-discover="true"
             href="/projekty"
           >
             Projekty
@@ -57,6 +60,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/1"
           >
             Add hint to set videos to public
@@ -66,6 +70,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -112,6 +117,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/2"
           >
             If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
@@ -121,6 +127,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -167,6 +174,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/3"
           >
             Editing doesn't check path validity
@@ -176,6 +184,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -226,6 +235,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/4"
           >
             Ctrl-click on folders does not work
@@ -235,6 +245,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -276,6 +287,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/5"
           >
             Add option to specify gallery by a Drive link
@@ -285,6 +297,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -340,6 +353,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/6"
           >
             Add images to the block
@@ -349,6 +363,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -390,6 +405,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/7"
           >
             Add video overlay
@@ -399,6 +415,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -440,6 +457,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/8"
           >
             Increase test coverage
@@ -449,6 +467,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -494,6 +513,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/9"
           >
             Themes with "editor-styles" support change the look of the block editor
@@ -503,6 +523,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -564,6 +585,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/10"
           >
             Google app creation manual is outdated
@@ -573,6 +595,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -630,6 +653,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/11"
           >
             Directory preview images
@@ -639,6 +663,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -680,6 +705,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery/12"
           >
             UX & design audit
@@ -689,6 +715,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
             title="Plugin pro WordPress, který ze složek s fotkami na Google Disku dělá galerie na webu."
           >
@@ -856,6 +883,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration/1"
           >
             User management smart table is not smart when the registration module is enabled
@@ -865,6 +893,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration"
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
@@ -902,6 +931,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration/2"
           >
             Chyba v zobrazení
@@ -911,6 +941,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration"
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
@@ -955,6 +986,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration/3"
           >
             WordPress 5.x + Gutenberg
@@ -964,6 +996,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration"
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
@@ -1010,6 +1043,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration/4"
           >
             Profilové fotky
@@ -1019,6 +1053,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration"
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
@@ -1060,6 +1095,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration/5"
           >
             Výběry pravidel v shortcode
@@ -1069,6 +1105,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration"
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
@@ -1110,6 +1147,7 @@ exports[`App > should render correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration/6"
           >
             Modul "Nábory"
@@ -1119,6 +1157,7 @@ exports[`App > should render correctly 1`] = `
           class="css-8e8b4u"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration"
             title="Plugin pro WordPress, který napojuje přihlašování přes skautIS na skautské weby."
           >
@@ -1174,6 +1213,7 @@ exports[`App > should render issue listing correctly 1`] = `
   class="css-16eqj7k"
 >
   <a
+    data-discover="true"
     href="/"
     title="domů"
   >
@@ -1290,6 +1330,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery"
             >
               WordPress plugin: Galerie obrázků a videí z Google Disku
@@ -1612,6 +1653,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/1"
             >
               Add hint to set videos to public
@@ -1640,6 +1682,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/2"
             >
               If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
@@ -1668,6 +1711,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/4"
             >
               Ctrl-click on folders does not work
@@ -1691,6 +1735,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/5"
             >
               Add option to specify gallery by a Drive link
@@ -1728,6 +1773,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/6"
             >
               Add images to the block
@@ -1751,6 +1797,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/7"
             >
               Add video overlay
@@ -1774,6 +1821,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/8"
             >
               Increase test coverage
@@ -1801,6 +1849,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/9"
             >
               Themes with "editor-styles" support change the look of the block editor
@@ -1844,6 +1893,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/10"
             >
               Google app creation manual is outdated
@@ -1883,6 +1933,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/11"
             >
               Directory preview images
@@ -1906,6 +1957,7 @@ exports[`App > should render issue listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/12"
             >
               UX & design audit
@@ -2059,6 +2111,7 @@ exports[`App > should render project listing correctly 1`] = `
   class="css-16eqj7k"
 >
   <a
+    data-discover="true"
     href="/"
     title="domů"
   >
@@ -2413,6 +2466,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/1"
             >
               Add hint to set videos to public
@@ -2441,6 +2495,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/2"
             >
               If a shortcut name differs from the original, the name in gallery and breadcrumbs differs
@@ -2469,6 +2524,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/3"
             >
               Editing doesn't check path validity
@@ -2501,6 +2557,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/4"
             >
               Ctrl-click on folders does not work
@@ -2524,6 +2581,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/5"
             >
               Add option to specify gallery by a Drive link
@@ -2561,6 +2619,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/6"
             >
               Add images to the block
@@ -2584,6 +2643,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/7"
             >
               Add video overlay
@@ -2607,6 +2667,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/8"
             >
               Increase test coverage
@@ -2634,6 +2695,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/9"
             >
               Themes with "editor-styles" support change the look of the block editor
@@ -2677,6 +2739,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/10"
             >
               Google app creation manual is outdated
@@ -2716,6 +2779,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/11"
             >
               Directory preview images
@@ -2739,6 +2803,7 @@ exports[`App > should render project listing correctly 1`] = `
             class="css-ttb6we"
           >
             <a
+              data-discover="true"
               href="/skaut/skaut-google-drive-gallery/12"
             >
               UX & design audit
@@ -2892,6 +2957,7 @@ exports[`App > should render projects correctly 1`] = `
   class="css-16eqj7k"
 >
   <a
+    data-discover="true"
     href="/"
     title="domů"
   >
@@ -2918,6 +2984,7 @@ exports[`App > should render projects correctly 1`] = `
         >
           <a
             class="css-nqd2p0"
+            data-discover="true"
             href="/"
           >
             Poptávky
@@ -2925,6 +2992,7 @@ exports[`App > should render projects correctly 1`] = `
           <a
             aria-current="page"
             class="css-nqd2p0 active"
+            data-discover="true"
             href="/projekty"
           >
             Projekty
@@ -2938,6 +3006,7 @@ exports[`App > should render projects correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skaut-google-drive-gallery"
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
@@ -2981,6 +3050,7 @@ exports[`App > should render projects correctly 1`] = `
           class="css-ttb6we"
         >
           <a
+            data-discover="true"
             href="/skaut/skautis-integration"
           >
             WordPress plugin: SkautIS integrace

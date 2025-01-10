@@ -8,12 +8,14 @@ exports[`Navigation component > should render correctly 1`] = `
     <a
       aria-current="page"
       class="css-nqd2p0 active"
+      data-discover="true"
       href="/"
     >
       Poptávky
     </a>
     <a
       class="css-nqd2p0"
+      data-discover="true"
       href="/projekty"
     >
       Projekty
@@ -30,12 +32,14 @@ exports[`Navigation component > should render correctly with active item 1`] = `
     <a
       aria-current="page"
       class="css-nqd2p0 active"
+      data-discover="true"
       href="/"
     >
       Poptávky
     </a>
     <a
       class="css-nqd2p0"
+      data-discover="true"
       href="/projekty"
     >
       Projekty
