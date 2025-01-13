@@ -2,10 +2,11 @@ import { Octokit } from "@octokit/core";
 import { restEndpointMethods } from "@octokit/plugin-rest-endpoint-methods";
 import nock from "nock";
 import nodeFetch from "node-fetch";
+import { vi } from "vitest";
 
 nock.disableNetConnect();
 
-jest.mock("../src/octokit", () => {
+vi.mock("../src/octokit", () => {
   const OctokitWithRest = Octokit.plugin(restEndpointMethods);
   return {
     octokit: new OctokitWithRest({
