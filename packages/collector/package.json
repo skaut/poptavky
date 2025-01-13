@@ -21,8 +21,7 @@
     "@actions/core": "^1.10.1",
     "@octokit/core": "^6.1.3",
     "@octokit/plugin-rest-endpoint-methods": "^13.2.6",
-    "ts-custom-error": "^3.3.1",
-    "tsx": "^4.19.2"
+    "ts-custom-error": "^3.3.1"
   },
   "type": "module",
   "devDependencies": {
@@ -50,6 +49,6 @@
     "lint:eslint": "eslint --color \"src/**/*\" \"__tests__/**/*\" \"*.config.{js,ts}\"",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "jest",
-    "collect": "tsx src/index.ts"
+    "collect": "node --experimental-strip-types src/index.ts"
   }
 }
