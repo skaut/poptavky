@@ -1,4 +1,4 @@
-import { PoptavkyError } from "./PoptavkyError";
+import { PoptavkyError } from "./PoptavkyError.ts";
 
 export class IssueListError extends PoptavkyError {
   public constructor(e: string) {

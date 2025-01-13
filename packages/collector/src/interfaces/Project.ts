@@ -1,4 +1,4 @@
-import { PoptavkyError } from "../exceptions/PoptavkyError";
+import { PoptavkyError } from "../exceptions/PoptavkyError.ts";
 
 export interface Project {
   owner: string;

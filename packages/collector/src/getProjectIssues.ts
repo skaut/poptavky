@@ -1,8 +1,8 @@
-import type { Project } from "./interfaces/Project";
-import type { ProjectIssue } from "./interfaces/ProjectIssue";
+import type { Project } from "./interfaces/Project.ts";
+import type { ProjectIssue } from "./interfaces/ProjectIssue.ts";
 
-import { IssueListError } from "./exceptions/IssueListError";
-import { octokit } from "./octokit";
+import { IssueListError } from "./exceptions/IssueListError.ts";
+import { octokit } from "./octokit.ts";
 
 export async function getProjectIssues(
   project: Project,

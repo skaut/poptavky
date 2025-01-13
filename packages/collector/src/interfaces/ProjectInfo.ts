@@ -1,6 +1,6 @@
-import type { PoptavkyError } from "../exceptions/PoptavkyError";
+import type { PoptavkyError } from "../exceptions/PoptavkyError.ts";
 
-import { ProjectInfoError } from "../exceptions/ProjectInfoError";
+import { ProjectInfoError } from "../exceptions/ProjectInfoError.ts";
 
 export interface ProjectInfo {
   description: string;

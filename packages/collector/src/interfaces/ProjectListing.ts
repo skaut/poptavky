@@ -1,6 +1,6 @@
-import type { Project } from "./Project";
-import type { ProjectInfo } from "./ProjectInfo";
-import type { ProjectIssue } from "./ProjectIssue";
+import type { Project } from "./Project.ts";
+import type { ProjectInfo } from "./ProjectInfo.ts";
+import type { ProjectIssue } from "./ProjectIssue.ts";
 
 export type ProjectListing = Project & {
   info: ProjectInfo;
