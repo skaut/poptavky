@@ -10,8 +10,6 @@ const issue = project.issues[0];
 
 describe("IssueDetail page", () => {
   test("should render correctly", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter
         initialEntries={[
@@ -31,8 +29,6 @@ describe("IssueDetail page", () => {
   });
 
   test("should render correctly if there is no related issue", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter initialEntries={[`/${project.owner}/${project.repo}/0`]}>
         <Routes>

@@ -18,7 +18,6 @@ const issueWithProject = getIssueWithProject(
 
 describe("Issue component", () => {
   test("should render correctly", () => {
-    expect.assertions(2);
     expect(issue).not.toBeNull();
 
     const { container } = render(
@@ -31,8 +30,6 @@ describe("Issue component", () => {
   });
 
   test("should render correctly without tags", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter>
         <Issue hideTags issue={issueWithProject} />

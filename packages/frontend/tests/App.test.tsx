@@ -15,8 +15,6 @@ describe("App", () => {
   });
 
   test("should render correctly", () => {
-    expect.assertions(1);
-
     vi.mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -34,8 +32,6 @@ describe("App", () => {
   });
 
   test("should render projects correctly", () => {
-    expect.assertions(1);
-
     vi.mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -53,8 +49,6 @@ describe("App", () => {
   });
 
   test("should render project listing correctly", () => {
-    expect.assertions(1);
-
     vi.mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -72,8 +66,6 @@ describe("App", () => {
   });
 
   test("should render issue listing correctly", () => {
-    expect.assertions(1);
-
     vi.mocked(swr).default.mockReturnValue({
       data: testData,
       error: undefined,
@@ -91,8 +83,6 @@ describe("App", () => {
   });
 
   test("should handle error gracefully", () => {
-    expect.assertions(1);
-
     vi.mocked(swr).default.mockReturnValue({
       data: undefined,
       error: true,

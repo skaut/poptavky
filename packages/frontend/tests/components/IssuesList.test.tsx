@@ -9,8 +9,6 @@ const project = testData.projects[0];
 
 describe("IssuesList component", () => {
   test("should render correctly", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter>
         <IssuesList issues={project.issues} project={project} />
@@ -21,8 +19,6 @@ describe("IssuesList component", () => {
   });
 
   test("should render correctly without link", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter>
         <IssuesList

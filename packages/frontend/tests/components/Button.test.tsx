@@ -5,8 +5,6 @@ import { Button } from "../../src/components/Button";
 
 describe("Button component", () => {
   test("should render correctly", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <Button href="http://www.somewhere.com">Link somewhere</Button>,
     );
@@ -15,8 +13,6 @@ describe("Button component", () => {
   });
 
   test("should render correctly with title", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <Button href="http://www.somewhere.com" title="myTitle">
         Link somewhere
@@ -27,8 +23,6 @@ describe("Button component", () => {
   });
 
   test("should render correctly with custom class", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <Button className="myClassName" href="http://www.somewhere.com">
         Link somewhere
@@ -39,8 +33,6 @@ describe("Button component", () => {
   });
 
   test("should render correctly with target self", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <Button href="http://www.somewhere.com" targetSelf>
         Link somewhere

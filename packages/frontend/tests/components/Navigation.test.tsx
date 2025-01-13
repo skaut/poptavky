@@ -6,8 +6,6 @@ import { Navigation } from "../../src/components/Navigation";
 
 describe("Navigation component", () => {
   test("should render correctly", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter>
         <Navigation
@@ -29,8 +27,6 @@ describe("Navigation component", () => {
   });
 
   test("should render correctly with active item", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter>
         <Navigation
