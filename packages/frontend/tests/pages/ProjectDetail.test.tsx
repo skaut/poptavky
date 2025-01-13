@@ -9,8 +9,6 @@ const project = testData.projects[0];
 
 describe("ProjectDetail page", () => {
   test("should render correctly", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter initialEntries={[`/${project.owner}/${project.repo}`]}>
         <Routes>
@@ -26,8 +24,6 @@ describe("ProjectDetail page", () => {
   });
 
   test("should render correctly if there is no related issue", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter initialEntries={[`/owner/repo`]}>
         <Routes>

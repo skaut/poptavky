@@ -7,8 +7,6 @@ import { testData } from "../testData";
 
 describe("IssuesList page", () => {
   test("should render correctly", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter>
         <IssuesList data={testData} />

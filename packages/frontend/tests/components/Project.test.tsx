@@ -9,8 +9,6 @@ const project = testData.projects[0];
 
 describe("Project component", () => {
   test("should render correctly", () => {
-    expect.assertions(1);
-
     const { container } = render(
       <MemoryRouter>
         <Project project={project} />
