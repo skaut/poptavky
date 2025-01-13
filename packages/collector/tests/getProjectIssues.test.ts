@@ -1,4 +1,5 @@
 import nock from "nock";
+import { afterEach, beforeEach, describe, expect, test } from "vitest";
 
 import { IssueListError } from "../src/exceptions/IssueListError";
 import { getProjectIssues } from "../src/getProjectIssues";

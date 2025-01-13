@@ -42,13 +42,15 @@
     "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.19.1"
+    "typescript-eslint": "^8.19.1",
+    "vitest": "^2.1.8"
   },
   "scripts": {
     "lint:typecheck": "tsc  --noEmit",
-    "lint:eslint": "eslint --color \"src/**/*\" \"__tests__/**/*\" \"*.config.{js,ts}\"",
+    "lint:eslint": "eslint --color \"src/**/*\" \"tests/**/*\" \"__tests__/**/*\" \"*.config.{js,ts}\"",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "jest",
+    "vitest": "vitest",
     "collect": "node --experimental-strip-types src/index.ts"
   }
 }
