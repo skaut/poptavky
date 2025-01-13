@@ -1,9 +1,9 @@
-import type { Project } from "./interfaces/Project";
-import type { ProjectListing } from "./interfaces/ProjectListing";
+import type { Project } from "./interfaces/Project.ts";
+import type { ProjectListing } from "./interfaces/ProjectListing.ts";
 
-import { getProjectInfo } from "./getProjectInfo";
-import { getProjectIssues } from "./getProjectIssues";
-import { getProjectVisibility } from "./getProjectVisibility";
+import { getProjectInfo } from "./getProjectInfo.ts";
+import { getProjectIssues } from "./getProjectIssues.ts";
+import { getProjectVisibility } from "./getProjectVisibility.ts";
 
 export async function getProjectListing(
   project: Project,

@@ -1,5 +1,5 @@
-import { GlobalConfigError } from "../exceptions/GlobalConfigError";
-import { assertIsProject, type Project } from "./Project";
+import { GlobalConfigError } from "../exceptions/GlobalConfigError.ts";
+import { assertIsProject, type Project } from "./Project.ts";
 
 export interface GlobalConfig {
   projects: Array<Project>;

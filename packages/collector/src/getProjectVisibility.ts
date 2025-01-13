@@ -1,7 +1,7 @@
-import type { Project } from "./interfaces/Project";
+import type { Project } from "./interfaces/Project.ts";
 
-import { VisibilityError } from "../src/exceptions/VisibilityError";
-import { octokit } from "./octokit";
+import { VisibilityError } from "../src/exceptions/VisibilityError.ts";
+import { octokit } from "./octokit.ts";
 
 export async function getProjectVisibility(project: Project): Promise<boolean> {
   const rawResponse = await octokit.rest.repos

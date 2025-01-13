@@ -1,10 +1,10 @@
 import * as fs from "fs";
 
-import { GlobalConfigError } from "./exceptions/GlobalConfigError";
+import { GlobalConfigError } from "./exceptions/GlobalConfigError.ts";
 import {
   assertIsGlobalConfig,
   type GlobalConfig,
-} from "./interfaces/GlobalConfig";
+} from "./interfaces/GlobalConfig.ts";
 
 export function getGlobalConfig(): GlobalConfig {
   let contents = undefined;
