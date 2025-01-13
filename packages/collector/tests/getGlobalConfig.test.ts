@@ -1,8 +1,8 @@
 import * as fs from "fs";
 import { expect, test, vi } from "vitest";
 
-import { GlobalConfigError } from "../src/exceptions/GlobalConfigError";
-import { getGlobalConfig } from "../src/getGlobalConfig";
+import { GlobalConfigError } from "../src/exceptions/GlobalConfigError.ts";
+import { getGlobalConfig } from "../src/getGlobalConfig.ts";
 
 vi.mock("fs");
 

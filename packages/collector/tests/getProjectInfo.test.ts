@@ -1,8 +1,8 @@
 import nock from "nock";
 import { expect, test } from "vitest";
 
-import { ProjectInfoError } from "../src/exceptions/ProjectInfoError";
-import { getProjectInfo } from "../src/getProjectInfo";
+import { ProjectInfoError } from "../src/exceptions/ProjectInfoError.ts";
+import { getProjectInfo } from "../src/getProjectInfo.ts";
 
 const config = {
   description: "DESCRIPTION",

@@ -1,8 +1,8 @@
 import nock from "nock";
 import { afterEach, beforeEach, describe, expect, test } from "vitest";
 
-import { IssueListError } from "../src/exceptions/IssueListError";
-import { getProjectIssues } from "../src/getProjectIssues";
+import { IssueListError } from "../src/exceptions/IssueListError.ts";
+import { getProjectIssues } from "../src/getProjectIssues.ts";
 
 describe("Working issue listing", () => {
   beforeEach(() => {

@@ -1,11 +1,11 @@
 import { expect, test, vi } from "vitest";
 
-import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
+import type { ProjectInfo } from "../src/interfaces/ProjectInfo.ts";
 
-import { getProjectInfo } from "../src/getProjectInfo";
-import { getProjectIssues } from "../src/getProjectIssues";
-import { getProjectListing } from "../src/getProjectListing";
-import { getProjectVisibility } from "../src/getProjectVisibility";
+import { getProjectInfo } from "../src/getProjectInfo.ts";
+import { getProjectIssues } from "../src/getProjectIssues.ts";
+import { getProjectListing } from "../src/getProjectListing.ts";
+import { getProjectVisibility } from "../src/getProjectVisibility.ts";
 
 vi.mock("../src/getProjectInfo");
 vi.mock("../src/getProjectIssues");

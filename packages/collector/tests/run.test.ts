@@ -2,11 +2,11 @@ import * as core from "@actions/core";
 import * as fs from "fs";
 import { beforeEach, expect, test, vi } from "vitest";
 
-import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
+import type { ProjectInfo } from "../src/interfaces/ProjectInfo.ts";
 
-import { getGlobalConfig } from "../src/getGlobalConfig";
-import { getProjectListing } from "../src/getProjectListing";
-import { run } from "../src/run";
+import { getGlobalConfig } from "../src/getGlobalConfig.ts";
+import { getProjectListing } from "../src/getProjectListing.ts";
+import { run } from "../src/run.ts";
 
 vi.mock("fs");
 vi.mock("@actions/core");
