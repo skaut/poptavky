@@ -1,4 +1,5 @@
 import nock from "nock";
+import { expect, test } from "vitest";
 
 import { ProjectInfoError } from "../src/exceptions/ProjectInfoError";
 import { getProjectInfo } from "../src/getProjectInfo";

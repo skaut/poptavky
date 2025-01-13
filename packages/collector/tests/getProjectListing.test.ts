@@ -1,4 +1,4 @@
-import { mocked } from "jest-mock";
+import { expect, test, vi } from "vitest";
 
 import type { ProjectInfo } from "../src/interfaces/ProjectInfo";
 
@@ -7,9 +7,9 @@ import { getProjectIssues } from "../src/getProjectIssues";
 import { getProjectListing } from "../src/getProjectListing";
 import { getProjectVisibility } from "../src/getProjectVisibility";
 
-jest.mock("../src/getProjectInfo");
-jest.mock("../src/getProjectIssues");
-jest.mock("../src/getProjectVisibility");
+vi.mock("../src/getProjectInfo");
+vi.mock("../src/getProjectIssues");
+vi.mock("../src/getProjectVisibility");
 
 const project = { owner: "OWNER", repo: "REPO" };
 const info: ProjectInfo = {
@@ -27,23 +27,25 @@ const issues = [
 test("getProjectListing gets a value", async () => {
   expect.assertions(9);
 
-  mocked(getProjectInfo).mockResolvedValue(info);
-  mocked(getProjectIssues).mockResolvedValue(issues);
-  mocked(getProjectVisibility).mockResolvedValue(true);
+  vi.mocked(getProjectInfo).mockResolvedValue(info);
+  vi.mocked(getProjectIssues).mockResolvedValue(issues);
+  vi.mocked(getProjectVisibility).mockResolvedValue(true);
 
   await expect(getProjectListing(project)).resolves.toStrictEqual({
     ...project,
     info,
     issues,
   });
-  expect(mocked(getProjectInfo).mock.calls).toHaveLength(1);
-  expect(mocked(getProjectInfo).mock.calls[0][0]).toStrictEqual(project);
-  expect(mocked(getProjectVisibility).mock.calls).toHaveLength(1);
-  expect(mocked(getProjectVisibility).mock.calls[0][0]).toStrictEqual(project);
-  expect(mocked(getProjectIssues).mock.calls).toHaveLength(1);
-  expect(mocked(getProjectIssues).mock.calls[0][0]).toStrictEqual(project);
-  expect(mocked(getProjectIssues).mock.calls[0][1]).toBe(true);
-  expect(mocked(getProjectIssues).mock.calls[0][2]).toStrictEqual(
+  expect(vi.mocked(getProjectInfo).mock.calls).toHaveLength(1);
+  expect(vi.mocked(getProjectInfo).mock.calls[0][0]).toStrictEqual(project);
+  expect(vi.mocked(getProjectVisibility).mock.calls).toHaveLength(1);
+  expect(vi.mocked(getProjectVisibility).mock.calls[0][0]).toStrictEqual(
+    project,
+  );
+  expect(vi.mocked(getProjectIssues).mock.calls).toHaveLength(1);
+  expect(vi.mocked(getProjectIssues).mock.calls[0][0]).toStrictEqual(project);
+  expect(vi.mocked(getProjectIssues).mock.calls[0][1]).toBe(true);
+  expect(vi.mocked(getProjectIssues).mock.calls[0][2]).toStrictEqual(
     info["help-issue-label"],
   );
 });

@@ -1,4 +1,5 @@
 import nock from "nock";
+import { expect, test } from "vitest";
 
 import { VisibilityError } from "../src/exceptions/VisibilityError";
 import { getProjectVisibility } from "../src/getProjectVisibility";
