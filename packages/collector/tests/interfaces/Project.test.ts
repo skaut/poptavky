@@ -1,3 +1,5 @@
+import { expect, test } from "vitest";
+
 import { PoptavkyError } from "../../src/exceptions/PoptavkyError";
 import { assertIsProject } from "../../src/interfaces/Project";
 

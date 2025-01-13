@@ -1,3 +1,5 @@
+import { expect, test } from "vitest";
+
 import { GlobalConfigError } from "../../src/exceptions/GlobalConfigError";
 import { assertIsGlobalConfig } from "../../src/interfaces/GlobalConfig";
 
