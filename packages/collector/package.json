@@ -44,7 +44,7 @@
     "vitest": "^2.1.8"
   },
   "scripts": {
-    "lint:typecheck": "tsc  --noEmit",
+    "lint:typecheck": "tsc --noEmit",
     "lint:eslint": "eslint --color \"src/**/*\" \"tests/**/*\" \"*.config.{js,ts}\"",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "vitest",

@@ -48,8 +48,6 @@ const listing1 = {
 };
 
 beforeEach(() => {
-  vi.resetAllMocks();
-
   vi.mocked(fs).writeFileSync.mockReturnValue(undefined);
   vi.mocked(core).error.mockReturnValue(undefined);
   vi.mocked(core).setFailed.mockReturnValue(undefined);
