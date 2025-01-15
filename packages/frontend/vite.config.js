@@ -10,6 +10,7 @@ export default defineConfig({
   root: "src",
   test: {
     environment: "jsdom",
+    mockReset: true,
     root: ".",
   },
 });
