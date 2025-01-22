@@ -5,7 +5,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
   class="css-b50td5"
 >
   <section
-    class="css-v7vhcp"
+    class="css-17cnzpy css-1rb6w2p"
   >
     <span
       class="css-1yhrhbp"
@@ -71,7 +71,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
       Zaujala tě poptávka?
     </span>
     <a
-      class="css-1jr5wp3"
+      class="css-1ke5b5t css-ti9e4i"
       href="mailto:mlha@skaut.cz"
       rel="noreferrer noopener"
       target="_blank"
@@ -80,7 +80,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
     </a>
   </section>
   <section
-    class="css-64djbl"
+    class="css-pz6x98 css-1rb6w2p"
   >
     <div
       class="css-1wr42l4"
@@ -135,7 +135,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
     </div>
   </section>
   <section
-    class="css-1xo3opi"
+    class="css-snfp4i css-1rb6w2p"
   >
     <div
       class="css-eh7qde"
@@ -403,7 +403,7 @@ exports[`IssueDetail page > should render correctly 1`] = `
     </div>
   </section>
   <section
-    class="css-z5ryhi"
+    class="css-4dckue css-1rb6w2p"
   >
     <span
       class="css-1yhrhbp"
