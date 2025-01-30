@@ -5,13 +5,13 @@ exports[`ProjectDetail page > should render correctly 1`] = `
   class="css-b50td5"
 >
   <section
-    class="css-17cnzpy css-1rb6w2p"
+    class="css-v7vhcp"
   >
     <div
       class="css-1wr42l4"
     >
       <h1
-        class="css-o8tq20 css-cq0erp"
+        class="css-16e9k9b"
       >
         WordPress plugin: Galerie obrázků a videí z Google Disku
       </h1>
@@ -54,7 +54,7 @@ exports[`ProjectDetail page > should render correctly 1`] = `
     </div>
   </section>
   <section
-    class="css-7ry3e6 css-1rb6w2p"
+    class="css-1e3tnes"
   >
     <div
       class="css-eh7qde"
@@ -322,7 +322,7 @@ exports[`ProjectDetail page > should render correctly 1`] = `
     </div>
   </section>
   <section
-    class="css-1h816go css-1rb6w2p"
+    class="css-17viyw0"
   >
     <span
       class="css-1yhrhbp"

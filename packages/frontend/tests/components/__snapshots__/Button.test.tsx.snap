@@ -2,7 +2,7 @@
 
 exports[`Button component > should render correctly 1`] = `
 <a
-  class="css-1ke5b5t css-ti9e4i"
+  class="css-1jr5wp3"
   href="http://www.somewhere.com"
   rel="noreferrer noopener"
   target="_blank"
@@ -13,7 +13,7 @@ exports[`Button component > should render correctly 1`] = `
 
 exports[`Button component > should render correctly with custom class 1`] = `
 <a
-  class="myClassName css-1ke5b5t css-ti9e4i"
+  class="myClassName css-1jr5wp3"
   href="http://www.somewhere.com"
   rel="noreferrer noopener"
   target="_blank"
@@ -24,7 +24,7 @@ exports[`Button component > should render correctly with custom class 1`] = `
 
 exports[`Button component > should render correctly with target self 1`] = `
 <a
-  class="css-1ke5b5t css-ti9e4i"
+  class="css-1jr5wp3"
   href="http://www.somewhere.com"
 >
   Link somewhere
@@ -33,7 +33,7 @@ exports[`Button component > should render correctly with target self 1`] = `
 
 exports[`Button component > should render correctly with title 1`] = `
 <a
-  class="css-1ke5b5t css-ti9e4i"
+  class="css-1jr5wp3"
   href="http://www.somewhere.com"
   rel="noreferrer noopener"
   target="_blank"
