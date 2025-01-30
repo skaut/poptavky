@@ -1237,7 +1237,7 @@ exports[`App > should render issue listing correctly 1`] = `
       class="css-b50td5"
     >
       <section
-        class="css-17cnzpy css-1rb6w2p"
+        class="css-v7vhcp"
       >
         <span
           class="css-1yhrhbp"
@@ -1307,7 +1307,7 @@ exports[`App > should render issue listing correctly 1`] = `
           Zaujala tě poptávka?
         </span>
         <a
-          class="css-1ke5b5t css-ti9e4i"
+          class="css-1jr5wp3"
           href="mailto:mlha@skaut.cz"
           rel="noreferrer noopener"
           target="_blank"
@@ -1316,7 +1316,7 @@ exports[`App > should render issue listing correctly 1`] = `
         </a>
       </section>
       <section
-        class="css-pz6x98 css-1rb6w2p"
+        class="css-64djbl"
       >
         <div
           class="css-1wr42l4"
@@ -1371,7 +1371,7 @@ exports[`App > should render issue listing correctly 1`] = `
         </div>
       </section>
       <section
-        class="css-snfp4i css-1rb6w2p"
+        class="css-1xo3opi"
       >
         <div
           class="css-eh7qde"
@@ -1639,7 +1639,7 @@ exports[`App > should render issue listing correctly 1`] = `
         </div>
       </section>
       <section
-        class="css-4dckue css-1rb6w2p"
+        class="css-z5ryhi"
       >
         <span
           class="css-1yhrhbp"
@@ -2135,13 +2135,13 @@ exports[`App > should render project listing correctly 1`] = `
       class="css-b50td5"
     >
       <section
-        class="css-17cnzpy css-1rb6w2p"
+        class="css-v7vhcp"
       >
         <div
           class="css-1wr42l4"
         >
           <h1
-            class="css-o8tq20 css-cq0erp"
+            class="css-16e9k9b"
           >
             WordPress plugin: Galerie obrázků a videí z Google Disku
           </h1>
@@ -2184,7 +2184,7 @@ exports[`App > should render project listing correctly 1`] = `
         </div>
       </section>
       <section
-        class="css-7ry3e6 css-1rb6w2p"
+        class="css-1e3tnes"
       >
         <div
           class="css-eh7qde"
@@ -2452,7 +2452,7 @@ exports[`App > should render project listing correctly 1`] = `
         </div>
       </section>
       <section
-        class="css-1h816go css-1rb6w2p"
+        class="css-17viyw0"
       >
         <span
           class="css-1yhrhbp"
