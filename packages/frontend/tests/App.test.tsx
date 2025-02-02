@@ -20,7 +20,7 @@ describe("App", () => {
       error: undefined,
       isLoading: false,
       isValidating: false,
-      mutate: vi.fn(),
+      mutate: vi.fn<(data?: unknown) => Promise<unknown>>(),
     });
     const { container } = render(
       <MemoryRouter>
@@ -37,7 +37,7 @@ describe("App", () => {
       error: undefined,
       isLoading: false,
       isValidating: false,
-      mutate: vi.fn(),
+      mutate: vi.fn<(data?: unknown) => Promise<unknown>>(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/projekty"]}>
@@ -54,7 +54,7 @@ describe("App", () => {
       error: undefined,
       isLoading: false,
       isValidating: false,
-      mutate: vi.fn(),
+      mutate: vi.fn<(data?: unknown) => Promise<unknown>>(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery"]}>
@@ -71,7 +71,7 @@ describe("App", () => {
       error: undefined,
       isLoading: false,
       isValidating: false,
-      mutate: vi.fn(),
+      mutate: vi.fn<(data?: unknown) => Promise<unknown>>(),
     });
     const { container } = render(
       <MemoryRouter initialEntries={["/skaut/skaut-google-drive-gallery/3"]}>
@@ -88,7 +88,7 @@ describe("App", () => {
       error: true,
       isLoading: false,
       isValidating: false,
-      mutate: vi.fn(),
+      mutate: vi.fn<(data?: unknown) => Promise<unknown>>(),
     });
     const { container } = render(
       <MemoryRouter>
