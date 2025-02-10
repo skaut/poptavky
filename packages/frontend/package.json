@@ -48,7 +48,7 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/react-dom": "^19.0.3",
     "@types/react-test-renderer": "^19.0.0",
-    "@vitejs/plugin-legacy": "^6.0.0",
+    "@vitejs/plugin-legacy": "^6.0.1",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-v8": "^3.0.5",
     "@vitest/eslint-plugin": "^1.1.25",
