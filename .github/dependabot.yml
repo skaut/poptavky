@@ -5,19 +5,16 @@ updates:
   schedule:
     interval: weekly
   assignees:
-  - DeetsCZ
   - marekdedic
 - package-ecosystem: npm
   directory: "/packages/frontend"
   schedule:
     interval: weekly
   assignees:
-  - DeetsCZ
   - marekdedic
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
     interval: weekly
   assignees:
-  - DeetsCZ
   - marekdedic
