@@ -50,7 +50,7 @@
     "@types/react-test-renderer": "^19.0.0",
     "@vitejs/plugin-legacy": "^6.0.2",
     "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/coverage-v8": "^3.0.9",
+    "@vitest/coverage-v8": "^3.1.1",
     "@vitest/eslint-plugin": "^1.1.38",
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
