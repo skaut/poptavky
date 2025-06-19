@@ -45,7 +45,7 @@
   },
   "scripts": {
     "lint:typecheck": "tsc --noEmit",
-    "lint:eslint": "eslint --color \"src/**/*\" \"tests/**/*\" \"*.config.{js,ts}\"",
+    "lint:eslint": "eslint --color",
     "lint": "run-p -c --aggregate-output lint:*",
     "test": "vitest",
     "test-coverage": "vitest run --coverage",
