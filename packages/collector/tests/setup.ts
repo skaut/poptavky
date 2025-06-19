@@ -4,6 +4,8 @@ import nock from "nock";
 import nodeFetch from "node-fetch";
 import { vi } from "vitest";
 
+/* eslint-disable vitest/require-hook -- OK in the setup file */
+
 nock.disableNetConnect();
 
 vi.mock("../src/octokit", () => {
@@ -17,3 +19,5 @@ vi.mock("../src/octokit", () => {
     }),
   };
 });
+
+/* eslint-enable */
