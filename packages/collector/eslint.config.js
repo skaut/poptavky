@@ -1,13 +1,21 @@
 import eslintComments from "@eslint-community/eslint-plugin-eslint-comments";
 import commentsConfig from "@eslint-community/eslint-plugin-eslint-comments/configs";
 import js from "@eslint/js";
+import json from "@eslint/json";
 import vitest from "@vitest/eslint-plugin";
 import perfectionist from "eslint-plugin-perfectionist";
 import preferArrowFunctions from "eslint-plugin-prefer-arrow-functions";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
+import { globalIgnores } from "eslint/config";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
+  globalIgnores(["package-lock.json"]),
+  {
+    extends: [json.configs.recommended],
+    files: ["**/*.json"],
+    language: "json/json",
+  },
   {
     extends: [
       js.configs.recommended,
