@@ -20,7 +20,7 @@
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean",
     "build": "vite build",
-    "lint:ts:eslint": "eslint --color \"src/**/*\" \"__mocks__/**/*\" \"tests/**/*\" \"*.config.{js,ts}\"",
+    "lint:eslint": "eslint --color",
     "lint:ts:typecheck": "tsc --noEmit",
     "lint:ts": "run-p -c --aggregate-output lint:ts:*",
     "lint": "run-p -c --aggregate-output lint:*",
