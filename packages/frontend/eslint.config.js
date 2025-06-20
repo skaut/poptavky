@@ -1,6 +1,7 @@
 import eslintComments from "@eslint-community/eslint-plugin-eslint-comments";
 import commentsConfig from "@eslint-community/eslint-plugin-eslint-comments/configs";
 import js from "@eslint/js";
+import json from "@eslint/json";
 import vitest from "@vitest/eslint-plugin";
 import compat from "eslint-plugin-compat";
 import perfectionist from "eslint-plugin-perfectionist";
@@ -12,7 +13,12 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  globalIgnores(["dist/"]),
+  globalIgnores(["dist/", "package-lock.json"]),
+  {
+    extends: [json.configs.recommended],
+    files: ["**/*.json"],
+    language: "json/json",
+  },
   {
     extends: [
       js.configs.recommended,
