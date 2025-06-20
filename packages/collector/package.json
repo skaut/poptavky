@@ -12,10 +12,19 @@
   "bugs": {
     "url": "https://github.com/skaut/poptavky/issues"
   },
-  "author": "Marek Dědič",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skaut/poptavky.git"
+  },
+  "author": "Marek Dědič",
+  "type": "module",
+  "scripts": {
+    "collect": "node --experimental-strip-types src/index.ts",
+    "lint": "run-p -c --aggregate-output lint:*",
+    "lint:eslint": "eslint --color",
+    "lint:typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test-coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
@@ -23,15 +32,16 @@
     "@octokit/plugin-rest-endpoint-methods": "^16.0.0",
     "ts-custom-error": "^3.3.1"
   },
-  "type": "module",
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
     "@eslint/js": "^9.28.0",
+    "@eslint/json": "^0.12.0",
     "@types/node": "^24.0.3",
     "@vitest/coverage-v8": "^3.2.3",
     "@vitest/eslint-plugin": "^1.2.7",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-package-json": "^0.40.2",
     "eslint-plugin-perfectionist": "^4.14.0",
     "eslint-plugin-prefer-arrow-functions": "^3.6.2",
     "eslint-plugin-prettier": "^5.4.1",
@@ -42,13 +52,5 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.34.1",
     "vitest": "^3.2.3"
-  },
-  "scripts": {
-    "lint:typecheck": "tsc --noEmit",
-    "lint:eslint": "eslint --color \"src/**/*\" \"tests/**/*\" \"*.config.{js,ts}\"",
-    "lint": "run-p -c --aggregate-output lint:*",
-    "test": "vitest",
-    "test-coverage": "vitest run --coverage",
-    "collect": "node --experimental-strip-types src/index.ts"
   }
 }
