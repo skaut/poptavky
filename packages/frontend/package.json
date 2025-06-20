@@ -17,17 +17,29 @@
   },
   "type": "module",
   "scripts": {
-    "clean": "rimraf dist/*",
     "prebuild": "npm run clean",
     "build": "vite build",
-    "lint:eslint": "eslint --color",
-    "lint:ts:typecheck": "tsc --noEmit",
-    "lint:ts": "run-p -c --aggregate-output lint:ts:*",
+    "clean": "rimraf dist/*",
     "lint": "run-p -c --aggregate-output lint:*",
+    "lint:eslint": "eslint --color",
+    "lint:ts": "run-p -c --aggregate-output lint:ts:*",
+    "lint:ts:typecheck": "tsc --noEmit",
     "start": "vite",
     "test": "vitest",
-    "test-coverage": "vitest run --coverage",
-    "test-accept": "vitest run --update"
+    "test-accept": "vitest run --update",
+    "test-coverage": "vitest run --coverage"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -70,17 +82,5 @@
     "typescript-eslint": "^8.34.1",
     "vite": "^6.3.5",
     "vitest": "^3.0.7"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
