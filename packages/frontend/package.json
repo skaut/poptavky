@@ -65,7 +65,7 @@
     "@vitejs/plugin-react": "^5.1.0",
     "@vitest/coverage-v8": "^4.0.6",
     "@vitest/eslint-plugin": "^1.4.2",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-compat": "^6.0.2",
     "eslint-plugin-package-json": "^0.65.1",
