@@ -8,7 +8,7 @@ test("GlobalConfig recognizes valid config", () => {
 
   expect(() => {
     assertIsGlobalConfig(config);
-  }).not.toThrow();
+  }).not.toThrowError();
 });
 
 test("GlobalConfig requires object input", () => {
@@ -16,7 +16,7 @@ test("GlobalConfig requires object input", () => {
 
   expect(() => {
     assertIsGlobalConfig(config);
-  }).toThrow(GlobalConfigError);
+  }).toThrowError(GlobalConfigError);
 });
 
 test("GlobalConfig cannot be null", () => {
@@ -24,7 +24,7 @@ test("GlobalConfig cannot be null", () => {
 
   expect(() => {
     assertIsGlobalConfig(config);
-  }).toThrow(GlobalConfigError);
+  }).toThrowError(GlobalConfigError);
 });
 
 test("GlobalConfig requires the projects field", () => {
@@ -32,7 +32,7 @@ test("GlobalConfig requires the projects field", () => {
 
   expect(() => {
     assertIsGlobalConfig(config);
-  }).toThrow(GlobalConfigError);
+  }).toThrowError(GlobalConfigError);
 });
 
 test("GlobalConfig requires the projects field to be an array", () => {
@@ -40,7 +40,7 @@ test("GlobalConfig requires the projects field to be an array", () => {
 
   expect(() => {
     assertIsGlobalConfig(config);
-  }).toThrow(GlobalConfigError);
+  }).toThrowError(GlobalConfigError);
 });
 
 test("GlobalConfig requires the projects field to be an array of projects", () => {
@@ -48,7 +48,7 @@ test("GlobalConfig requires the projects field to be an array of projects", () =
 
   expect(() => {
     assertIsGlobalConfig(config);
-  }).toThrow(GlobalConfigError);
+  }).toThrowError(GlobalConfigError);
 });
 
 test("GlobalConfig uses custom errors", () => {
@@ -58,5 +58,5 @@ test("GlobalConfig uses custom errors", () => {
     assertIsGlobalConfig(config, () => {
       throw new Error("My error");
     });
-  }).toThrow("My error");
+  }).toThrowError("My error");
 });

@@ -14,7 +14,7 @@ test("ProjectInfo recognizes minimal valid info", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).not.toThrow();
+  }).not.toThrowError();
 });
 
 test("ProjectInfo recognizes full valid info", () => {
@@ -30,7 +30,7 @@ test("ProjectInfo recognizes full valid info", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).not.toThrow();
+  }).not.toThrowError();
 });
 
 test("ProjectInfo requires object input", () => {
@@ -38,7 +38,7 @@ test("ProjectInfo requires object input", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires cannot be null", () => {
@@ -46,7 +46,7 @@ test("ProjectInfo requires cannot be null", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the name field", () => {
@@ -59,7 +59,7 @@ test("ProjectInfo requires the name field", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the short-description field", () => {
@@ -72,7 +72,7 @@ test("ProjectInfo requires the short-description field", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the description field", () => {
@@ -85,7 +85,7 @@ test("ProjectInfo requires the description field", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field", () => {
@@ -98,7 +98,7 @@ test("ProjectInfo requires the maintainers field", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the links field", () => {
@@ -111,7 +111,7 @@ test("ProjectInfo requires the links field", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the name field to be a string", () => {
@@ -125,7 +125,7 @@ test("ProjectInfo requires the name field to be a string", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the short-description field to be a string", () => {
@@ -139,7 +139,7 @@ test("ProjectInfo requires the short-description field to be a string", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the description field to be a string", () => {
@@ -153,7 +153,7 @@ test("ProjectInfo requires the description field to be a string", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field to be an array", () => {
@@ -167,7 +167,7 @@ test("ProjectInfo requires the maintainers field to be an array", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the links field to be an array", () => {
@@ -181,7 +181,7 @@ test("ProjectInfo requires the links field to be an array", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the help-issue-label field to be a string", () => {
@@ -196,7 +196,7 @@ test("ProjectInfo requires the help-issue-label field to be a string", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the help-issue-label not to contain commas", () => {
@@ -211,7 +211,7 @@ test("ProjectInfo requires the help-issue-label not to contain commas", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the tags field to be an array", () => {
@@ -226,7 +226,7 @@ test("ProjectInfo requires the tags field to be an array", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field to be non-empty", () => {
@@ -240,7 +240,7 @@ test("ProjectInfo requires the maintainers field to be non-empty", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the links field to be non-empty", () => {
@@ -254,7 +254,7 @@ test("ProjectInfo requires the links field to be non-empty", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field to be objects", () => {
@@ -268,7 +268,7 @@ test("ProjectInfo requires the maintainers field to be objects", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field not to be null", () => {
@@ -282,7 +282,7 @@ test("ProjectInfo requires the maintainers field not to be null", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field to contain name", () => {
@@ -296,7 +296,7 @@ test("ProjectInfo requires the maintainers field to contain name", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field name to be a string", () => {
@@ -310,7 +310,7 @@ test("ProjectInfo requires the maintainers field name to be a string", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the maintainers field email to be a string", () => {
@@ -324,7 +324,7 @@ test("ProjectInfo requires the maintainers field email to be a string", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to be objects", () => {
@@ -338,7 +338,7 @@ test("ProjectInfo requires the link field to be objects", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to not be null", () => {
@@ -352,7 +352,7 @@ test("ProjectInfo requires the link field to not be null", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain type", () => {
@@ -369,7 +369,7 @@ test("ProjectInfo requires the link field to contain type", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain uri", () => {
@@ -386,7 +386,7 @@ test("ProjectInfo requires the link field to contain uri", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo allows the link field type to be slack", () => {
@@ -407,7 +407,7 @@ test("ProjectInfo allows the link field type to be slack", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).not.toThrow(ProjectInfoError);
+  }).not.toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo allows the link field type to be github-repo, facebook-page, facebook-group", () => {
@@ -424,7 +424,7 @@ test("ProjectInfo allows the link field type to be github-repo, facebook-page, f
 
     expect(() => {
       assertIsProjectInfo(info);
-    }).not.toThrow(ProjectInfoError);
+    }).not.toThrowError(ProjectInfoError);
   }
 });
 
@@ -449,7 +449,7 @@ test("ProjectInfo allows the link field type to be email, homepage, demo, issue-
 
     expect(() => {
       assertIsProjectInfo(info);
-    }).not.toThrow();
+    }).not.toThrowError();
   }
 });
 
@@ -464,7 +464,7 @@ test("ProjectInfo disallows the link field type to be something else", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field type to be a string", () => {
@@ -478,7 +478,7 @@ test("ProjectInfo requires the link field type to be a string", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field uri to be a string", () => {
@@ -492,7 +492,7 @@ test("ProjectInfo requires the link field uri to be a string", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain space when the type is slack", () => {
@@ -506,7 +506,7 @@ test("ProjectInfo requires the link field to contain space when the type is slac
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field space to be a string when the type is slack", () => {
@@ -522,7 +522,7 @@ test("ProjectInfo requires the link field space to be a string when the type is 
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain channel when the type is slack", () => {
@@ -536,7 +536,7 @@ test("ProjectInfo requires the link field to contain channel when the type is sl
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field channel to be a string when the type is slack", () => {
@@ -552,7 +552,7 @@ test("ProjectInfo requires the link field channel to be a string when the type i
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo requires the link field to contain name when the type is github-repo, facebook-page, facebook-group", () => {
@@ -569,7 +569,7 @@ test("ProjectInfo requires the link field to contain name when the type is githu
 
     expect(() => {
       assertIsProjectInfo(info);
-    }).toThrow(ProjectInfoError);
+    }).toThrowError(ProjectInfoError);
   }
 });
 
@@ -587,7 +587,7 @@ test("ProjectInfo requires the link field name to be a string when the type is g
 
     expect(() => {
       assertIsProjectInfo(info);
-    }).toThrow(ProjectInfoError);
+    }).toThrowError(ProjectInfoError);
   }
 });
 
@@ -603,7 +603,7 @@ test("ProjectInfo requires the tags field to be an array of strings", () => {
 
   expect(() => {
     assertIsProjectInfo(info);
-  }).toThrow(ProjectInfoError);
+  }).toThrowError(ProjectInfoError);
 });
 
 test("ProjectInfo uses custom errors", () => {
@@ -613,5 +613,5 @@ test("ProjectInfo uses custom errors", () => {
     assertIsProjectInfo(info, () => {
       throw new Error("My error");
     });
-  }).toThrow("My error");
+  }).toThrowError("My error");
 });
