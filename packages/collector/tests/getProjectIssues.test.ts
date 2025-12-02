@@ -133,7 +133,7 @@ test("getProjectIssues fails gracefully on connection issues", async () => {
 
   await expect(async () =>
     getProjectIssues({ owner: "OWNER", repo: "REPO" }, true, "help-wanted"),
-  ).rejects.toThrow(IssueListError);
+  ).rejects.toThrowError(IssueListError);
 
   nock.cleanAll();
 });

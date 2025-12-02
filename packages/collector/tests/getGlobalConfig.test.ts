@@ -32,11 +32,11 @@ test("getGlobalConfig fails gracefully on file read error", () => {
     throw new Error();
   });
 
-  expect(() => getGlobalConfig()).toThrow(GlobalConfigError);
+  expect(() => getGlobalConfig()).toThrowError(GlobalConfigError);
 });
 
 test("getGlobalConfig fails gracefully on empty file", () => {
   vi.mocked(fs).readFileSync.mockReturnValue("");
 
-  expect(() => getGlobalConfig()).toThrow(GlobalConfigError);
+  expect(() => getGlobalConfig()).toThrowError(GlobalConfigError);
 });
