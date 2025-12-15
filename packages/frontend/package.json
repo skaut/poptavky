@@ -51,7 +51,7 @@
     "react-router": "^7.10.1",
     "remark-gfm": "^4.0.1",
     "string-to-color": "^2.2.2",
-    "swr": "^2.3.7"
+    "swr": "^2.3.8"
   },
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
