@@ -172,6 +172,7 @@ export default tseslint.config(
     ],
     files: ["**/*.tsx"],
     rules: {
+      "@typescript-eslint/no-useless-default-assignment": "off", // Interferes with react/require-default-props
       "react/button-has-type": "error",
       "react/checked-requires-onchange-or-readonly": "error",
       "react/default-props-match-prop-types": "error",
