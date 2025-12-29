@@ -24,7 +24,7 @@ export const getIssuesWithProjectInfo = (
     )
     .flatMap((project) =>
       project.issues
-        .filter((issue) => !query || query.omitIssueNumber !== issue.number)
+        .filter((issue) => query?.omitIssueNumber !== issue.number)
         .map((issue) => ({
           ...issue,
           project: {
