@@ -14,6 +14,7 @@ export async function getProjectIssues(
     .listForRepo({
       labels: safeIssueLabel,
       owner: project.owner,
+      // eslint-disable-next-line camelcase -- API parameter
       per_page: 100,
       repo: project.repo,
     })
