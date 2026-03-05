@@ -21,6 +21,7 @@ export async function getProjectInfo(project: Project): Promise<ProjectInfo> {
   if (encodedContent === undefined) {
     throw new ProjectInfoError("Failed to decode the file.");
   }
+  // eslint-disable-next-line no-useless-assignment -- no way to assign in the try block directly
   let info: unknown = undefined;
   try {
     info = JSON.parse(Buffer.from(encodedContent, "base64").toString());
