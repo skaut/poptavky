@@ -14,6 +14,7 @@ describe("Working issue listing", () => {
       .reply(200, [
         {
           body: "BODY_C",
+          // eslint-disable-next-line camelcase -- API parameter
           html_url: "https://example.test",
           number: 1,
           title: "CORRECT",
@@ -27,6 +28,7 @@ describe("Working issue listing", () => {
       .reply(200, [
         {
           body: "BODY_I",
+          // eslint-disable-next-line camelcase -- API parameter
           html_url: "https://example.test",
           number: 2,
           title: "INCORRECT",
@@ -38,18 +40,21 @@ describe("Working issue listing", () => {
       .reply(200, [
         {
           body: "BODY_C",
+          // eslint-disable-next-line camelcase -- API parameter
           html_url: "https://example.test",
           number: 1,
           title: "CORRECT",
         },
         {
           body: "BODY_I",
+          // eslint-disable-next-line camelcase -- API parameter
           html_url: "https://example.test",
           number: 2,
           title: "INCORRECT",
         },
         {
           body: "BODY_N",
+          // eslint-disable-next-line camelcase -- API parameter
           html_url: "https://example.test",
           number: 3,
           title: "NONE",
@@ -106,6 +111,7 @@ test("getProjectIssues auto-populates body", async () => {
     .get("/repos/OWNER/REPO/issues")
     .query((actualQueryObject) => actualQueryObject["labels"] === "help-wanted")
     .reply(200, [
+      // eslint-disable-next-line camelcase -- API parameter
       { html_url: "https://example.test", number: 1, title: "CORRECT" },
     ]);
 
