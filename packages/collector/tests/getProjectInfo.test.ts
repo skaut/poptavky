@@ -37,7 +37,7 @@ test("getProjectInfo fails gracefully on connection issues", async () => {
 
   await expect(
     getProjectInfo({ owner: "OWNER", repo: "REPO" }),
-  ).rejects.toThrowError(ProjectInfoError);
+  ).rejects.toThrow(ProjectInfoError);
 
   nock.cleanAll();
 });
@@ -51,7 +51,7 @@ test("getProjectInfo fails gracefully on invalid response", async () => {
 
   await expect(
     getProjectInfo({ owner: "OWNER", repo: "REPO" }),
-  ).rejects.toThrowError(ProjectInfoError);
+  ).rejects.toThrow(ProjectInfoError);
 
   nock.cleanAll();
 });
@@ -67,7 +67,7 @@ test("getProjectInfo fails gracefully on invalid response 2", async () => {
 
   await expect(
     getProjectInfo({ owner: "OWNER", repo: "REPO" }),
-  ).rejects.toThrowError(ProjectInfoError);
+  ).rejects.toThrow(ProjectInfoError);
 
   nock.cleanAll();
 });
