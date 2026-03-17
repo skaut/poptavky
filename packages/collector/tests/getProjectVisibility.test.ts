@@ -39,7 +39,7 @@ test("getProjectVisibility fails gracefully on connection issues", async () => {
 
   await expect(
     getProjectVisibility({ owner: "OWNER", repo: "REPO" }),
-  ).rejects.toThrowError(VisibilityError);
+  ).rejects.toThrow(VisibilityError);
 
   nock.cleanAll();
 });

@@ -8,7 +8,7 @@ test("Project recognizes valid project", () => {
 
   expect(() => {
     assertIsProject(project);
-  }).not.toThrowError();
+  }).not.toThrow();
 });
 
 test("Project requires object input", () => {
@@ -16,7 +16,7 @@ test("Project requires object input", () => {
 
   expect(() => {
     assertIsProject(project);
-  }).toThrowError(PoptavkyError);
+  }).toThrow(PoptavkyError);
 });
 
 test("Project cannot be null", () => {
@@ -24,7 +24,7 @@ test("Project cannot be null", () => {
 
   expect(() => {
     assertIsProject(project);
-  }).toThrowError(PoptavkyError);
+  }).toThrow(PoptavkyError);
 });
 
 test("Project requires the owner field", () => {
@@ -32,7 +32,7 @@ test("Project requires the owner field", () => {
 
   expect(() => {
     assertIsProject(project);
-  }).toThrowError(PoptavkyError);
+  }).toThrow(PoptavkyError);
 });
 
 test("Project requires the repo field", () => {
@@ -40,7 +40,7 @@ test("Project requires the repo field", () => {
 
   expect(() => {
     assertIsProject(project);
-  }).toThrowError(PoptavkyError);
+  }).toThrow(PoptavkyError);
 });
 
 test("Project requires the owner field to be a string", () => {
@@ -48,7 +48,7 @@ test("Project requires the owner field to be a string", () => {
 
   expect(() => {
     assertIsProject(project);
-  }).toThrowError(PoptavkyError);
+  }).toThrow(PoptavkyError);
 });
 
 test("Project requires the repo field to be a string", () => {
@@ -56,7 +56,7 @@ test("Project requires the repo field to be a string", () => {
 
   expect(() => {
     assertIsProject(project);
-  }).toThrowError(PoptavkyError);
+  }).toThrow(PoptavkyError);
 });
 
 test("Project uses custom errors", () => {
@@ -66,5 +66,5 @@ test("Project uses custom errors", () => {
     assertIsProject(project, () => {
       throw new Error("My error");
     });
-  }).toThrowError("My error");
+  }).toThrow("My error");
 });
