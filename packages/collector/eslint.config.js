@@ -11,7 +11,7 @@ import { globalIgnores } from "eslint/config";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  globalIgnores(["package-lock.json"]),
+  globalIgnores(["coverage/", "package-lock.json"]),
   packageJson.configs.recommended,
   {
     extends: [json.configs.recommended],
