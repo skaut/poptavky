@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
-    "module": "es2020",
-    "moduleResolution": "node",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "sourceMap": true,
-    "target": "es2019",
 
     "skipLibCheck": true,
 
@@ -19,7 +16,6 @@
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strict": true
+    "noUnusedParameters": true
   }
 }
