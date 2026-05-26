@@ -38,7 +38,7 @@
     "@eslint/json": "^1.2.0",
     "@types/node": "^25.9.0",
     "@vitest/coverage-v8": "^4.1.6",
-    "@vitest/eslint-plugin": "^1.6.17",
+    "@vitest/eslint-plugin": "^1.6.18",
     "eslint": "^10.4.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-package-json": "^1.1.0",
