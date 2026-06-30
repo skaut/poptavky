@@ -13,9 +13,7 @@ export interface ProjectInfo {
 }
 
 type ProjectInfoLink =
-  | ProjectInfoLinkNamed
-  | ProjectInfoLinkOther
-  | ProjectInfoLinkSlack;
+  ProjectInfoLinkNamed | ProjectInfoLinkOther | ProjectInfoLinkSlack;
 
 interface ProjectInfoLinkNamed {
   name: string;
