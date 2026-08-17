@@ -1,23 +1,24 @@
+---
 version: 2
 updates:
-- package-ecosystem: github-actions
-  directory: "/"
-  open-pull-requests-limit: 9999
-  schedule:
-    interval: weekly
-  assignees:
-  - marekdedic
-- package-ecosystem: npm
-  directory: "/packages/collector"
-  open-pull-requests-limit: 9999
-  schedule:
-    interval: weekly
-  assignees:
-  - marekdedic
-- package-ecosystem: npm
-  directory: "/packages/frontend"
-  open-pull-requests-limit: 9999
-  schedule:
-    interval: weekly
-  assignees:
-  - marekdedic
+  - package-ecosystem: github-actions
+    directory: "/"
+    open-pull-requests-limit: 9999
+    schedule:
+      interval: weekly
+    assignees:
+      - marekdedic
+  - package-ecosystem: npm
+    directory: "/packages/collector"
+    open-pull-requests-limit: 9999
+    schedule:
+      interval: weekly
+    assignees:
+      - marekdedic
+  - package-ecosystem: npm
+    directory: "/packages/frontend"
+    open-pull-requests-limit: 9999
+    schedule:
+      interval: weekly
+    assignees:
+      - marekdedic
