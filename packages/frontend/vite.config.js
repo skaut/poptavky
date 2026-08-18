@@ -9,6 +9,9 @@ export default defineConfig({
   plugins: [legacy(), react()],
   root: "src",
   test: {
+    coverage: {
+      exclude: ["tests/**"],
+    },
     environment: "jsdom",
     mockReset: true,
     root: ".",
