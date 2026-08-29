@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "esModuleInterop": true,
+    "erasableSyntaxOnly": true,
     "module": "nodenext",
+    "moduleResolution": "nodenext",
 
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
