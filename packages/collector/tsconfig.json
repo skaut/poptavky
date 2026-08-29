@@ -2,7 +2,6 @@
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "module": "NodeNext",
 
     "allowUnreachableCode": false,
