@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "esModuleInterop": true,
-    "module": "NodeNext",
+    "module": "nodenext",
 
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
