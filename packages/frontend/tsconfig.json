@@ -3,6 +3,7 @@
     "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "bundler",
+    "target": "es2017",
 
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
