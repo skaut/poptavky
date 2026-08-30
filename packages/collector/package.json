@@ -19,7 +19,7 @@
   "author": "Marek Dědič",
   "type": "module",
   "scripts": {
-    "collect": "node --experimental-strip-types src/index.ts",
+    "collect": "node src/index.ts",
     "lint": "run-p -c --aggregate-output lint:*",
     "lint:eslint": "eslint --color",
     "lint:typecheck": "tsc --noEmit",
@@ -52,5 +52,8 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.67.0",
     "vitest": "^4.1.11"
+  },
+  "engines": {
+    "node": "^26.0.0"
   }
 }
