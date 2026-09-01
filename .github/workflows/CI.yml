@@ -105,6 +105,10 @@ jobs:
         run: |
           npm run build
 
+      - name: "Check the built output"
+        run: |
+          npm run check
+
   frontend-lint:
     name: "Lint frontend"
     runs-on: ubuntu-latest
