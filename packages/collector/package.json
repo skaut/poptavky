@@ -21,7 +21,7 @@
   "scripts": {
     "collect": "node src/index.ts",
     "lint": "FORCE_COLOR=1 run-p -c --aggregate-output lint:*",
-    "lint:eslint": "eslint --color",
+    "lint:eslint": "eslint",
     "lint:typecheck": "tsc --noEmit",
     "test": "vitest run --coverage",
     "test-watch": "vitest"
