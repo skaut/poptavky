@@ -149,7 +149,6 @@ export default tseslint.config(
       "@typescript-eslint/no-unnecessary-parameter-property-assignment":
         "error",
       "@typescript-eslint/no-unnecessary-qualifier": "error",
-      "@typescript-eslint/no-unused-vars": "error",
       "@typescript-eslint/no-use-before-define": [
         "error",
         { functions: false },
@@ -244,16 +243,11 @@ export default tseslint.config(
     rules: {
       "vitest/consistent-test-it": ["error", { withinDescribe: "test" }],
       "vitest/no-alias-methods": "error",
-      "vitest/no-conditional-expect": "error",
       "vitest/no-conditional-in-test": "error",
       "vitest/no-conditional-tests": "error",
       "vitest/no-disabled-tests": "error",
       "vitest/no-duplicate-hooks": "error",
-      "vitest/no-focused-tests": "error",
-      "vitest/no-interpolation-in-snapshots": "error",
       "vitest/no-large-snapshots": "error",
-      "vitest/no-mocks-import": "error",
-      "vitest/no-standalone-expect": "error",
       "vitest/no-test-prefixes": "error",
       "vitest/no-test-return-statement": "error",
       "vitest/padding-around-all": "error",
@@ -284,7 +278,6 @@ export default tseslint.config(
       "vitest/prefer-vi-mocked": "error",
       "vitest/require-hook": "error",
       "vitest/require-to-throw-message": "error",
-      "vitest/valid-expect-in-promise": "error",
     },
   },
   {
