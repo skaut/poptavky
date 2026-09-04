@@ -39,7 +39,7 @@ export const ArticleBox = ({
   readonly title: string;
 }): React.JSX.Element => (
   <ThinArticle>
-    <H2>{link !== undefined ? <Link to={link}>{title}</Link> : title}</H2>
+    <H2>{link === undefined ? title : <Link to={link}>{title}</Link>}</H2>
     <ProjectName>
       {subtitle !== undefined && subtitleLink !== undefined && (
         <Link title={subtitleDescription} to={subtitleLink}>
