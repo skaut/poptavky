@@ -113,6 +113,7 @@ export default tseslint.config(
         },
       ],
       "prefer-exponentiation-operator": "error",
+      "prefer-object-has-own": "error",
       "prefer-object-spread": "error",
       "prefer-regex-literals": "error",
       "prefer-template": "error",
