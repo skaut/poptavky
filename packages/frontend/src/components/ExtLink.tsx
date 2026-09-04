@@ -21,12 +21,12 @@ export const ExtLink = ({
     className={className}
     href={href}
     title={title}
-    {...(!targetSelf
-      ? {
+    {...(targetSelf
+      ? {}
+      : {
           rel: "noreferrer noopener",
           target: "_blank",
-        }
-      : {})}
+        })}
     css={css`
       display: inline-flex;
       align-items: center;
