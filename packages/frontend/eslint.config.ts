@@ -188,7 +188,7 @@ export default defineConfig(
   },
   {
     extends: [
-      react.configs.flat.recommended,
+      react.configs.flat["recommended"],
       react.configs.flat["jsx-runtime"],
     ],
     files: ["**/*.tsx"],
