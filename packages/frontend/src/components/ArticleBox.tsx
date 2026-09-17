@@ -23,10 +23,10 @@ const emptyArray: Array<string> = [];
 
 export const ArticleBox = ({
   description,
-  link = undefined,
-  subtitle = undefined,
-  subtitleDescription = undefined,
-  subtitleLink = undefined,
+  link,
+  subtitle,
+  subtitleDescription,
+  subtitleLink,
   tags = emptyArray,
   title,
 }: {
