@@ -12,10 +12,10 @@ export interface LinkProps {
 }
 export const ExtLink = ({
   children,
-  className = undefined,
+  className,
   href,
   targetSelf = false,
-  title = undefined,
+  title,
 }: LinkProps): React.JSX.Element => (
   <a
     className={className}
