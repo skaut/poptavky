@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppNavigation component > should render correctly 1`] = `
+<nav>
+  <div
+    class="css-1otv0s7"
+  >
+    <a
+      aria-current="page"
+      class="css-nqd2p0 active"
+      data-discover="true"
+      href="/"
+    >
+      Poptávky
+    </a>
+    <a
+      class="css-nqd2p0"
+      data-discover="true"
+      href="/projekty"
+    >
+      Projekty
+    </a>
+  </div>
+</nav>
+`;

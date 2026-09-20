@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ColoredTag component > should render correctly 1`] = `
+<span
+  class="css-1djbha5"
+>
+  Tag
+</span>
+`;

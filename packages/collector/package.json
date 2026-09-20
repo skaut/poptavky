@@ -1,0 +1,60 @@
+{
+  "name": "poptavky",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A GitHub app to automatically export issues to a webpage.",
+  "keywords": [
+    "plugin",
+    "github app",
+    "automation"
+  ],
+  "homepage": "https://github.com/skaut/poptavky#readme",
+  "bugs": {
+    "url": "https://github.com/skaut/poptavky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skaut/poptavky.git"
+  },
+  "author": "Marek Dědič",
+  "type": "module",
+  "scripts": {
+    "collect": "node src/index.ts",
+    "lint": "FORCE_COLOR=1 run-p -c --aggregate-output lint:*",
+    "lint:eslint": "eslint",
+    "lint:typecheck": "tsc --noEmit",
+    "test": "vitest run --coverage",
+    "test-watch": "vitest"
+  },
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "@octokit/core": "^7.0.8",
+    "@octokit/plugin-rest-endpoint-methods": "^18.0.0",
+    "ts-custom-error": "^3.3.1"
+  },
+  "devDependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.8.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.1.0",
+    "@types/node": "^26.5.1",
+    "@vitest/coverage-v8": "^4.1.11",
+    "@vitest/eslint-plugin": "^1.6.27",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-package-json": "^1.8.0",
+    "eslint-plugin-perfectionist": "^5.11.0",
+    "eslint-plugin-prefer-arrow-functions": "^3.10.2",
+    "eslint-plugin-prettier": "^5.5.6",
+    "jiti": "^2.7.0",
+    "nock": "^14.0.17",
+    "node-fetch": "^3.3.2",
+    "npm-run-all2": "^9.0.3",
+    "prettier": "^3.9.6",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^4.1.11"
+  },
+  "engines": {
+    "node": "^26.0.0"
+  }
+}

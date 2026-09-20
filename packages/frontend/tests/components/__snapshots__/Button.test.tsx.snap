@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button component > should render correctly 1`] = `
+<a
+  class="css-1jr5wp3"
+  href="http://www.somewhere.com"
+  rel="noreferrer noopener"
+  target="_blank"
+>
+  Link somewhere
+</a>
+`;
+
+exports[`Button component > should render correctly with custom class 1`] = `
+<a
+  class="myClassName css-1jr5wp3"
+  href="http://www.somewhere.com"
+  rel="noreferrer noopener"
+  target="_blank"
+>
+  Link somewhere
+</a>
+`;
+
+exports[`Button component > should render correctly with target self 1`] = `
+<a
+  class="css-1jr5wp3"
+  href="http://www.somewhere.com"
+>
+  Link somewhere
+</a>
+`;
+
+exports[`Button component > should render correctly with title 1`] = `
+<a
+  class="css-1jr5wp3"
+  href="http://www.somewhere.com"
+  rel="noreferrer noopener"
+  target="_blank"
+  title="myTitle"
+>
+  Link somewhere
+</a>
+`;

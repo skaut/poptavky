@@ -1,0 +1,44 @@
+---
+name: "Collect"
+"on":
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'config.json'
+  schedule:
+    - cron: '0 0 * * *'
+env:
+  cache-version: 1
+
+jobs:
+  collect:
+    uses: ./.github/workflows/reusable-collect.yml
+    secrets:
+      PAT: ${{ secrets.PAT_PETA }}
+
+  deploy:
+    name: "Deploy collected listings"
+    runs-on: ubuntu-latest
+    needs: collect
+    defaults:
+      run:
+        working-directory: packages/collector
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v7
+
+      - name: "Download artifact"
+        uses: actions/download-artifact@v8
+        with:
+          name: "listings"
+          path: dist
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.9.0
+        with:
+          branch: gh-pages
+          folder: dist
+          clean: false
+          single-commit: true
