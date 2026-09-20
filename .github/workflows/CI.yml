@@ -70,7 +70,7 @@ jobs:
           npm test
 
       - name: "Upload coverage results"
-        uses: codecov/codecov-action@v7.0.0
+        uses: codecov/codecov-action@v7.1.1
         with:
           flags: collector
           token: ${{ secrets.CODECOV_TOKEN }}
@@ -168,7 +168,7 @@ jobs:
           npm test
 
       - name: "Upload coverage results"
-        uses: codecov/codecov-action@v7.0.0
+        uses: codecov/codecov-action@v7.1.1
         with:
           flags: frontend
           token: ${{ secrets.CODECOV_TOKEN }}
