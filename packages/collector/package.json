@@ -46,7 +46,7 @@
     "eslint-plugin-prefer-arrow-functions": "^3.10.2",
     "eslint-plugin-prettier": "^5.5.7",
     "jiti": "^2.7.0",
-    "nock": "^15.0.1",
+    "nock": "^15.0.5",
     "node-fetch": "^3.3.2",
     "npm-run-all2": "^9.0.4",
     "prettier": "^3.9.10",
